@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-allergyintolerancecode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-allergyintolerancecode</b></p><a name="be-allergyintolerancecode"> </a><a name="hcbe-allergyintolerancecode"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-be-causativeagent.html">BeCausativeAgent</a></li><li>Import all the codes that are contained in <a href="ValueSet-be-noallergy.html">BeNoAllergy</a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"/>
+  <version value="1.0.0"/>
+  <name value="BeAllergyIntoleranceCode"/>
+  <title value="BeAllergyIntoleranceCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent"/>
+    </include>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"/>
+    </include>
+  </compose>
+</ValueSet>

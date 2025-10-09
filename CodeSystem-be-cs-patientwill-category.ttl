@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-patientwill-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-patientwill-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-patientwill-category</b></p><a name=\"be-cs-patientwill-category\"> </a><a name=\"hcbe-cs-patientwill-category\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">negativedeclaration<a name=\"be-cs-patientwill-category-negativedeclaration\"> </a></td></tr><tr><td style=\"white-space:nowrap\">euthanasia<a name=\"be-cs-patientwill-category-euthanasia\"> </a></td></tr><tr><td style=\"white-space:nowrap\">organdonation<a name=\"be-cs-patientwill-category-organdonation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lastwill<a name=\"be-cs-patientwill-category-lastwill\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodydonation<a name=\"be-cs-patientwill-category-bodydonation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">patientwill<a name=\"be-cs-patientwill-category-patientwill\"> </a></td></tr><tr><td style=\"white-space:nowrap\">resuscitation<a name=\"be-cs-patientwill-category-resuscitation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hospitalisation<a name=\"be-cs-patientwill-category-hospitalisation\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSPatientWillCategory"] ; # 
+  fhir:title [ fhir:v "Patient Will Category CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-01-10T10:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Patient Will Category CodeSystem"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "negativedeclaration" ]
+  ] [
+     fhir:code [ fhir:v "euthanasia" ]
+  ] [
+     fhir:code [ fhir:v "organdonation" ]
+  ] [
+     fhir:code [ fhir:v "lastwill" ]
+  ] [
+     fhir:code [ fhir:v "bodydonation" ]
+  ] [
+     fhir:code [ fhir:v "patientwill" ]
+  ] [
+     fhir:code [ fhir:v "resuscitation" ]
+  ] [
+     fhir:code [ fhir:v "hospitalisation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

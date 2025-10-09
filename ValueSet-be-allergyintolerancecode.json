@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-allergyintolerancecode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-allergyintolerancecode</b></p><a name=\"be-allergyintolerancecode\"> </a><a name=\"hcbe-allergyintolerancecode\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-be-causativeagent.html\">BeCausativeAgent</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-be-noallergy.html\">BeNoAllergy</a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode",
+  "version" : "1.0.0",
+  "name" : "BeAllergyIntoleranceCode",
+  "title" : "BeAllergyIntoleranceCode",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-18T12:02:54+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent"]
+    },
+    {
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"]
+    }]
+  }
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agreement-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem agreement-types</b></p><a name="agreement-types"> </a><a name="hcagreement-types"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-types</code> provides <b>a fragment</b> that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">physiotherapy-fa<a name="agreement-types-physiotherapy-fa"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-fb<a name="agreement-types-physiotherapy-fb"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-eb<a name="agreement-types-physiotherapy-eb"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-e<a name="agreement-types-physiotherapy-e"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-common-1<a name="agreement-types-physiotherapy-common-1"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-common-2-and-more<a name="agreement-types-physiotherapy-common-2-and-more"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy<a name="agreement-types-physiotherapy"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-maternity<a name="agreement-types-physiotherapy-maternity"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-palliative<a name="agreement-types-physiotherapy-palliative"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-day-hospitalization<a name="agreement-types-physiotherapy-day-hospitalization"> </a></td></tr><tr><td style="white-space:nowrap">physiotherapy-consultative-review<a name="agreement-types-physiotherapy-consultative-review"> </a></td></tr><tr><td style="white-space:nowrap">speechtherapy-assessment<a name="agreement-types-speechtherapy-assessment"> </a></td></tr><tr><td style="white-space:nowrap">speechtherapy-treatment<a name="agreement-types-speechtherapy-treatment"> </a></td></tr><tr><td style="white-space:nowrap">speechtherapy<a name="agreement-types-speechtherapy"> </a></td></tr><tr><td style="white-space:nowrap">rehabilitation-convention<a name="agreement-types-rehabilitation-convention"> </a></td></tr><tr><td style="white-space:nowrap">stay-orgretirementhome<a name="agreement-types-stay-orgretirementhome"> </a></td></tr><tr><td style="white-space:nowrap">stay-orgpsychiatriccarehome<a name="agreement-types-stay-orgpsychiatriccarehome"> </a></td></tr><tr><td style="white-space:nowrap">stay-orgshelteredliving<a name="agreement-types-stay-orgshelteredliving"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-types"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetAgreementTypes"/>
+  <title value="CodeSystem agreement types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="physiotherapy-fa"/>
+    <display value="physiotherapy-fa"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-fb"/>
+    <display value="physiotherapy-fb"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-eb"/>
+    <display value="physiotherapy-eb"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-e"/>
+    <display value="physiotherapy-e"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-common-1"/>
+    <display value="physiotherapy-common-1"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-common-2-and-more"/>
+    <display value="physiotherapy-common-2-and-more"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy"/>
+    <display value="physiotherapy"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-maternity"/>
+    <display value="physiotherapy-maternity"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-palliative"/>
+    <display value="physiotherapy-palliative"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-day-hospitalization"/>
+    <display value="physiotherapy-day-hospitalization"/>
+  </concept>
+  <concept>
+    <code value="physiotherapy-consultative-review"/>
+    <display value="physiotherapy-consultative-review"/>
+  </concept>
+  <concept>
+    <code value="speechtherapy-assessment"/>
+    <display value="speechtherapy-assessment"/>
+  </concept>
+  <concept>
+    <code value="speechtherapy-treatment"/>
+    <display value="speechtherapy-treatment"/>
+  </concept>
+  <concept>
+    <code value="speechtherapy"/>
+    <display value="speechtherapy"/>
+  </concept>
+  <concept>
+    <code value="rehabilitation-convention"/>
+    <display value="rehabilitation-convention"/>
+  </concept>
+  <concept>
+    <code value="stay-orgretirementhome"/>
+    <display value="stay-orgretirementhome"/>
+  </concept>
+  <concept>
+    <code value="stay-orgpsychiatriccarehome"/>
+    <display value="stay-orgpsychiatriccarehome"/>
+  </concept>
+  <concept>
+    <code value="stay-orgshelteredliving"/>
+    <display value="stay-orgshelteredliving"/>
+  </concept>
+</CodeSystem>

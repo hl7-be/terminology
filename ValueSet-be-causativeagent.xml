@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-causativeagent"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-causativeagent</b></p><a name="be-causativeagent"> </a><a name="hcbe-causativeagent"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <span title="Version is explicitly stated to be http://snomed.info/sct/11000172109">&#x1F4CD;</span> where concept  in 50851000172106</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <span title="Version is explicitly stated to be http://snomed.info/sct/11000172109">&#x1F4CD;</span> where concept  in 50841000172109</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent"/>
+  <version value="1.0.0"/>
+  <name value="BeCausativeAgent"/>
+  <title value="BeCausativeAgent"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Causative Agents for Allergy (non medication)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000172109"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="50851000172106"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000172109"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="50841000172109"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

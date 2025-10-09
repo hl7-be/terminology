@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="message-events"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem message-events</b></p><a name="message-events"> </a><a name="hcmessage-events"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events</code> provides <b>a fragment</b> that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">claim-ask<a name="message-events-claim-ask"> </a></td></tr><tr><td style="white-space:nowrap">claim-cancel<a name="message-events-claim-cancel"> </a></td></tr><tr><td style="white-space:nowrap">claim-completeAgreement<a name="message-events-claim-completeAgreement"> </a></td></tr><tr><td style="white-space:nowrap">claim-extend<a name="message-events-claim-extend"> </a></td></tr><tr><td style="white-space:nowrap">claim-argue<a name="message-events-claim-argue"> </a></td></tr><tr><td style="white-space:nowrap">claimresponse-decide<a name="message-events-claimresponse-decide"> </a></td></tr><tr><td style="white-space:nowrap">claimresponse-cancel<a name="message-events-claimresponse-cancel"> </a></td></tr><tr><td style="white-space:nowrap">claimresponse-request-for-argue<a name="message-events-claimresponse-request-for-argue"> </a></td></tr><tr><td style="white-space:nowrap">claimresponse-close<a name="message-events-claimresponse-close"> </a></td></tr><tr><td style="white-space:nowrap">claimresponse-completeAgreement<a name="message-events-claimresponse-completeAgreement"> </a></td></tr><tr><td style="white-space:nowrap">reject<a name="message-events-reject"> </a></td></tr><tr><td style="white-space:nowrap">eattest-create<a name="message-events-eattest-create"> </a></td></tr><tr><td style="white-space:nowrap">eattestresponse-create<a name="message-events-eattestresponse-create"> </a></td></tr><tr><td style="white-space:nowrap">eattest-cancel<a name="message-events-eattest-cancel"> </a></td></tr><tr><td style="white-space:nowrap">eattestresponse-cancel<a name="message-events-eattestresponse-cancel"> </a></td></tr><tr><td style="white-space:nowrap">etariff-consult<a name="message-events-etariff-consult"> </a></td></tr><tr><td style="white-space:nowrap">etariffresponse-consult<a name="message-events-etariffresponse-consult"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetMessageEvents"/>
+  <title value="CodeSystem message events"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="claim-ask"/>
+    <display value="claim-ask"/>
+  </concept>
+  <concept>
+    <code value="claim-cancel"/>
+    <display value="claim-cancel"/>
+  </concept>
+  <concept>
+    <code value="claim-completeAgreement"/>
+    <display value="claim-completeAgreement"/>
+  </concept>
+  <concept>
+    <code value="claim-extend"/>
+    <display value="claim-extend"/>
+  </concept>
+  <concept>
+    <code value="claim-argue"/>
+    <display value="claim-argue"/>
+  </concept>
+  <concept>
+    <code value="claimresponse-decide"/>
+    <display value="claimresponse-decide"/>
+  </concept>
+  <concept>
+    <code value="claimresponse-cancel"/>
+    <display value="claimresponse-cancel"/>
+  </concept>
+  <concept>
+    <code value="claimresponse-request-for-argue"/>
+    <display value="claimresponse-request-for-argue"/>
+  </concept>
+  <concept>
+    <code value="claimresponse-close"/>
+    <display value="claimresponse-close"/>
+  </concept>
+  <concept>
+    <code value="claimresponse-completeAgreement"/>
+    <display value="claimresponse-completeAgreement"/>
+  </concept>
+  <concept>
+    <code value="reject"/>
+    <display value="reject"/>
+  </concept>
+  <concept>
+    <code value="eattest-create"/>
+    <display value="eattest-create"/>
+  </concept>
+  <concept>
+    <code value="eattestresponse-create"/>
+    <display value="eattestresponse-create"/>
+  </concept>
+  <concept>
+    <code value="eattest-cancel"/>
+    <display value="eattest-cancel"/>
+  </concept>
+  <concept>
+    <code value="eattestresponse-cancel"/>
+    <display value="eattestresponse-cancel"/>
+  </concept>
+  <concept>
+    <code value="etariff-consult"/>
+    <display value="etariff-consult"/>
+  </concept>
+  <concept>
+    <code value="etariffresponse-consult"/>
+    <display value="etariffresponse-consult"/>
+  </concept>
+</CodeSystem>

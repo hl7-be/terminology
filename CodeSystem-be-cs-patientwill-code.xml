@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-patientwill-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-patientwill-code</b></p><a name="be-cs-patientwill-code"> </a><a name="hcbe-cs-patientwill-code"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">bloodtransfusionrefusal<a name="be-cs-patientwill-code-bloodtransfusionrefusal"> </a></td></tr><tr><td style="white-space:nowrap">clinicaltrialparticipationconsent<a name="be-cs-patientwill-code-clinicaltrialparticipationconsent"> </a></td></tr><tr><td style="white-space:nowrap">datareuseforclinicalresearchconsent<a name="be-cs-patientwill-code-datareuseforclinicalresearchconsent"> </a></td></tr><tr><td style="white-space:nowrap">datareuseforclinicaltrialsconsent<a name="be-cs-patientwill-code-datareuseforclinicaltrialsconsent"> </a></td></tr><tr><td style="white-space:nowrap">intubationrefusal<a name="be-cs-patientwill-code-intubationrefusal"> </a></td></tr><tr><td style="white-space:nowrap">omissionofmedicaldata<a name="be-cs-patientwill-code-omissionofmedicaldata"> </a></td></tr><tr><td style="white-space:nowrap">vaccinationrefusal<a name="be-cs-patientwill-code-vaccinationrefusal"> </a></td></tr><tr><td style="white-space:nowrap">dnr0<a name="be-cs-patientwill-code-dnr0"> </a></td></tr><tr><td style="white-space:nowrap">dnr1<a name="be-cs-patientwill-code-dnr1"> </a></td></tr><tr><td style="white-space:nowrap">dnr2<a name="be-cs-patientwill-code-dnr2"> </a></td></tr><tr><td style="white-space:nowrap">dnr3<a name="be-cs-patientwill-code-dnr3"> </a></td></tr><tr><td style="white-space:nowrap">hos0<a name="be-cs-patientwill-code-hos0"> </a></td></tr><tr><td style="white-space:nowrap">hos2<a name="be-cs-patientwill-code-hos2"> </a></td></tr><tr><td style="white-space:nowrap">onlycomfort<a name="be-cs-patientwill-code-onlycomfort"> </a></td></tr><tr><td style="white-space:nowrap">onlytestsforcomfort<a name="be-cs-patientwill-code-onlytestsforcomfort"> </a></td></tr><tr><td style="white-space:nowrap">noantibiotics<a name="be-cs-patientwill-code-noantibiotics"> </a></td></tr><tr><td style="white-space:nowrap">noartificialhydratationfeeding<a name="be-cs-patientwill-code-noartificialhydratationfeeding"> </a></td></tr><tr><td style="white-space:nowrap">nochemo<a name="be-cs-patientwill-code-nochemo"> </a></td></tr><tr><td style="white-space:nowrap">noradiation<a name="be-cs-patientwill-code-noradiation"> </a></td></tr><tr><td style="white-space:nowrap">nooperation<a name="be-cs-patientwill-code-nooperation"> </a></td></tr><tr><td style="white-space:nowrap">noventilation<a name="be-cs-patientwill-code-noventilation"> </a></td></tr><tr><td style="white-space:nowrap">nodialysis<a name="be-cs-patientwill-code-nodialysis"> </a></td></tr><tr><td style="white-space:nowrap">noresuscitation<a name="be-cs-patientwill-code-noresuscitation"> </a></td></tr><tr><td style="white-space:nowrap">nointensivecare<a name="be-cs-patientwill-code-nointensivecare"> </a></td></tr><tr><td style="white-space:nowrap">nohospitalisation<a name="be-cs-patientwill-code-nohospitalisation"> </a></td></tr><tr><td style="white-space:nowrap">onlytreatmentfororgandonation<a name="be-cs-patientwill-code-onlytreatmentfororgandonation"> </a></td></tr><tr><td style="white-space:nowrap">other<a name="be-cs-patientwill-code-other"> </a></td></tr><tr><td style="white-space:nowrap">euthanasiarequest<a name="be-cs-patientwill-code-euthanasiarequest"> </a></td></tr><tr><td style="white-space:nowrap">euthanasiarefusal<a name="be-cs-patientwill-code-euthanasiarefusal"> </a></td></tr><tr><td style="white-space:nowrap">organdonationfortransplant<a name="be-cs-patientwill-code-organdonationfortransplant"> </a></td></tr><tr><td style="white-space:nowrap">bodymaterialfortransplant<a name="be-cs-patientwill-code-bodymaterialfortransplant"> </a></td></tr><tr><td style="white-space:nowrap">bodymaterialformedication<a name="be-cs-patientwill-code-bodymaterialformedication"> </a></td></tr><tr><td style="white-space:nowrap">bodymaterialforresearch<a name="be-cs-patientwill-code-bodymaterialforresearch"> </a></td></tr><tr><td style="white-space:nowrap">bodydonationforscience<a name="be-cs-patientwill-code-bodydonationforscience"> </a></td></tr><tr><td style="white-space:nowrap">burialbody<a name="be-cs-patientwill-code-burialbody"> </a></td></tr><tr><td style="white-space:nowrap">burialashescemetry<a name="be-cs-patientwill-code-burialashescemetry"> </a></td></tr><tr><td style="white-space:nowrap">columbariumashes<a name="be-cs-patientwill-code-columbariumashes"> </a></td></tr><tr><td style="white-space:nowrap">scattergardenashes<a name="be-cs-patientwill-code-scattergardenashes"> </a></td></tr><tr><td style="white-space:nowrap">scatterashesbelgiansea<a name="be-cs-patientwill-code-scatterashesbelgiansea"> </a></td></tr><tr><td style="white-space:nowrap">scatterashesother<a name="be-cs-patientwill-code-scatterashesother"> </a></td></tr><tr><td style="white-space:nowrap">burialashesother<a name="be-cs-patientwill-code-burialashesother"> </a></td></tr><tr><td style="white-space:nowrap">storeashesother<a name="be-cs-patientwill-code-storeashesother"> </a></td></tr><tr><td style="white-space:nowrap">norituals<a name="be-cs-patientwill-code-norituals"> </a></td></tr><tr><td style="white-space:nowrap">catholic<a name="be-cs-patientwill-code-catholic"> </a></td></tr><tr><td style="white-space:nowrap">protestant<a name="be-cs-patientwill-code-protestant"> </a></td></tr><tr><td style="white-space:nowrap">anglican<a name="be-cs-patientwill-code-anglican"> </a></td></tr><tr><td style="white-space:nowrap">orthodox<a name="be-cs-patientwill-code-orthodox"> </a></td></tr><tr><td style="white-space:nowrap">jewish<a name="be-cs-patientwill-code-jewish"> </a></td></tr><tr><td style="white-space:nowrap">islamic<a name="be-cs-patientwill-code-islamic"> </a></td></tr><tr><td style="white-space:nowrap">secular<a name="be-cs-patientwill-code-secular"> </a></td></tr><tr><td style="white-space:nowrap">neutral<a name="be-cs-patientwill-code-neutral"> </a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"/>
+  <version value="1.0.0"/>
+  <name value="BeCSPatientWillCode"/>
+  <title value="Patient Will Directive CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-01-10T10:59:49+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Patient Will Directive CodeSystem. Codes as defined by the NIHDI."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="51"/>
+  <concept>
+    <code value="bloodtransfusionrefusal"/>
+  </concept>
+  <concept>
+    <code value="clinicaltrialparticipationconsent"/>
+  </concept>
+  <concept>
+    <code value="datareuseforclinicalresearchconsent"/>
+  </concept>
+  <concept>
+    <code value="datareuseforclinicaltrialsconsent"/>
+  </concept>
+  <concept>
+    <code value="intubationrefusal"/>
+  </concept>
+  <concept>
+    <code value="omissionofmedicaldata"/>
+  </concept>
+  <concept>
+    <code value="vaccinationrefusal"/>
+  </concept>
+  <concept>
+    <code value="dnr0"/>
+  </concept>
+  <concept>
+    <code value="dnr1"/>
+  </concept>
+  <concept>
+    <code value="dnr2"/>
+  </concept>
+  <concept>
+    <code value="dnr3"/>
+  </concept>
+  <concept>
+    <code value="hos0"/>
+  </concept>
+  <concept>
+    <code value="hos2"/>
+  </concept>
+  <concept>
+    <code value="onlycomfort"/>
+  </concept>
+  <concept>
+    <code value="onlytestsforcomfort"/>
+  </concept>
+  <concept>
+    <code value="noantibiotics"/>
+  </concept>
+  <concept>
+    <code value="noartificialhydratationfeeding"/>
+  </concept>
+  <concept>
+    <code value="nochemo"/>
+  </concept>
+  <concept>
+    <code value="noradiation"/>
+  </concept>
+  <concept>
+    <code value="nooperation"/>
+  </concept>
+  <concept>
+    <code value="noventilation"/>
+  </concept>
+  <concept>
+    <code value="nodialysis"/>
+  </concept>
+  <concept>
+    <code value="noresuscitation"/>
+  </concept>
+  <concept>
+    <code value="nointensivecare"/>
+  </concept>
+  <concept>
+    <code value="nohospitalisation"/>
+  </concept>
+  <concept>
+    <code value="onlytreatmentfororgandonation"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+  </concept>
+  <concept>
+    <code value="euthanasiarequest"/>
+  </concept>
+  <concept>
+    <code value="euthanasiarefusal"/>
+  </concept>
+  <concept>
+    <code value="organdonationfortransplant"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialfortransplant"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialformedication"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialforresearch"/>
+  </concept>
+  <concept>
+    <code value="bodydonationforscience"/>
+  </concept>
+  <concept>
+    <code value="burialbody"/>
+  </concept>
+  <concept>
+    <code value="burialashescemetry"/>
+  </concept>
+  <concept>
+    <code value="columbariumashes"/>
+  </concept>
+  <concept>
+    <code value="scattergardenashes"/>
+  </concept>
+  <concept>
+    <code value="scatterashesbelgiansea"/>
+  </concept>
+  <concept>
+    <code value="scatterashesother"/>
+  </concept>
+  <concept>
+    <code value="burialashesother"/>
+  </concept>
+  <concept>
+    <code value="storeashesother"/>
+  </concept>
+  <concept>
+    <code value="norituals"/>
+  </concept>
+  <concept>
+    <code value="catholic"/>
+  </concept>
+  <concept>
+    <code value="protestant"/>
+  </concept>
+  <concept>
+    <code value="anglican"/>
+  </concept>
+  <concept>
+    <code value="orthodox"/>
+  </concept>
+  <concept>
+    <code value="jewish"/>
+  </concept>
+  <concept>
+    <code value="islamic"/>
+  </concept>
+  <concept>
+    <code value="secular"/>
+  </concept>
+  <concept>
+    <code value="neutral"/>
+  </concept>
+</CodeSystem>

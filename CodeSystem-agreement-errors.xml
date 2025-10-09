@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agreement-errors"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem agreement-errors</b></p><a name="agreement-errors"> </a><a name="hcagreement-errors"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-errors</code> provides <b>a fragment</b> that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">MISSING_BUNDLE_ID<a name="agreement-errors-MISSING_BUNDLE_ID"> </a></td></tr><tr><td style="white-space:nowrap">MISSING_CLAIM_SERVICEREQUEST_SUPPORTINGINFO<a name="agreement-errors-MISSING_CLAIM_SERVICEREQUEST_SUPPORTINGINFO"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-errors"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetAgreementErrors"/>
+  <title value="CodeSystem agreement errors"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Errors in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) Not all codes are defined here, a full list can be found on mycarenet.be."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="MISSING_BUNDLE_ID"/>
+  </concept>
+  <concept>
+    <code value="MISSING_CLAIM_SERVICEREQUEST_SUPPORTINGINFO"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,277 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-errors",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetAgreementErrors",
+      "title" : "CodeSystem agreement errors",
+      "description" : "Errors in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) Not all codes are defined here, a full list can be found on mycarenet.be."
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-types",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetAgreementTypes",
+      "title" : "CodeSystem agreement types",
+      "description" : "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/annex-types",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetAnnexTypes",
+      "title" : "CodeSystem annex types",
+      "description" : "Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSHolderCode1",
+      "title" : "Insurability code CT1",
+      "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-2",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSHolderCode2",
+      "title" : "Insurability code CT2",
+      "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-partial-agreement-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPartialAgreementValues",
+      "title" : "BeCSPartialAgreementValues",
+      "description" : "Partial agreement values"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/decision-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetDecisionValues",
+      "title" : "CodeSystem decision values",
+      "description" : "Decision values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) The codes are not defined here, a full list can be found on mycarenet.be."
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetMessageEvents",
+      "title" : "CodeSystem message events",
+      "description" : "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/nihdi-physiotherapy-pathologysituationcode",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "NIHDIPhysiotherapyPathologySituationCode",
+      "title" : "CodeSystem NIHDIPhysiotherapyPathology",
+      "description" : "Legal pathology situation codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage instructions."
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/refusal-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetRefusalValues",
+      "title" : "CodeSystem refusal values",
+      "description" : "Refusal values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)"
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/waitingforinformation-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MyCareNetWaitingForInformationValues",
+      "title" : "CodeSystem waiting for information values",
+      "description" : "Waiting for information values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-bodysite",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSBodySite",
+      "title" : "Body Site CodeSystem",
+      "description" : "Body Site CodeSystem"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSProblemCategory",
+      "title" : "Problem Category",
+      "description" : "Problem Category"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSProblemOriginType",
+      "title" : "Problem Origin Type",
+      "description" : "Problem Origin Type"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSScore",
+      "title" : "Score Code System",
+      "description" : "Codes as defined initially by the NIHDI. Dutch translations were not yet defined but are planned   for a next release."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSScoreCategory",
+      "title" : "Score Category",
+      "description" : "Score Category"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSCareLocation",
+      "title" : "BeCSCareLocation",
+      "description" : "Care Location Code System"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CivilState",
+      "title" : "BeCdCivilState",
+      "description" : "Civil state in Belgium."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ContactPerson",
+      "title" : "BeCdContactPerson",
+      "description" : "Contact person in Belgium."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "Cdfedcountry",
+      "title" : "BeCdFedCountry",
+      "description" : "FedICT country codes."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "HCParty",
+      "title" : "BeCdHcParty",
+      "description" : "healthcare party in Belgium."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPseudonymizationType",
+      "title" : "Types of pseudonymization",
+      "description" : "The technique used for pseudonymization"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPseudonymizationVersion",
+      "title" : "BeCSPseudonymizationVersion",
+      "description" : "List of pseudonymization versions that can be used a.o. in the Capabilities Statement"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "Albert",
+      "title" : "CodeSystem Albert",
+      "description" : "This code system is to identify Albert code"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSCodedAnnotationTypes",
+      "title" : "Coded Annotation Type Codes",
+      "description" : "Code System for specific types of coded annotations"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPatientWillCategory",
+      "title" : "Patient Will Category CodeSystem",
+      "description" : "Patient Will Category CodeSystem"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPatientWillCode",
+      "title" : "Patient Will Directive CodeSystem",
+      "description" : "Patient Will Directive CodeSystem. Codes as defined by the NIHDI."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSRatingTypes",
+      "title" : "CodeSystem: Types of rating provided by the PSS system",
+      "description" : "CodeSystem: Types of rating provided by the PSS system",
+      "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSPopulationScreeningNextInvitationType",
+      "title" : "Population Screening Next Invitation Type",
+      "description" : "Code System containing the codes for the type of the next invitation (or exclusion of next invitation)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeCSVaccineAdministrationRoute",
+      "title" : "BeCSVaccineAdministrationRoute",
+      "description" : "Vaccine Administration Route"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeCSVaccinationConfirmationStatus",
+      "title" : "BeCSVaccinationConfirmationStatus",
+      "description" : "Vaccination status Code System."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeCSStatusReason",
+      "title" : "BeCSStatusReason",
+      "description" : "Vaccination reason status Code System."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCSVaccineCode",
+      "title" : "BeCSVaccineCode",
+      "description" : "Vaccine Code Code System - set of Belgian codes for types of vaccines that are administered"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeCSVaccineTargetDisease",
+      "title" : "BeCSVaccineTargetDisease",
+      "description" : "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vaccines"
+    }
+  ]
+}

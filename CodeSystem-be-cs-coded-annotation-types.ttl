@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-coded-annotation-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-coded-annotation-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-coded-annotation-types</b></p><a name=\"be-cs-coded-annotation-types\"> </a><a name=\"hcbe-cs-coded-annotation-types\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">lab-test-accreditation<a name=\"be-cs-coded-annotation-types-lab-test-accreditation\"> </a></td><td>Laboratory Test Accreditation</td><td>Test disclaimer with the report</td></tr><tr><td style=\"white-space:nowrap\">lab-test-subcontractor<a name=\"be-cs-coded-annotation-types-lab-test-subcontractor\"> </a></td><td>Laboratory Test subcontractor</td><td>Laboratory Test subcontractor</td></tr><tr><td style=\"white-space:nowrap\">lab-referencerange-comment<a name=\"be-cs-coded-annotation-types-lab-referencerange-comment\"> </a></td><td>Comment on laboratory reference range</td><td>Comment on reference range</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSCodedAnnotationTypes"] ; # 
+  fhir:title [ fhir:v "Coded Annotation Type Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-08T14:33:03+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System for specific types of coded annotations"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "lab-test-accreditation" ] ;
+     fhir:display [ fhir:v "Laboratory Test Accreditation" ] ;
+     fhir:definition [ fhir:v "Test disclaimer with the report" ]
+  ] [
+     fhir:code [ fhir:v "lab-test-subcontractor" ] ;
+     fhir:display [ fhir:v "Laboratory Test subcontractor" ] ;
+     fhir:definition [ fhir:v "Laboratory Test subcontractor" ]
+  ] [
+     fhir:code [ fhir:v "lab-referencerange-comment" ] ;
+     fhir:display [ fhir:v "Comment on laboratory reference range" ] ;
+     fhir:definition [ fhir:v "Comment on reference range" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

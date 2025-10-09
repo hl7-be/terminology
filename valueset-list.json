@@ -1,0 +1,512 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-basic-laterality",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSBasicLaterality",
+      "title" : "Basic Laterality",
+      "description" : "Basic Laterality as requested by CIN-NIC, subset of be-vs-body-laterality",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-decision-values",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSDecisionValues",
+      "title" : "Mycarenet Decision Values",
+      "description" : "Values indicating the type of decision. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/decision-values"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-eagreementerrors",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSEagreementErrors",
+      "title" : "EAgreement errors",
+      "description" : "Errors in the EAgreement flow",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-errors"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-holder-code-1",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSHolderCode1",
+      "title" : "BeVSHolderCode1",
+      "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-holder-code-2",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSHolderCode2",
+      "title" : "BeVSHolderCode2",
+      "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-2"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-toothnumber-bodysite",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSToothNumberBodySite",
+      "title" : "Tooth Number Body Site",
+      "description" : "Tooth Number Body Site",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/eagreementadjudicationreason",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeEAgreementAdjudicationReason",
+      "title" : "ValueSet adjudication reason",
+      "description" : "Codes for use to describe eAgreement adjudication reasons in the MyCareNet eAgreement flows.",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/waitingforinformation-values",
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/refusal-values",
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-partial-agreement-values"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/eagreementmessage",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeMessageEAgreement",
+      "title" : "ValueSet message",
+      "description" : "Codes for use to describe eAgreement messages in the MyCareNet eAgreement flows.",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events",
+        "http://hl7.org/fhir/restful-interaction"
+      ]
+    },
+    {
+      "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/eagreementproductorservice",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeProductOrServiceNihdiEAgreement",
+      "title" : "ValueSet product or service",
+      "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
+      "systems" : [
+        "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/nihdi-physiotherapy-pathologysituationcode",
+        "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeAllergyIntoleranceCode",
+      "title" : "BeAllergyIntoleranceCode",
+      "description" : "Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCausativeAgent",
+      "title" : "BeCausativeAgent",
+      "description" : "Causative Agents for Allergy (non medication)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeExposureRoute",
+      "title" : "BeExposureRoute",
+      "description" : "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeNoAllergy",
+      "title" : "BeNoAllergy",
+      "description" : "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeRiskManifestation",
+      "title" : "BeRiskManifestation",
+      "description" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSAllergyIntoleranceType",
+      "title" : "BeVSAllergyIntoleranceType",
+      "description" : "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-bodysite",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSBodySite",
+      "title" : "Body Site",
+      "description" : "Body Site",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-bodysite"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSLaterality",
+      "title" : "Laterality",
+      "description" : "Laterality",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-category",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSProblemCategory",
+      "title" : "Problem Category",
+      "description" : "Problem Category",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSProblemCode",
+      "title" : "Problem Code",
+      "description" : "Problem Code. No Belgian standardized valueset is yet defined, this is expected   for a future iteration. Implementers are encouraged to use a codification system of their choosing."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-origin-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSProblemOriginType",
+      "title" : "Problem Origin Type",
+      "description" : "Problem Origin Type",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSReactionManifestationCode",
+      "title" : "Reaction Manifestation Code",
+      "description" : "Reaction Manifestation Code (Allergy - Immunization)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSScore",
+      "title" : "Score Value Set",
+      "description" : "Codes as defined by the NIHDI. Dutch translations are expected for a next release.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSScoreCategory",
+      "title" : "Score Category Value Set",
+      "description" : "Score Category Value Set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeCivilstate",
+      "title" : "BeCivilState",
+      "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/CD-CIVILSTATE for the Belgian specific code.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate",
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeContactPerson",
+      "title" : "BeContactPerson",
+      "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSCareLocation",
+      "title" : "BeVSCareLocation",
+      "description" : "Care Location Value Set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSCdHcParty",
+      "title" : "BeVSCdHcParty",
+      "description" : "List of health care parties in Belgium",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSGenderAtBirth",
+      "title" : "List of possible genders at birth in Belgium",
+      "description" : "BeVSGenderAtBirth",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSPatientRelationshipType",
+      "title" : "BeVSPatientRelationshipType",
+      "description" : "Describes the patient relationship type (the relation between the patient and the person implied)",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/ValueSet/be-vs-pseudonymization-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPseudonymizationType",
+      "title" : "Types of pseudonymization",
+      "description" : "The technique used for pseudonymization",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/ValueSet/be-vs-coded-annotation-types",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSCodedAnnotationTypes",
+      "title" : "Coded Annotation Types",
+      "description" : "Value Set for specific types of coded annotations",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "description" : "Dispenser Types - from hcparty",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-category",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPatientWillCategory",
+      "title" : "Patient Will Category",
+      "description" : "Patient will category Value Set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPatientWillCode",
+      "title" : "Patient Will code Value Set",
+      "description" : "Patient Will code Value Set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-scope",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPatientWillScope",
+      "title" : "BeVSPatientWillScope",
+      "description" : "Patient Will scope Value Set",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.9"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/BeVSPopulationScreeningFollowUpAdvice",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPopulationScreeningFollowUpAdvice",
+      "title" : "Population Screening Follow-up Advice Value Set",
+      "description" : "Possible follow up actions",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-populationscreening-result-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BePopulationScreeningResultVS",
+      "title" : "PopulationScreening Result Value Set",
+      "description" : "Result",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-next-invitation-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPopulationScreeningNextInvitationType",
+      "title" : "Population Screening Next Invitation Type Value Set",
+      "description" : "Value Set containing the codes for the type of the next invitation (or exclusion of next invitation)",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPopulationScreeningType",
+      "title" : "Population Screening Type Value Set",
+      "description" : "Value Set with the codes for the type of screening",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vspopulationscreening-body-site-location",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSPopulationScreeningBodySiteLocation",
+      "title" : "PopulationScreening Body Site Value Set",
+      "description" : "Body site or location on body",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccineAdministrationRoute",
+      "title" : "BeVSVaccineAdministrationRoute",
+      "description" : "Vaccine Administration Route",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccinationBodySite",
+      "title" : "BeVSVaccinationBodySite",
+      "description" : "Vaccination Body Site Value Set",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-confirmation-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccinationConfirmationStatus",
+      "title" : "BeVSVaccinationConfirmationStatus",
+      "description" : "Vaccination status Value Set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-product",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccinationProduct",
+      "title" : "BeVSVaccinationProduct",
+      "description" : "Vaccination Product Value Set"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-reason-code",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccinationReasonCode",
+      "title" : "BeVSVaccinationReasonCode",
+      "description" : "Vaccination reason code Value Set - the reasons for an vaccination",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccinationStatusReason",
+      "title" : "BeVSVaccinationStatusReason",
+      "description" : "Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BeVSVaccineCode",
+      "title" : "BeVSVaccineCode",
+      "description" : "Vaccine Code Value Set - the types of vaccines that are administered in Belgium",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-target-disease",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BeVSVaccineTargetDisease",
+      "title" : "BeVSVaccineTargetDisease",
+      "description" : "Vaccine Target Disease Value Set - the types of diseases that targeted by the vaccines",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-patientwill-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-patientwill-category</b></p><a name=\"be-cs-patientwill-category\"> </a><a name=\"hcbe-cs-patientwill-category\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">negativedeclaration<a name=\"be-cs-patientwill-category-negativedeclaration\"> </a></td></tr><tr><td style=\"white-space:nowrap\">euthanasia<a name=\"be-cs-patientwill-category-euthanasia\"> </a></td></tr><tr><td style=\"white-space:nowrap\">organdonation<a name=\"be-cs-patientwill-category-organdonation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lastwill<a name=\"be-cs-patientwill-category-lastwill\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodydonation<a name=\"be-cs-patientwill-category-bodydonation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">patientwill<a name=\"be-cs-patientwill-category-patientwill\"> </a></td></tr><tr><td style=\"white-space:nowrap\">resuscitation<a name=\"be-cs-patientwill-category-resuscitation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hospitalisation<a name=\"be-cs-patientwill-category-hospitalisation\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category",
+  "version" : "1.0.0",
+  "name" : "BeCSPatientWillCategory",
+  "title" : "Patient Will Category CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-01-10T10:59:49+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Patient Will Category CodeSystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "negativedeclaration"
+  },
+  {
+    "code" : "euthanasia"
+  },
+  {
+    "code" : "organdonation"
+  },
+  {
+    "code" : "lastwill"
+  },
+  {
+    "code" : "bodydonation"
+  },
+  {
+    "code" : "patientwill"
+  },
+  {
+    "code" : "resuscitation"
+  },
+  {
+    "code" : "hospitalisation"
+  }]
+}

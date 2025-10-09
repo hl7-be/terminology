@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-patientwill-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-patientwill-code</b></p><a name=\"be-vs-patientwill-code\"> </a><a name=\"hcbe-vs-patientwill-code\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-patientwill-code.html\"><code>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-code",
+  "version" : "1.0.0",
+  "name" : "BeVSPatientWillCode",
+  "title" : "Patient Will code Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-10-01T11:01:09+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Patient Will code Value Set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"
+    }]
+  }
+}

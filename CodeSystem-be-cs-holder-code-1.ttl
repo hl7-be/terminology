@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-holder-code-1> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-holder-code-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-holder-code-1</b></p><a name=\"be-cs-holder-code-1\"> </a><a name=\"hcbe-cs-holder-code-1\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"be-cs-holder-code-1-100\"> </a></td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"be-cs-holder-code-1-101\"> </a></td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"be-cs-holder-code-1-110\"> </a></td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"be-cs-holder-code-1-111\"> </a></td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"be-cs-holder-code-1-120\"> </a></td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"be-cs-holder-code-1-121\"> </a></td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"be-cs-holder-code-1-130\"> </a></td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"be-cs-holder-code-1-131\"> </a></td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"be-cs-holder-code-1-140\"> </a></td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"be-cs-holder-code-1-141\"> </a></td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"be-cs-holder-code-1-150\"> </a></td></tr><tr><td style=\"white-space:nowrap\">151<a name=\"be-cs-holder-code-1-151\"> </a></td></tr><tr><td style=\"white-space:nowrap\">410<a name=\"be-cs-holder-code-1-410\"> </a></td></tr><tr><td style=\"white-space:nowrap\">411<a name=\"be-cs-holder-code-1-411\"> </a></td></tr><tr><td style=\"white-space:nowrap\">420<a name=\"be-cs-holder-code-1-420\"> </a></td></tr><tr><td style=\"white-space:nowrap\">421<a name=\"be-cs-holder-code-1-421\"> </a></td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"be-cs-holder-code-1-430\"> </a></td></tr><tr><td style=\"white-space:nowrap\">431<a name=\"be-cs-holder-code-1-431\"> </a></td></tr><tr><td style=\"white-space:nowrap\">440<a name=\"be-cs-holder-code-1-440\"> </a></td></tr><tr><td style=\"white-space:nowrap\">441<a name=\"be-cs-holder-code-1-441\"> </a></td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"be-cs-holder-code-1-450\"> </a></td></tr><tr><td style=\"white-space:nowrap\">451<a name=\"be-cs-holder-code-1-451\"> </a></td></tr><tr><td style=\"white-space:nowrap\">470<a name=\"be-cs-holder-code-1-470\"> </a></td></tr><tr><td style=\"white-space:nowrap\">480<a name=\"be-cs-holder-code-1-480\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSHolderCode1"] ; # 
+  fhir:title [ fhir:v "Insurability code CT1"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-02-17T19:47:43+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "24"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100" ]
+  ] [
+     fhir:code [ fhir:v "101" ]
+  ] [
+     fhir:code [ fhir:v "110" ]
+  ] [
+     fhir:code [ fhir:v "111" ]
+  ] [
+     fhir:code [ fhir:v "120" ]
+  ] [
+     fhir:code [ fhir:v "121" ]
+  ] [
+     fhir:code [ fhir:v "130" ]
+  ] [
+     fhir:code [ fhir:v "131" ]
+  ] [
+     fhir:code [ fhir:v "140" ]
+  ] [
+     fhir:code [ fhir:v "141" ]
+  ] [
+     fhir:code [ fhir:v "150" ]
+  ] [
+     fhir:code [ fhir:v "151" ]
+  ] [
+     fhir:code [ fhir:v "410" ]
+  ] [
+     fhir:code [ fhir:v "411" ]
+  ] [
+     fhir:code [ fhir:v "420" ]
+  ] [
+     fhir:code [ fhir:v "421" ]
+  ] [
+     fhir:code [ fhir:v "430" ]
+  ] [
+     fhir:code [ fhir:v "431" ]
+  ] [
+     fhir:code [ fhir:v "440" ]
+  ] [
+     fhir:code [ fhir:v "441" ]
+  ] [
+     fhir:code [ fhir:v "450" ]
+  ] [
+     fhir:code [ fhir:v "451" ]
+  ] [
+     fhir:code [ fhir:v "470" ]
+  ] [
+     fhir:code [ fhir:v "480" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,142 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-holder-code-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-holder-code-1</b></p><a name=\"be-cs-holder-code-1\"> </a><a name=\"hcbe-cs-holder-code-1\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"be-cs-holder-code-1-100\"> </a></td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"be-cs-holder-code-1-101\"> </a></td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"be-cs-holder-code-1-110\"> </a></td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"be-cs-holder-code-1-111\"> </a></td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"be-cs-holder-code-1-120\"> </a></td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"be-cs-holder-code-1-121\"> </a></td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"be-cs-holder-code-1-130\"> </a></td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"be-cs-holder-code-1-131\"> </a></td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"be-cs-holder-code-1-140\"> </a></td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"be-cs-holder-code-1-141\"> </a></td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"be-cs-holder-code-1-150\"> </a></td></tr><tr><td style=\"white-space:nowrap\">151<a name=\"be-cs-holder-code-1-151\"> </a></td></tr><tr><td style=\"white-space:nowrap\">410<a name=\"be-cs-holder-code-1-410\"> </a></td></tr><tr><td style=\"white-space:nowrap\">411<a name=\"be-cs-holder-code-1-411\"> </a></td></tr><tr><td style=\"white-space:nowrap\">420<a name=\"be-cs-holder-code-1-420\"> </a></td></tr><tr><td style=\"white-space:nowrap\">421<a name=\"be-cs-holder-code-1-421\"> </a></td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"be-cs-holder-code-1-430\"> </a></td></tr><tr><td style=\"white-space:nowrap\">431<a name=\"be-cs-holder-code-1-431\"> </a></td></tr><tr><td style=\"white-space:nowrap\">440<a name=\"be-cs-holder-code-1-440\"> </a></td></tr><tr><td style=\"white-space:nowrap\">441<a name=\"be-cs-holder-code-1-441\"> </a></td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"be-cs-holder-code-1-450\"> </a></td></tr><tr><td style=\"white-space:nowrap\">451<a name=\"be-cs-holder-code-1-451\"> </a></td></tr><tr><td style=\"white-space:nowrap\">470<a name=\"be-cs-holder-code-1-470\"> </a></td></tr><tr><td style=\"white-space:nowrap\">480<a name=\"be-cs-holder-code-1-480\"> </a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  }],
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-1",
+  "version" : "1.0.0",
+  "name" : "BeCSHolderCode1",
+  "title" : "Insurability code CT1",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-17T19:47:43+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 24,
+  "concept" : [{
+    "code" : "100"
+  },
+  {
+    "code" : "101"
+  },
+  {
+    "code" : "110"
+  },
+  {
+    "code" : "111"
+  },
+  {
+    "code" : "120"
+  },
+  {
+    "code" : "121"
+  },
+  {
+    "code" : "130"
+  },
+  {
+    "code" : "131"
+  },
+  {
+    "code" : "140"
+  },
+  {
+    "code" : "141"
+  },
+  {
+    "code" : "150"
+  },
+  {
+    "code" : "151"
+  },
+  {
+    "code" : "410"
+  },
+  {
+    "code" : "411"
+  },
+  {
+    "code" : "420"
+  },
+  {
+    "code" : "421"
+  },
+  {
+    "code" : "430"
+  },
+  {
+    "code" : "431"
+  },
+  {
+    "code" : "440"
+  },
+  {
+    "code" : "441"
+  },
+  {
+    "code" : "450"
+  },
+  {
+    "code" : "451"
+  },
+  {
+    "code" : "470"
+  },
+  {
+    "code" : "480"
+  }]
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-confirmation-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-vaccination-confirmation-status</b></p><a name="be-cs-vaccination-confirmation-status"> </a><a name="hcbe-cs-vaccination-confirmation-status"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">unconfirmed<a name="be-cs-vaccination-confirmation-status-unconfirmed"> </a></td></tr><tr><td style="white-space:nowrap">confirmed<a name="be-cs-vaccination-confirmation-status-confirmed"> </a></td></tr><tr><td style="white-space:nowrap">other<a name="be-cs-vaccination-confirmation-status-other"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>unconfirmed</td><td>non confirmé</td><td>niet bevestigd</td></tr><tr><td>confirmed</td><td>confirmé</td><td>bevestigd</td></tr><tr><td>other</td><td>autre</td><td>andere</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"/>
+  <version value="1.0.0"/>
+  <name value="BeCSVaccinationConfirmationStatus"/>
+  <title value="BeCSVaccinationConfirmationStatus"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-03-24T16:01:36+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination status Code System."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="unconfirmed"/>
+    <display value="unconfirmed"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="non confirmé"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="niet bevestigd"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="confirmed"/>
+    <display value="confirmed"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="confirmé"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="bevestigd"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

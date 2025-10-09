@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-holder-code-2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-holder-code-2</b></p><a name="be-cs-holder-code-2"> </a><a name="hcbe-cs-holder-code-2"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-2</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">000<a name="be-cs-holder-code-2-000"> </a></td></tr><tr><td style="white-space:nowrap">100<a name="be-cs-holder-code-2-100"> </a></td></tr><tr><td style="white-space:nowrap">101<a name="be-cs-holder-code-2-101"> </a></td></tr><tr><td style="white-space:nowrap">110<a name="be-cs-holder-code-2-110"> </a></td></tr><tr><td style="white-space:nowrap">111<a name="be-cs-holder-code-2-111"> </a></td></tr><tr><td style="white-space:nowrap">114<a name="be-cs-holder-code-2-114"> </a></td></tr><tr><td style="white-space:nowrap">120<a name="be-cs-holder-code-2-120"> </a></td></tr><tr><td style="white-space:nowrap">121<a name="be-cs-holder-code-2-121"> </a></td></tr><tr><td style="white-space:nowrap">130<a name="be-cs-holder-code-2-130"> </a></td></tr><tr><td style="white-space:nowrap">131<a name="be-cs-holder-code-2-131"> </a></td></tr><tr><td style="white-space:nowrap">140<a name="be-cs-holder-code-2-140"> </a></td></tr><tr><td style="white-space:nowrap">141<a name="be-cs-holder-code-2-141"> </a></td></tr><tr><td style="white-space:nowrap">144<a name="be-cs-holder-code-2-144"> </a></td></tr><tr><td style="white-space:nowrap">150<a name="be-cs-holder-code-2-150"> </a></td></tr><tr><td style="white-space:nowrap">151<a name="be-cs-holder-code-2-151"> </a></td></tr><tr><td style="white-space:nowrap">460<a name="be-cs-holder-code-2-460"> </a></td></tr><tr><td style="white-space:nowrap">461<a name="be-cs-holder-code-2-461"> </a></td></tr><tr><td style="white-space:nowrap">464<a name="be-cs-holder-code-2-464"> </a></td></tr><tr><td style="white-space:nowrap">481<a name="be-cs-holder-code-2-481"> </a></td></tr><tr><td style="white-space:nowrap">701<a name="be-cs-holder-code-2-701"> </a></td></tr><tr><td style="white-space:nowrap">900<a name="be-cs-holder-code-2-900"> </a></td></tr><tr><td style="white-space:nowrap">901<a name="be-cs-holder-code-2-901"> </a></td></tr><tr><td style="white-space:nowrap">911<a name="be-cs-holder-code-2-911"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-holder-code-2"/>
+  <version value="1.0.0"/>
+  <name value="BeCSHolderCode2"/>
+  <title value="Insurability code CT2"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="23"/>
+  <concept>
+    <code value="000"/>
+  </concept>
+  <concept>
+    <code value="100"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+  </concept>
+  <concept>
+    <code value="111"/>
+  </concept>
+  <concept>
+    <code value="114"/>
+  </concept>
+  <concept>
+    <code value="120"/>
+  </concept>
+  <concept>
+    <code value="121"/>
+  </concept>
+  <concept>
+    <code value="130"/>
+  </concept>
+  <concept>
+    <code value="131"/>
+  </concept>
+  <concept>
+    <code value="140"/>
+  </concept>
+  <concept>
+    <code value="141"/>
+  </concept>
+  <concept>
+    <code value="144"/>
+  </concept>
+  <concept>
+    <code value="150"/>
+  </concept>
+  <concept>
+    <code value="151"/>
+  </concept>
+  <concept>
+    <code value="460"/>
+  </concept>
+  <concept>
+    <code value="461"/>
+  </concept>
+  <concept>
+    <code value="464"/>
+  </concept>
+  <concept>
+    <code value="481"/>
+  </concept>
+  <concept>
+    <code value="701"/>
+  </concept>
+  <concept>
+    <code value="900"/>
+  </concept>
+  <concept>
+    <code value="901"/>
+  </concept>
+  <concept>
+    <code value="911"/>
+  </concept>
+</CodeSystem>

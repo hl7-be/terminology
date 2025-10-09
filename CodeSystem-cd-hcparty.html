@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BeCdHcParty - HL7 Belgium terminology Implementation Guide (IG) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"20.53"}
+    h3,h4,h5,h6{--heading-prefix:"20.53"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- My Organization -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium terminology Implementation Guide (IG)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="scope.html">Scope and content</a>
+      </li>
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="challenges.html">Challenges</a>
+      </li>
+      <li>
+        <a href="design.html">Design choices</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use cases</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="logicals.html">Logical models</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profilemapping.html">Mapping to profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+      <li>
+        <a href="implementationnotes.html">Implementation notes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="knownissues.html">Known issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+      <li>
+        <a href="xversion.html">Cross-version analysis</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="index.html">Rx</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BeCdHcParty</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Belgium terminology Implementation Guide (IG), published by My Organization. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/terminology/tree/master'>https://github.com/hl7-be/terminology/tree/master</a> and changes regularly. See the <a href='https://hl7belgium.org/profiles/fhir/terminology/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cd-hcparty.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cd-hcparty.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cd-hcparty.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: BeCdHcParty
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2020-09-25
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">HCParty</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>healthcare party in Belgium.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-be-vs-cd-hcparty.html">BeVSCdHcParty</a></li>
+ <li><a href="ValueSet-be-vs-dispenser-types.html">DispenserTypes</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="cd-hcparty"> </a><a name="hccd-hcparty"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">application<a name="cd-hcparty-application"> </a></td>
+<td>software application</td></tr>
+<tr><td style="white-space:nowrap">certificateholder<a name="cd-hcparty-certificateholder"> </a></td>
+<td>certificate holder</td></tr>
+<tr><td style="white-space:nowrap">deptabdpelvrehabandperinatalphysiotherapy<a name="cd-hcparty-deptabdpelvrehabandperinatalphysiotherapy"> </a></td>
+<td>pelviperineal and perinatal physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptacutemedicine<a name="cd-hcparty-deptacutemedicine"> </a></td>
+<td>acute medecine</td></tr>
+<tr><td style="white-space:nowrap">deptadultpsychiatry<a name="cd-hcparty-deptadultpsychiatry"> </a></td>
+<td>adult psychiatry</td></tr>
+<tr><td style="white-space:nowrap">deptaestheticsurgery<a name="cd-hcparty-deptaestheticsurgery"> </a></td>
+<td>plastic, reconstructive and esthetic surgery</td></tr>
+<tr><td style="white-space:nowrap">deptalgology<a name="cd-hcparty-deptalgology"> </a></td>
+<td>algology</td></tr>
+<tr><td style="white-space:nowrap">deptanatomopathology<a name="cd-hcparty-deptanatomopathology"> </a></td>
+<td>anatomopathology</td></tr>
+<tr><td style="white-space:nowrap">deptanesthesiaandresuscitation<a name="cd-hcparty-deptanesthesiaandresuscitation"> </a></td>
+<td>anesthesia and reanimation</td></tr>
+<tr><td style="white-space:nowrap">deptanesthesiology<a name="cd-hcparty-deptanesthesiology"> </a></td>
+<td>anesthesiology</td></tr>
+<tr><td style="white-space:nowrap">deptaudiology<a name="cd-hcparty-deptaudiology"> </a></td>
+<td>audiology</td></tr>
+<tr><td style="white-space:nowrap">deptbacteriology<a name="cd-hcparty-deptbacteriology"> </a></td>
+<td>bacteriology</td></tr>
+<tr><td style="white-space:nowrap">deptcardiacsurgery<a name="cd-hcparty-deptcardiacsurgery"> </a></td>
+<td>cardiac surgery</td></tr>
+<tr><td style="white-space:nowrap">deptcardiology<a name="cd-hcparty-deptcardiology"> </a></td>
+<td>cardiology</td></tr>
+<tr><td style="white-space:nowrap">deptcardiovascularphysiotherapy<a name="cd-hcparty-deptcardiovascularphysiotherapy"> </a></td>
+<td>cardiovascular physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptchildandadolescentpsychiatry<a name="cd-hcparty-deptchildandadolescentpsychiatry"> </a></td>
+<td>child and adolescent psychiatry</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalbiology<a name="cd-hcparty-deptclinicalbiology"> </a></td>
+<td>clinical biology</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalgenetics<a name="cd-hcparty-deptclinicalgenetics"> </a></td>
+<td>clinical genetics</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalhematology<a name="cd-hcparty-deptclinicalhematology"> </a></td>
+<td>clinical hematology</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalinfectiology<a name="cd-hcparty-deptclinicalinfectiology"> </a></td>
+<td>clinical infectiology</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalorthopedagogy<a name="cd-hcparty-deptclinicalorthopedagogy"> </a></td>
+<td>clinical orthopedagogy</td></tr>
+<tr><td style="white-space:nowrap">deptclinicalpsychology<a name="cd-hcparty-deptclinicalpsychology"> </a></td>
+<td>clinical psychology</td></tr>
+<tr><td style="white-space:nowrap">deptdentistry<a name="cd-hcparty-deptdentistry"> </a></td>
+<td>dentistry</td></tr>
+<tr><td style="white-space:nowrap">deptdermatology<a name="cd-hcparty-deptdermatology"> </a></td>
+<td>dermatology</td></tr>
+<tr><td style="white-space:nowrap">deptdermatovenereology<a name="cd-hcparty-deptdermatovenereology"> </a></td>
+<td>dermatovenereology</td></tr>
+<tr><td style="white-space:nowrap">deptdiabeticeducation<a name="cd-hcparty-deptdiabeticeducation"> </a></td>
+<td>diabetic education</td></tr>
+<tr><td style="white-space:nowrap">deptdiabetology<a name="cd-hcparty-deptdiabetology"> </a></td>
+<td>diabetology</td></tr>
+<tr><td style="white-space:nowrap">deptdietetics<a name="cd-hcparty-deptdietetics"> </a></td>
+<td>dietetics</td></tr>
+<tr><td style="white-space:nowrap">deptemergency<a name="cd-hcparty-deptemergency"> </a></td>
+<td>emergency</td></tr>
+<tr><td style="white-space:nowrap">deptendocrinodiabetology<a name="cd-hcparty-deptendocrinodiabetology"> </a></td>
+<td>endocrinodiabetology</td></tr>
+<tr><td style="white-space:nowrap">deptendocrinology<a name="cd-hcparty-deptendocrinology"> </a></td>
+<td>endocrinology</td></tr>
+<tr><td style="white-space:nowrap">deptforensicpsychiatry<a name="cd-hcparty-deptforensicpsychiatry"> </a></td>
+<td>forensic psychiatry</td></tr>
+<tr><td style="white-space:nowrap">deptfunctionaldisabledrehabilitation<a name="cd-hcparty-deptfunctionaldisabledrehabilitation"> </a></td>
+<td>functional and professional rehabilitation</td></tr>
+<tr><td style="white-space:nowrap">deptgastroenterology<a name="cd-hcparty-deptgastroenterology"> </a></td>
+<td>gastroenterology</td></tr>
+<tr><td style="white-space:nowrap">deptgeneralpractice<a name="cd-hcparty-deptgeneralpractice"> </a></td>
+<td>general practice</td></tr>
+<tr><td style="white-space:nowrap">deptgenetics<a name="cd-hcparty-deptgenetics"> </a></td>
+<td>genetics</td></tr>
+<tr><td style="white-space:nowrap">deptgeriatry<a name="cd-hcparty-deptgeriatry"> </a></td>
+<td>geriatry</td></tr>
+<tr><td style="white-space:nowrap">deptgynecology<a name="cd-hcparty-deptgynecology"> </a></td>
+<td>gynecology</td></tr>
+<tr><td style="white-space:nowrap">deptgynecologyobstetrics<a name="cd-hcparty-deptgynecologyobstetrics"> </a></td>
+<td>gynecology and obstetrics</td></tr>
+<tr><td style="white-space:nowrap">depthandsurgery<a name="cd-hcparty-depthandsurgery"> </a></td>
+<td>hand surgery</td></tr>
+<tr><td style="white-space:nowrap">depthealthdatamanagement<a name="cd-hcparty-depthealthdatamanagement"> </a></td>
+<td>health data management</td></tr>
+<tr><td style="white-space:nowrap">depthearingaidfitting<a name="cd-hcparty-depthearingaidfitting"> </a></td>
+<td>hearing aid fitting</td></tr>
+<tr><td style="white-space:nowrap">depthematology<a name="cd-hcparty-depthematology"> </a></td>
+<td>hematology</td></tr>
+<tr><td style="white-space:nowrap">depthospitalpharmacy<a name="cd-hcparty-depthospitalpharmacy"> </a></td>
+<td>hospitalpharmacy</td></tr>
+<tr><td style="white-space:nowrap">deptinfectiousdisease<a name="cd-hcparty-deptinfectiousdisease"> </a></td>
+<td>infectious disease</td></tr>
+<tr><td style="white-space:nowrap">deptinsurancemedicine<a name="cd-hcparty-deptinsurancemedicine"> </a></td>
+<td>insurance medicine and medical assessment</td></tr>
+<tr><td style="white-space:nowrap">deptintensivecare<a name="cd-hcparty-deptintensivecare"> </a></td>
+<td>intensive care</td></tr>
+<tr><td style="white-space:nowrap">deptintensiveemergencycare<a name="cd-hcparty-deptintensiveemergencycare"> </a></td>
+<td>intensive emergency care</td></tr>
+<tr><td style="white-space:nowrap">deptinternalmedicine<a name="cd-hcparty-deptinternalmedicine"> </a></td>
+<td>internal medicine</td></tr>
+<tr><td style="white-space:nowrap">deptinvitronuclear<a name="cd-hcparty-deptinvitronuclear"> </a></td>
+<td>in vitro nuclear medicine</td></tr>
+<tr><td style="white-space:nowrap">deptkinesitherapy<a name="cd-hcparty-deptkinesitherapy"> </a></td>
+<td>physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptlaboratory<a name="cd-hcparty-deptlaboratory"> </a></td>
+<td>laboratory service or department within an organisation</td></tr>
+<tr><td style="white-space:nowrap">deptlegalmedecine<a name="cd-hcparty-deptlegalmedecine"> </a></td>
+<td>legal medecine</td></tr>
+<tr><td style="white-space:nowrap">deptlogopedy<a name="cd-hcparty-deptlogopedy"> </a></td>
+<td>logopedy</td></tr>
+<tr><td style="white-space:nowrap">deptmajorburns<a name="cd-hcparty-deptmajorburns"> </a></td>
+<td>major burns center</td></tr>
+<tr><td style="white-space:nowrap">deptmanualtherapy<a name="cd-hcparty-deptmanualtherapy"> </a></td>
+<td>manual therapy</td></tr>
+<tr><td style="white-space:nowrap">deptmaxillofacialsurgery<a name="cd-hcparty-deptmaxillofacialsurgery"> </a></td>
+<td>maxillofacial surgery</td></tr>
+<tr><td style="white-space:nowrap">deptmedicalmicrobiology<a name="cd-hcparty-deptmedicalmicrobiology"> </a></td>
+<td>medical microbiology</td></tr>
+<tr><td style="white-space:nowrap">deptmedicine<a name="cd-hcparty-deptmedicine"> </a></td>
+<td>internal medecine</td></tr>
+<tr><td style="white-space:nowrap">deptmolecularbiology<a name="cd-hcparty-deptmolecularbiology"> </a></td>
+<td>molecular biology</td></tr>
+<tr><td style="white-space:nowrap">deptneonatalogy<a name="cd-hcparty-deptneonatalogy"> </a></td>
+<td>neonatalogy</td></tr>
+<tr><td style="white-space:nowrap">deptnephrology<a name="cd-hcparty-deptnephrology"> </a></td>
+<td>nephrology</td></tr>
+<tr><td style="white-space:nowrap">deptneurologicalphysiotherapy<a name="cd-hcparty-deptneurologicalphysiotherapy"> </a></td>
+<td>neurological physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptneurology<a name="cd-hcparty-deptneurology"> </a></td>
+<td>neurology</td></tr>
+<tr><td style="white-space:nowrap">deptneuropsychiatry<a name="cd-hcparty-deptneuropsychiatry"> </a></td>
+<td>neuropsychiatry</td></tr>
+<tr><td style="white-space:nowrap">deptneurosurgery<a name="cd-hcparty-deptneurosurgery"> </a></td>
+<td>neurosurgery</td></tr>
+<tr><td style="white-space:nowrap">deptnonsurgicalaestheticmedicine<a name="cd-hcparty-deptnonsurgicalaestheticmedicine"> </a></td>
+<td>non-surgical aesthetic medicine</td></tr>
+<tr><td style="white-space:nowrap">deptnte<a name="cd-hcparty-deptnte"> </a></td>
+<td>nose-throat-ear</td></tr>
+<tr><td style="white-space:nowrap">deptnuclear<a name="cd-hcparty-deptnuclear"> </a></td>
+<td>nuclear medecine</td></tr>
+<tr><td style="white-space:nowrap">deptnursing<a name="cd-hcparty-deptnursing"> </a></td>
+<td>nursing</td></tr>
+<tr><td style="white-space:nowrap">deptnutritiondietetics<a name="cd-hcparty-deptnutritiondietetics"> </a></td>
+<td>nutrition dietetics</td></tr>
+<tr><td style="white-space:nowrap">deptobstetrics<a name="cd-hcparty-deptobstetrics"> </a></td>
+<td>obstetrics</td></tr>
+<tr><td style="white-space:nowrap">deptoccupationalmedicine<a name="cd-hcparty-deptoccupationalmedicine"> </a></td>
+<td>occupational medicine</td></tr>
+<tr><td style="white-space:nowrap">deptoccupationaltherapy<a name="cd-hcparty-deptoccupationaltherapy"> </a></td>
+<td>occupational therapy</td></tr>
+<tr><td style="white-space:nowrap">deptoncology<a name="cd-hcparty-deptoncology"> </a></td>
+<td>oncology</td></tr>
+<tr><td style="white-space:nowrap">deptophtalmology<a name="cd-hcparty-deptophtalmology"> </a></td>
+<td>ophtalmology</td></tr>
+<tr><td style="white-space:nowrap">deptorthodontics<a name="cd-hcparty-deptorthodontics"> </a></td>
+<td>orthodontics</td></tr>
+<tr><td style="white-space:nowrap">deptorthopedy<a name="cd-hcparty-deptorthopedy"> </a></td>
+<td>orthopedy</td></tr>
+<tr><td style="white-space:nowrap">deptorthopticsoptometry<a name="cd-hcparty-deptorthopticsoptometry"> </a></td>
+<td>orthoptics optometry</td></tr>
+<tr><td style="white-space:nowrap">deptpalliativecare<a name="cd-hcparty-deptpalliativecare"> </a></td>
+<td>palliative care</td></tr>
+<tr><td style="white-space:nowrap">deptpediatrichematologyoncology<a name="cd-hcparty-deptpediatrichematologyoncology"> </a></td>
+<td>pediatric hematology and oncology</td></tr>
+<tr><td style="white-space:nowrap">deptpediatricintensivecare<a name="cd-hcparty-deptpediatricintensivecare"> </a></td>
+<td>pediatric intensive care</td></tr>
+<tr><td style="white-space:nowrap">deptpediatricneurology<a name="cd-hcparty-deptpediatricneurology"> </a></td>
+<td>pediatric neurology</td></tr>
+<tr><td style="white-space:nowrap">deptpediatricphysiotherapy<a name="cd-hcparty-deptpediatricphysiotherapy"> </a></td>
+<td>pediatric physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptpediatricsurgery<a name="cd-hcparty-deptpediatricsurgery"> </a></td>
+<td>pediatric surgery</td></tr>
+<tr><td style="white-space:nowrap">deptpediatry<a name="cd-hcparty-deptpediatry"> </a></td>
+<td>pediatry</td></tr>
+<tr><td style="white-space:nowrap">deptperiodontology<a name="cd-hcparty-deptperiodontology"> </a></td>
+<td>periodontology</td></tr>
+<tr><td style="white-space:nowrap">deptperioperativecare<a name="cd-hcparty-deptperioperativecare"> </a></td>
+<td>perioperative care</td></tr>
+<tr><td style="white-space:nowrap">deptpharmacy<a name="cd-hcparty-deptpharmacy"> </a></td>
+<td>pharmacy service or department within an organisation</td></tr>
+<tr><td style="white-space:nowrap">deptphysicalmedecine<a name="cd-hcparty-deptphysicalmedecine"> </a></td>
+<td>physical medecine</td></tr>
+<tr><td style="white-space:nowrap">deptphysiotherapy<a name="cd-hcparty-deptphysiotherapy"> </a></td>
+<td>physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptplasticandreparatorysurgery<a name="cd-hcparty-deptplasticandreparatorysurgery"> </a></td>
+<td>plastic and reparatory surgery</td></tr>
+<tr><td style="white-space:nowrap">deptpneumology<a name="cd-hcparty-deptpneumology"> </a></td>
+<td>pneumology</td></tr>
+<tr><td style="white-space:nowrap">deptpodiatry<a name="cd-hcparty-deptpodiatry"> </a></td>
+<td>podiatry</td></tr>
+<tr><td style="white-space:nowrap">deptpodology<a name="cd-hcparty-deptpodology"> </a></td>
+<td>podology</td></tr>
+<tr><td style="white-space:nowrap">deptpsychiatry<a name="cd-hcparty-deptpsychiatry"> </a></td>
+<td>psychiatry</td></tr>
+<tr><td style="white-space:nowrap">deptpsychogeriatry<a name="cd-hcparty-deptpsychogeriatry"> </a></td>
+<td>psychogeriatry</td></tr>
+<tr><td style="white-space:nowrap">deptpsychology<a name="cd-hcparty-deptpsychology"> </a></td>
+<td>psychology</td></tr>
+<tr><td style="white-space:nowrap">deptradiology<a name="cd-hcparty-deptradiology"> </a></td>
+<td>radiology</td></tr>
+<tr><td style="white-space:nowrap">deptradiotherapy<a name="cd-hcparty-deptradiotherapy"> </a></td>
+<td>radiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptradiotherapyoncology<a name="cd-hcparty-deptradiotherapyoncology"> </a></td>
+<td>radiation oncology</td></tr>
+<tr><td style="white-space:nowrap">deptrespiratoryphysiotherapy<a name="cd-hcparty-deptrespiratoryphysiotherapy"> </a></td>
+<td>respiratory physiotherapy</td></tr>
+<tr><td style="white-space:nowrap">deptrevalidation<a name="cd-hcparty-deptrevalidation"> </a></td>
+<td>revalidation</td></tr>
+<tr><td style="white-space:nowrap">deptrheumatology<a name="cd-hcparty-deptrheumatology"> </a></td>
+<td>rheumatology</td></tr>
+<tr><td style="white-space:nowrap">deptrhumatology<a name="cd-hcparty-deptrhumatology"> </a></td>
+<td>rheumatology</td></tr>
+<tr><td style="white-space:nowrap">deptsenology<a name="cd-hcparty-deptsenology"> </a></td>
+<td>senology</td></tr>
+<tr><td style="white-space:nowrap">deptsocialservice<a name="cd-hcparty-deptsocialservice"> </a></td>
+<td>social service</td></tr>
+<tr><td style="white-space:nowrap">deptspeechtherapy<a name="cd-hcparty-deptspeechtherapy"> </a></td>
+<td>speech therapy</td></tr>
+<tr><td style="white-space:nowrap">deptsportsmedecine<a name="cd-hcparty-deptsportsmedecine"> </a></td>
+<td>sports medecine</td></tr>
+<tr><td style="white-space:nowrap">deptstomatology<a name="cd-hcparty-deptstomatology"> </a></td>
+<td>stomatology</td></tr>
+<tr><td style="white-space:nowrap">deptsurgery<a name="cd-hcparty-deptsurgery"> </a></td>
+<td>surgery</td></tr>
+<tr><td style="white-space:nowrap">deptthoracicsurgery<a name="cd-hcparty-deptthoracicsurgery"> </a></td>
+<td>thoracic surgery</td></tr>
+<tr><td style="white-space:nowrap">depttoxicology<a name="cd-hcparty-depttoxicology"> </a></td>
+<td>toxicology</td></tr>
+<tr><td style="white-space:nowrap">depttropicalmedecine<a name="cd-hcparty-depttropicalmedecine"> </a></td>
+<td>tropical medecine</td></tr>
+<tr><td style="white-space:nowrap">depturology<a name="cd-hcparty-depturology"> </a></td>
+<td>urology</td></tr>
+<tr><td style="white-space:nowrap">deptvascularsurgery<a name="cd-hcparty-deptvascularsurgery"> </a></td>
+<td>vascular surgery</td></tr>
+<tr><td style="white-space:nowrap">deptvisceraldigestiveabdominalsurgery<a name="cd-hcparty-deptvisceraldigestiveabdominalsurgery"> </a></td>
+<td>visceral digestive abdominal surgery</td></tr>
+<tr><td style="white-space:nowrap">groupofnurses<a name="cd-hcparty-groupofnurses"> </a></td>
+<td>group of nurses</td></tr>
+<tr><td style="white-space:nowrap">groupofphysiciansdifferentaddress<a name="cd-hcparty-groupofphysiciansdifferentaddress"> </a></td>
+<td>group of physicians different address</td></tr>
+<tr><td style="white-space:nowrap">groupofphysicianssameaddress<a name="cd-hcparty-groupofphysicianssameaddress"> </a></td>
+<td>group of physicians same address</td></tr>
+<tr><td style="white-space:nowrap">guardpost<a name="cd-hcparty-guardpost"> </a></td>
+<td>duty post</td></tr>
+<tr><td style="white-space:nowrap">hub<a name="cd-hcparty-hub"> </a></td>
+<td>hub</td></tr>
+<tr><td style="white-space:nowrap">orghospital<a name="cd-hcparty-orghospital"> </a></td>
+<td>hospital</td></tr>
+<tr><td style="white-space:nowrap">orginsurance<a name="cd-hcparty-orginsurance"> </a></td>
+<td>insurance</td></tr>
+<tr><td style="white-space:nowrap">orglaboratory<a name="cd-hcparty-orglaboratory"> </a></td>
+<td>independent laboratory</td></tr>
+<tr><td style="white-space:nowrap">orgpharmacy<a name="cd-hcparty-orgpharmacy"> </a></td>
+<td>independent pharmacy</td></tr>
+<tr><td style="white-space:nowrap">orgpolyclinic<a name="cd-hcparty-orgpolyclinic"> </a></td>
+<td>polyclinic</td></tr>
+<tr><td style="white-space:nowrap">orgpractice<a name="cd-hcparty-orgpractice"> </a></td>
+<td>practice</td></tr>
+<tr><td style="white-space:nowrap">orgprevention<a name="cd-hcparty-orgprevention"> </a></td>
+<td>prevention service</td></tr>
+<tr><td style="white-space:nowrap">orgprimaryhealthcarecenter<a name="cd-hcparty-orgprimaryhealthcarecenter"> </a></td>
+<td>primary health care center</td></tr>
+<tr><td style="white-space:nowrap">orgpsychiatriccarehome<a name="cd-hcparty-orgpsychiatriccarehome"> </a></td>
+<td>psychiatric care home</td></tr>
+<tr><td style="white-space:nowrap">orgpublichealth<a name="cd-hcparty-orgpublichealth"> </a></td>
+<td>public health organisation</td></tr>
+<tr><td style="white-space:nowrap">orgretirementhome<a name="cd-hcparty-orgretirementhome"> </a></td>
+<td>retirement home</td></tr>
+<tr><td style="white-space:nowrap">orgrevalidationcenter<a name="cd-hcparty-orgrevalidationcenter"> </a></td>
+<td>revalidation center</td></tr>
+<tr><td style="white-space:nowrap">orgshelteredliving<a name="cd-hcparty-orgshelteredliving"> </a></td>
+<td>sheltered living</td></tr>
+<tr><td style="white-space:nowrap">patient<a name="cd-hcparty-patient"> </a></td>
+<td>patient</td></tr>
+<tr><td style="white-space:nowrap">persabdpelvrehabandperinatalphysiotherapist<a name="cd-hcparty-persabdpelvrehabandperinatalphysiotherapist"> </a></td>
+<td>abdomino-pelvic and perinatal physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">persadministrative<a name="cd-hcparty-persadministrative"> </a></td>
+<td>administrative staff</td></tr>
+<tr><td style="white-space:nowrap">persadultpsychiatrist<a name="cd-hcparty-persadultpsychiatrist"> </a></td>
+<td>adult psychiatrist</td></tr>
+<tr><td style="white-space:nowrap">persaestheticsurger<a name="cd-hcparty-persaestheticsurger"> </a></td>
+<td>aesthetic surgeon</td></tr>
+<tr><td style="white-space:nowrap">persambulancedriver<a name="cd-hcparty-persambulancedriver"> </a></td>
+<td>ambulance driver for non-emergency patient transport</td></tr>
+<tr><td style="white-space:nowrap">persambulancefirstaid<a name="cd-hcparty-persambulancefirstaid"> </a></td>
+<td>ambulance first aid</td></tr>
+<tr><td style="white-space:nowrap">persanathomopathologist<a name="cd-hcparty-persanathomopathologist"> </a></td>
+<td>anathomopathologist</td></tr>
+<tr><td style="white-space:nowrap">persanesthesistandresuscitation<a name="cd-hcparty-persanesthesistandresuscitation"> </a></td>
+<td>anesthesist reanimator</td></tr>
+<tr><td style="white-space:nowrap">persappliedpsychbachelor<a name="cd-hcparty-persappliedpsychbachelor"> </a></td>
+<td>bachelor in applied psychology</td></tr>
+<tr><td style="white-space:nowrap">persaudician<a name="cd-hcparty-persaudician"> </a></td>
+<td>audician</td></tr>
+<tr><td style="white-space:nowrap">persaudiologist<a name="cd-hcparty-persaudiologist"> </a></td>
+<td>audiologist</td></tr>
+<tr><td style="white-space:nowrap">persbiologist<a name="cd-hcparty-persbiologist"> </a></td>
+<td>medical laboratory technician</td></tr>
+<tr><td style="white-space:nowrap">perscardiologist<a name="cd-hcparty-perscardiologist"> </a></td>
+<td>cardiologist</td></tr>
+<tr><td style="white-space:nowrap">perscardiovascularphysiotherapist<a name="cd-hcparty-perscardiovascularphysiotherapist"> </a></td>
+<td>cardiovascular physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">perscaregiver<a name="cd-hcparty-perscaregiver"> </a></td>
+<td>caregiver</td></tr>
+<tr><td style="white-space:nowrap">perschildandadolescentpsychiatrist<a name="cd-hcparty-perschildandadolescentpsychiatrist"> </a></td>
+<td>child and adolescent psychiatrist</td></tr>
+<tr><td style="white-space:nowrap">persclinialhematologist<a name="cd-hcparty-persclinialhematologist"> </a></td>
+<td>clinical hematologist</td></tr>
+<tr><td style="white-space:nowrap">persclinicalbiologist<a name="cd-hcparty-persclinicalbiologist"> </a></td>
+<td>clinical biologist</td></tr>
+<tr><td style="white-space:nowrap">persclinicalinfectiologist<a name="cd-hcparty-persclinicalinfectiologist"> </a></td>
+<td>clinical infectiologist</td></tr>
+<tr><td style="white-space:nowrap">persclinicalorthopedagogist<a name="cd-hcparty-persclinicalorthopedagogist"> </a></td>
+<td>clinical orthopedagogist</td></tr>
+<tr><td style="white-space:nowrap">persclinicalpsychologist<a name="cd-hcparty-persclinicalpsychologist"> </a></td>
+<td>clinical psychologist</td></tr>
+<tr><td style="white-space:nowrap">persdentalhygienist<a name="cd-hcparty-persdentalhygienist"> </a></td>
+<td>dental hygienist</td></tr>
+<tr><td style="white-space:nowrap">persdentist<a name="cd-hcparty-persdentist"> </a></td>
+<td>dentist</td></tr>
+<tr><td style="white-space:nowrap">persdermatovenereologist<a name="cd-hcparty-persdermatovenereologist"> </a></td>
+<td>dermato venereologist</td></tr>
+<tr><td style="white-space:nowrap">persdiabeticeducator<a name="cd-hcparty-persdiabeticeducator"> </a></td>
+<td>diabetis educator</td></tr>
+<tr><td style="white-space:nowrap">persdiabetologist<a name="cd-hcparty-persdiabetologist"> </a></td>
+<td>diabetologist</td></tr>
+<tr><td style="white-space:nowrap">persdietician<a name="cd-hcparty-persdietician"> </a></td>
+<td>dietician</td></tr>
+<tr><td style="white-space:nowrap">perseducator<a name="cd-hcparty-perseducator"> </a></td>
+<td>educator</td></tr>
+<tr><td style="white-space:nowrap">persemergencyphycisian<a name="cd-hcparty-persemergencyphycisian"> </a></td>
+<td>emergency physician</td></tr>
+<tr><td style="white-space:nowrap">persendocrinodiabetologist<a name="cd-hcparty-persendocrinodiabetologist"> </a></td>
+<td>endocrino-diabetologist</td></tr>
+<tr><td style="white-space:nowrap">persfamilysciencebachelor<a name="cd-hcparty-persfamilysciencebachelor"> </a></td>
+<td>bachelor in family sciences</td></tr>
+<tr><td style="white-space:nowrap">persforensicpsychiatrust<a name="cd-hcparty-persforensicpsychiatrust"> </a></td>
+<td>forensic psychiatrist</td></tr>
+<tr><td style="white-space:nowrap">persgastroenterologist<a name="cd-hcparty-persgastroenterologist"> </a></td>
+<td>gastroenterologist</td></tr>
+<tr><td style="white-space:nowrap">persgeneralphysician<a name="cd-hcparty-persgeneralphysician"> </a></td>
+<td>general practitioner</td></tr>
+<tr><td style="white-space:nowrap">persgeriatrist<a name="cd-hcparty-persgeriatrist"> </a></td>
+<td>geriatrist</td></tr>
+<tr><td style="white-space:nowrap">persgerontologymaster<a name="cd-hcparty-persgerontologymaster"> </a></td>
+<td>master in gerontological sciences</td></tr>
+<tr><td style="white-space:nowrap">persgynecologistobstetrics<a name="cd-hcparty-persgynecologistobstetrics"> </a></td>
+<td>gynecologist obstetrics</td></tr>
+<tr><td style="white-space:nowrap">pershealthdatamanagemer<a name="cd-hcparty-pershealthdatamanagemer"> </a></td>
+<td>health data manager</td></tr>
+<tr><td style="white-space:nowrap">pershospitalpharmacist<a name="cd-hcparty-pershospitalpharmacist"> </a></td>
+<td>hospital pharmacist</td></tr>
+<tr><td style="white-space:nowrap">persinsurancephysician<a name="cd-hcparty-persinsurancephysician"> </a></td>
+<td>insurance doctor and  medical expert</td></tr>
+<tr><td style="white-space:nowrap">persinternalphysician<a name="cd-hcparty-persinternalphysician"> </a></td>
+<td>internist</td></tr>
+<tr><td style="white-space:nowrap">perslabtechnologist<a name="cd-hcparty-perslabtechnologist"> </a></td>
+<td>medical lab technologist</td></tr>
+<tr><td style="white-space:nowrap">perslegalphysician<a name="cd-hcparty-perslegalphysician"> </a></td>
+<td>legal physician</td></tr>
+<tr><td style="white-space:nowrap">perslogopedist<a name="cd-hcparty-perslogopedist"> </a></td>
+<td>logopedist</td></tr>
+<tr><td style="white-space:nowrap">persmanualtherapist<a name="cd-hcparty-persmanualtherapist"> </a></td>
+<td>manual therapist</td></tr>
+<tr><td style="white-space:nowrap">persmedicalimaging<a name="cd-hcparty-persmedicalimaging"> </a></td>
+<td>medical imaging technologist</td></tr>
+<tr><td style="white-space:nowrap">persmedicalmicrobiologist<a name="cd-hcparty-persmedicalmicrobiologist"> </a></td>
+<td>medical microbiologist</td></tr>
+<tr><td style="white-space:nowrap">persmidwife<a name="cd-hcparty-persmidwife"> </a></td>
+<td>midwife</td></tr>
+<tr><td style="white-space:nowrap">persneonatologist<a name="cd-hcparty-persneonatologist"> </a></td>
+<td>neonatologist</td></tr>
+<tr><td style="white-space:nowrap">persnephrologist<a name="cd-hcparty-persnephrologist"> </a></td>
+<td>nephrologist</td></tr>
+<tr><td style="white-space:nowrap">persneurologicalphysiotherapist<a name="cd-hcparty-persneurologicalphysiotherapist"> </a></td>
+<td>neurological physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">persneurologist<a name="cd-hcparty-persneurologist"> </a></td>
+<td>neurologist</td></tr>
+<tr><td style="white-space:nowrap">persneuropsychiatrist<a name="cd-hcparty-persneuropsychiatrist"> </a></td>
+<td>neuropsychiatrist</td></tr>
+<tr><td style="white-space:nowrap">persneurosurger<a name="cd-hcparty-persneurosurger"> </a></td>
+<td>neurosurgeon</td></tr>
+<tr><td style="white-space:nowrap">persnonsurgicalaestheticphysician<a name="cd-hcparty-persnonsurgicalaestheticphysician"> </a></td>
+<td>non surgical aesthetic physician</td></tr>
+<tr><td style="white-space:nowrap">persnurse<a name="cd-hcparty-persnurse"> </a></td>
+<td>nurse</td></tr>
+<tr><td style="white-space:nowrap">persoccupationalphysician<a name="cd-hcparty-persoccupationalphysician"> </a></td>
+<td>occupational physician</td></tr>
+<tr><td style="white-space:nowrap">persoccupationaltherapist<a name="cd-hcparty-persoccupationaltherapist"> </a></td>
+<td>occupational therapist</td></tr>
+<tr><td style="white-space:nowrap">personcologist<a name="cd-hcparty-personcologist"> </a></td>
+<td>oncologist</td></tr>
+<tr><td style="white-space:nowrap">persophthalmologist<a name="cd-hcparty-persophthalmologist"> </a></td>
+<td>ophthalmologist</td></tr>
+<tr><td style="white-space:nowrap">persoptician<a name="cd-hcparty-persoptician"> </a></td>
+<td>optician</td></tr>
+<tr><td style="white-space:nowrap">persoraldentalhygienist<a name="cd-hcparty-persoraldentalhygienist"> </a></td>
+<td>oral dental hygienist</td></tr>
+<tr><td style="white-space:nowrap">persoralmaxillofacialsurger<a name="cd-hcparty-persoralmaxillofacialsurger"> </a></td>
+<td>oral and maxillofacial surgeon</td></tr>
+<tr><td style="white-space:nowrap">persorthodontist<a name="cd-hcparty-persorthodontist"> </a></td>
+<td>orthodontist</td></tr>
+<tr><td style="white-space:nowrap">persorthopedagogistmaster<a name="cd-hcparty-persorthopedagogistmaster"> </a></td>
+<td>master in orthopedagogy</td></tr>
+<tr><td style="white-space:nowrap">persorthopedist<a name="cd-hcparty-persorthopedist"> </a></td>
+<td>orthopedist</td></tr>
+<tr><td style="white-space:nowrap">persorthoptist<a name="cd-hcparty-persorthoptist"> </a></td>
+<td>orthoptist</td></tr>
+<tr><td style="white-space:nowrap">persorthotist<a name="cd-hcparty-persorthotist"> </a></td>
+<td>orthotist</td></tr>
+<tr><td style="white-space:nowrap">persotolaryngologist<a name="cd-hcparty-persotolaryngologist"> </a></td>
+<td>otolaryngologist</td></tr>
+<tr><td style="white-space:nowrap">persparamedical<a name="cd-hcparty-persparamedical"> </a></td>
+<td>paramedical staff</td></tr>
+<tr><td style="white-space:nowrap">perspatientdriver<a name="cd-hcparty-perspatientdriver"> </a></td>
+<td>patient driver (not urgent)</td></tr>
+<tr><td style="white-space:nowrap">perspedagogybachelor<a name="cd-hcparty-perspedagogybachelor"> </a></td>
+<td>bachelor in pedagogy</td></tr>
+<tr><td style="white-space:nowrap">perspediatrichematologistoncologist<a name="cd-hcparty-perspediatrichematologistoncologist"> </a></td>
+<td>pediatric hematologist oncologist</td></tr>
+<tr><td style="white-space:nowrap">perspediatrician<a name="cd-hcparty-perspediatrician"> </a></td>
+<td>pediatrician</td></tr>
+<tr><td style="white-space:nowrap">perspediatricneurologist<a name="cd-hcparty-perspediatricneurologist"> </a></td>
+<td>pediatric neurologist</td></tr>
+<tr><td style="white-space:nowrap">perspediatricphysiotherapist<a name="cd-hcparty-perspediatricphysiotherapist"> </a></td>
+<td>pediatric physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">persperiodontologist<a name="cd-hcparty-persperiodontologist"> </a></td>
+<td>periodontologist</td></tr>
+<tr><td style="white-space:nowrap">perspharmacist<a name="cd-hcparty-perspharmacist"> </a></td>
+<td>pharmacist</td></tr>
+<tr><td style="white-space:nowrap">perspharmacistclinicalbiologist<a name="cd-hcparty-perspharmacistclinicalbiologist"> </a></td>
+<td>pharmacist-clinical biologist</td></tr>
+<tr><td style="white-space:nowrap">perspharmacyassistant<a name="cd-hcparty-perspharmacyassistant"> </a></td>
+<td>pharmacy assistant</td></tr>
+<tr><td style="white-space:nowrap">persphysicalphysician<a name="cd-hcparty-persphysicalphysician"> </a></td>
+<td>physical and rehabilitation doctor</td></tr>
+<tr><td style="white-space:nowrap">persphysician<a name="cd-hcparty-persphysician"> </a></td>
+<td>physician</td></tr>
+<tr><td style="white-space:nowrap">persphysiotherapist<a name="cd-hcparty-persphysiotherapist"> </a></td>
+<td>physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">perspneumologist<a name="cd-hcparty-perspneumologist"> </a></td>
+<td>pneumologist</td></tr>
+<tr><td style="white-space:nowrap">perspodologist<a name="cd-hcparty-perspodologist"> </a></td>
+<td>podologist</td></tr>
+<tr><td style="white-space:nowrap">perspracticalnurse<a name="cd-hcparty-perspracticalnurse"> </a></td>
+<td>practical nurse</td></tr>
+<tr><td style="white-space:nowrap">persprothesist<a name="cd-hcparty-persprothesist"> </a></td>
+<td>prothesist</td></tr>
+<tr><td style="white-space:nowrap">perspsychatrist<a name="cd-hcparty-perspsychatrist"> </a></td>
+<td>psychatrist</td></tr>
+<tr><td style="white-space:nowrap">perspsychologist<a name="cd-hcparty-perspsychologist"> </a></td>
+<td>psychologist</td></tr>
+<tr><td style="white-space:nowrap">perspsychomotortherapymaster<a name="cd-hcparty-perspsychomotortherapymaster"> </a></td>
+<td>master in psychomotor therapy</td></tr>
+<tr><td style="white-space:nowrap">persreadaptationbachelor<a name="cd-hcparty-persreadaptationbachelor"> </a></td>
+<td>bachelor in physiotherapy and rehabilitation</td></tr>
+<tr><td style="white-space:nowrap">persrespiratoryphysiotherapist<a name="cd-hcparty-persrespiratoryphysiotherapist"> </a></td>
+<td>respiratory physiotherapist</td></tr>
+<tr><td style="white-space:nowrap">persrheumatologist<a name="cd-hcparty-persrheumatologist"> </a></td>
+<td>rheumatologist</td></tr>
+<tr><td style="white-space:nowrap">perssocialworker<a name="cd-hcparty-perssocialworker"> </a></td>
+<td>social worker</td></tr>
+<tr><td style="white-space:nowrap">persstomatologist<a name="cd-hcparty-persstomatologist"> </a></td>
+<td>stomatologist</td></tr>
+<tr><td style="white-space:nowrap">perssurger<a name="cd-hcparty-perssurger"> </a></td>
+<td>surgeon</td></tr>
+<tr><td style="white-space:nowrap">perstechnician<a name="cd-hcparty-perstechnician"> </a></td>
+<td>medical imaging technician</td></tr>
+<tr><td style="white-space:nowrap">perstrussmaker<a name="cd-hcparty-perstrussmaker"> </a></td>
+<td>bandagist</td></tr>
+<tr><td style="white-space:nowrap">persurologist<a name="cd-hcparty-persurologist"> </a></td>
+<td>urologist</td></tr>
+<tr><td style="white-space:nowrap">persoptometrist<a name="cd-hcparty-persoptometrist"> </a></td>
+<td>optometrist</td></tr>
+<tr><td style="white-space:nowrap">persmobilityimprover<a name="cd-hcparty-persmobilityimprover"> </a></td>
+<td>mobility improver (orthopedic technologist)</td></tr>
+<tr><td style="white-space:nowrap">persbandagistorthosiologist<a name="cd-hcparty-persbandagistorthosiologist"> </a></td>
+<td>bandagist orthosiologist (orthopedic technologist)</td></tr>
+<tr><td style="white-space:nowrap">persprosthesiologist<a name="cd-hcparty-persprosthesiologist"> </a></td>
+<td>prosthesiologist (orthopedic technologist)</td></tr>
+<tr><td style="white-space:nowrap">persshoetechnologist<a name="cd-hcparty-persshoetechnologist"> </a></td>
+<td>shoe technologist (orthopedic technologist)</td></tr>
+<tr><td style="white-space:nowrap">orgpharmacyinvoicingoffice<a name="cd-hcparty-orgpharmacyinvoicingoffice"> </a></td>
+<td>pharmacy invoicing office</td></tr></table><p><b>Additional Language Displays</b></p>
+<table class="codes" data-fhir="generated"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr>
+<tr><td>application</td>
+<td>Softwareapplikation</td>
+<td>software application</td>
+<td>application logicielle</td>
+<td>softwaretoepassing</td></tr>
+<tr><td>certificateholder</td>
+<td>Zertifikatsinhaber</td>
+<td>certificate holder</td>
+<td>titulaire du certificat</td>
+<td>houder van certificaat</td></tr>
+<tr><td>deptabdpelvrehabandperinatalphysiotherapy</td>
+<td>Beckenbodentherapie und Perinatale Physiotherapie</td>
+<td>pelviperineal and perinatal physiotherapy</td>
+<td>rééducation abdomino-pelvienne - kinésithérapie périnatale</td>
+<td>bekkenbodemreëducatie en perinatale kinesitherapie</td></tr>
+<tr><td>deptacutemedicine</td>
+<td>Akutmedizin</td>
+<td>acute medecine</td>
+<td>médecine aiguë</td>
+<td>acute geneeskunde</td></tr>
+<tr><td>deptadultpsychiatry</td>
+<td>Erwachsenenpsychiatrie</td>
+<td>adult psychiatry</td>
+<td>psychiatrie adulte</td>
+<td>volwassenpsychiatrie</td></tr>
+<tr><td>deptaestheticsurgery</td>
+<td>Plastische, rekonstruktive und ästhetische Chirurgie</td>
+<td>plastic, reconstructive and esthetic surgery</td>
+<td>chirurgie plastique, reconstructive et esthétique</td>
+<td>plastische, reconstructieve en esthetische heelkunde</td></tr>
+<tr><td>deptalgology</td>
+<td>Algologie</td>
+<td>algology</td>
+<td>algologie</td>
+<td>algologie</td></tr>
+<tr><td>deptanatomopathology</td>
+<td>pathologische Anatomie</td>
+<td>anatomopathology</td>
+<td>anatomopathologie</td>
+<td>pathologische anatomie</td></tr>
+<tr><td>deptanesthesiaandresuscitation</td>
+<td>Anästhesie und Reanimation</td>
+<td>anesthesia and reanimation</td>
+<td>anesthésie-réanimation</td>
+<td>anesthesie-reanimatie</td></tr>
+<tr><td>deptanesthesiology</td>
+<td>Anästhesiologe</td>
+<td>anesthesiology</td>
+<td>anesthésiologie</td>
+<td>anesthesiologie</td></tr>
+<tr><td>deptaudiology</td>
+<td>Audiologie</td>
+<td>audiology</td>
+<td>audiologie</td>
+<td>audiologie</td></tr>
+<tr><td>deptbacteriology</td>
+<td>Bakteriologie</td>
+<td>bacteriology</td>
+<td>bactériologie</td>
+<td>bacteriologie</td></tr>
+<tr><td>deptcardiacsurgery</td>
+<td>Herzchirurgie</td>
+<td>cardiac surgery</td>
+<td>chirurgie cardiaque</td>
+<td>hartchirurgie</td></tr>
+<tr><td>deptcardiology</td>
+<td>Kardiologie</td>
+<td>cardiology</td>
+<td>cardiologie</td>
+<td>cardiologie</td></tr>
+<tr><td>deptcardiovascularphysiotherapy</td>
+<td>kardiovaskuläre Physiotherapie</td>
+<td>cardiovascular physiotherapy</td>
+<td>kinésithérapie cardiovasculaire</td>
+<td>cardiovasculaire kinesitherapie</td></tr>
+<tr><td>deptchildandadolescentpsychiatry</td>
+<td>Kinder- und Jugendpsychiatrie</td>
+<td>child and adolescent psychiatry</td>
+<td>psychiatrie de l'enfant et de l'adolescent</td>
+<td>kinder- en jeugdpsychiatrie</td></tr>
+<tr><td>deptclinicalbiology</td>
+<td>klinische Biologie</td>
+<td>clinical biology</td>
+<td>biologie clinique</td>
+<td>klinische biologie</td></tr>
+<tr><td>deptclinicalgenetics</td>
+<td>klinische Genetik</td>
+<td>clinical genetics</td>
+<td>génétique clinique</td>
+<td>klinische genetica</td></tr>
+<tr><td>deptclinicalhematology</td>
+<td>klinische Hämatologie</td>
+<td>clinical hematology</td>
+<td>hématologie clinique</td>
+<td>klinische hematologie</td></tr>
+<tr><td>deptclinicalinfectiology</td>
+<td>klinische Infektiologie</td>
+<td>clinical infectiology</td>
+<td>infectiologie clinique</td>
+<td>klinische infectiologie</td></tr>
+<tr><td>deptclinicalorthopedagogy</td>
+<td>klinische Orthopädagogik</td>
+<td>clinical orthopedagogy</td>
+<td>orthopédagogie clinique</td>
+<td>klinische orthopedagogie</td></tr>
+<tr><td>deptclinicalpsychology</td>
+<td>klinische Psychologie</td>
+<td>clinical psychology</td>
+<td>psychologie clinique</td>
+<td>klinische psychologie</td></tr>
+<tr><td>deptdentistry</td>
+<td>Zahnheilkunde</td>
+<td>dentistry</td>
+<td>dentisterie</td>
+<td>tandheelkunde</td></tr>
+<tr><td>deptdermatology</td>
+<td>Dermatologie</td>
+<td>dermatology</td>
+<td>dermatologie</td>
+<td>dermatologie</td></tr>
+<tr><td>deptdermatovenereology</td>
+<td>Dermatologie und Venerologie</td>
+<td>dermatovenereology</td>
+<td>dermato-vénérologie</td>
+<td>dermato-venereologie</td></tr>
+<tr><td>deptdiabeticeducation</td>
+<td>Diabetes-Erziehung</td>
+<td>diabetic education</td>
+<td>éducation diabétique</td>
+<td>diabeteseducatie</td></tr>
+<tr><td>deptdiabetology</td>
+<td>Diabetologie</td>
+<td>diabetology</td>
+<td>diabétologie</td>
+<td>diabetologie</td></tr>
+<tr><td>deptdietetics</td>
+<td>Ernährungslehre</td>
+<td>dietetics</td>
+<td>diététique</td>
+<td>dieetleer</td></tr>
+<tr><td>deptemergency</td>
+<td>Notfalldienst</td>
+<td>emergency</td>
+<td>services d'urgence</td>
+<td>spoeddiensten</td></tr>
+<tr><td>deptendocrinodiabetology</td>
+<td>Endokrinologie und Diabetologie</td>
+<td>endocrinodiabetology</td>
+<td>endocrino-diabétologie</td>
+<td>endocrino-diabetologie</td></tr>
+<tr><td>deptendocrinology</td>
+<td>Endokrinologie</td>
+<td>endocrinology</td>
+<td>endocrinologie</td>
+<td>endocrinologie/hormonenleer</td></tr>
+<tr><td>deptforensicpsychiatry</td>
+<td>forensische Psychiatrie</td>
+<td>forensic psychiatry</td>
+<td>psychiatrie médico-légale</td>
+<td>forensische psychiatrie</td></tr>
+<tr><td>deptfunctionaldisabledrehabilitation</td>
+<td>funktionelle und berufliche Rehabilitation</td>
+<td>functional and professional rehabilitation</td>
+<td>réadaptation fonctionnelle et professionnelle des handicapés</td>
+<td>functionele, sociale en professionele revalidatie</td></tr>
+<tr><td>deptgastroenterology</td>
+<td>Gastroenterologie</td>
+<td>gastroenterology</td>
+<td>gastroentérologie</td>
+<td>gastro-enterologie</td></tr>
+<tr><td>deptgeneralpractice</td>
+<td>Allgemeinmedizin</td>
+<td>general practice</td>
+<td>médecine générale</td>
+<td>algemene geneeskunde</td></tr>
+<tr><td>deptgenetics</td>
+<td>Genetik</td>
+<td>genetics</td>
+<td>génétique</td>
+<td>genetica</td></tr>
+<tr><td>deptgeriatry</td>
+<td>Geriatrie</td>
+<td>geriatry</td>
+<td>gériatrie</td>
+<td>geriatrie</td></tr>
+<tr><td>deptgynecology</td>
+<td>Gynäkologie</td>
+<td>gynecology</td>
+<td>gynécologie</td>
+<td>gynaecologie</td></tr>
+<tr><td>deptgynecologyobstetrics</td>
+<td>Gynäkologie und Geburtshilfe</td>
+<td>gynecology and obstetrics</td>
+<td>gynécologie-obstétrique</td>
+<td>gynaecologie-verloskunde</td></tr>
+<tr><td>depthandsurgery</td>
+<td>Handchirurgie</td>
+<td>hand surgery</td>
+<td>chirurgie de la main</td>
+<td>handchirurgie</td></tr>
+<tr><td>depthealthdatamanagement</td>
+<td>Verwaltung von Gesundheitsdaten</td>
+<td>health data management</td>
+<td>gestion des données de santé</td>
+<td>beheer van gezondheidsgegevens</td></tr>
+<tr><td>depthearingaidfitting</td>
+<td>Anpassung von Hörgeräten und Hörimplantaten</td>
+<td>hearing aid fitting</td>
+<td>adaptation des aides auditives et implants auditifs</td>
+<td>aanpassing van hoortoestellen en hoorimplantaten</td></tr>
+<tr><td>depthematology</td>
+<td>Hämatologie</td>
+<td>hematology</td>
+<td>hématologie</td>
+<td>hematologie</td></tr>
+<tr><td>depthospitalpharmacy</td>
+<td>Krankenhausapotheke</td>
+<td>hospitalpharmacy</td>
+<td>pharmacie hospitalière</td>
+<td>ziekenhuisapotheek</td></tr>
+<tr><td>deptinfectiousdisease</td>
+<td>Infektionskrankheit</td>
+<td>infectious disease</td>
+<td>maladie infectieuse</td>
+<td>infectieziekte</td></tr>
+<tr><td>deptinsurancemedicine</td>
+<td>Versicherungsmedizin und medizinisches Gutachten</td>
+<td>insurance medicine and medical assessment</td>
+<td>médecine d'assurance et expertise médicale</td>
+<td>verzekeringsgeneeskunde en medische expertise</td></tr>
+<tr><td>deptintensivecare</td>
+<td>Intensivmedizin</td>
+<td>intensive care</td>
+<td>soins intensifs</td>
+<td>intensieve zorg</td></tr>
+<tr><td>deptintensiveemergencycare</td>
+<td>intensive Notfallbetreuung</td>
+<td>intensive emergency care</td>
+<td>soins intensifs et d'urgence</td>
+<td>intensieve zorg en spoedgevallenzorg</td></tr>
+<tr><td>deptinternalmedicine</td>
+<td>innere Medizin</td>
+<td>internal medicine</td>
+<td>médecine interne</td>
+<td>inwendige geneeskunde</td></tr>
+<tr><td>deptinvitronuclear</td>
+<td>In-Vitro-Nuklearmedizin</td>
+<td>in vitro nuclear medicine</td>
+<td>médecine nucléaire in vitro</td>
+<td>nucleaire geneeskunde in vitro</td></tr>
+<tr><td>deptkinesitherapy</td>
+<td>Bewegungstherapie</td>
+<td>physiotherapy</td>
+<td>kinésithérapie</td>
+<td>kinesitherapie</td></tr>
+<tr><td>deptlaboratory</td>
+<td>Laborabteilung innerhalb einer Organisation</td>
+<td>laboratory service or department within an organisation</td>
+<td>service / département laboratoire au sein d'une organisation</td>
+<td>laboratoriumdienst of -afdeling binnen een organisatie</td></tr>
+<tr><td>deptlegalmedecine</td>
+<td>Gerichtsmedizin</td>
+<td>legal medecine</td>
+<td>médecine légale</td>
+<td>gerechtelijke geneeskunde</td></tr>
+<tr><td>deptlogopedy</td>
+<td>Logopädie</td>
+<td>logopedy</td>
+<td>logopédie</td>
+<td>logopedist</td></tr>
+<tr><td>deptmajorburns</td>
+<td>Zentrum für Schwerbrandverletzte</td>
+<td>major burns center</td>
+<td>centre des grands brûlés</td>
+<td>brandwondencentrum</td></tr>
+<tr><td>deptmanualtherapy</td>
+<td>manuelle Therapie</td>
+<td>manual therapy</td>
+<td>thérapie manuelle</td>
+<td>manuele therapie</td></tr>
+<tr><td>deptmaxillofacialsurgery</td>
+<td>Mund-Kiefer-Gesichtschirurgie</td>
+<td>maxillofacial surgery</td>
+<td>chirurgie maxillofaciale</td>
+<td>mond-, kaak- en aangezichtschirurgie</td></tr>
+<tr><td>deptmedicalmicrobiology</td>
+<td>medizinische Mikrobiologie</td>
+<td>medical microbiology</td>
+<td>microbiologie médicale</td>
+<td>medische microbiologie</td></tr>
+<tr><td>deptmedicine</td>
+<td>Innere Medizin</td>
+<td>internal medecine</td>
+<td>médicine interne</td>
+<td>interne geneeskunde</td></tr>
+<tr><td>deptmolecularbiology</td>
+<td>Molekularbiologie</td>
+<td>molecular biology</td>
+<td>biologie moléculaire</td>
+<td>moleculaire biologie</td></tr>
+<tr><td>deptneonatalogy</td>
+<td>Neonatologie</td>
+<td>neonatalogy</td>
+<td>néonatologie</td>
+<td>neonatologie</td></tr>
+<tr><td>deptnephrology</td>
+<td>Nephrologie</td>
+<td>nephrology</td>
+<td>néphrologie</td>
+<td>nefrologie</td></tr>
+<tr><td>deptneurologicalphysiotherapy</td>
+<td>neurologische Physiotherapie</td>
+<td>neurological physiotherapy</td>
+<td>kinésithérapie neurologique</td>
+<td>neurologische kinesitherapie</td></tr>
+<tr><td>deptneurology</td>
+<td>Neurologie</td>
+<td>neurology</td>
+<td>neurologie</td>
+<td>neurologie</td></tr>
+<tr><td>deptneuropsychiatry</td>
+<td>Neuropsychiatrie</td>
+<td>neuropsychiatry</td>
+<td>neuropsychiatrie</td>
+<td>neuropsychiatrie</td></tr>
+<tr><td>deptneurosurgery</td>
+<td>Neurochirurgie</td>
+<td>neurosurgery</td>
+<td>neurochirurgie</td>
+<td>neurochirurgie</td></tr>
+<tr><td>deptnonsurgicalaestheticmedicine</td>
+<td>nicht-chirurgische ästhetische Medizin</td>
+<td>non-surgical aesthetic medicine</td>
+<td>médecine esthétique non chirurgicale</td>
+<td>niet-heelkundige esthetische geneeskunde</td></tr>
+<tr><td>deptnte</td>
+<td>Hals-Nasen-Ohren-Heilkunde</td>
+<td>nose-throat-ear</td>
+<td>oto-rhino-laryngologie</td>
+<td>neus-keel-oor (nko)</td></tr>
+<tr><td>deptnuclear</td>
+<td>Nuklearmedizin</td>
+<td>nuclear medecine</td>
+<td>médecine nucléaire</td>
+<td>nucleaire geneeskunde</td></tr>
+<tr><td>deptnursing</td>
+<td>Krankenpflege</td>
+<td>nursing</td>
+<td>soins infirmiers</td>
+<td>verpleegkunde</td></tr>
+<tr><td>deptnutritiondietetics</td>
+<td>Ernährungslehre</td>
+<td>nutrition dietetics</td>
+<td>diététique nutritionnelle</td>
+<td>voedingsleer</td></tr>
+<tr><td>deptobstetrics</td>
+<td>Geburtshilfe</td>
+<td>obstetrics</td>
+<td>obstétrique</td>
+<td>verloskunde</td></tr>
+<tr><td>deptoccupationalmedicine</td>
+<td>Arbeitsmedizin</td>
+<td>occupational medicine</td>
+<td>médecine du travail</td>
+<td>arbeidsgeneeskunde</td></tr>
+<tr><td>deptoccupationaltherapy</td>
+<td>Ergotherapie</td>
+<td>occupational therapy</td>
+<td>ergothérapie</td>
+<td>ergotherapie</td></tr>
+<tr><td>deptoncology</td>
+<td>Onkologie</td>
+<td>oncology</td>
+<td>oncologie</td>
+<td>oncologie</td></tr>
+<tr><td>deptophtalmology</td>
+<td>Augenheilkunde</td>
+<td>ophtalmology</td>
+<td>ophtalmologie</td>
+<td>oftalmologie</td></tr>
+<tr><td>deptorthodontics</td>
+<td>Kieferorthopädie</td>
+<td>orthodontics</td>
+<td>orthodontie</td>
+<td>orthodontie</td></tr>
+<tr><td>deptorthopedy</td>
+<td>Orthopädie</td>
+<td>orthopedy</td>
+<td>orthopédie</td>
+<td>orthopedie</td></tr>
+<tr><td>deptorthopticsoptometry</td>
+<td>Orthoptik-Optometrie</td>
+<td>orthoptics optometry</td>
+<td>orthoptie-optométrie</td>
+<td>orthoptie-optometrie</td></tr>
+<tr><td>deptpalliativecare</td>
+<td>Palliativversorgung</td>
+<td>palliative care</td>
+<td>soins palliatifs</td>
+<td>palliatieve zorg</td></tr>
+<tr><td>deptpediatrichematologyoncology</td>
+<td>Kinderhämatologie und -Onkologie</td>
+<td>pediatric hematology and oncology</td>
+<td>hématologie et oncologie pédiatrique</td>
+<td>pediatrische hematologie en oncologie</td></tr>
+<tr><td>deptpediatricintensivecare</td>
+<td>Intensivpflege für Kinder</td>
+<td>pediatric intensive care</td>
+<td>soins intensifs pédiatriques</td>
+<td>intensieve zorg voor kinderen</td></tr>
+<tr><td>deptpediatricneurology</td>
+<td>Kinderneurolgie</td>
+<td>pediatric neurology</td>
+<td>neurologie pédiatrique</td>
+<td>pediatrische neurologie</td></tr>
+<tr><td>deptpediatricphysiotherapy</td>
+<td>Kinderphysiotherapie</td>
+<td>pediatric physiotherapy</td>
+<td>kinésithérapie pédiatrique</td>
+<td>pediatrische kinesitherapie</td></tr>
+<tr><td>deptpediatricsurgery</td>
+<td>Kinderchirurgie</td>
+<td>pediatric surgery</td>
+<td>chirurgie pédiatrique</td>
+<td>kinderchirurgie</td></tr>
+<tr><td>deptpediatry</td>
+<td>Pädiatrie</td>
+<td>pediatry</td>
+<td>pédiatrie</td>
+<td>pediatrie</td></tr>
+<tr><td>deptperiodontology</td>
+<td>Parodontologie</td>
+<td>periodontology</td>
+<td>parodontologie</td>
+<td>parodontologie</td></tr>
+<tr><td>deptperioperativecare</td>
+<td>perioperative Versorgung</td>
+<td>perioperative care</td>
+<td>soins péri-opératoires</td>
+<td>peri-operatieve zorg</td></tr>
+<tr><td>deptpharmacy</td>
+<td>Apothekendienst oder -Abteilung innerhalb einer Organisation</td>
+<td>pharmacy service or department within an organisation</td>
+<td>service / département pharmacie au sein d'une organisation</td>
+<td>apotheekdienst of -afdeling binnen een organisatie</td></tr>
+<tr><td>deptphysicalmedecine</td>
+<td>physikalische Medizin</td>
+<td>physical medecine</td>
+<td>médecine physique</td>
+<td>fysische geneeskunde</td></tr>
+<tr><td>deptphysiotherapy</td>
+<td>Physiotherapie</td>
+<td>physiotherapy</td>
+<td>physiothérapie</td>
+<td>fysiotherapie</td></tr>
+<tr><td>deptplasticandreparatorysurgery</td>
+<td>plastisch-rekonstruktive Chirurgie</td>
+<td>plastic and reparatory surgery</td>
+<td>chirurgie esthétique et réparatrice</td>
+<td>plastische en reconstructieve chirurgie</td></tr>
+<tr><td>deptpneumology</td>
+<td>Lungenheilkunde</td>
+<td>pneumology</td>
+<td>pneumologie</td>
+<td>pneumologie</td></tr>
+<tr><td>deptpodiatry</td>
+<td>Podiatrie</td>
+<td>podiatry</td>
+<td>podiatrie</td>
+<td>podiatrie</td></tr>
+<tr><td>deptpodology</td>
+<td>Podologie</td>
+<td>podology</td>
+<td>podologie</td>
+<td>podologie</td></tr>
+<tr><td>deptpsychiatry</td>
+<td>Psychiatrie</td>
+<td>psychiatry</td>
+<td>psychiatrie</td>
+<td>psychiatrie</td></tr>
+<tr><td>deptpsychogeriatry</td>
+<td>Psychogeriatrie</td>
+<td>psychogeriatry</td>
+<td>psychogériatrie</td>
+<td>psychogeriatrie</td></tr>
+<tr><td>deptpsychology</td>
+<td>Psychologie</td>
+<td>psychology</td>
+<td>psychologie</td>
+<td>psychologie</td></tr>
+<tr><td>deptradiology</td>
+<td>Radiologie</td>
+<td>radiology</td>
+<td>radiologie</td>
+<td>radiologie</td></tr>
+<tr><td>deptradiotherapy</td>
+<td>Strahlentherapie</td>
+<td>radiotherapy</td>
+<td>radiothérapie</td>
+<td>radiotherapie</td></tr>
+<tr><td>deptradiotherapyoncology</td>
+<td>Strahlenonkologie</td>
+<td>radiation oncology</td>
+<td>oncologie radiologique</td>
+<td>bestralingsoncologie</td></tr>
+<tr><td>deptrespiratoryphysiotherapy</td>
+<td>Atemphysiotherapie</td>
+<td>respiratory physiotherapy</td>
+<td>kinésithérapie respiratoire</td>
+<td>respiratoire kinesitherapie</td></tr>
+<tr><td>deptrevalidation</td>
+<td>Rehabilitation</td>
+<td>revalidation</td>
+<td>rééducation</td>
+<td>revalidatie</td></tr>
+<tr><td>deptrheumatology</td>
+<td>Rheumatologie</td>
+<td>rheumatology</td>
+<td>rhumatologie</td>
+<td>reumatologie</td></tr>
+<tr><td>deptrhumatology</td>
+<td>Rheumatologie</td>
+<td>rheumatology</td>
+<td>rhumatologie</td>
+<td>reumatologie</td></tr>
+<tr><td>deptsenology</td>
+<td>Senologie</td>
+<td>senology</td>
+<td>sénologie</td>
+<td>senologie</td></tr>
+<tr><td>deptsocialservice</td>
+<td>Sozialdienst</td>
+<td>social service</td>
+<td>service social</td>
+<td>sociale dienst</td></tr>
+<tr><td>deptspeechtherapy</td>
+<td>Sprachtherapie</td>
+<td>speech therapy</td>
+<td>logopédie</td>
+<td>logopedie</td></tr>
+<tr><td>deptsportsmedecine</td>
+<td>Sportmedizin</td>
+<td>sports medecine</td>
+<td>médecine des sports</td>
+<td>sportgeneeskunde</td></tr>
+<tr><td>deptstomatology</td>
+<td>Stomatologie</td>
+<td>stomatology</td>
+<td>stomatologie</td>
+<td>stomatologie</td></tr>
+<tr><td>deptsurgery</td>
+<td>Chirurgie</td>
+<td>surgery</td>
+<td>chirurgie</td>
+<td>chirurgie</td></tr>
+<tr><td>deptthoracicsurgery</td>
+<td>Thoraxchirurgie</td>
+<td>thoracic surgery</td>
+<td>chirurgie thoracique</td>
+<td>thoraxchirurgie</td></tr>
+<tr><td>depttoxicology</td>
+<td>Toxikologie</td>
+<td>toxicology</td>
+<td>toxicologie</td>
+<td>toxicologie</td></tr>
+<tr><td>depttropicalmedecine</td>
+<td>Tropenmedizin</td>
+<td>tropical medecine</td>
+<td>médecine tropicale</td>
+<td>tropische geneeskunde</td></tr>
+<tr><td>depturology</td>
+<td>Urologie</td>
+<td>urology</td>
+<td>urologie</td>
+<td>urologie</td></tr>
+<tr><td>deptvascularsurgery</td>
+<td>vaskuläre Chirurgie</td>
+<td>vascular surgery</td>
+<td>chirurgie vasculaire</td>
+<td>vasculaire chirurgie</td></tr>
+<tr><td>deptvisceraldigestiveabdominalsurgery</td>
+<td>Viszeralchirurgie/abdominale Chirurgie/Bauchchirurgie</td>
+<td>visceral digestive abdominal surgery</td>
+<td>chirurgie abdominale, digestive et viscérale</td>
+<td>digestieve/viscerale chirurgie/buikchirurgie</td></tr>
+<tr><td>groupofnurses</td>
+<td>Krankenpflegeverein</td>
+<td>group of nurses</td>
+<td>regroupement d'infirmiers</td>
+<td>groepering van verplegers</td></tr>
+<tr><td>groupofphysiciansdifferentaddress</td>
+<td>Gruppierung von Ärzten andere Adresse</td>
+<td>group of physicians different address</td>
+<td>regroupement de médecins adresse différente</td>
+<td>groepering van artsen verschillend adres</td></tr>
+<tr><td>groupofphysicianssameaddress</td>
+<td>Gruppierung von Ärzten gleiche Adresse</td>
+<td>group of physicians same address</td>
+<td>regroupement de médecins même adresse</td>
+<td>groepering van artsen zelfde adres</td></tr>
+<tr><td>guardpost</td>
+<td>Wachposten</td>
+<td>duty post</td>
+<td>poste de garde</td>
+<td>wachtpost</td></tr>
+<tr><td>hub</td>
+<td>Hub</td>
+<td>hub</td>
+<td>hub</td>
+<td>hub</td></tr>
+<tr><td>orghospital</td>
+<td>Krankenhaus</td>
+<td>hospital</td>
+<td>hôpital</td>
+<td>ziekenhuis</td></tr>
+<tr><td>orginsurance</td>
+<td>Versicherung</td>
+<td>insurance</td>
+<td>assurance</td>
+<td>verzekering</td></tr>
+<tr><td>orglaboratory</td>
+<td>Unabhängiges Laboratorium</td>
+<td>independent laboratory</td>
+<td>laboratoire indépendant</td>
+<td>onafhankelijk laboratorium</td></tr>
+<tr><td>orgpharmacy</td>
+<td>Unabhängige Apotheke</td>
+<td>independent pharmacy</td>
+<td>pharmacie indépendante</td>
+<td>onafhankelijke apotheek</td></tr>
+<tr><td>orgpolyclinic</td>
+<td>Poliklinik</td>
+<td>polyclinic</td>
+<td>polyclinique</td>
+<td>polikliniek</td></tr>
+<tr><td>orgpractice</td>
+<td>Praxis</td>
+<td>practice</td>
+<td>cabinet</td>
+<td>praktijk</td></tr>
+<tr><td>orgprevention</td>
+<td>Präventionsdienst</td>
+<td>prevention service</td>
+<td>service de prévention</td>
+<td>preventiedienst</td></tr>
+<tr><td>orgprimaryhealthcarecenter</td>
+<td>Gesundheitspflege der ersten Linie</td>
+<td>primary health care center</td>
+<td>maison médicale</td>
+<td>medisch huis</td></tr>
+<tr><td>orgpsychiatriccarehome</td>
+<td>Psychiatrisches Pflegeheim</td>
+<td>psychiatric care home</td>
+<td>maison de soins psychiatriques</td>
+<td>psychiatrische verzorgingstehuis</td></tr>
+<tr><td>orgpublichealth</td>
+<td>Gesundheitsbehörde</td>
+<td>public health organisation</td>
+<td>service public de santé</td>
+<td>openbare gezondheidsdienst</td></tr>
+<tr><td>orgretirementhome</td>
+<td>Seniorenwohnheim</td>
+<td>retirement home</td>
+<td>maison de repos</td>
+<td>woonzorgcentrum</td></tr>
+<tr><td>orgrevalidationcenter</td>
+<td>Rehabilitationszentrum</td>
+<td>revalidation center</td>
+<td>centre de revalidation</td>
+<td>revalidatiecentrum</td></tr>
+<tr><td>orgshelteredliving</td>
+<td>betreutes Wohnen</td>
+<td>sheltered living</td>
+<td>initiative d'habitation protégée</td>
+<td>initiatief voor beschut wonen</td></tr>
+<tr><td>patient</td>
+<td>Patient</td>
+<td>patient</td>
+<td>patient</td>
+<td>patiënt</td></tr>
+<tr><td>persabdpelvrehabandperinatalphysiotherapist</td>
+<td>Bauch-, Becken- und Perinatal-Physiotherapeut</td>
+<td>abdomino-pelvic and perinatal physiotherapist</td>
+<td>kinésithérapeute périnatal et rééducation abdomino-pelvienne</td>
+<td>buik-bekkenrevalidatie en perinatale kinesitherapeut</td></tr>
+<tr><td>persadministrative</td>
+<td>Büroangestellte(r)</td>
+<td>administrative staff</td>
+<td>personnel administratif</td>
+<td>administratieve medewerker</td></tr>
+<tr><td>persadultpsychiatrist</td>
+<td>Erwachsenenpsychiater</td>
+<td>adult psychiatrist</td>
+<td>psychiatre pour adultes</td>
+<td>volwassenpsychiater</td></tr>
+<tr><td>persaestheticsurger</td>
+<td>plastischer, rekonstruktiver und ästhetischer Chirurg</td>
+<td>aesthetic surgeon</td>
+<td>chirurgien plastique reconstructive et esthétique</td>
+<td>plastisch, reconstructief en esthetisch chirurg</td></tr>
+<tr><td>persambulancedriver</td>
+<td>Sanitäter-Krankenwagenfahrer im nicht-dringenden Krankentransport</td>
+<td>ambulance driver for non-emergency patient transport</td>
+<td>ambulancier de transport non urgent de patients</td>
+<td>ambulancier niet dringend patiëntenvervoer</td></tr>
+<tr><td>persambulancefirstaid</td>
+<td>Krankenwagen erste Hilfe</td>
+<td>ambulance first aid</td>
+<td>ambulance premier secours</td>
+<td>ambulance eerste hulp</td></tr>
+<tr><td>persanathomopathologist</td>
+<td>Anatomopathologe</td>
+<td>anathomopathologist</td>
+<td>anatomo-pathologiste</td>
+<td>anatoom-patholoog</td></tr>
+<tr><td>persanesthesistandresuscitation</td>
+<td>Anästhesist-Reanimator</td>
+<td>anesthesist reanimator</td>
+<td>anesthésiste-réanimateur</td>
+<td>anesthesist-reanimeerder</td></tr>
+<tr><td>persappliedpsychbachelor</td>
+<td>Bachelor Angewandte Psychologie</td>
+<td>bachelor in applied psychology</td>
+<td>bachelier en psychologie appliquée</td>
+<td>bachelor in de toegepaste psychologie</td></tr>
+<tr><td>persaudician</td>
+<td>Hörgeräteakustiker</td>
+<td>audician</td>
+<td>audicien</td>
+<td>audicien</td></tr>
+<tr><td>persaudiologist</td>
+<td>Audiologe</td>
+<td>audiologist</td>
+<td>audiologue</td>
+<td>audioloog</td></tr>
+<tr><td>persbiologist</td>
+<td>Medizinischer Labortechniker</td>
+<td>medical laboratory technician</td>
+<td>technicien de laboratoire médical</td>
+<td>medisch laboratoriumtechnoloog</td></tr>
+<tr><td>perscardiologist</td>
+<td>Kardiologe</td>
+<td>cardiologist</td>
+<td>cardiologue</td>
+<td>cardioloog</td></tr>
+<tr><td>perscardiovascularphysiotherapist</td>
+<td>kardiovaskulärer Physiotherapeut</td>
+<td>cardiovascular physiotherapist</td>
+<td>kinésithérapeute cardiovasculaire</td>
+<td>cardiovasculaire kinesitherapeut</td></tr>
+<tr><td>perscaregiver</td>
+<td>Pflegeperson</td>
+<td>caregiver</td>
+<td>soignant informel</td>
+<td>mantelzorger</td></tr>
+<tr><td>perschildandadolescentpsychiatrist</td>
+<td>Kinder- und Jugendpsychiater</td>
+<td>child and adolescent psychiatrist</td>
+<td>psychiatre pour enfants et adolescents</td>
+<td>kinder- en jeugdpsychiater</td></tr>
+<tr><td>persclinialhematologist</td>
+<td>klinischer Hämatologe</td>
+<td>clinical hematologist</td>
+<td>hématologue clinique</td>
+<td>klinische hematoloog</td></tr>
+<tr><td>persclinicalbiologist</td>
+<td>klinischer Biologe</td>
+<td>clinical biologist</td>
+<td>biologiste clinique</td>
+<td>klinisch bioloog</td></tr>
+<tr><td>persclinicalinfectiologist</td>
+<td>klinischer Infektiologe</td>
+<td>clinical infectiologist</td>
+<td>infectiologue clinicien</td>
+<td>klinische infectioloog</td></tr>
+<tr><td>persclinicalorthopedagogist</td>
+<td>klinischer Orthopädagoge</td>
+<td>clinical orthopedagogist</td>
+<td>orthopédagogue clinique</td>
+<td>klinisch orthopedagoog</td></tr>
+<tr><td>persclinicalpsychologist</td>
+<td>klinischer Psychologe</td>
+<td>clinical psychologist</td>
+<td>psychologue clinicien</td>
+<td>klinisch psycholoog</td></tr>
+<tr><td>persdentalhygienist</td>
+<td>Dentalhygieniker</td>
+<td>dental hygienist</td>
+<td>hygiéniste bucco-dentaire</td>
+<td>mondhygiënist</td></tr>
+<tr><td>persdentist</td>
+<td>Zahnarzt</td>
+<td>dentist</td>
+<td>dentiste</td>
+<td>tandarts</td></tr>
+<tr><td>persdermatovenereologist</td>
+<td>Dermato-Venerologe</td>
+<td>dermato venereologist</td>
+<td>dermato-vénéréologue</td>
+<td>dermato-venereoloog</td></tr>
+<tr><td>persdiabeticeducator</td>
+<td>Diabetesberater</td>
+<td>diabetis educator</td>
+<td>éducateur diabétique</td>
+<td>diabeteseducator</td></tr>
+<tr><td>persdiabetologist</td>
+<td>Diabetologe</td>
+<td>diabetologist</td>
+<td>diabétologue</td>
+<td>diabetoloog</td></tr>
+<tr><td>persdietician</td>
+<td>Diätist</td>
+<td>dietician</td>
+<td>diététicien</td>
+<td>diëtist</td></tr>
+<tr><td>perseducator</td>
+<td>Erzieher</td>
+<td>educator</td>
+<td>éducateur</td>
+<td>opvoeder</td></tr>
+<tr><td>persemergencyphycisian</td>
+<td>Notarzt</td>
+<td>emergency physician</td>
+<td>médecin urgentiste</td>
+<td>spoedarts</td></tr>
+<tr><td>persendocrinodiabetologist</td>
+<td>Endokrinologe/Diabetologe</td>
+<td>endocrino-diabetologist</td>
+<td>endocrino-diabétologue</td>
+<td>endocrinoloog diabetoloog</td></tr>
+<tr><td>persfamilysciencebachelor</td>
+<td>Bachelor in Familienwissenschaften</td>
+<td>bachelor in family sciences</td>
+<td>bachelier en sciences de la famille</td>
+<td>bachelor in de gezinswetenschappen</td></tr>
+<tr><td>persforensicpsychiatrust</td>
+<td>Gerichtspsychiater</td>
+<td>forensic psychiatrist</td>
+<td>psychiatre médico-légal</td>
+<td>forensisch psychiater</td></tr>
+<tr><td>persgastroenterologist</td>
+<td>Gastroenterologe</td>
+<td>gastroenterologist</td>
+<td>gastro-entérologue</td>
+<td>gastro-enteroloog</td></tr>
+<tr><td>persgeneralphysician</td>
+<td>Hausarzt</td>
+<td>general practitioner</td>
+<td>médecin général</td>
+<td>huisarts</td></tr>
+<tr><td>persgeriatrist</td>
+<td>Geriater</td>
+<td>geriatrist</td>
+<td>gériatre</td>
+<td>geriater</td></tr>
+<tr><td>persgerontologymaster</td>
+<td>Master in Gerontologie</td>
+<td>master in gerontological sciences</td>
+<td>master en gérontologie</td>
+<td>master in de gerontologie</td></tr>
+<tr><td>persgynecologistobstetrics</td>
+<td>Gynäkologe Geburtshilfe</td>
+<td>gynecologist obstetrics</td>
+<td>gynécologue-obstétricien</td>
+<td>verloskundige-gynaecoloog</td></tr>
+<tr><td>pershealthdatamanagemer</td>
+<td>Gesundheitsdaten-Manager</td>
+<td>health data manager</td>
+<td>gestionnaire des données de santé</td>
+<td>beheerder van gezondheidsgegevens</td></tr>
+<tr><td>pershospitalpharmacist</td>
+<td>Krankenhausapotheker</td>
+<td>hospital pharmacist</td>
+<td>pharmacien hospitalier</td>
+<td>ziekenhuisapotheker</td></tr>
+<tr><td>persinsurancephysician</td>
+<td>Versicherungsarzt und medizinischer Gutachter</td>
+<td>insurance doctor and  medical expert</td>
+<td>médecin d'assurance et expert médical</td>
+<td>verzekeringsarts en medisch expert</td></tr>
+<tr><td>persinternalphysician</td>
+<td>Internist</td>
+<td>internist</td>
+<td>médecin interniste</td>
+<td>internist</td></tr>
+<tr><td>perslabtechnologist</td>
+<td>medizinischer Labortechnologe</td>
+<td>medical lab technologist</td>
+<td>technologue de laboratoire médical</td>
+<td>medisch laboratoriumtechnoloog</td></tr>
+<tr><td>perslegalphysician</td>
+<td>Gerichtsarzt</td>
+<td>legal physician</td>
+<td>médecin légiste</td>
+<td>gerechtsarts</td></tr>
+<tr><td>perslogopedist</td>
+<td>Logopäde</td>
+<td>logopedist</td>
+<td>logopède</td>
+<td>logopedist</td></tr>
+<tr><td>persmanualtherapist</td>
+<td>Manualtherapeut</td>
+<td>manual therapist</td>
+<td>kinesithérapeute manuel</td>
+<td>manueel therapeut</td></tr>
+<tr><td>persmedicalimaging</td>
+<td>Technologe im bildgebenden Diagnoseverfahren</td>
+<td>medical imaging technologist</td>
+<td>technologue en imagerie médicale</td>
+<td>technoloog medische beeldvorming</td></tr>
+<tr><td>persmedicalmicrobiologist</td>
+<td>medizinischer Mikrobiologe</td>
+<td>medical microbiologist</td>
+<td>microbiologiste médical</td>
+<td>medisch microbioloog</td></tr>
+<tr><td>persmidwife</td>
+<td>Hebamme</td>
+<td>midwife</td>
+<td>sage-femme</td>
+<td>vroedvrouw</td></tr>
+<tr><td>persneonatologist</td>
+<td>Neonatologe</td>
+<td>neonatologist</td>
+<td>néonatologue</td>
+<td>neonatoloog</td></tr>
+<tr><td>persnephrologist</td>
+<td>Nephrologe</td>
+<td>nephrologist</td>
+<td>néphrologue</td>
+<td>nefroloog</td></tr>
+<tr><td>persneurologicalphysiotherapist</td>
+<td>neurologischer Physiotherapeut</td>
+<td>neurological physiotherapist</td>
+<td>kinésithérapeute neurologique</td>
+<td>neurologisch kinesitherapeut</td></tr>
+<tr><td>persneurologist</td>
+<td>Neurologe</td>
+<td>neurologist</td>
+<td>neurologue</td>
+<td>neuroloog</td></tr>
+<tr><td>persneuropsychiatrist</td>
+<td>Neuropsychiater</td>
+<td>neuropsychiatrist</td>
+<td>neuropsychiatre</td>
+<td>neuropsychiater</td></tr>
+<tr><td>persneurosurger</td>
+<td>Neurochirurg</td>
+<td>neurosurgeon</td>
+<td>neurochirurgien</td>
+<td>neurochirurg</td></tr>
+<tr><td>persnonsurgicalaestheticphysician</td>
+<td>nicht-chirurgischer ästhetischer Arzt</td>
+<td>non surgical aesthetic physician</td>
+<td>médecin esthétique non chirurgical</td>
+<td>niet-chirurgisch esthetisch arts</td></tr>
+<tr><td>persnurse</td>
+<td>Krankenpfleger/in</td>
+<td>nurse</td>
+<td>infirmier</td>
+<td>verpleegkundige</td></tr>
+<tr><td>persoccupationalphysician</td>
+<td>Arbeitsmediziner</td>
+<td>occupational physician</td>
+<td>médecin du travail</td>
+<td>bedrijfsarts</td></tr>
+<tr><td>persoccupationaltherapist</td>
+<td>Ergotherapeute</td>
+<td>occupational therapist</td>
+<td>ergothérapeute</td>
+<td>ergotherapeut</td></tr>
+<tr><td>personcologist</td>
+<td>Onkologe</td>
+<td>oncologist</td>
+<td>oncologue</td>
+<td>oncoloog</td></tr>
+<tr><td>persophthalmologist</td>
+<td>Augenarzt</td>
+<td>ophthalmologist</td>
+<td>ophtalmologue</td>
+<td>oogarts</td></tr>
+<tr><td>persoptician</td>
+<td>Optiker</td>
+<td>optician</td>
+<td>opticien</td>
+<td>opticien</td></tr>
+<tr><td>persoraldentalhygienist</td>
+<td>Dentalhygieniker</td>
+<td>oral dental hygienist</td>
+<td>hygiéniste bucco-dentaire</td>
+<td>mondhygiënist</td></tr>
+<tr><td>persoralmaxillofacialsurger</td>
+<td>Mund-, Kiefer-Gesichtschirurg</td>
+<td>oral and maxillofacial surgeon</td>
+<td>chirurgien oral et maxillo-facial</td>
+<td>mond-, kaak- en aangezichtschirurg</td></tr>
+<tr><td>persorthodontist</td>
+<td>Kieferorthopäde</td>
+<td>orthodontist</td>
+<td>orthodontiste</td>
+<td>orthodontist</td></tr>
+<tr><td>persorthopedagogistmaster</td>
+<td>Master in Orthopädagogik</td>
+<td>master in orthopedagogy</td>
+<td>master en orthopédagogie</td>
+<td>master in de orthopedagogie</td></tr>
+<tr><td>persorthopedist</td>
+<td>Orthopädist</td>
+<td>orthopedist</td>
+<td>orthopédiste</td>
+<td>orthopedist</td></tr>
+<tr><td>persorthoptist</td>
+<td>Orthoptist</td>
+<td>orthoptist</td>
+<td>orthoptiste</td>
+<td>orthoptist</td></tr>
+<tr><td>persorthotist</td>
+<td>Orthopädietechniker</td>
+<td>orthotist</td>
+<td>orthésiste/prothésiste</td>
+<td>orthopedische technieker</td></tr>
+<tr><td>persotolaryngologist</td>
+<td>Hals-Nasen-Ohren-Arzt</td>
+<td>otolaryngologist</td>
+<td>oto-rhino-laryngologue</td>
+<td>neus-keel- en oorarts</td></tr>
+<tr><td>persparamedical</td>
+<td>Medizinisches Hilfspersonal</td>
+<td>paramedical staff</td>
+<td>personnel paramédical</td>
+<td>paramedisch personeel</td></tr>
+<tr><td>perspatientdriver</td>
+<td>Patientenfahrer (nicht dringend)</td>
+<td>patient driver (not urgent)</td>
+<td>transporteur de patient (non urgent)</td>
+<td>ziekenvervoerder (niet urgent)</td></tr>
+<tr><td>perspedagogybachelor</td>
+<td>Bachelor in Pädagogik</td>
+<td>bachelor in pedagogy</td>
+<td>bachelier en pédagogie</td>
+<td>bachelor in de opvoedkunde</td></tr>
+<tr><td>perspediatrichematologistoncologist</td>
+<td>pädiatrischer Hämatologe Onkologe</td>
+<td>pediatric hematologist oncologist</td>
+<td>hématologue et oncologue pédiatrique</td>
+<td>pediatrisch hematoloog en oncoloog</td></tr>
+<tr><td>perspediatrician</td>
+<td>Kinderarzt</td>
+<td>pediatrician</td>
+<td>pédiatre</td>
+<td>kinderarts</td></tr>
+<tr><td>perspediatricneurologist</td>
+<td>Kinderneurologe</td>
+<td>pediatric neurologist</td>
+<td>neurologue pédiatrique</td>
+<td>kinderneuroloog</td></tr>
+<tr><td>perspediatricphysiotherapist</td>
+<td>Kinderphysiotherapeut</td>
+<td>pediatric physiotherapist</td>
+<td>kinésithérapeute pédiatrique</td>
+<td>pediatrisch kinesitherapeut</td></tr>
+<tr><td>persperiodontologist</td>
+<td>Parodontologe</td>
+<td>periodontologist</td>
+<td>parodontologue</td>
+<td>parodontoloog</td></tr>
+<tr><td>perspharmacist</td>
+<td>Apotheker</td>
+<td>pharmacist</td>
+<td>pharmacien</td>
+<td>apotheker</td></tr>
+<tr><td>perspharmacistclinicalbiologist</td>
+<td>Apotheker-klinischer Biologe</td>
+<td>pharmacist-clinical biologist</td>
+<td>pharmacien-biologiste clinicien</td>
+<td>apotheker-klinisch bioloog</td></tr>
+<tr><td>perspharmacyassistant</td>
+<td>pharmazeutischer Assistent</td>
+<td>pharmacy assistant</td>
+<td>assistant en pharmacie</td>
+<td>apothekersassistent</td></tr>
+<tr><td>persphysicalphysician</td>
+<td>physikaler und Rehabilitationsmediziner</td>
+<td>physical and rehabilitation doctor</td>
+<td>médecin physique et réadaptation</td>
+<td>fysiotherapeut en revalidatiearts</td></tr>
+<tr><td>persphysician</td>
+<td>Arzt</td>
+<td>physician</td>
+<td>médecin</td>
+<td>arts</td></tr>
+<tr><td>persphysiotherapist</td>
+<td>Physiotherapeut</td>
+<td>physiotherapist</td>
+<td>kinésithérapeute</td>
+<td>kinesitherapeut</td></tr>
+<tr><td>perspneumologist</td>
+<td>Lungenarzt</td>
+<td>pneumologist</td>
+<td>pneumologue</td>
+<td>pneumoloog</td></tr>
+<tr><td>perspodologist</td>
+<td>Podologe</td>
+<td>podologist</td>
+<td>podologue</td>
+<td>podologist</td></tr>
+<tr><td>perspracticalnurse</td>
+<td>Pfleger</td>
+<td>practical nurse</td>
+<td>aide-soignante</td>
+<td>verzorgende</td></tr>
+<tr><td>persprothesist</td>
+<td>Prothesist</td>
+<td>prothesist</td>
+<td>prothésiste</td>
+<td>prothesist</td></tr>
+<tr><td>perspsychatrist</td>
+<td>Psychiater</td>
+<td>psychatrist</td>
+<td>psychiatre</td>
+<td>psychiater</td></tr>
+<tr><td>perspsychologist</td>
+<td>Psychologe</td>
+<td>psychologist</td>
+<td>psychologue</td>
+<td>psycholoog</td></tr>
+<tr><td>perspsychomotortherapymaster</td>
+<td>Master in Psychomotorik</td>
+<td>master in psychomotor therapy</td>
+<td>master en thérapie psychomotrice</td>
+<td>master in de psychomotorische therapie</td></tr>
+<tr><td>persreadaptationbachelor</td>
+<td>Bachelor in Psysiotherapie und Rehabilitation</td>
+<td>bachelor in physiotherapy and rehabilitation</td>
+<td>bachelier en kinésithérapie et réadaptation</td>
+<td>bachelor in de readaptatiewetenschappen</td></tr>
+<tr><td>persrespiratoryphysiotherapist</td>
+<td>Atemphysiotherapeut</td>
+<td>respiratory physiotherapist</td>
+<td>kinésithérapeute respiratoire</td>
+<td>respiratoire kinesitherapeut</td></tr>
+<tr><td>persrheumatologist</td>
+<td>Rheumatologe</td>
+<td>rheumatologist</td>
+<td>rhumatologue</td>
+<td>reumatoloog</td></tr>
+<tr><td>perssocialworker</td>
+<td>Sozialarbeiter</td>
+<td>social worker</td>
+<td>travailleur social</td>
+<td>maatschappelijk werker</td></tr>
+<tr><td>persstomatologist</td>
+<td>Stomatologe</td>
+<td>stomatologist</td>
+<td>stomatologue</td>
+<td>stomatoloog</td></tr>
+<tr><td>perssurger</td>
+<td>Chirurg</td>
+<td>surgeon</td>
+<td>chirurgien</td>
+<td>chirurg</td></tr>
+<tr><td>perstechnician</td>
+<td>Techniker für medizinische Bildgebung</td>
+<td>medical imaging technician</td>
+<td>technicien d'imagerie médicale</td>
+<td>technicus medische beeldvorming</td></tr>
+<tr><td>perstrussmaker</td>
+<td>Bandagist</td>
+<td>bandagist</td>
+<td>bandagiste</td>
+<td>bandagist</td></tr>
+<tr><td>persurologist</td>
+<td>Urologe</td>
+<td>urologist</td>
+<td>urologue</td>
+<td>uroloog</td></tr>
+<tr><td>persoptometrist</td>
+<td>Optometrist</td>
+<td>optometrist</td>
+<td>optométriste</td>
+<td>optometrist</td></tr>
+<tr><td>persmobilityimprover</td>
+<td>Mobilitätsverbesserer (Orthopädietechniker)</td>
+<td>mobility improver (orthopedic technologist)</td>
+<td>améliorateur de mobilité (technologue en orthopédie)</td>
+<td>mobiliteitsverbeteraar (orthopedisch technoloog)</td></tr>
+<tr><td>persbandagistorthosiologist</td>
+<td>Bandagist Orthosiologe (Orthopädietechniker)</td>
+<td>bandagist orthosiologist (orthopedic technologist)</td>
+<td>orthosiologue bandagiste (technologue en orthopédie)</td>
+<td>bandagist orthosioloog (orthopedisch technoloog)</td></tr>
+<tr><td>persprosthesiologist</td>
+<td>Orthopädietechniker (Orthopädietechniker)</td>
+<td>prosthesiologist (orthopedic technologist)</td>
+<td>prothésiste (technologue en orthopédie)</td>
+<td>prothesemaker (orthopedisch technoloog)</td></tr>
+<tr><td>persshoetechnologist</td>
+<td>Schuhtechniker (Orthopädietechniker)</td>
+<td>shoe technologist (orthopedic technologist)</td>
+<td>technicien de chaussures (technologue en orthopédie)</td>
+<td>schoentechnicus (orthopedisch technoloog)</td></tr>
+<tr><td>orgpharmacyinvoicingoffice</td>
+<td>Rechnungstelle für Apotheken</td>
+<td>pharmacy invoicing office</td>
+<td>office de tarification</td>
+<td>facturatie kantoor apotheek</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 18:11+0000">2025-10-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- My Organization -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7belgium.org/profiles/fhir/terminology/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-exposureroute"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-exposureroute</b></p><a name="be-exposureroute"> </a><a name="hcbe-exposureroute"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/447694001">447694001</a></td><td style="color: #cccccc">Respiratory tract route (qualifier value)</td><td>Respiratory tract route</td></tr><tr><td><a href="http://snomed.info/id/6064005">6064005</a></td><td style="color: #cccccc">Topical route</td><td>Topical route</td></tr><tr><td><a href="http://snomed.info/id/26643006">26643006</a></td><td style="color: #cccccc">Oral route</td><td>Oral route</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute"/>
+  <version value="1.0.0"/>
+  <name value="BeExposureRoute"/>
+  <title value="BeExposureRoute"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="447694001"/>
+        <designation>
+          <language value="en"/>
+          <value value="Respiratory tract route"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6064005"/>
+        <designation>
+          <language value="en"/>
+          <value value="Topical route"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26643006"/>
+        <designation>
+          <language value="en"/>
+          <value value="Oral route"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

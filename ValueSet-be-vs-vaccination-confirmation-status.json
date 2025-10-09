@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-vaccination-confirmation-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-vaccination-confirmation-status</b></p><a name=\"be-vs-vaccination-confirmation-status\"> </a><a name=\"hcbe-vs-vaccination-confirmation-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-vaccination-confirmation-status.html\"><code>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-confirmation-status",
+  "version" : "1.0.0",
+  "name" : "BeVSVaccinationConfirmationStatus",
+  "title" : "BeVSVaccinationConfirmationStatus",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-03-24T16:01:36+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Vaccination status Value Set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"
+    }]
+  }
+}

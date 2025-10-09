@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-gender-at-birth"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-gender-at-birth</b></p><a name="be-vs-gender-at-birth"> </a><a name="hcbe-vs-gender-at-birth"> </a><ul><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html"><code>http://hl7.org/fhir/administrative-gender</code></a> version <span title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references">&#x1F4E6;4.0.1</span></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth"/>
+  <version value="1.0.0"/>
+  <name value="BeVSGenderAtBirth"/>
+  <title value="List of possible genders at birth in Belgium"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-30T17:36:02+02:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="BeVSGenderAtBirth"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/administrative-gender"/>
+    </include>
+  </compose>
+</ValueSet>

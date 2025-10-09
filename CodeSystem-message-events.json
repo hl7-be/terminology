@@ -1,0 +1,137 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "message-events",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem message-events</b></p><a name=\"message-events\"> </a><a name=\"hcmessage-events\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">claim-ask<a name=\"message-events-claim-ask\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-cancel<a name=\"message-events-claim-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-completeAgreement<a name=\"message-events-claim-completeAgreement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-extend<a name=\"message-events-claim-extend\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-argue<a name=\"message-events-claim-argue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-decide<a name=\"message-events-claimresponse-decide\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-cancel<a name=\"message-events-claimresponse-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-request-for-argue<a name=\"message-events-claimresponse-request-for-argue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-close<a name=\"message-events-claimresponse-close\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-completeAgreement<a name=\"message-events-claimresponse-completeAgreement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">reject<a name=\"message-events-reject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattest-create<a name=\"message-events-eattest-create\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattestresponse-create<a name=\"message-events-eattestresponse-create\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattest-cancel<a name=\"message-events-eattest-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattestresponse-cancel<a name=\"message-events-eattestresponse-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">etariff-consult<a name=\"message-events-etariff-consult\"> </a></td></tr><tr><td style=\"white-space:nowrap\">etariffresponse-consult<a name=\"message-events-etariffresponse-consult\"> </a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  }],
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events",
+  "version" : "1.0.0",
+  "name" : "MyCareNetMessageEvents",
+  "title" : "CodeSystem message events",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-17T19:47:43+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "fragment",
+  "concept" : [{
+    "code" : "claim-ask",
+    "display" : "claim-ask"
+  },
+  {
+    "code" : "claim-cancel",
+    "display" : "claim-cancel"
+  },
+  {
+    "code" : "claim-completeAgreement",
+    "display" : "claim-completeAgreement"
+  },
+  {
+    "code" : "claim-extend",
+    "display" : "claim-extend"
+  },
+  {
+    "code" : "claim-argue",
+    "display" : "claim-argue"
+  },
+  {
+    "code" : "claimresponse-decide",
+    "display" : "claimresponse-decide"
+  },
+  {
+    "code" : "claimresponse-cancel",
+    "display" : "claimresponse-cancel"
+  },
+  {
+    "code" : "claimresponse-request-for-argue",
+    "display" : "claimresponse-request-for-argue"
+  },
+  {
+    "code" : "claimresponse-close",
+    "display" : "claimresponse-close"
+  },
+  {
+    "code" : "claimresponse-completeAgreement",
+    "display" : "claimresponse-completeAgreement"
+  },
+  {
+    "code" : "reject",
+    "display" : "reject"
+  },
+  {
+    "code" : "eattest-create",
+    "display" : "eattest-create"
+  },
+  {
+    "code" : "eattestresponse-create",
+    "display" : "eattestresponse-create"
+  },
+  {
+    "code" : "eattest-cancel",
+    "display" : "eattest-cancel"
+  },
+  {
+    "code" : "eattestresponse-cancel",
+    "display" : "eattestresponse-cancel"
+  },
+  {
+    "code" : "etariff-consult",
+    "display" : "etariff-consult"
+  },
+  {
+    "code" : "etariffresponse-consult",
+    "display" : "etariffresponse-consult"
+  }]
+}

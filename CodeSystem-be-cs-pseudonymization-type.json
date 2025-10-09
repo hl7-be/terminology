@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-pseudonymization-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-pseudonymization-type</b></p><a name=\"be-cs-pseudonymization-type\"> </a><a name=\"hcbe-cs-pseudonymization-type\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">direct<a name=\"be-cs-pseudonymization-type-direct\"> </a></td><td>Direct pseudonym, for text shorter than 32 bytes</td></tr><tr><td style=\"white-space:nowrap\">encrypted<a name=\"be-cs-pseudonymization-type-encrypted\"> </a></td><td>Encrypted pseudonym, for text longer than 32 bytes</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type",
+  "version" : "1.0.0",
+  "name" : "BeCSPseudonymizationType",
+  "title" : "Types of pseudonymization",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-12T09:42:51+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The technique used for pseudonymization",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "direct",
+    "display" : "Direct pseudonym, for text shorter than 32 bytes"
+  },
+  {
+    "code" : "encrypted",
+    "display" : "Encrypted pseudonym, for text longer than 32 bytes"
+  }]
+}

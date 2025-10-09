@@ -1,0 +1,236 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/annex-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "annex-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem annex-types</b></p><a name=\"annex-types\"> </a><a name=\"hcannex-types\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/annex-types</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">functional-report<a name=\"annex-types-functional-report\"> </a></td><td>functional-report</td></tr><tr><td style=\"white-space:nowrap\">medical-report<a name=\"annex-types-medical-report\"> </a></td><td>medical-report</td></tr><tr><td style=\"white-space:nowrap\">physiotherapist-report<a name=\"annex-types-physiotherapist-report\"> </a></td><td>physiotherapist-report</td></tr><tr><td style=\"white-space:nowrap\">cra-justification<a name=\"annex-types-cra-justification\"> </a></td><td>cra-justification</td></tr><tr><td style=\"white-space:nowrap\">scoliosis-protocol<a name=\"annex-types-scoliosis-protocol\"> </a></td><td>scoliosis-protocol</td></tr><tr><td style=\"white-space:nowrap\">rheumatology-report<a name=\"annex-types-rheumatology-report\"> </a></td><td>rheumatology-report</td></tr><tr><td style=\"white-space:nowrap\">radiology-protocol<a name=\"annex-types-radiology-protocol\"> </a></td><td>radiology-protocol</td></tr><tr><td style=\"white-space:nowrap\">mevs-results<a name=\"annex-types-mevs-results\"> </a></td><td>mevs-results</td></tr><tr><td style=\"white-space:nowrap\">perimetry-lymphoscintigraphy-results<a name=\"annex-types-perimetry-lymphoscintigraphy-results\"> </a></td><td>perimetry-lymphoscintigraphy-results</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"annex-types-other\"> </a></td><td>other</td></tr><tr><td style=\"white-space:nowrap\">776100<a name=\"annex-types-776100\"> </a></td><td>7.76.1 - Sequelae of female genital mutilation</td></tr><tr><td style=\"white-space:nowrap\">776201<a name=\"annex-types-776201\"> </a></td><td>7.76.2 - Support for transidentity</td></tr><tr><td style=\"white-space:nowrap\">776601<a name=\"annex-types-776601\"> </a></td><td>7.76.6 - Pediatric rehabilitation</td></tr><tr><td style=\"white-space:nowrap\">776001<a name=\"annex-types-776001\"> </a></td><td>7.76.0 - AIDS and HIV</td></tr><tr><td style=\"white-space:nowrap\">778101<a name=\"annex-types-778101\"> </a></td><td>7.78.1 - Memory clinic</td></tr><tr><td style=\"white-space:nowrap\">781501<a name=\"annex-types-781501\"> </a></td><td>7.81.5 - Severe chronic respiratory conditions</td></tr><tr><td style=\"white-space:nowrap\">781001<a name=\"annex-types-781001\"> </a></td><td>7.81.x - Long-term oxygen therapy at home</td></tr><tr><td style=\"white-space:nowrap\">782101<a name=\"annex-types-782101\"> </a></td><td>7.82.1 - Cardiac rehabilitation</td></tr><tr><td style=\"white-space:nowrap\">782501<a name=\"annex-types-782501\"> </a></td><td>7.82.5 - Support in case of unwanted pregnancy</td></tr><tr><td style=\"white-space:nowrap\">783101<a name=\"annex-types-783101\"> </a></td><td>7.83.1 - Unexpected and unexplained death of a child under 18 months</td></tr><tr><td style=\"white-space:nowrap\">783501<a name=\"annex-types-783501\"> </a></td><td>7.83.5 - Sudden death monitoring</td></tr><tr><td style=\"white-space:nowrap\">783601<a name=\"annex-types-783601\"> </a></td><td>7.83.6 - Children born prematurely</td></tr><tr><td style=\"white-space:nowrap\">784501<a name=\"annex-types-784501\"> </a></td><td>7.84.5 - Pediatric neuropsychiatric rehabilitation</td></tr><tr><td style=\"white-space:nowrap\">785201<a name=\"annex-types-785201\"> </a></td><td>7.85.2 - Home ventilatory assistance</td></tr><tr><td style=\"white-space:nowrap\">785301<a name=\"annex-types-785301\"> </a></td><td>7.85.3 - Home ventilatory assistance - obesity-hypoventilation syndrome</td></tr><tr><td style=\"white-space:nowrap\">785001<a name=\"annex-types-785001\"> </a></td><td>7.85.x - Obstructive sleep apnea</td></tr><tr><td style=\"white-space:nowrap\">786501<a name=\"annex-types-786501\"> </a></td><td>7.86.5 - Insulin pump</td></tr><tr><td style=\"white-space:nowrap\">786701<a name=\"annex-types-786701\"> </a></td><td>7.86.7 - Self-regulation of diabetes in children</td></tr><tr><td style=\"white-space:nowrap\">786801<a name=\"annex-types-786801\"> </a></td><td>7.86.8 - Clinics of diabetic foot</td></tr><tr><td style=\"white-space:nowrap\">786901<a name=\"annex-types-786901\"> </a></td><td>7.86.9 - Advanced or expensive technologies in a specialized center</td></tr><tr><td style=\"white-space:nowrap\">786001<a name=\"annex-types-786001\"> </a></td><td>7.86.x - Self-management of adult diabetic patients</td></tr><tr><td style=\"white-space:nowrap\">789101<a name=\"annex-types-789101\"> </a></td><td>7.89.1 - Cystic fibrosis</td></tr><tr><td style=\"white-space:nowrap\">789201<a name=\"annex-types-789201\"> </a></td><td>7.89.2 - Neuromuscular disease</td></tr><tr><td style=\"white-space:nowrap\">789301<a name=\"annex-types-789301\"> </a></td><td>7.89.3 - Intractable epilepsy</td></tr><tr><td style=\"white-space:nowrap\">789401<a name=\"annex-types-789401\"> </a></td><td>7.89.4 - Chronic fatigue syndrome (CFS)</td></tr><tr><td style=\"white-space:nowrap\">789501<a name=\"annex-types-789501\"> </a></td><td>7.89.5 - Cerebral palsy</td></tr><tr><td style=\"white-space:nowrap\">789551<a name=\"annex-types-789551\"> </a></td><td>7.89.55 - IMOC - Spina-Bifida</td></tr><tr><td style=\"white-space:nowrap\">789701<a name=\"annex-types-789701\"> </a></td><td>7.89.7 - Pediatric nephrology</td></tr><tr><td style=\"white-space:nowrap\">789801<a name=\"annex-types-789801\"> </a></td><td>7.89.8 - Hemophilia</td></tr><tr><td style=\"white-space:nowrap\">789901<a name=\"annex-types-789901\"> </a></td><td>7.89.9 - Lymphedema</td></tr><tr><td style=\"white-space:nowrap\">789001<a name=\"annex-types-789001\"> </a></td><td>7.89.0 - Rare hereditary monogenic metabolic disease</td></tr><tr><td style=\"white-space:nowrap\">950<a name=\"annex-types-950\"> </a></td><td>9.50 - General locomotor rehabilitation centers</td></tr><tr><td style=\"white-space:nowrap\">951<a name=\"annex-types-951\"> </a></td><td>9.51 - Conventions R30 - R60</td></tr><tr><td style=\"white-space:nowrap\">resth-in<a name=\"annex-types-resth-in\"> </a></td><td>Retirement home - (Re)admission/transfer/change category-scale/extension</td></tr><tr><td style=\"white-space:nowrap\">resth-out<a name=\"annex-types-resth-out\"> </a></td><td>Retirement home - Closure</td></tr><tr><td style=\"white-space:nowrap\">psyh-in<a name=\"annex-types-psyh-in\"> </a></td><td>Psychiatric home - Admission/extension</td></tr><tr><td style=\"white-space:nowrap\">psyh-out<a name=\"annex-types-psyh-out\"> </a></td><td>Psychiatric home - Closure</td></tr><tr><td style=\"white-space:nowrap\">ihp-in<a name=\"annex-types-ihp-in\"> </a></td><td>Sheltered living - Admission/extension</td></tr><tr><td style=\"white-space:nowrap\">ihp-out<a name=\"annex-types-ihp-out\"> </a></td><td>Sheltered living - Closure</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/annex-types"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MyCareNetAnnexTypes"] ; # 
+  fhir:title [ fhir:v "CodeSystem annex types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-02-17T19:47:43+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "functional-report" ] ;
+     fhir:display [ fhir:v "functional-report" ]
+  ] [
+     fhir:code [ fhir:v "medical-report" ] ;
+     fhir:display [ fhir:v "medical-report" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapist-report" ] ;
+     fhir:display [ fhir:v "physiotherapist-report" ]
+  ] [
+     fhir:code [ fhir:v "cra-justification" ] ;
+     fhir:display [ fhir:v "cra-justification" ]
+  ] [
+     fhir:code [ fhir:v "scoliosis-protocol" ] ;
+     fhir:display [ fhir:v "scoliosis-protocol" ]
+  ] [
+     fhir:code [ fhir:v "rheumatology-report" ] ;
+     fhir:display [ fhir:v "rheumatology-report" ]
+  ] [
+     fhir:code [ fhir:v "radiology-protocol" ] ;
+     fhir:display [ fhir:v "radiology-protocol" ]
+  ] [
+     fhir:code [ fhir:v "mevs-results" ] ;
+     fhir:display [ fhir:v "mevs-results" ]
+  ] [
+     fhir:code [ fhir:v "perimetry-lymphoscintigraphy-results" ] ;
+     fhir:display [ fhir:v "perimetry-lymphoscintigraphy-results" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "776100" ] ;
+     fhir:display [ fhir:v "7.76.1 - Sequelae of female genital mutilation" ]
+  ] [
+     fhir:code [ fhir:v "776201" ] ;
+     fhir:display [ fhir:v "7.76.2 - Support for transidentity" ]
+  ] [
+     fhir:code [ fhir:v "776601" ] ;
+     fhir:display [ fhir:v "7.76.6 - Pediatric rehabilitation" ]
+  ] [
+     fhir:code [ fhir:v "776001" ] ;
+     fhir:display [ fhir:v "7.76.0 - AIDS and HIV" ]
+  ] [
+     fhir:code [ fhir:v "778101" ] ;
+     fhir:display [ fhir:v "7.78.1 - Memory clinic" ]
+  ] [
+     fhir:code [ fhir:v "781501" ] ;
+     fhir:display [ fhir:v "7.81.5 - Severe chronic respiratory conditions" ]
+  ] [
+     fhir:code [ fhir:v "781001" ] ;
+     fhir:display [ fhir:v "7.81.x - Long-term oxygen therapy at home" ]
+  ] [
+     fhir:code [ fhir:v "782101" ] ;
+     fhir:display [ fhir:v "7.82.1 - Cardiac rehabilitation" ]
+  ] [
+     fhir:code [ fhir:v "782501" ] ;
+     fhir:display [ fhir:v "7.82.5 - Support in case of unwanted pregnancy" ]
+  ] [
+     fhir:code [ fhir:v "783101" ] ;
+     fhir:display [ fhir:v "7.83.1 - Unexpected and unexplained death of a child under 18 months" ]
+  ] [
+     fhir:code [ fhir:v "783501" ] ;
+     fhir:display [ fhir:v "7.83.5 - Sudden death monitoring" ]
+  ] [
+     fhir:code [ fhir:v "783601" ] ;
+     fhir:display [ fhir:v "7.83.6 - Children born prematurely" ]
+  ] [
+     fhir:code [ fhir:v "784501" ] ;
+     fhir:display [ fhir:v "7.84.5 - Pediatric neuropsychiatric rehabilitation" ]
+  ] [
+     fhir:code [ fhir:v "785201" ] ;
+     fhir:display [ fhir:v "7.85.2 - Home ventilatory assistance" ]
+  ] [
+     fhir:code [ fhir:v "785301" ] ;
+     fhir:display [ fhir:v "7.85.3 - Home ventilatory assistance - obesity-hypoventilation syndrome" ]
+  ] [
+     fhir:code [ fhir:v "785001" ] ;
+     fhir:display [ fhir:v "7.85.x - Obstructive sleep apnea" ]
+  ] [
+     fhir:code [ fhir:v "786501" ] ;
+     fhir:display [ fhir:v "7.86.5 - Insulin pump" ]
+  ] [
+     fhir:code [ fhir:v "786701" ] ;
+     fhir:display [ fhir:v "7.86.7 - Self-regulation of diabetes in children" ]
+  ] [
+     fhir:code [ fhir:v "786801" ] ;
+     fhir:display [ fhir:v "7.86.8 - Clinics of diabetic foot" ]
+  ] [
+     fhir:code [ fhir:v "786901" ] ;
+     fhir:display [ fhir:v "7.86.9 - Advanced or expensive technologies in a specialized center" ]
+  ] [
+     fhir:code [ fhir:v "786001" ] ;
+     fhir:display [ fhir:v "7.86.x - Self-management of adult diabetic patients" ]
+  ] [
+     fhir:code [ fhir:v "789101" ] ;
+     fhir:display [ fhir:v "7.89.1 - Cystic fibrosis" ]
+  ] [
+     fhir:code [ fhir:v "789201" ] ;
+     fhir:display [ fhir:v "7.89.2 - Neuromuscular disease" ]
+  ] [
+     fhir:code [ fhir:v "789301" ] ;
+     fhir:display [ fhir:v "7.89.3 - Intractable epilepsy" ]
+  ] [
+     fhir:code [ fhir:v "789401" ] ;
+     fhir:display [ fhir:v "7.89.4 - Chronic fatigue syndrome (CFS)" ]
+  ] [
+     fhir:code [ fhir:v "789501" ] ;
+     fhir:display [ fhir:v "7.89.5 - Cerebral palsy" ]
+  ] [
+     fhir:code [ fhir:v "789551" ] ;
+     fhir:display [ fhir:v "7.89.55 - IMOC - Spina-Bifida" ]
+  ] [
+     fhir:code [ fhir:v "789701" ] ;
+     fhir:display [ fhir:v "7.89.7 - Pediatric nephrology" ]
+  ] [
+     fhir:code [ fhir:v "789801" ] ;
+     fhir:display [ fhir:v "7.89.8 - Hemophilia" ]
+  ] [
+     fhir:code [ fhir:v "789901" ] ;
+     fhir:display [ fhir:v "7.89.9 - Lymphedema" ]
+  ] [
+     fhir:code [ fhir:v "789001" ] ;
+     fhir:display [ fhir:v "7.89.0 - Rare hereditary monogenic metabolic disease" ]
+  ] [
+     fhir:code [ fhir:v "950" ] ;
+     fhir:display [ fhir:v "9.50 - General locomotor rehabilitation centers" ]
+  ] [
+     fhir:code [ fhir:v "951" ] ;
+     fhir:display [ fhir:v "9.51 - Conventions R30 - R60" ]
+  ] [
+     fhir:code [ fhir:v "resth-in" ] ;
+     fhir:display [ fhir:v "Retirement home - (Re)admission/transfer/change category-scale/extension" ]
+  ] [
+     fhir:code [ fhir:v "resth-out" ] ;
+     fhir:display [ fhir:v "Retirement home - Closure" ]
+  ] [
+     fhir:code [ fhir:v "psyh-in" ] ;
+     fhir:display [ fhir:v "Psychiatric home - Admission/extension" ]
+  ] [
+     fhir:code [ fhir:v "psyh-out" ] ;
+     fhir:display [ fhir:v "Psychiatric home - Closure" ]
+  ] [
+     fhir:code [ fhir:v "ihp-in" ] ;
+     fhir:display [ fhir:v "Sheltered living - Admission/extension" ]
+  ] [
+     fhir:code [ fhir:v "ihp-out" ] ;
+     fhir:display [ fhir:v "Sheltered living - Closure" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

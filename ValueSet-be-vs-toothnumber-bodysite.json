@@ -1,0 +1,229 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-toothnumber-bodysite",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-toothnumber-bodysite</b></p><a name=\"be-vs-toothnumber-bodysite\"> </a><a name=\"hcbe-vs-toothnumber-bodysite\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/422653006\">422653006</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary right central incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/424877001\">424877001</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary right lateral incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/860767006\">860767006</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary right canine tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/57826002\">57826002</a></td><td style=\"color: #cccccc\">Maxillary right first premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/36492000\">36492000</a></td><td style=\"color: #cccccc\">Maxillary right second premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/865995000\">865995000</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary right first molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/863902006\">863902006</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary right second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/68085002\">68085002</a></td><td style=\"color: #cccccc\">Structure of maxillary right third molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/424399000\">424399000</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary left central incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/423185002\">423185002</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary left lateral incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/860780009\">860780009</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary left canine tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/61897005\">61897005</a></td><td style=\"color: #cccccc\">Maxillary left first premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/23226009\">23226009</a></td><td style=\"color: #cccccc\">Maxillary left second premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/865988009\">865988009</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary left first molar tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/863901004\">863901004</a></td><td style=\"color: #cccccc\">Structure of permanent maxillary left second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/87704003\">87704003</a></td><td style=\"color: #cccccc\">Maxillary left third molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/425106001\">425106001</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular left central incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/423331005\">423331005</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular left lateral incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/860782001\">860782001</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular left canine tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/2400006\">2400006</a></td><td style=\"color: #cccccc\">Mandibular left first premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/24573005\">24573005</a></td><td style=\"color: #cccccc\">Mandibular left second premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/866006002\">866006002</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular left first molar tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/863898000\">863898000</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular left second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/74344005\">74344005</a></td><td style=\"color: #cccccc\">Mandibular left third molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/424575004\">424575004</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular right central incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/423937004\">423937004</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular right lateral incisor tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/860785004\">860785004</a></td><td style=\"color: #cccccc\">Permanent lower right canine tooth</td></tr><tr><td><a href=\"http://snomed.info/id/80140008\">80140008</a></td><td style=\"color: #cccccc\">Mandibular right first premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/8873007\">8873007</a></td><td style=\"color: #cccccc\">Mandibular right second premolar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/866005003\">866005003</a></td><td style=\"color: #cccccc\">Structure of permanent mandibular right first molar tooth (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/863899008\">863899008</a></td><td style=\"color: #cccccc\">Permanent lower right 7 tooth</td></tr><tr><td><a href=\"http://snomed.info/id/38994002\">38994002</a></td><td style=\"color: #cccccc\">Mandibular right third molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/88824007\">88824007</a></td><td style=\"color: #cccccc\">Deciduous maxillary right central incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/65624003\">65624003</a></td><td style=\"color: #cccccc\">Deciduous maxillary right lateral incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/30618001\">30618001</a></td><td style=\"color: #cccccc\">Deciduous maxillary right canine tooth</td></tr><tr><td><a href=\"http://snomed.info/id/17505006\">17505006</a></td><td style=\"color: #cccccc\">Deciduous maxillary right first molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/27855007\">27855007</a></td><td style=\"color: #cccccc\">Deciduous maxillary right second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/51678005\">51678005</a></td><td style=\"color: #cccccc\">Deciduous maxillary left central incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/43622005\">43622005</a></td><td style=\"color: #cccccc\">Deciduous maxillary left lateral incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/73937000\">73937000</a></td><td style=\"color: #cccccc\">Deciduous maxillary left canine tooth</td></tr><tr><td><a href=\"http://snomed.info/id/45234009\">45234009</a></td><td style=\"color: #cccccc\">Deciduous maxillary left first molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/51943008\">51943008</a></td><td style=\"color: #cccccc\">Deciduous maxillary left second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/89552004\">89552004</a></td><td style=\"color: #cccccc\">Deciduous mandibular left central incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/14770005\">14770005</a></td><td style=\"color: #cccccc\">Deciduous mandibular left lateral incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/43281008\">43281008</a></td><td style=\"color: #cccccc\">Deciduous mandibular left canine tooth</td></tr><tr><td><a href=\"http://snomed.info/id/38896004\">38896004</a></td><td style=\"color: #cccccc\">Deciduous mandibular left first molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/49330006\">49330006</a></td><td style=\"color: #cccccc\">Deciduous mandibular left second molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/67834006\">67834006</a></td><td style=\"color: #cccccc\">Deciduous mandibular right central incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/22445006\">22445006</a></td><td style=\"color: #cccccc\">Deciduous mandibular right lateral incisor tooth</td></tr><tr><td><a href=\"http://snomed.info/id/6062009\">6062009</a></td><td style=\"color: #cccccc\">Deciduous mandibular right canine tooth</td></tr><tr><td><a href=\"http://snomed.info/id/58646007\">58646007</a></td><td style=\"color: #cccccc\">Deciduous mandibular right first molar tooth</td></tr><tr><td><a href=\"http://snomed.info/id/61868007\">61868007</a></td><td style=\"color: #cccccc\">Deciduous mandibular right second molar tooth</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  }],
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-toothnumber-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeVSToothNumberBodySite",
+  "title" : "Tooth Number Body Site",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-17T19:47:43+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tooth Number Body Site",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "422653006"
+      },
+      {
+        "code" : "424877001"
+      },
+      {
+        "code" : "860767006"
+      },
+      {
+        "code" : "57826002"
+      },
+      {
+        "code" : "36492000"
+      },
+      {
+        "code" : "865995000"
+      },
+      {
+        "code" : "863902006"
+      },
+      {
+        "code" : "68085002"
+      },
+      {
+        "code" : "424399000"
+      },
+      {
+        "code" : "423185002"
+      },
+      {
+        "code" : "860780009"
+      },
+      {
+        "code" : "61897005"
+      },
+      {
+        "code" : "23226009"
+      },
+      {
+        "code" : "865988009"
+      },
+      {
+        "code" : "863901004"
+      },
+      {
+        "code" : "87704003"
+      },
+      {
+        "code" : "425106001"
+      },
+      {
+        "code" : "423331005"
+      },
+      {
+        "code" : "860782001"
+      },
+      {
+        "code" : "2400006"
+      },
+      {
+        "code" : "24573005"
+      },
+      {
+        "code" : "866006002"
+      },
+      {
+        "code" : "863898000"
+      },
+      {
+        "code" : "74344005"
+      },
+      {
+        "code" : "424575004"
+      },
+      {
+        "code" : "423937004"
+      },
+      {
+        "code" : "860785004"
+      },
+      {
+        "code" : "80140008"
+      },
+      {
+        "code" : "8873007"
+      },
+      {
+        "code" : "866005003"
+      },
+      {
+        "code" : "863899008"
+      },
+      {
+        "code" : "38994002"
+      },
+      {
+        "code" : "88824007"
+      },
+      {
+        "code" : "65624003"
+      },
+      {
+        "code" : "30618001"
+      },
+      {
+        "code" : "17505006"
+      },
+      {
+        "code" : "27855007"
+      },
+      {
+        "code" : "51678005"
+      },
+      {
+        "code" : "43622005"
+      },
+      {
+        "code" : "73937000"
+      },
+      {
+        "code" : "45234009"
+      },
+      {
+        "code" : "51943008"
+      },
+      {
+        "code" : "89552004"
+      },
+      {
+        "code" : "14770005"
+      },
+      {
+        "code" : "43281008"
+      },
+      {
+        "code" : "38896004"
+      },
+      {
+        "code" : "49330006"
+      },
+      {
+        "code" : "67834006"
+      },
+      {
+        "code" : "22445006"
+      },
+      {
+        "code" : "6062009"
+      },
+      {
+        "code" : "58646007"
+      },
+      {
+        "code" : "61868007"
+      }]
+    }]
+  }
+}

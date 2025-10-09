@@ -1,0 +1,837 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-vaccine-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-vs-vaccine-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-vaccine-code</b></p><a name=\"be-vs-vaccine-code\"> </a><a name=\"hcbe-vs-vaccine-code\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-be-cs-vaccine-code.html\"><code>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"CodeSystem-be-cs-vaccine-code.html#be-cs-vaccine-code-other\">other</a></td><td style=\"color: #cccccc\">other</td><td/><td/><td/></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/787859002\">787859002</a></td><td>unspecified vaccine</td><td>Autre vaccin à spécifier</td><td>Nader te specifieren vaccin</td><td>Some vaccine to be specified</td></tr><tr><td><a href=\"http://snomed.info/id/836500008\">836500008</a></td><td>Vaccine product containing only Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens (medicinal product)</td><td>vaccin divalent contre l'Haemophilus influenzae type b et le méningocoque C</td><td>Haemophilus influenzae b en meningokok C</td><td>Haemophilus influenzae type b and meningitis C vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871717007\">871717007</a></td><td>Vaccine product containing only Yellow fever virus antigen (medicinal product)</td><td>vaccin contre la fièvre jaune</td><td>Gele koorts</td><td>Yellow fever vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871719005\">871719005</a></td><td>Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)</td><td>vaccin contre la méningoencéphalite à tiques</td><td>Tekenencefalitis virus</td><td>Tick-borne encephalitis vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871720004\">871720004</a></td><td>Vaccine product containing only Dengue virus antigen (medicinal product)</td><td>vaccin contre la dengue</td><td>Dengue</td><td>Dengue vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871721000\">871721000</a></td><td>Vaccine product containing only Ebolavirus antigen (medicinal product)</td><td>vaccin contre l'Ebola</td><td>Ebola</td><td>Ebolavirus antigen only vaccine product</td></tr><tr><td><a href=\"http://snomed.info/id/871724008\">871724008</a></td><td>Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)</td><td>vaccin contre le virus de l'encéphalite japonaise</td><td>Japanse encephalitis</td><td>Japanese encephalitis virus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871726005\">871726005</a></td><td>Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |</td><td>vaccin contre la rage</td><td>Hondsdolheid</td><td>Rabies vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871727001\">871727001</a></td><td>Vaccine product containing only Vaccinia virus antigen (medicinal product)</td><td>vaccin contre la variole</td><td>Variola (pokken)</td><td>Vaccinia virus antigen only vaccine product</td></tr><tr><td><a href=\"http://snomed.info/id/871729003\">871729003</a></td><td>Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product)</td><td>vaccin contre la diphtérie</td><td>Difterie</td><td>Diphtheria vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871732000\">871732000</a></td><td>Vaccine product containing only Rubella virus antigen (medicinal product)</td><td>vaccin contre la rubéole</td><td>Rubella</td><td>Rubella vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871737006\">871737006</a></td><td>Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)</td><td>vaccin contre les oreillons</td><td>Bof</td><td>Mumps vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871739009\">871739009</a></td><td>Vaccine product containing only Human poliovirus antigen (medicinal product)</td><td>vaccin contre la poliomyélite</td><td>Polio</td><td>Human poliovirus antigen only vaccine product</td></tr><tr><td><a href=\"http://snomed.info/id/871742003\">871742003</a></td><td>Vaccine product containing only Clostridium tetani antigen (medicinal product)</td><td>vaccin contre le tétanos</td><td>Tetanus</td><td>Tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871751006\">871751006</a></td><td>Vaccine product containing only Hepatitis A virus antigen (medicinal product)</td><td>vaccin contre l'hépatite A</td><td>Hepatitis A</td><td>Hepatitis A vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871758000\">871758000</a></td><td>Vaccine product containing only Bordetella pertussis antigen (medicinal product)</td><td>vaccin contre la coqueluche</td><td>Kinkhoest</td><td>Pertussis vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871761004\">871761004</a></td><td>Vaccine product containing only Rotavirus antigen (medicinal product)</td><td>vaccin contre le rotavirus</td><td>Rotavirus</td><td>Rotavirus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871764007\">871764007</a></td><td>Vaccine product containing only Haemophilus influenzae type b antigen (medicinal product)</td><td>vaccin contre l'hemophilus influenzae de type B</td><td>Haemophilus influenzae b</td><td>Haemophilus influenzae type b vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871765008\">871765008</a></td><td>Vaccine product containing only Measles morbillivirus antigen (medicinal product)</td><td>vaccin contre la rougeole</td><td>Mazelen</td><td>Measles vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1209197008\">1209197008</a></td><td>Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens</td><td>vaccin contre les papillomavirus humains (HPV) de type 6, 11, 16, 18, 31, 33, 45, 52 et 58</td><td>humaan papillomavirus  (HPV 6, 11, 16, 18, 31, 33, 45, 52 en 58)</td><td>Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871803007\">871803007</a></td><td>Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)</td><td>vaccin divalent contre l'hépatite A et B</td><td>Hepatitis A + B</td><td>Hepatitis A and B vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871804001\">871804001</a></td><td>Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)</td><td>vaccin contre la fièvre typhoïde et l'hépatite A</td><td>Tyfus + hepatitis A</td><td>Hepatitis A and typhoid vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871817003\">871817003</a></td><td>Vaccine product containing only Measles morbillivirus and Rubella virus antigens (medicinal product)</td><td>vaccin divalent contre la rougeole et la rubéole</td><td>Mazelen + rubella</td><td>Measles and rubella vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871822003\">871822003</a></td><td>Vaccine product containing only Hepatitis B virus antigen (medicinal product)</td><td>vaccin contre l'hépatite B</td><td>Hepatitis B</td><td>Hepatitis B vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871826000\">871826000</a></td><td>Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td><td>vaccin divalent contre la diphtérie et le tétanos</td><td>Difterie + tetanus</td><td>Diphtheria and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871831003\">871831003</a></td><td>Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)</td><td>vaccin trivalent contre la rougeole, la rubéole et les oreillons</td><td>Mazelen + bof + rubella</td><td>Measles and mumps and rubella vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871837004\">871837004</a></td><td>Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)</td><td>vaccin trivalent contre la diphtérie, le tétanos et la poliomyélite</td><td>Difterie + tetanus + polio</td><td>Diphtheria and poliomyelitis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871866001\">871866001</a></td><td>Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)</td><td>vaccin contre le méningocoque C</td><td>Meningokok C</td><td>Meningitis C vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871871008\">871871008</a></td><td>Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)</td><td>vaccin contre les méningocoques A et C</td><td>Meningokok A, C</td><td>Meningitis A and C vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871873006\">871873006</a></td><td>Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)</td><td>vaccin contre les méningocoques A, C, W135 et Y</td><td>Meningokok A, C, W en Y</td><td>Meningitis A, C, W135 and Y vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871875004\">871875004</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td><td>vaccin trivalent contre la diphtérie, le tétanos et la coqueluche</td><td>Difterie + tetanus + kinkhoest</td><td>Diphtheria and pertussis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871878002\">871878002</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)</td><td>vaccin quadrivalent contre la diphtérie, le tétanos, la coqueluche et la poliomyélite</td><td>Difterie + tetanus + kinkhoest + polio</td><td>Diphtheria and pertussis and poliomyelitis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871886002\">871886002</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus antigens (medicinal product)</td><td>vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, l'Haemophilus influenzae de type B et l'hépatite B</td><td>Difterie + tetanus + kinkhoest + Haemophilus influenzae b + hepatitis B</td><td>Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871887006\">871887006</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Human poliovirus antigens (medicinal product)</td><td>vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'Haemophilus influenzae de type B</td><td>Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b</td><td>Diphtheria and Haemophilus influenzae type b and pertussis and poliomyelitis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871891001\">871891001</a></td><td>Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)</td><td>vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'hépatite B</td><td>Difterie + tetanus + kinkhoest + polio + hepatitis B</td><td>Diphtheria and hepatitis B and acellular pertussis and inactivated poliomyelitis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871895005\">871895005</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)</td><td>vaccin hexavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite, l'Haemophilus influenzae de type B et l'hépatite B</td><td>Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b + hepatitis B</td><td>Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and poliomyelitis and tetanus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871908002\">871908002</a></td><td>Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)</td><td>vaccin tetravalent contre la rougeole, la rubéole, les oreillons et la varicelle</td><td>Mazelen + bof + rubella + windpokken</td><td>Measles and mumps and rubella and varicella virus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871919004\">871919004</a></td><td>Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)</td><td>vaccin contre la varicelle et le zona</td><td>Windpokken</td><td>Varicella-zoster vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1052328007\">1052328007</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)</td><td>vaccin pneumococcique conjugué heptavalent</td><td>Pneumokokken 7 types</td><td>Pneumococcal 7-valent conjugate vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1052330009\">1052330009</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)</td><td>vaccin pneumococcique conjugué 10-valent</td><td>Pneumokokken 10 types</td><td>Pneumococcal 10-valent conjugate vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1119220001\">1119220001</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (medicinal product)</td><td>vaccin pneumococcique non conjugué 23-valent</td><td>Pneumokokken 23 types</td><td>Pneumococcal 23-valent vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1252708008\">1252708008</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)</td><td>vaccin pneumococcique conjugué 15-valent</td><td>Pneumokokken 15 types</td><td>Pneumococcal 15-valent conjugate vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1252709000\">1252709000</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsular polysaccharide antigens conjugated (medicinal product)</td><td>vaccin pneumococcique conjugué 20-valent</td><td>Pneumokokken 20 types</td><td>Pneumococcal 20-valent conjugate vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/911000221103\">911000221103</a></td><td>Vaccine product containing only Human papillomavirus antigen (medicinal product)</td><td>vaccin contre le papillomavirus humain</td><td>Humaan papillomavirus</td><td>Human papillomavirus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/921000221108\">921000221108</a></td><td>Vaccine product containing only Neisseria meningitidis antigen (medicinal product)</td><td>vaccin contre le méningocoque</td><td>Meningokok</td><td>Meningococcus vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/961000221100\">961000221100</a></td><td>Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)</td><td>vaccin contre la fièvre typhoïde</td><td>Tyfus</td><td>Typhoid vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/981000221107\">981000221107</a></td><td>Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)</td><td>vaccin pneumococcique</td><td>Pneumokokken</td><td>Pneumococcal vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/991000221105\">991000221105</a></td><td>Vaccine product containing only Vibrio cholerae antigen (medicinal product)</td><td>vaccin contre le choléra</td><td>Cholera</td><td>Cholera vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1181000221105\">1181000221105</a></td><td>Vaccine product containing only Influenza virus antigen (medicinal product)</td><td>vaccin contre la grippe</td><td>Griep</td><td>Influenza vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1861000221106\">1861000221106</a></td><td>Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)</td><td>vaccin contre la tuberculose</td><td>Tuberculose (BCG)</td><td>Bacillus Calmette-Guerin vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1981000221108\">1981000221108</a></td><td>Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)</td><td>vaccin contre le méningocoque B</td><td>Meningokok B</td><td>Meningococcus serogroup B vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1991000221106\">1991000221106</a></td><td>Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)</td><td>vaccin contre les papillomavirus humains de type 16 et 18</td><td>humaan papillomavirus (HPV 16, 18)</td><td>Human papillomavirus 16 and 18 vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/2001000221108\">2001000221108</a></td><td>Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)</td><td>vaccin contre les papillomavirus humains de type 6, 11, 16 et 18</td><td>humaan papillomavirus (HPV 6, 11, 16, 18)</td><td>Human papillomavirus 6, 11, 16 and 18 vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/28531000087107\">28531000087107</a></td><td>Vaccine product against severe acute respiratory syndrome coronavirus 2 (medicinal product)</td><td>vaccin contre la COVID-19</td><td>COVID19</td><td>SARS-CoV-2 vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/1252703004\">1252703004</a></td><td>Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus</td><td>vaccin contre la rougeole et les oreillons</td><td>Mazelen + bof</td><td>Measles and mumps vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/51311000087100\">51311000087100</a></td><td>Vaccine product containing only Human orthopneumovirus antigen (medicinal product)</td><td>vaccin contre le RSV</td><td>RSV</td><td>RSV (respiratory syncytial virus) vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/871839001\">871839001</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)</td><td>vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B</td><td>vaccin met uitsluitend Corynebacterium diphtheriae-Ag, Bordetella pertussis-Ag, Clostridium tetani-Ag en Haemophilus influenzae type b-Ag</td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/1252690003\">1252690003</a></td><td>Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)</td><td>vaccin contre le méningocoque A</td><td>vaccin enkel tegen meningokok A</td><td>Meningococcus serogroup A vaccine</td></tr><tr><td><a href=\"http://snomed.info/id/51451000087105\">51451000087105</a></td><td>Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)</td><td>vaccin pneumococcique conjugué 13-valent</td><td>vaccin met uitsluitend geconjugeerde Streptococcus pneumoniae-Ag van kapselpolysachariden van Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F</td><td> Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeVSVaccineCode"] ; # 
+  fhir:title [ fhir:v "BeVSVaccineCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-03-24T16:01:36+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Vaccine Code Value Set - the types of vaccines that are administered in Belgium"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "other" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "787859002" ] ;
+         fhir:display [ fhir:v "unspecified vaccine" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Autre vaccin à spécifier" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Nader te specifieren vaccin" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Some vaccine to be specified" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "836500008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin divalent contre l'Haemophilus influenzae type b et le méningocoque C" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Haemophilus influenzae b en meningokok C" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Haemophilus influenzae type b and meningitis C vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871717007" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Yellow fever virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la fièvre jaune" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Gele koorts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yellow fever vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871719005" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la méningoencéphalite à tiques" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Tekenencefalitis virus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tick-borne encephalitis vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871720004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Dengue virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la dengue" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Dengue" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dengue vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871721000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Ebolavirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre l'Ebola" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Ebola" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ebolavirus antigen only vaccine product" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871724008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le virus de l'encéphalite japonaise" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Japanse encephalitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Japanese encephalitis virus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871726005" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la rage" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hondsdolheid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rabies vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871727001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Vaccinia virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la variole" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Variola (pokken)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vaccinia virus antigen only vaccine product" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871729003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la diphtérie" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871732000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Rubella virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la rubéole" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Rubella" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rubella vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871737006" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les oreillons" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Bof" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mumps vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871739009" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human poliovirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la poliomyélite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Polio" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human poliovirus antigen only vaccine product" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871742003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Clostridium tetani antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le tétanos" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871751006" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Hepatitis A virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre l'hépatite A" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hepatitis A" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hepatitis A vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871758000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la coqueluche" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Kinkhoest" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pertussis vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871761004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Rotavirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rotavirus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871764007" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Haemophilus influenzae type b antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre l'hemophilus influenzae de type B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Haemophilus influenzae b" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Haemophilus influenzae type b vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871765008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Measles morbillivirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la rougeole" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Mazelen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Measles vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1209197008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les papillomavirus humains (HPV) de type 6, 11, 16, 18, 31, 33, 45, 52 et 58" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "humaan papillomavirus  (HPV 6, 11, 16, 18, 31, 33, 45, 52 en 58)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871803007" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin divalent contre l'hépatite A et B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hepatitis A + B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hepatitis A and B vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871804001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la fièvre typhoïde et l'hépatite A" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Tyfus + hepatitis A" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hepatitis A and typhoid vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871817003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Measles morbillivirus and Rubella virus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin divalent contre la rougeole et la rubéole" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Mazelen + rubella" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Measles and rubella vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871822003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Hepatitis B virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hepatitis B vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871826000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin divalent contre la diphtérie et le tétanos" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871831003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin trivalent contre la rougeole, la rubéole et les oreillons" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Mazelen + bof + rubella" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Measles and mumps and rubella vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871837004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin trivalent contre la diphtérie, le tétanos et la poliomyélite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + polio" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and poliomyelitis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871866001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le méningocoque C" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Meningokok C" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningitis C vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871871008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les méningocoques A et C" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Meningokok A, C" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningitis A and C vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871873006" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les méningocoques A, C, W135 et Y" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Meningokok A, C, W en Y" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningitis A, C, W135 and Y vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871875004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin trivalent contre la diphtérie, le tétanos et la coqueluche" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and pertussis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871878002" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin quadrivalent contre la diphtérie, le tétanos, la coqueluche et la poliomyélite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest + polio" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and pertussis and poliomyelitis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871886002" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, l'Haemophilus influenzae de type B et l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest + Haemophilus influenzae b + hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871887006" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Human poliovirus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'Haemophilus influenzae de type B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and Haemophilus influenzae type b and pertussis and poliomyelitis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871891001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest + polio + hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and hepatitis B and acellular pertussis and inactivated poliomyelitis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871895005" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin hexavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite, l'Haemophilus influenzae de type B et l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b + hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and poliomyelitis and tetanus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871908002" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin tetravalent contre la rougeole, la rubéole, les oreillons et la varicelle" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Mazelen + bof + rubella + windpokken" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Measles and mumps and rubella and varicella virus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871919004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la varicelle et le zona" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Windpokken" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Varicella-zoster vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1052328007" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique conjugué heptavalent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken 7 types" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal 7-valent conjugate vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1052330009" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique conjugué 10-valent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken 10 types" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal 10-valent conjugate vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1119220001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique non conjugué 23-valent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken 23 types" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal 23-valent vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1252708008" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique conjugué 15-valent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken 15 types" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal 15-valent conjugate vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1252709000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsular polysaccharide antigens conjugated (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique conjugué 20-valent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken 20 types" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal 20-valent conjugate vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "911000221103" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human papillomavirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le papillomavirus humain" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Humaan papillomavirus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human papillomavirus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "921000221108" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le méningocoque" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Meningokok" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningococcus vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "961000221100" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la fièvre typhoïde" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Tyfus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Typhoid vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "981000221107" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Pneumokokken" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pneumococcal vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "991000221105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Vibrio cholerae antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le choléra" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Cholera" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cholera vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1181000221105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Influenza virus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la grippe" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Griep" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Influenza vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1861000221106" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la tuberculose" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Tuberculose (BCG)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bacillus Calmette-Guerin vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1981000221108" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le méningocoque B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Meningokok B" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningococcus serogroup B vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1991000221106" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les papillomavirus humains de type 16 et 18" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "humaan papillomavirus (HPV 16, 18)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human papillomavirus 16 and 18 vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2001000221108" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre les papillomavirus humains de type 6, 11, 16 et 18" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "humaan papillomavirus (HPV 6, 11, 16, 18)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human papillomavirus 6, 11, 16 and 18 vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "28531000087107" ] ;
+         fhir:display [ fhir:v "Vaccine product against severe acute respiratory syndrome coronavirus 2 (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "COVID19" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "SARS-CoV-2 vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1252703004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre la rougeole et les oreillons" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Mazelen + bof" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Measles and mumps vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "51311000087100" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human orthopneumovirus antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le RSV" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "RSV" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "RSV (respiratory syncytial virus) vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "871839001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "vaccin met uitsluitend Corynebacterium diphtheriae-Ag, Bordetella pertussis-Ag, Clostridium tetani-Ag en Haemophilus influenzae type b-Ag" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1252690003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin contre le méningocoque A" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "vaccin enkel tegen meningokok A" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Meningococcus serogroup A vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "51451000087105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "vaccin pneumococcique conjugué 13-valent" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "vaccin met uitsluitend geconjugeerde Streptococcus pneumoniae-Ag van kapselpolysachariden van Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v " Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

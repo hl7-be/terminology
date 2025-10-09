@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-noallergy"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-noallergy</b></p><a name="be-noallergy"> </a><a name="hcbe-noallergy"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Fully specified name</b></td><td><b>English (English, en)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>French (Belgium) (fr)</b></td></tr><tr><td><a href="http://snomed.info/id/716186003">716186003</a></td><td>No known allergy (situation)</td><td>No known allergy (situation)</td><td>No known allergy</td><td>geen gekende allergie</td><td>pas d'allergie connue</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"/>
+  <version value="1.0.0"/>
+  <name value="BeNoAllergy"/>
+  <title value="BeNoAllergy"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="716186003"/>
+        <display value="No known allergy (situation)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="No known allergy (situation)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="No known allergy"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="geen gekende allergie"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="pas d'allergie connue"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="annex-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem annex-types</b></p><a name="annex-types"> </a><a name="hcannex-types"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/annex-types</code> provides <b>a fragment</b> that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">functional-report<a name="annex-types-functional-report"> </a></td><td>functional-report</td></tr><tr><td style="white-space:nowrap">medical-report<a name="annex-types-medical-report"> </a></td><td>medical-report</td></tr><tr><td style="white-space:nowrap">physiotherapist-report<a name="annex-types-physiotherapist-report"> </a></td><td>physiotherapist-report</td></tr><tr><td style="white-space:nowrap">cra-justification<a name="annex-types-cra-justification"> </a></td><td>cra-justification</td></tr><tr><td style="white-space:nowrap">scoliosis-protocol<a name="annex-types-scoliosis-protocol"> </a></td><td>scoliosis-protocol</td></tr><tr><td style="white-space:nowrap">rheumatology-report<a name="annex-types-rheumatology-report"> </a></td><td>rheumatology-report</td></tr><tr><td style="white-space:nowrap">radiology-protocol<a name="annex-types-radiology-protocol"> </a></td><td>radiology-protocol</td></tr><tr><td style="white-space:nowrap">mevs-results<a name="annex-types-mevs-results"> </a></td><td>mevs-results</td></tr><tr><td style="white-space:nowrap">perimetry-lymphoscintigraphy-results<a name="annex-types-perimetry-lymphoscintigraphy-results"> </a></td><td>perimetry-lymphoscintigraphy-results</td></tr><tr><td style="white-space:nowrap">other<a name="annex-types-other"> </a></td><td>other</td></tr><tr><td style="white-space:nowrap">776100<a name="annex-types-776100"> </a></td><td>7.76.1 - Sequelae of female genital mutilation</td></tr><tr><td style="white-space:nowrap">776201<a name="annex-types-776201"> </a></td><td>7.76.2 - Support for transidentity</td></tr><tr><td style="white-space:nowrap">776601<a name="annex-types-776601"> </a></td><td>7.76.6 - Pediatric rehabilitation</td></tr><tr><td style="white-space:nowrap">776001<a name="annex-types-776001"> </a></td><td>7.76.0 - AIDS and HIV</td></tr><tr><td style="white-space:nowrap">778101<a name="annex-types-778101"> </a></td><td>7.78.1 - Memory clinic</td></tr><tr><td style="white-space:nowrap">781501<a name="annex-types-781501"> </a></td><td>7.81.5 - Severe chronic respiratory conditions</td></tr><tr><td style="white-space:nowrap">781001<a name="annex-types-781001"> </a></td><td>7.81.x - Long-term oxygen therapy at home</td></tr><tr><td style="white-space:nowrap">782101<a name="annex-types-782101"> </a></td><td>7.82.1 - Cardiac rehabilitation</td></tr><tr><td style="white-space:nowrap">782501<a name="annex-types-782501"> </a></td><td>7.82.5 - Support in case of unwanted pregnancy</td></tr><tr><td style="white-space:nowrap">783101<a name="annex-types-783101"> </a></td><td>7.83.1 - Unexpected and unexplained death of a child under 18 months</td></tr><tr><td style="white-space:nowrap">783501<a name="annex-types-783501"> </a></td><td>7.83.5 - Sudden death monitoring</td></tr><tr><td style="white-space:nowrap">783601<a name="annex-types-783601"> </a></td><td>7.83.6 - Children born prematurely</td></tr><tr><td style="white-space:nowrap">784501<a name="annex-types-784501"> </a></td><td>7.84.5 - Pediatric neuropsychiatric rehabilitation</td></tr><tr><td style="white-space:nowrap">785201<a name="annex-types-785201"> </a></td><td>7.85.2 - Home ventilatory assistance</td></tr><tr><td style="white-space:nowrap">785301<a name="annex-types-785301"> </a></td><td>7.85.3 - Home ventilatory assistance - obesity-hypoventilation syndrome</td></tr><tr><td style="white-space:nowrap">785001<a name="annex-types-785001"> </a></td><td>7.85.x - Obstructive sleep apnea</td></tr><tr><td style="white-space:nowrap">786501<a name="annex-types-786501"> </a></td><td>7.86.5 - Insulin pump</td></tr><tr><td style="white-space:nowrap">786701<a name="annex-types-786701"> </a></td><td>7.86.7 - Self-regulation of diabetes in children</td></tr><tr><td style="white-space:nowrap">786801<a name="annex-types-786801"> </a></td><td>7.86.8 - Clinics of diabetic foot</td></tr><tr><td style="white-space:nowrap">786901<a name="annex-types-786901"> </a></td><td>7.86.9 - Advanced or expensive technologies in a specialized center</td></tr><tr><td style="white-space:nowrap">786001<a name="annex-types-786001"> </a></td><td>7.86.x - Self-management of adult diabetic patients</td></tr><tr><td style="white-space:nowrap">789101<a name="annex-types-789101"> </a></td><td>7.89.1 - Cystic fibrosis</td></tr><tr><td style="white-space:nowrap">789201<a name="annex-types-789201"> </a></td><td>7.89.2 - Neuromuscular disease</td></tr><tr><td style="white-space:nowrap">789301<a name="annex-types-789301"> </a></td><td>7.89.3 - Intractable epilepsy</td></tr><tr><td style="white-space:nowrap">789401<a name="annex-types-789401"> </a></td><td>7.89.4 - Chronic fatigue syndrome (CFS)</td></tr><tr><td style="white-space:nowrap">789501<a name="annex-types-789501"> </a></td><td>7.89.5 - Cerebral palsy</td></tr><tr><td style="white-space:nowrap">789551<a name="annex-types-789551"> </a></td><td>7.89.55 - IMOC - Spina-Bifida</td></tr><tr><td style="white-space:nowrap">789701<a name="annex-types-789701"> </a></td><td>7.89.7 - Pediatric nephrology</td></tr><tr><td style="white-space:nowrap">789801<a name="annex-types-789801"> </a></td><td>7.89.8 - Hemophilia</td></tr><tr><td style="white-space:nowrap">789901<a name="annex-types-789901"> </a></td><td>7.89.9 - Lymphedema</td></tr><tr><td style="white-space:nowrap">789001<a name="annex-types-789001"> </a></td><td>7.89.0 - Rare hereditary monogenic metabolic disease</td></tr><tr><td style="white-space:nowrap">950<a name="annex-types-950"> </a></td><td>9.50 - General locomotor rehabilitation centers</td></tr><tr><td style="white-space:nowrap">951<a name="annex-types-951"> </a></td><td>9.51 - Conventions R30 - R60</td></tr><tr><td style="white-space:nowrap">resth-in<a name="annex-types-resth-in"> </a></td><td>Retirement home - (Re)admission/transfer/change category-scale/extension</td></tr><tr><td style="white-space:nowrap">resth-out<a name="annex-types-resth-out"> </a></td><td>Retirement home - Closure</td></tr><tr><td style="white-space:nowrap">psyh-in<a name="annex-types-psyh-in"> </a></td><td>Psychiatric home - Admission/extension</td></tr><tr><td style="white-space:nowrap">psyh-out<a name="annex-types-psyh-out"> </a></td><td>Psychiatric home - Closure</td></tr><tr><td style="white-space:nowrap">ihp-in<a name="annex-types-ihp-in"> </a></td><td>Sheltered living - Admission/extension</td></tr><tr><td style="white-space:nowrap">ihp-out<a name="annex-types-ihp-out"> </a></td><td>Sheltered living - Closure</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/annex-types"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetAnnexTypes"/>
+  <title value="CodeSystem annex types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="functional-report"/>
+    <display value="functional-report"/>
+  </concept>
+  <concept>
+    <code value="medical-report"/>
+    <display value="medical-report"/>
+  </concept>
+  <concept>
+    <code value="physiotherapist-report"/>
+    <display value="physiotherapist-report"/>
+  </concept>
+  <concept>
+    <code value="cra-justification"/>
+    <display value="cra-justification"/>
+  </concept>
+  <concept>
+    <code value="scoliosis-protocol"/>
+    <display value="scoliosis-protocol"/>
+  </concept>
+  <concept>
+    <code value="rheumatology-report"/>
+    <display value="rheumatology-report"/>
+  </concept>
+  <concept>
+    <code value="radiology-protocol"/>
+    <display value="radiology-protocol"/>
+  </concept>
+  <concept>
+    <code value="mevs-results"/>
+    <display value="mevs-results"/>
+  </concept>
+  <concept>
+    <code value="perimetry-lymphoscintigraphy-results"/>
+    <display value="perimetry-lymphoscintigraphy-results"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="776100"/>
+    <display value="7.76.1 - Sequelae of female genital mutilation"/>
+  </concept>
+  <concept>
+    <code value="776201"/>
+    <display value="7.76.2 - Support for transidentity"/>
+  </concept>
+  <concept>
+    <code value="776601"/>
+    <display value="7.76.6 - Pediatric rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="776001"/>
+    <display value="7.76.0 - AIDS and HIV"/>
+  </concept>
+  <concept>
+    <code value="778101"/>
+    <display value="7.78.1 - Memory clinic"/>
+  </concept>
+  <concept>
+    <code value="781501"/>
+    <display value="7.81.5 - Severe chronic respiratory conditions"/>
+  </concept>
+  <concept>
+    <code value="781001"/>
+    <display value="7.81.x - Long-term oxygen therapy at home"/>
+  </concept>
+  <concept>
+    <code value="782101"/>
+    <display value="7.82.1 - Cardiac rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="782501"/>
+    <display value="7.82.5 - Support in case of unwanted pregnancy"/>
+  </concept>
+  <concept>
+    <code value="783101"/>
+    <display value="7.83.1 - Unexpected and unexplained death of a child under 18 months"/>
+  </concept>
+  <concept>
+    <code value="783501"/>
+    <display value="7.83.5 - Sudden death monitoring"/>
+  </concept>
+  <concept>
+    <code value="783601"/>
+    <display value="7.83.6 - Children born prematurely"/>
+  </concept>
+  <concept>
+    <code value="784501"/>
+    <display value="7.84.5 - Pediatric neuropsychiatric rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="785201"/>
+    <display value="7.85.2 - Home ventilatory assistance"/>
+  </concept>
+  <concept>
+    <code value="785301"/>
+    <display value="7.85.3 - Home ventilatory assistance - obesity-hypoventilation syndrome"/>
+  </concept>
+  <concept>
+    <code value="785001"/>
+    <display value="7.85.x - Obstructive sleep apnea"/>
+  </concept>
+  <concept>
+    <code value="786501"/>
+    <display value="7.86.5 - Insulin pump"/>
+  </concept>
+  <concept>
+    <code value="786701"/>
+    <display value="7.86.7 - Self-regulation of diabetes in children"/>
+  </concept>
+  <concept>
+    <code value="786801"/>
+    <display value="7.86.8 - Clinics of diabetic foot"/>
+  </concept>
+  <concept>
+    <code value="786901"/>
+    <display value="7.86.9 - Advanced or expensive technologies in a specialized center"/>
+  </concept>
+  <concept>
+    <code value="786001"/>
+    <display value="7.86.x - Self-management of adult diabetic patients"/>
+  </concept>
+  <concept>
+    <code value="789101"/>
+    <display value="7.89.1 - Cystic fibrosis"/>
+  </concept>
+  <concept>
+    <code value="789201"/>
+    <display value="7.89.2 - Neuromuscular disease"/>
+  </concept>
+  <concept>
+    <code value="789301"/>
+    <display value="7.89.3 - Intractable epilepsy"/>
+  </concept>
+  <concept>
+    <code value="789401"/>
+    <display value="7.89.4 - Chronic fatigue syndrome (CFS)"/>
+  </concept>
+  <concept>
+    <code value="789501"/>
+    <display value="7.89.5 - Cerebral palsy"/>
+  </concept>
+  <concept>
+    <code value="789551"/>
+    <display value="7.89.55 - IMOC - Spina-Bifida"/>
+  </concept>
+  <concept>
+    <code value="789701"/>
+    <display value="7.89.7 - Pediatric nephrology"/>
+  </concept>
+  <concept>
+    <code value="789801"/>
+    <display value="7.89.8 - Hemophilia"/>
+  </concept>
+  <concept>
+    <code value="789901"/>
+    <display value="7.89.9 - Lymphedema"/>
+  </concept>
+  <concept>
+    <code value="789001"/>
+    <display value="7.89.0 - Rare hereditary monogenic metabolic disease"/>
+  </concept>
+  <concept>
+    <code value="950"/>
+    <display value="9.50 - General locomotor rehabilitation centers"/>
+  </concept>
+  <concept>
+    <code value="951"/>
+    <display value="9.51 - Conventions R30 - R60"/>
+  </concept>
+  <concept>
+    <code value="resth-in"/>
+    <display value="Retirement home - (Re)admission/transfer/change category-scale/extension"/>
+  </concept>
+  <concept>
+    <code value="resth-out"/>
+    <display value="Retirement home - Closure"/>
+  </concept>
+  <concept>
+    <code value="psyh-in"/>
+    <display value="Psychiatric home - Admission/extension"/>
+  </concept>
+  <concept>
+    <code value="psyh-out"/>
+    <display value="Psychiatric home - Closure"/>
+  </concept>
+  <concept>
+    <code value="ihp-in"/>
+    <display value="Sheltered living - Admission/extension"/>
+  </concept>
+  <concept>
+    <code value="ihp-out"/>
+    <display value="Sheltered living - Closure"/>
+  </concept>
+</CodeSystem>

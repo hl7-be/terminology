@@ -1,0 +1,216 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/cd-contact-person> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cd-contact-person"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cd-contact-person</b></p><a name=\"cd-contact-person\"> </a><a name=\"hccd-contact-person\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>English (English, en)</b></td></tr><tr><td style=\"white-space:nowrap\">father<a name=\"cd-contact-person-father\"> </a></td><td>father</td></tr><tr><td style=\"white-space:nowrap\">mother<a name=\"cd-contact-person-mother\"> </a></td><td>mother</td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"cd-contact-person-child\"> </a></td><td>child</td></tr><tr><td style=\"white-space:nowrap\">spouse<a name=\"cd-contact-person-spouse\"> </a></td><td>spouse</td></tr><tr><td style=\"white-space:nowrap\">husband<a name=\"cd-contact-person-husband\"> </a></td><td>husband</td></tr><tr><td style=\"white-space:nowrap\">partner<a name=\"cd-contact-person-partner\"> </a></td><td>partner</td></tr><tr><td style=\"white-space:nowrap\">brother<a name=\"cd-contact-person-brother\"> </a></td><td>brother</td></tr><tr><td style=\"white-space:nowrap\">sister<a name=\"cd-contact-person-sister\"> </a></td><td>sister</td></tr><tr><td style=\"white-space:nowrap\">brotherinlaw<a name=\"cd-contact-person-brotherinlaw\"> </a></td><td>brother-in-law</td></tr><tr><td style=\"white-space:nowrap\">tutor<a name=\"cd-contact-person-tutor\"> </a></td><td>tutor</td></tr><tr><td style=\"white-space:nowrap\">notary<a name=\"cd-contact-person-notary\"> </a></td><td>notary</td></tr><tr><td style=\"white-space:nowrap\">lawyer<a name=\"cd-contact-person-lawyer\"> </a></td><td>lawyer</td></tr><tr><td style=\"white-space:nowrap\">employer<a name=\"cd-contact-person-employer\"> </a></td><td>employer</td></tr><tr><td style=\"white-space:nowrap\">grandparent<a name=\"cd-contact-person-grandparent\"> </a></td><td>grandparent</td></tr><tr><td style=\"white-space:nowrap\">son<a name=\"cd-contact-person-son\"> </a></td><td>son</td></tr><tr><td style=\"white-space:nowrap\">daughter<a name=\"cd-contact-person-daughter\"> </a></td><td>daughter</td></tr><tr><td style=\"white-space:nowrap\">grandchild<a name=\"cd-contact-person-grandchild\"> </a></td><td>grandchild</td></tr><tr><td style=\"white-space:nowrap\">neighbour<a name=\"cd-contact-person-neighbour\"> </a></td><td>neighbour</td></tr><tr><td style=\"white-space:nowrap\">stepson<a name=\"cd-contact-person-stepson\"> </a></td><td>stepson</td></tr><tr><td style=\"white-space:nowrap\">stepdaughter<a name=\"cd-contact-person-stepdaughter\"> </a></td><td>stepdaughter</td></tr><tr><td style=\"white-space:nowrap\">stepfather<a name=\"cd-contact-person-stepfather\"> </a></td><td>stepfather</td></tr><tr><td style=\"white-space:nowrap\">stepmother<a name=\"cd-contact-person-stepmother\"> </a></td><td>stepmother</td></tr><tr><td style=\"white-space:nowrap\">sisterinlaw<a name=\"cd-contact-person-sisterinlaw\"> </a></td><td>sisterinlaw</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ContactPerson"] ; # 
+  fhir:title [ fhir:v "BeCdContactPerson"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-08-30T17:36:02+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Contact person in Belgium."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "23"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "father" ] ;
+     fhir:display [ fhir:v "father" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "father" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "mother" ] ;
+     fhir:display [ fhir:v "mother" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "mother" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "child" ] ;
+     fhir:display [ fhir:v "child" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "child" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "spouse" ] ;
+     fhir:display [ fhir:v "spouse" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "spouse" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "husband" ] ;
+     fhir:display [ fhir:v "husband" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "husband" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "partner" ] ;
+     fhir:display [ fhir:v "partner" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "partner" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "brother" ] ;
+     fhir:display [ fhir:v "brother" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "brother" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sister" ] ;
+     fhir:display [ fhir:v "sister" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "sister" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "brotherinlaw" ] ;
+     fhir:display [ fhir:v "brotherinlaw" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "brother-in-law" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tutor" ] ;
+     fhir:display [ fhir:v "tutor" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "tutor" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "notary" ] ;
+     fhir:display [ fhir:v "notary" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "notary" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "lawyer" ] ;
+     fhir:display [ fhir:v "lawyer" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "lawyer" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "employer" ] ;
+     fhir:display [ fhir:v "employer" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "employer" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "grandparent" ] ;
+     fhir:display [ fhir:v "grandparent" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "grandparent" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "son" ] ;
+     fhir:display [ fhir:v "son" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "son" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "daughter" ] ;
+     fhir:display [ fhir:v "daughter" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "daughter" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "grandchild" ] ;
+     fhir:display [ fhir:v "grandchild" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "grandchild" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "neighbour" ] ;
+     fhir:display [ fhir:v "neighbour" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "neighbour" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "stepson" ] ;
+     fhir:display [ fhir:v "stepson" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "stepson" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "stepdaughter" ] ;
+     fhir:display [ fhir:v "stepdaughter" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "stepdaughter" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "stepfather" ] ;
+     fhir:display [ fhir:v "stepfather" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "stepfather" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "stepmother" ] ;
+     fhir:display [ fhir:v "stepmother" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "stepmother" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sisterinlaw" ] ;
+     fhir:display [ fhir:v "sisterinlaw" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "sisterinlaw" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

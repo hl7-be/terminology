@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-coded-annotation-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-coded-annotation-types</b></p><a name=\"be-cs-coded-annotation-types\"> </a><a name=\"hcbe-cs-coded-annotation-types\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">lab-test-accreditation<a name=\"be-cs-coded-annotation-types-lab-test-accreditation\"> </a></td><td>Laboratory Test Accreditation</td><td>Test disclaimer with the report</td></tr><tr><td style=\"white-space:nowrap\">lab-test-subcontractor<a name=\"be-cs-coded-annotation-types-lab-test-subcontractor\"> </a></td><td>Laboratory Test subcontractor</td><td>Laboratory Test subcontractor</td></tr><tr><td style=\"white-space:nowrap\">lab-referencerange-comment<a name=\"be-cs-coded-annotation-types-lab-referencerange-comment\"> </a></td><td>Comment on laboratory reference range</td><td>Comment on reference range</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types",
+  "version" : "1.0.0",
+  "name" : "BeCSCodedAnnotationTypes",
+  "title" : "Coded Annotation Type Codes",
+  "status" : "active",
+  "date" : "2022-09-08T14:33:03+02:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Code System for specific types of coded annotations",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "lab-test-accreditation",
+    "display" : "Laboratory Test Accreditation",
+    "definition" : "Test disclaimer with the report"
+  },
+  {
+    "code" : "lab-test-subcontractor",
+    "display" : "Laboratory Test subcontractor",
+    "definition" : "Laboratory Test subcontractor"
+  },
+  {
+    "code" : "lab-referencerange-comment",
+    "display" : "Comment on laboratory reference range",
+    "definition" : "Comment on reference range"
+  }]
+}

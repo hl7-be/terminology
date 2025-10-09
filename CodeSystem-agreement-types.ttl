@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/agreement-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "agreement-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem agreement-types</b></p><a name=\"agreement-types\"> </a><a name=\"hcagreement-types\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-types</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-fa<a name=\"agreement-types-physiotherapy-fa\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-fb<a name=\"agreement-types-physiotherapy-fb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-eb<a name=\"agreement-types-physiotherapy-eb\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-e<a name=\"agreement-types-physiotherapy-e\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-common-1<a name=\"agreement-types-physiotherapy-common-1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-common-2-and-more<a name=\"agreement-types-physiotherapy-common-2-and-more\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy<a name=\"agreement-types-physiotherapy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-maternity<a name=\"agreement-types-physiotherapy-maternity\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-palliative<a name=\"agreement-types-physiotherapy-palliative\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-day-hospitalization<a name=\"agreement-types-physiotherapy-day-hospitalization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy-consultative-review<a name=\"agreement-types-physiotherapy-consultative-review\"> </a></td></tr><tr><td style=\"white-space:nowrap\">speechtherapy-assessment<a name=\"agreement-types-speechtherapy-assessment\"> </a></td></tr><tr><td style=\"white-space:nowrap\">speechtherapy-treatment<a name=\"agreement-types-speechtherapy-treatment\"> </a></td></tr><tr><td style=\"white-space:nowrap\">speechtherapy<a name=\"agreement-types-speechtherapy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rehabilitation-convention<a name=\"agreement-types-rehabilitation-convention\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stay-orgretirementhome<a name=\"agreement-types-stay-orgretirementhome\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stay-orgpsychiatriccarehome<a name=\"agreement-types-stay-orgpsychiatriccarehome\"> </a></td></tr><tr><td style=\"white-space:nowrap\">stay-orgshelteredliving<a name=\"agreement-types-stay-orgshelteredliving\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/agreement-types"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MyCareNetAgreementTypes"] ; # 
+  fhir:title [ fhir:v "CodeSystem agreement types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-02-17T19:47:43+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "physiotherapy-fa" ] ;
+     fhir:display [ fhir:v "physiotherapy-fa" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-fb" ] ;
+     fhir:display [ fhir:v "physiotherapy-fb" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-eb" ] ;
+     fhir:display [ fhir:v "physiotherapy-eb" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-e" ] ;
+     fhir:display [ fhir:v "physiotherapy-e" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-common-1" ] ;
+     fhir:display [ fhir:v "physiotherapy-common-1" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-common-2-and-more" ] ;
+     fhir:display [ fhir:v "physiotherapy-common-2-and-more" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy" ] ;
+     fhir:display [ fhir:v "physiotherapy" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-maternity" ] ;
+     fhir:display [ fhir:v "physiotherapy-maternity" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-palliative" ] ;
+     fhir:display [ fhir:v "physiotherapy-palliative" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-day-hospitalization" ] ;
+     fhir:display [ fhir:v "physiotherapy-day-hospitalization" ]
+  ] [
+     fhir:code [ fhir:v "physiotherapy-consultative-review" ] ;
+     fhir:display [ fhir:v "physiotherapy-consultative-review" ]
+  ] [
+     fhir:code [ fhir:v "speechtherapy-assessment" ] ;
+     fhir:display [ fhir:v "speechtherapy-assessment" ]
+  ] [
+     fhir:code [ fhir:v "speechtherapy-treatment" ] ;
+     fhir:display [ fhir:v "speechtherapy-treatment" ]
+  ] [
+     fhir:code [ fhir:v "speechtherapy" ] ;
+     fhir:display [ fhir:v "speechtherapy" ]
+  ] [
+     fhir:code [ fhir:v "rehabilitation-convention" ] ;
+     fhir:display [ fhir:v "rehabilitation-convention" ]
+  ] [
+     fhir:code [ fhir:v "stay-orgretirementhome" ] ;
+     fhir:display [ fhir:v "stay-orgretirementhome" ]
+  ] [
+     fhir:code [ fhir:v "stay-orgpsychiatriccarehome" ] ;
+     fhir:display [ fhir:v "stay-orgpsychiatriccarehome" ]
+  ] [
+     fhir:code [ fhir:v "stay-orgshelteredliving" ] ;
+     fhir:display [ fhir:v "stay-orgshelteredliving" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

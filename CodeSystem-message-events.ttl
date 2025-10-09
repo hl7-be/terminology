@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/message-events> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "message-events"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem message-events</b></p><a name=\"message-events\"> </a><a name=\"hcmessage-events\"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">claim-ask<a name=\"message-events-claim-ask\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-cancel<a name=\"message-events-claim-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-completeAgreement<a name=\"message-events-claim-completeAgreement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-extend<a name=\"message-events-claim-extend\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claim-argue<a name=\"message-events-claim-argue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-decide<a name=\"message-events-claimresponse-decide\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-cancel<a name=\"message-events-claimresponse-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-request-for-argue<a name=\"message-events-claimresponse-request-for-argue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-close<a name=\"message-events-claimresponse-close\"> </a></td></tr><tr><td style=\"white-space:nowrap\">claimresponse-completeAgreement<a name=\"message-events-claimresponse-completeAgreement\"> </a></td></tr><tr><td style=\"white-space:nowrap\">reject<a name=\"message-events-reject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattest-create<a name=\"message-events-eattest-create\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattestresponse-create<a name=\"message-events-eattestresponse-create\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattest-cancel<a name=\"message-events-eattest-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">eattestresponse-cancel<a name=\"message-events-eattestresponse-cancel\"> </a></td></tr><tr><td style=\"white-space:nowrap\">etariff-consult<a name=\"message-events-etariff-consult\"> </a></td></tr><tr><td style=\"white-space:nowrap\">etariffresponse-consult<a name=\"message-events-etariffresponse-consult\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/message-events"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MyCareNetMessageEvents"] ; # 
+  fhir:title [ fhir:v "CodeSystem message events"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-02-17T19:47:43+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "claim-ask" ] ;
+     fhir:display [ fhir:v "claim-ask" ]
+  ] [
+     fhir:code [ fhir:v "claim-cancel" ] ;
+     fhir:display [ fhir:v "claim-cancel" ]
+  ] [
+     fhir:code [ fhir:v "claim-completeAgreement" ] ;
+     fhir:display [ fhir:v "claim-completeAgreement" ]
+  ] [
+     fhir:code [ fhir:v "claim-extend" ] ;
+     fhir:display [ fhir:v "claim-extend" ]
+  ] [
+     fhir:code [ fhir:v "claim-argue" ] ;
+     fhir:display [ fhir:v "claim-argue" ]
+  ] [
+     fhir:code [ fhir:v "claimresponse-decide" ] ;
+     fhir:display [ fhir:v "claimresponse-decide" ]
+  ] [
+     fhir:code [ fhir:v "claimresponse-cancel" ] ;
+     fhir:display [ fhir:v "claimresponse-cancel" ]
+  ] [
+     fhir:code [ fhir:v "claimresponse-request-for-argue" ] ;
+     fhir:display [ fhir:v "claimresponse-request-for-argue" ]
+  ] [
+     fhir:code [ fhir:v "claimresponse-close" ] ;
+     fhir:display [ fhir:v "claimresponse-close" ]
+  ] [
+     fhir:code [ fhir:v "claimresponse-completeAgreement" ] ;
+     fhir:display [ fhir:v "claimresponse-completeAgreement" ]
+  ] [
+     fhir:code [ fhir:v "reject" ] ;
+     fhir:display [ fhir:v "reject" ]
+  ] [
+     fhir:code [ fhir:v "eattest-create" ] ;
+     fhir:display [ fhir:v "eattest-create" ]
+  ] [
+     fhir:code [ fhir:v "eattestresponse-create" ] ;
+     fhir:display [ fhir:v "eattestresponse-create" ]
+  ] [
+     fhir:code [ fhir:v "eattest-cancel" ] ;
+     fhir:display [ fhir:v "eattest-cancel" ]
+  ] [
+     fhir:code [ fhir:v "eattestresponse-cancel" ] ;
+     fhir:display [ fhir:v "eattestresponse-cancel" ]
+  ] [
+     fhir:code [ fhir:v "etariff-consult" ] ;
+     fhir:display [ fhir:v "etariff-consult" ]
+  ] [
+     fhir:code [ fhir:v "etariffresponse-consult" ] ;
+     fhir:display [ fhir:v "etariffresponse-consult" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

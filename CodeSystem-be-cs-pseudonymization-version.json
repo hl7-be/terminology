@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-pseudonymization-version",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-pseudonymization-version</b></p><a name=\"be-cs-pseudonymization-version\"> </a><a name=\"hcbe-cs-pseudonymization-version\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">urn:be:fgov:ehealth:pseudo:v1<a name=\"be-cs-pseudonymization-version-urn.58be.58fgov.58ehealth.58pseudo.58v1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">urn:be:fgov:ehealth:pseudo:v2<a name=\"be-cs-pseudonymization-version-urn.58be.58fgov.58ehealth.58pseudo.58v2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">urn:be:fgov:pseudo-encrypted:v1<a name=\"be-cs-pseudonymization-version-urn.58be.58fgov.58pseudo-encrypted.58v1\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version",
+  "version" : "1.0.0",
+  "name" : "BeCSPseudonymizationVersion",
+  "title" : "BeCSPseudonymizationVersion",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-12T09:42:51+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "List of pseudonymization versions that can be used a.o. in the Capabilities Statement",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "urn:be:fgov:ehealth:pseudo:v1"
+  },
+  {
+    "code" : "urn:be:fgov:ehealth:pseudo:v2"
+  },
+  {
+    "code" : "urn:be:fgov:pseudo-encrypted:v1"
+  }]
+}

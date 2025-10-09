@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-pseudonymization-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-pseudonymization-type</b></p><a name="be-cs-pseudonymization-type"> </a><a name="hcbe-cs-pseudonymization-type"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">direct<a name="be-cs-pseudonymization-type-direct"> </a></td><td>Direct pseudonym, for text shorter than 32 bytes</td></tr><tr><td style="white-space:nowrap">encrypted<a name="be-cs-pseudonymization-type-encrypted"> </a></td><td>Encrypted pseudonym, for text longer than 32 bytes</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type"/>
+  <version value="1.0.0"/>
+  <name value="BeCSPseudonymizationType"/>
+  <title value="Types of pseudonymization"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-12T09:42:51+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The technique used for pseudonymization"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="direct"/>
+    <display value="Direct pseudonym, for text shorter than 32 bytes"/>
+  </concept>
+  <concept>
+    <code value="encrypted"/>
+    <display value="Encrypted pseudonym, for text longer than 32 bytes"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-populationscreening-next-invitation-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-populationscreening-next-invitation-type</b></p><a name="be-cs-populationscreening-next-invitation-type"> </a><a name="hcbe-cs-populationscreening-next-invitation-type"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">nextinvitation<a name="be-cs-populationscreening-next-invitation-type-nextinvitation"> </a></td><td>A following invitation is expected</td></tr><tr><td style="white-space:nowrap">definitivelyexcluded<a name="be-cs-populationscreening-next-invitation-type-definitivelyexcluded"> </a></td><td>No further invitation expected</td></tr><tr><td style="white-space:nowrap">notintargetgroup<a name="be-cs-populationscreening-next-invitation-type-notintargetgroup"> </a></td><td>Not part of target group.</td></tr><tr><td style="white-space:nowrap">refusal<a name="be-cs-populationscreening-next-invitation-type-refusal"> </a></td><td>No further invitations due to refusal.</td></tr><tr><td style="white-space:nowrap">temporarilyexcluded<a name="be-cs-populationscreening-next-invitation-type-temporarilyexcluded"> </a></td><td>Temporarily excluded.</td></tr><tr><td style="white-space:nowrap">tobedetermined<a name="be-cs-populationscreening-next-invitation-type-tobedetermined"> </a></td><td>A further invitation may or not be advised, but that is not yet determined.</td></tr><tr><td style="white-space:nowrap">unknown<a name="be-cs-populationscreening-next-invitation-type-unknown"> </a></td><td>Insufficient information to determine a future invitation.</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type"/>
+  <version value="1.0.0"/>
+  <name value="BeCSPopulationScreeningNextInvitationType"/>
+  <title value="Population Screening Next Invitation Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-06-12T10:56:47+02:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code System containing the codes for the type of the next invitation (or exclusion of next invitation)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="nextinvitation"/>
+    <display value="A following invitation is expected"/>
+  </concept>
+  <concept>
+    <code value="definitivelyexcluded"/>
+    <display value="No further invitation expected"/>
+  </concept>
+  <concept>
+    <code value="notintargetgroup"/>
+    <display value="Not part of target group."/>
+  </concept>
+  <concept>
+    <code value="refusal"/>
+    <display value="No further invitations due to refusal."/>
+  </concept>
+  <concept>
+    <code value="temporarilyexcluded"/>
+    <display value="Temporarily excluded."/>
+  </concept>
+  <concept>
+    <code value="tobedetermined"/>
+    <display value="A further invitation may or not be advised, but that is not yet determined."/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Insufficient information to determine a future invitation."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-pseudonymization-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-pseudonymization-type</b></p><a name=\"be-vs-pseudonymization-type\"> </a><a name=\"hcbe-vs-pseudonymization-type\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-pseudonymization-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/ValueSet/be-vs-pseudonymization-type",
+  "version" : "1.0.0",
+  "name" : "BeVSPseudonymizationType",
+  "title" : "Types of pseudonymization",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-12T09:42:51+01:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The technique used for pseudonymization",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type"
+    }]
+  }
+}

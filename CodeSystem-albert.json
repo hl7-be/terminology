@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "albert",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem albert</b></p><a name=\"albert\"> </a><a name=\"hcalbert\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert</code> provides <b>a fragment</b> that includes following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">26223<a name=\"albert-26223\"> </a></td><td>Aldosterone (urine)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert",
+  "version" : "1.0.0",
+  "name" : "Albert",
+  "title" : "CodeSystem Albert",
+  "status" : "active",
+  "date" : "2020-09-25T13:06:43+02:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This code system is to identify Albert code",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "fragment",
+  "count" : 1,
+  "concept" : [{
+    "code" : "26223",
+    "display" : "Aldosterone (urine)"
+  }]
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-populationscreening-next-invitation-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-populationscreening-next-invitation-type</b></p><a name=\"be-cs-populationscreening-next-invitation-type\"> </a><a name=\"hcbe-cs-populationscreening-next-invitation-type\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">nextinvitation<a name=\"be-cs-populationscreening-next-invitation-type-nextinvitation\"> </a></td><td>A following invitation is expected</td></tr><tr><td style=\"white-space:nowrap\">definitivelyexcluded<a name=\"be-cs-populationscreening-next-invitation-type-definitivelyexcluded\"> </a></td><td>No further invitation expected</td></tr><tr><td style=\"white-space:nowrap\">notintargetgroup<a name=\"be-cs-populationscreening-next-invitation-type-notintargetgroup\"> </a></td><td>Not part of target group.</td></tr><tr><td style=\"white-space:nowrap\">refusal<a name=\"be-cs-populationscreening-next-invitation-type-refusal\"> </a></td><td>No further invitations due to refusal.</td></tr><tr><td style=\"white-space:nowrap\">temporarilyexcluded<a name=\"be-cs-populationscreening-next-invitation-type-temporarilyexcluded\"> </a></td><td>Temporarily excluded.</td></tr><tr><td style=\"white-space:nowrap\">tobedetermined<a name=\"be-cs-populationscreening-next-invitation-type-tobedetermined\"> </a></td><td>A further invitation may or not be advised, but that is not yet determined.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"be-cs-populationscreening-next-invitation-type-unknown\"> </a></td><td>Insufficient information to determine a future invitation.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type",
+  "version" : "1.0.0",
+  "name" : "BeCSPopulationScreeningNextInvitationType",
+  "title" : "Population Screening Next Invitation Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-06-12T10:56:47+02:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Code System containing the codes for the type of the next invitation (or exclusion of next invitation)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "nextinvitation",
+    "display" : "A following invitation is expected"
+  },
+  {
+    "code" : "definitivelyexcluded",
+    "display" : "No further invitation expected"
+  },
+  {
+    "code" : "notintargetgroup",
+    "display" : "Not part of target group."
+  },
+  {
+    "code" : "refusal",
+    "display" : "No further invitations due to refusal."
+  },
+  {
+    "code" : "temporarilyexcluded",
+    "display" : "Temporarily excluded."
+  },
+  {
+    "code" : "tobedetermined",
+    "display" : "A further invitation may or not be advised, but that is not yet determined."
+  },
+  {
+    "code" : "unknown",
+    "display" : "Insufficient information to determine a future invitation."
+  }]
+}

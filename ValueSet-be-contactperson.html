@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BeContactPerson - HL7 Belgium terminology Implementation Guide (IG) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"20.5"}
+    h3,h4,h5,h6{--heading-prefix:"20.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- My Organization -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium terminology Implementation Guide (IG)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="scope.html">Scope and content</a>
+      </li>
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="challenges.html">Challenges</a>
+      </li>
+      <li>
+        <a href="design.html">Design choices</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use cases</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="logicals.html">Logical models</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profilemapping.html">Mapping to profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+      <li>
+        <a href="implementationnotes.html">Implementation notes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="knownissues.html">Known issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+      <li>
+        <a href="xversion.html">Cross-version analysis</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="index.html">Rx</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BeContactPerson</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Belgium terminology Implementation Guide (IG), published by My Organization. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/terminology/tree/master'>https://github.com/hl7-be/terminology/tree/master</a> and changes regularly. See the <a href='https://hl7belgium.org/profiles/fhir/terminology/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-be-contactperson.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-be-contactperson.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-be-contactperson.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: BeContactPerson
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-08-30
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">BeContactPerson</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="be-contactperson"> </a><a name="hcbe-contactperson"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include codes from<a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> version <span title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</span> where concept  is-not-a <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-O">O</a></li>
+<li>Include these codes as defined in <a href="CodeSystem-cd-contact-person.html"><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></a> version <span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</span>
+<table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>English (English, en)</b></td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-father">father</a></td>
+<td style="color: #cccccc">father</td>
+<td>father</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-mother">mother</a></td>
+<td style="color: #cccccc">mother</td>
+<td>mother</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-child">child</a></td>
+<td style="color: #cccccc">child</td>
+<td>child</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-spouse">spouse</a></td>
+<td style="color: #cccccc">spouse</td>
+<td>spouse</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-husband">husband</a></td>
+<td style="color: #cccccc">husband</td>
+<td>husband</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-partner">partner</a></td>
+<td style="color: #cccccc">partner</td>
+<td>partner</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-brother">brother</a></td>
+<td style="color: #cccccc">brother</td>
+<td>brother</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-sister">sister</a></td>
+<td style="color: #cccccc">sister</td>
+<td>sister</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-brotherinlaw">brotherinlaw</a></td>
+<td style="color: #cccccc">brotherinlaw</td>
+<td>brother-in-law</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-tutor">tutor</a></td>
+<td style="color: #cccccc">tutor</td>
+<td>tutor</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-notary">notary</a></td>
+<td style="color: #cccccc">notary</td>
+<td>notary</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-lawyer">lawyer</a></td>
+<td style="color: #cccccc">lawyer</td>
+<td>lawyer</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-employer">employer</a></td>
+<td style="color: #cccccc">employer</td>
+<td>employer</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandparent">grandparent</a></td>
+<td style="color: #cccccc">grandparent</td>
+<td>grandparent</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-son">son</a></td>
+<td style="color: #cccccc">son</td>
+<td>son</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-daughter">daughter</a></td>
+<td style="color: #cccccc">daughter</td>
+<td>daughter</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandchild">grandchild</a></td>
+<td style="color: #cccccc">grandchild</td>
+<td>grandchild</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-neighbour">neighbour</a></td>
+<td style="color: #cccccc">neighbour</td>
+<td>neighbour</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepson">stepson</a></td>
+<td style="color: #cccccc">stepson</td>
+<td>stepson</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepdaughter">stepdaughter</a></td>
+<td style="color: #cccccc">stepdaughter</td>
+<td>stepdaughter</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepfather">stepfather</a></td>
+<td style="color: #cccccc">stepfather</td>
+<td>stepfather</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepmother">stepmother</a></td>
+<td style="color: #cccccc">stepmother</td>
+<td>stepmother</td></tr>
+<tr><td><a href="CodeSystem-cd-contact-person.html#cd-contact-person-sisterinlaw">sisterinlaw</a></td>
+<td style="color: #cccccc">sisterinlaw</td>
+<td>sisterinlaw</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"/><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion performed internally based on:</p><ul><li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html">codesystem contactRole2 v2.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v2-0131|2.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="CodeSystem-cd-contact-person.html">codesystem BeCdContactPerson v1.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person|1.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></li></ul></div><p>This value set contains 34 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b><a href="http://hl7.org/fhir/concept-properties#status">status</a></b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-BP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-BP">BP</a></td><td>Billing contact person</td><td>Billing contact person</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;BP&quot;, &quot;display&quot;: &quot;Billing contact person&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;BP&quot;&gt;&lt;display value=&quot;Billing contact person&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-CP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-CP">CP</a></td><td>Contact person</td><td>Contact person</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;CP&quot;, &quot;display&quot;: &quot;Contact person&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;CP&quot;&gt;&lt;display value=&quot;Contact person&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-EP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-EP">EP</a></td><td>Emergency contact person</td><td>Emergency contact person</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;EP&quot;, &quot;display&quot;: &quot;Emergency contact person&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;EP&quot;&gt;&lt;display value=&quot;Emergency contact person&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-PR"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-PR">PR</a></td><td>Person preparing referral</td><td>Person preparing referral</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;PR&quot;, &quot;display&quot;: &quot;Person preparing referral&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;PR&quot;&gt;&lt;display value=&quot;Person preparing referral&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-E"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-E">E</a></td><td>Employer</td><td>Employer</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Employer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Employer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-C"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-C">C</a></td><td>Emergency Contact</td><td>Emergency Contact</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Emergency Contact&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Emergency Contact&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-F"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-F">F</a></td><td>Federal Agency</td><td>Federal Agency</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Federal Agency&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Federal Agency&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-I"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-I">I</a></td><td>Insurance Company</td><td>Insurance Company</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Insurance Company&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Insurance Company&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-N"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-N">N</a></td><td>Next-of-Kin</td><td>Next-of-Kin</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Next-of-Kin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Next-of-Kin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-S"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-S">S</a></td><td>State Agency</td><td>State Agency</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;S&quot;, &quot;display&quot;: &quot;State Agency&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;S&quot;&gt;&lt;display value=&quot;State Agency&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-U"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0131.html#v2-0131-U">U</a></td><td>Unknown</td><td>Unknown</td><td>A</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;U&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;U&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-father"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-father">father</a></td><td>father</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;father&quot;, &quot;display&quot;: &quot;father&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;father&quot;&gt;&lt;display value=&quot;father&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-mother"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-mother">mother</a></td><td>mother</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mother&quot;, &quot;display&quot;: &quot;mother&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mother&quot;&gt;&lt;display value=&quot;mother&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-child"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-child">child</a></td><td>child</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;child&quot;, &quot;display&quot;: &quot;child&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;child&quot;&gt;&lt;display value=&quot;child&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-spouse"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-spouse">spouse</a></td><td>spouse</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;spouse&quot;, &quot;display&quot;: &quot;spouse&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;spouse&quot;&gt;&lt;display value=&quot;spouse&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-husband"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-husband">husband</a></td><td>husband</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;husband&quot;, &quot;display&quot;: &quot;husband&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;husband&quot;&gt;&lt;display value=&quot;husband&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-partner"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-partner">partner</a></td><td>partner</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;partner&quot;, &quot;display&quot;: &quot;partner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;partner&quot;&gt;&lt;display value=&quot;partner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-brother"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-brother">brother</a></td><td>brother</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;brother&quot;, &quot;display&quot;: &quot;brother&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;brother&quot;&gt;&lt;display value=&quot;brother&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-sister"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-sister">sister</a></td><td>sister</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;sister&quot;, &quot;display&quot;: &quot;sister&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;sister&quot;&gt;&lt;display value=&quot;sister&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-brotherinlaw"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-brotherinlaw">brotherinlaw</a></td><td>brotherinlaw</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;brotherinlaw&quot;, &quot;display&quot;: &quot;brotherinlaw&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;brotherinlaw&quot;&gt;&lt;display value=&quot;brotherinlaw&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-tutor"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-tutor">tutor</a></td><td>tutor</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;tutor&quot;, &quot;display&quot;: &quot;tutor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;tutor&quot;&gt;&lt;display value=&quot;tutor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-notary"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-notary">notary</a></td><td>notary</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;notary&quot;, &quot;display&quot;: &quot;notary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;notary&quot;&gt;&lt;display value=&quot;notary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-lawyer"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-lawyer">lawyer</a></td><td>lawyer</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;lawyer&quot;, &quot;display&quot;: &quot;lawyer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;lawyer&quot;&gt;&lt;display value=&quot;lawyer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-employer"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-employer">employer</a></td><td>employer</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;employer&quot;, &quot;display&quot;: &quot;employer&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;employer&quot;&gt;&lt;display value=&quot;employer&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-grandparent"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandparent">grandparent</a></td><td>grandparent</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;grandparent&quot;, &quot;display&quot;: &quot;grandparent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;grandparent&quot;&gt;&lt;display value=&quot;grandparent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-son"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-son">son</a></td><td>son</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;son&quot;, &quot;display&quot;: &quot;son&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;son&quot;&gt;&lt;display value=&quot;son&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-daughter"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-daughter">daughter</a></td><td>daughter</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;daughter&quot;, &quot;display&quot;: &quot;daughter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;daughter&quot;&gt;&lt;display value=&quot;daughter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-grandchild"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-grandchild">grandchild</a></td><td>grandchild</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;grandchild&quot;, &quot;display&quot;: &quot;grandchild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;grandchild&quot;&gt;&lt;display value=&quot;grandchild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-neighbour"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-neighbour">neighbour</a></td><td>neighbour</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;neighbour&quot;, &quot;display&quot;: &quot;neighbour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;neighbour&quot;&gt;&lt;display value=&quot;neighbour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-stepson"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepson">stepson</a></td><td>stepson</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stepson&quot;, &quot;display&quot;: &quot;stepson&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stepson&quot;&gt;&lt;display value=&quot;stepson&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-stepdaughter"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepdaughter">stepdaughter</a></td><td>stepdaughter</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stepdaughter&quot;, &quot;display&quot;: &quot;stepdaughter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stepdaughter&quot;&gt;&lt;display value=&quot;stepdaughter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-stepfather"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepfather">stepfather</a></td><td>stepfather</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stepfather&quot;, &quot;display&quot;: &quot;stepfather&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stepfather&quot;&gt;&lt;display value=&quot;stepfather&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-stepmother"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-stepmother">stepmother</a></td><td>stepmother</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;stepmother&quot;, &quot;display&quot;: &quot;stepmother&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;stepmother&quot;&gt;&lt;display value=&quot;stepmother&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person-sisterinlaw"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</code></td><td style="white-space:nowrap">  <a href="CodeSystem-cd-contact-person.html#cd-contact-person-sisterinlaw">sisterinlaw</a></td><td>sisterinlaw</td><td/><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;sisterinlaw&quot;, &quot;display&quot;: &quot;sisterinlaw&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;sisterinlaw&quot;&gt;&lt;display value=&quot;sisterinlaw&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 18:11+0000">2025-10-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- My Organization -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7belgium.org/profiles/fhir/terminology/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-patientwill-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-patientwill-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-patientwill-code</b></p><a name=\"be-cs-patientwill-code\"> </a><a name=\"hcbe-cs-patientwill-code\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">bloodtransfusionrefusal<a name=\"be-cs-patientwill-code-bloodtransfusionrefusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">clinicaltrialparticipationconsent<a name=\"be-cs-patientwill-code-clinicaltrialparticipationconsent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">datareuseforclinicalresearchconsent<a name=\"be-cs-patientwill-code-datareuseforclinicalresearchconsent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">datareuseforclinicaltrialsconsent<a name=\"be-cs-patientwill-code-datareuseforclinicaltrialsconsent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">intubationrefusal<a name=\"be-cs-patientwill-code-intubationrefusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">omissionofmedicaldata<a name=\"be-cs-patientwill-code-omissionofmedicaldata\"> </a></td></tr><tr><td style=\"white-space:nowrap\">vaccinationrefusal<a name=\"be-cs-patientwill-code-vaccinationrefusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dnr0<a name=\"be-cs-patientwill-code-dnr0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dnr1<a name=\"be-cs-patientwill-code-dnr1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dnr2<a name=\"be-cs-patientwill-code-dnr2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dnr3<a name=\"be-cs-patientwill-code-dnr3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hos0<a name=\"be-cs-patientwill-code-hos0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hos2<a name=\"be-cs-patientwill-code-hos2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">onlycomfort<a name=\"be-cs-patientwill-code-onlycomfort\"> </a></td></tr><tr><td style=\"white-space:nowrap\">onlytestsforcomfort<a name=\"be-cs-patientwill-code-onlytestsforcomfort\"> </a></td></tr><tr><td style=\"white-space:nowrap\">noantibiotics<a name=\"be-cs-patientwill-code-noantibiotics\"> </a></td></tr><tr><td style=\"white-space:nowrap\">noartificialhydratationfeeding<a name=\"be-cs-patientwill-code-noartificialhydratationfeeding\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nochemo<a name=\"be-cs-patientwill-code-nochemo\"> </a></td></tr><tr><td style=\"white-space:nowrap\">noradiation<a name=\"be-cs-patientwill-code-noradiation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nooperation<a name=\"be-cs-patientwill-code-nooperation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">noventilation<a name=\"be-cs-patientwill-code-noventilation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nodialysis<a name=\"be-cs-patientwill-code-nodialysis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">noresuscitation<a name=\"be-cs-patientwill-code-noresuscitation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nointensivecare<a name=\"be-cs-patientwill-code-nointensivecare\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nohospitalisation<a name=\"be-cs-patientwill-code-nohospitalisation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">onlytreatmentfororgandonation<a name=\"be-cs-patientwill-code-onlytreatmentfororgandonation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"be-cs-patientwill-code-other\"> </a></td></tr><tr><td style=\"white-space:nowrap\">euthanasiarequest<a name=\"be-cs-patientwill-code-euthanasiarequest\"> </a></td></tr><tr><td style=\"white-space:nowrap\">euthanasiarefusal<a name=\"be-cs-patientwill-code-euthanasiarefusal\"> </a></td></tr><tr><td style=\"white-space:nowrap\">organdonationfortransplant<a name=\"be-cs-patientwill-code-organdonationfortransplant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodymaterialfortransplant<a name=\"be-cs-patientwill-code-bodymaterialfortransplant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodymaterialformedication<a name=\"be-cs-patientwill-code-bodymaterialformedication\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodymaterialforresearch<a name=\"be-cs-patientwill-code-bodymaterialforresearch\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bodydonationforscience<a name=\"be-cs-patientwill-code-bodydonationforscience\"> </a></td></tr><tr><td style=\"white-space:nowrap\">burialbody<a name=\"be-cs-patientwill-code-burialbody\"> </a></td></tr><tr><td style=\"white-space:nowrap\">burialashescemetry<a name=\"be-cs-patientwill-code-burialashescemetry\"> </a></td></tr><tr><td style=\"white-space:nowrap\">columbariumashes<a name=\"be-cs-patientwill-code-columbariumashes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scattergardenashes<a name=\"be-cs-patientwill-code-scattergardenashes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scatterashesbelgiansea<a name=\"be-cs-patientwill-code-scatterashesbelgiansea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">scatterashesother<a name=\"be-cs-patientwill-code-scatterashesother\"> </a></td></tr><tr><td style=\"white-space:nowrap\">burialashesother<a name=\"be-cs-patientwill-code-burialashesother\"> </a></td></tr><tr><td style=\"white-space:nowrap\">storeashesother<a name=\"be-cs-patientwill-code-storeashesother\"> </a></td></tr><tr><td style=\"white-space:nowrap\">norituals<a name=\"be-cs-patientwill-code-norituals\"> </a></td></tr><tr><td style=\"white-space:nowrap\">catholic<a name=\"be-cs-patientwill-code-catholic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">protestant<a name=\"be-cs-patientwill-code-protestant\"> </a></td></tr><tr><td style=\"white-space:nowrap\">anglican<a name=\"be-cs-patientwill-code-anglican\"> </a></td></tr><tr><td style=\"white-space:nowrap\">orthodox<a name=\"be-cs-patientwill-code-orthodox\"> </a></td></tr><tr><td style=\"white-space:nowrap\">jewish<a name=\"be-cs-patientwill-code-jewish\"> </a></td></tr><tr><td style=\"white-space:nowrap\">islamic<a name=\"be-cs-patientwill-code-islamic\"> </a></td></tr><tr><td style=\"white-space:nowrap\">secular<a name=\"be-cs-patientwill-code-secular\"> </a></td></tr><tr><td style=\"white-space:nowrap\">neutral<a name=\"be-cs-patientwill-code-neutral\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSPatientWillCode"] ; # 
+  fhir:title [ fhir:v "Patient Will Directive CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-01-10T10:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "My Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "My Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.com/committees" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "my-group@example.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Bob Smith" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "bobsmith@example.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Patient Will Directive CodeSystem. Codes as defined by the NIHDI."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "51"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "bloodtransfusionrefusal" ]
+  ] [
+     fhir:code [ fhir:v "clinicaltrialparticipationconsent" ]
+  ] [
+     fhir:code [ fhir:v "datareuseforclinicalresearchconsent" ]
+  ] [
+     fhir:code [ fhir:v "datareuseforclinicaltrialsconsent" ]
+  ] [
+     fhir:code [ fhir:v "intubationrefusal" ]
+  ] [
+     fhir:code [ fhir:v "omissionofmedicaldata" ]
+  ] [
+     fhir:code [ fhir:v "vaccinationrefusal" ]
+  ] [
+     fhir:code [ fhir:v "dnr0" ]
+  ] [
+     fhir:code [ fhir:v "dnr1" ]
+  ] [
+     fhir:code [ fhir:v "dnr2" ]
+  ] [
+     fhir:code [ fhir:v "dnr3" ]
+  ] [
+     fhir:code [ fhir:v "hos0" ]
+  ] [
+     fhir:code [ fhir:v "hos2" ]
+  ] [
+     fhir:code [ fhir:v "onlycomfort" ]
+  ] [
+     fhir:code [ fhir:v "onlytestsforcomfort" ]
+  ] [
+     fhir:code [ fhir:v "noantibiotics" ]
+  ] [
+     fhir:code [ fhir:v "noartificialhydratationfeeding" ]
+  ] [
+     fhir:code [ fhir:v "nochemo" ]
+  ] [
+     fhir:code [ fhir:v "noradiation" ]
+  ] [
+     fhir:code [ fhir:v "nooperation" ]
+  ] [
+     fhir:code [ fhir:v "noventilation" ]
+  ] [
+     fhir:code [ fhir:v "nodialysis" ]
+  ] [
+     fhir:code [ fhir:v "noresuscitation" ]
+  ] [
+     fhir:code [ fhir:v "nointensivecare" ]
+  ] [
+     fhir:code [ fhir:v "nohospitalisation" ]
+  ] [
+     fhir:code [ fhir:v "onlytreatmentfororgandonation" ]
+  ] [
+     fhir:code [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "euthanasiarequest" ]
+  ] [
+     fhir:code [ fhir:v "euthanasiarefusal" ]
+  ] [
+     fhir:code [ fhir:v "organdonationfortransplant" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialfortransplant" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialformedication" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialforresearch" ]
+  ] [
+     fhir:code [ fhir:v "bodydonationforscience" ]
+  ] [
+     fhir:code [ fhir:v "burialbody" ]
+  ] [
+     fhir:code [ fhir:v "burialashescemetry" ]
+  ] [
+     fhir:code [ fhir:v "columbariumashes" ]
+  ] [
+     fhir:code [ fhir:v "scattergardenashes" ]
+  ] [
+     fhir:code [ fhir:v "scatterashesbelgiansea" ]
+  ] [
+     fhir:code [ fhir:v "scatterashesother" ]
+  ] [
+     fhir:code [ fhir:v "burialashesother" ]
+  ] [
+     fhir:code [ fhir:v "storeashesother" ]
+  ] [
+     fhir:code [ fhir:v "norituals" ]
+  ] [
+     fhir:code [ fhir:v "catholic" ]
+  ] [
+     fhir:code [ fhir:v "protestant" ]
+  ] [
+     fhir:code [ fhir:v "anglican" ]
+  ] [
+     fhir:code [ fhir:v "orthodox" ]
+  ] [
+     fhir:code [ fhir:v "jewish" ]
+  ] [
+     fhir:code [ fhir:v "islamic" ]
+  ] [
+     fhir:code [ fhir:v "secular" ]
+  ] [
+     fhir:code [ fhir:v "neutral" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

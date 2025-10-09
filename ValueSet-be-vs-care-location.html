@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>BeVSCareLocation - HL7 Belgium terminology Implementation Guide (IG) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- My Organization -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"20.10"}
+    h3,h4,h5,h6{--heading-prefix:"20.10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- My Organization -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium terminology Implementation Guide (IG)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="scope.html">Scope and content</a>
+      </li>
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="challenges.html">Challenges</a>
+      </li>
+      <li>
+        <a href="design.html">Design choices</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use cases</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="logicals.html">Logical models</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profilemapping.html">Mapping to profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+      <li>
+        <a href="implementationnotes.html">Implementation notes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="knownissues.html">Known issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+      <li>
+        <a href="xversion.html">Cross-version analysis</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="index.html">Rx</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>BeVSCareLocation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Belgium terminology Implementation Guide (IG), published by My Organization. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/terminology/tree/master'>https://github.com/hl7-be/terminology/tree/master</a> and changes regularly. See the <a href='https://hl7belgium.org/profiles/fhir/terminology/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-be-vs-care-location.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-be-vs-care-location.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-be-vs-care-location.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: BeVSCareLocation
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2021-01-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">BeVSCareLocation</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Care Location Value Set</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"></p><a name="be-vs-care-location"> </a><a name="hcbe-vs-care-location"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-be-cs-care-location.html"><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></a> version <span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</span></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-be-cs-care-location.html">codesystem BeCSCareLocation v1.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location|1.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 23 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-hospital"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-hospital">hospital</a></td><td>Hospital</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;hospital&quot;, &quot;display&quot;: &quot;Hospital&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;hospital&quot;&gt;&lt;display value=&quot;Hospital&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-patient-home"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-patient-home">patient-home</a></td><td>Patient home</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;patient-home&quot;, &quot;display&quot;: &quot;Patient home&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;patient-home&quot;&gt;&lt;display value=&quot;Patient home&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-nursing-home"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-nursing-home">nursing-home</a></td><td>Nursing home</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;nursing-home&quot;, &quot;display&quot;: &quot;Nursing home&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;nursing-home&quot;&gt;&lt;display value=&quot;Nursing home&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-recovery-home"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-recovery-home">recovery-home</a></td><td>Recovery home</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;recovery-home&quot;, &quot;display&quot;: &quot;Recovery home&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;recovery-home&quot;&gt;&lt;display value=&quot;Recovery home&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-workplace"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-workplace">workplace</a></td><td>Workplace</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;workplace&quot;, &quot;display&quot;: &quot;Workplace&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;workplace&quot;&gt;&lt;display value=&quot;Workplace&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-medical-center"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-medical-center">medical-center</a></td><td>Medical center</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;medical-center&quot;, &quot;display&quot;: &quot;Medical center&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;medical-center&quot;&gt;&lt;display value=&quot;Medical center&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-clinic"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-clinic">clinic</a></td><td>Clinic</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;clinic&quot;, &quot;display&quot;: &quot;Clinic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;clinic&quot;&gt;&lt;display value=&quot;Clinic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-pediatric-ic"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-pediatric-ic">pediatric-ic</a></td><td>Pediatric ic</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;pediatric-ic&quot;, &quot;display&quot;: &quot;Pediatric ic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;pediatric-ic&quot;&gt;&lt;display value=&quot;Pediatric ic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-neonatal-ic"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-neonatal-ic">neonatal-ic</a></td><td>Neonatal ic</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;neonatal-ic&quot;, &quot;display&quot;: &quot;Neonatal ic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;neonatal-ic&quot;&gt;&lt;display value=&quot;Neonatal ic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-prenatal-consult"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-prenatal-consult">prenatal-consult</a></td><td>Prenatal consult</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;prenatal-consult&quot;, &quot;display&quot;: &quot;Prenatal consult&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;prenatal-consult&quot;&gt;&lt;display value=&quot;Prenatal consult&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-m-accueil"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-m-accueil">m-accueil</a></td><td>m-accueil</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;m-accueil&quot;, &quot;display&quot;: &quot;m-accueil&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;m-accueil&quot;&gt;&lt;display value=&quot;m-accueil&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-child-consult"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-child-consult">child-consult</a></td><td>Child consult</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;child-consult&quot;, &quot;display&quot;: &quot;Child consult&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;child-consult&quot;&gt;&lt;display value=&quot;Child consult&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-one"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-one">one</a></td><td>ONE</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;one&quot;, &quot;display&quot;: &quot;ONE&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;one&quot;&gt;&lt;display value=&quot;ONE&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-kind-gezin"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-kind-gezin">kind-gezin</a></td><td>Kind en gezin</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;kind-gezin&quot;, &quot;display&quot;: &quot;Kind en gezin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;kind-gezin&quot;&gt;&lt;display value=&quot;Kind en gezin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-ambulance"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-ambulance">ambulance</a></td><td>Ambulance</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ambulance&quot;, &quot;display&quot;: &quot;Ambulance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ambulance&quot;&gt;&lt;display value=&quot;Ambulance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-school"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-school">school</a></td><td>School</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;school&quot;, &quot;display&quot;: &quot;School&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;school&quot;&gt;&lt;display value=&quot;School&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-school-health-serv"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-school-health-serv">school-health-serv</a></td><td>School health services</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;school-health-serv&quot;, &quot;display&quot;: &quot;School health services&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;school-health-serv&quot;&gt;&lt;display value=&quot;School health services&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-pharmacy"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-pharmacy">pharmacy</a></td><td>Pharmacy</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;pharmacy&quot;, &quot;display&quot;: &quot;Pharmacy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;pharmacy&quot;&gt;&lt;display value=&quot;Pharmacy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-med-monde"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-med-monde">med-monde</a></td><td>Med monde</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;med-monde&quot;, &quot;display&quot;: &quot;Med monde&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;med-monde&quot;&gt;&lt;display value=&quot;Med monde&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-ngo"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-ngo">ngo</a></td><td>Non-Governmental Organization</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ngo&quot;, &quot;display&quot;: &quot;Non-Governmental Organization&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ngo&quot;&gt;&lt;display value=&quot;Non-Governmental Organization&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-family-planning"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-family-planning">family-planning</a></td><td>Family planning</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;family-planning&quot;, &quot;display&quot;: &quot;Family planning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;family-planning&quot;&gt;&lt;display value=&quot;Family planning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-abroad"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-abroad">abroad</a></td><td>Abroad</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;abroad&quot;, &quot;display&quot;: &quot;Abroad&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;abroad&quot;&gt;&lt;display value=&quot;Abroad&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location-other"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</code></td><td style="white-space:nowrap">  <a href="CodeSystem-be-cs-care-location.html#be-cs-care-location-other">other</a></td><td>other</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;other&quot;, &quot;display&quot;: &quot;other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;other&quot;&gt;&lt;display value=&quot;other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.com/committees">My Organization</a>.  Package hl7.fhir.be.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 9, 2025 18:11+0000">2025-10-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- My Organization -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7belgium.org/profiles/fhir/terminology/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

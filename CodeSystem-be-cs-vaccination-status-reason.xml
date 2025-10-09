@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-status-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-vaccination-status-reason</b></p><a name="be-cs-vaccination-status-reason"> </a><a name="hcbe-cs-vaccination-status-reason"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">OTHER<a name="be-cs-vaccination-status-reason-OTHER"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">ALLERGY<a name="be-cs-vaccination-status-reason-ALLERGY"> </a></td><td>Allergy to vaccine ingredient</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>OTHER</td><td>Autre</td><td>Andere</td></tr><tr><td>ALLERGY</td><td>Allergie</td><td>Allergie</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"/>
+  <version value="1.0.0"/>
+  <name value="BeCSStatusReason"/>
+  <title value="BeCSStatusReason"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-03-24T16:01:36+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination reason status Code System."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="OTHER"/>
+    <display value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Andere"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ALLERGY"/>
+    <display value="Allergy to vaccine ingredient"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Allergie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Allergie"/>
+    </designation>
+  </concept>
+</CodeSystem>

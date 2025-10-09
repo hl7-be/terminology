@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="refusal-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem refusal-values</b></p><a name="refusal-values"> </a><a name="hcrefusal-values"> </a><p>This case-sensitive code system <code>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/refusal-values</code> provides <b>a fragment</b> that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">REF_AGREE_ALL_001<a name="refusal-values-REF_AGREE_ALL_001"> </a></td></tr><tr><td style="white-space:nowrap">REF_AGREE_ALL_002<a name="refusal-values-REF_AGREE_ALL_002"> </a></td></tr><tr><td style="white-space:nowrap">REF_AGREE_ALL_003<a name="refusal-values-REF_AGREE_ALL_003"> </a></td></tr><tr><td style="white-space:nowrap">REF_AGREE_ALL_004<a name="refusal-values-REF_AGREE_ALL_004"> </a></td></tr><tr><td style="white-space:nowrap">REF_AGREE_SRV_PHYSIO_001<a name="refusal-values-REF_AGREE_SRV_PHYSIO_001"> </a></td></tr><tr><td style="white-space:nowrap">REF_AGREE_SRV_PHYSIO_002<a name="refusal-values-REF_AGREE_SRV_PHYSIO_002"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/refusal-values"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetRefusalValues"/>
+  <title value="CodeSystem refusal values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:47:43+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Refusal values in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="REF_AGREE_ALL_001"/>
+    <display value="REF_AGREE_ALL_001"/>
+  </concept>
+  <concept>
+    <code value="REF_AGREE_ALL_002"/>
+    <display value="REF_AGREE_ALL_002"/>
+  </concept>
+  <concept>
+    <code value="REF_AGREE_ALL_003"/>
+    <display value="REF_AGREE_ALL_003"/>
+  </concept>
+  <concept>
+    <code value="REF_AGREE_ALL_004"/>
+    <display value="REF_AGREE_ALL_004"/>
+  </concept>
+  <concept>
+    <code value="REF_AGREE_SRV_PHYSIO_001"/>
+    <display value="REF_AGREE_SRV_PHYSIO_001"/>
+  </concept>
+  <concept>
+    <code value="REF_AGREE_SRV_PHYSIO_002"/>
+    <display value="REF_AGREE_SRV_PHYSIO_002"/>
+  </concept>
+</CodeSystem>

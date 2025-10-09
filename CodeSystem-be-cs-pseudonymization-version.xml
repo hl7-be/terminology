@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-pseudonymization-version"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-pseudonymization-version</b></p><a name="be-cs-pseudonymization-version"> </a><a name="hcbe-cs-pseudonymization-version"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">urn:be:fgov:ehealth:pseudo:v1<a name="be-cs-pseudonymization-version-urn.58be.58fgov.58ehealth.58pseudo.58v1"> </a></td></tr><tr><td style="white-space:nowrap">urn:be:fgov:ehealth:pseudo:v2<a name="be-cs-pseudonymization-version-urn.58be.58fgov.58ehealth.58pseudo.58v2"> </a></td></tr><tr><td style="white-space:nowrap">urn:be:fgov:pseudo-encrypted:v1<a name="be-cs-pseudonymization-version-urn.58be.58fgov.58pseudo-encrypted.58v1"> </a></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version"/>
+  <version value="1.0.0"/>
+  <name value="BeCSPseudonymizationVersion"/>
+  <title value="BeCSPseudonymizationVersion"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-12T09:42:51+01:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="List of pseudonymization versions that can be used a.o. in the Capabilities Statement"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="urn:be:fgov:ehealth:pseudo:v1"/>
+  </concept>
+  <concept>
+    <code value="urn:be:fgov:ehealth:pseudo:v2"/>
+  </concept>
+  <concept>
+    <code value="urn:be:fgov:pseudo-encrypted:v1"/>
+  </concept>
+</CodeSystem>
