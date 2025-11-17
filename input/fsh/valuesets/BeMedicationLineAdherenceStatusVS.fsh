@@ -2,7 +2,7 @@ ValueSet: BeMedicationLineAdherenceStatusVS
 Id: BeMedicationLineAdherenceStatusVS
 Title: "BeExtAdherenceStatus"
 Description: "The status of taking the medication."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusVS"
 * ^version = "1.1.0"
 * ^status = #draft
 * ^experimental = false

@@ -2,7 +2,7 @@ CodeSystem: BeMedicationLineAdherenceStatus
 Id: BeMedicationLineAdherenceStatus
 Title: "Medication Line Adherence Status"
 Description: "Medication Line Adherence Status - ValueSet."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

@@ -2,7 +2,7 @@ CodeSystem: BeMedicationLineAdherenceStatusReason
 Id: BeMedicationLineAdherenceStatusReason
 Title: "Adherence Status Reason"
 Description: "Reasons for non-adherence to a treatment or intervention."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatusReason"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

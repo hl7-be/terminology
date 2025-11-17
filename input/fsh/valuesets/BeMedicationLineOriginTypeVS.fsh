@@ -2,7 +2,7 @@ ValueSet: BeMedicationLineOriginTypeVS
 Id: BeMedicationLineOriginTypeVS
 Title: "Medication origin type value set"
 Description: "Medication origin type value set"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineOriginTypeVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

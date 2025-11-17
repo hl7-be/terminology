@@ -2,7 +2,7 @@ ValueSet: BeRouteOfAdministrationVS
 Id: BeRouteOfAdministrationVS
 Title: "Route of Administration ValueSet"
 Description: "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeRouteOfAdministrationVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

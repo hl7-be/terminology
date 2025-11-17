@@ -2,7 +2,7 @@ ValueSet: BeMedicationPrescriptionStatusVS
 Id: BeMedicationPrescriptionStatusVS
 Title: "Medication Prescription Status"
 Description: "Medication prescription status codes."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationPrescriptionStatusVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

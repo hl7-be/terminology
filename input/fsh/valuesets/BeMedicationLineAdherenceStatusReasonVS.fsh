@@ -2,7 +2,7 @@ ValueSet: BeMedicationLineAdherenceStatusReasonVS
 Id: BeMedicationLineAdherenceStatusReasonVS
 Title: "Adherence Status Reason ValueSet"
 Description: "ValueSet containing reasons for non-adherence to a treatment or intervention."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusReasonVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = true

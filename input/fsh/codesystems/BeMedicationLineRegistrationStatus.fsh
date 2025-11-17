@@ -2,7 +2,7 @@ CodeSystem: BeMedicationLineRegistrationStatus
 Id: BeMedicationLineRegistrationStatus
 Title: "Medication Line Registration Status"
 Description: "This code system defines the registration statuses for medication lines."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

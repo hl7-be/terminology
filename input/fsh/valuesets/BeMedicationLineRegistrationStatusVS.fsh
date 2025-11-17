@@ -2,7 +2,7 @@ ValueSet: BeMedicationLineRegistrationStatusVS
 Id: BeMedicationLineRegistrationStatusVS
 Title: "Medication Line Registration Status Value Set"
 Description: "This value set includes the registration statuses for medication lines."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineRegistrationStatusVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

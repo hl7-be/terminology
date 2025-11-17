@@ -2,7 +2,7 @@ CodeSystem: BeMedicationRequestReimbursementType
 Id: BeMedicationRequestReimbursementType
 Title: "Medication request reimbursement type"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

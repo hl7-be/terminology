@@ -2,7 +2,7 @@ ValueSet: BeMedicationExposureIntentVS
 Id: BeMedicationExposureIntentVS
 Title: "Medication exposure intent"
 Description: "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationExposureIntentVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

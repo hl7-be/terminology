@@ -2,7 +2,7 @@ ValueSet: BeMedicationRequestReimbursementTypeVS
 Id: BeMedicationRequestReimbursementTypeVS
 Title: "Medication request reimbursement type ValueSet"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationRequestReimbursementTypeVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

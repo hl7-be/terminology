@@ -2,7 +2,7 @@ CodeSystem: BeMedicationType
 Id: BeMedicationType
 Title: "Medication preparation Type"
 Description: "Medication preparation type"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false

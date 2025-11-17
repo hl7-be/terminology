@@ -2,7 +2,7 @@ ValueSet: BeMedicationTypeVS
 Id: BeMedicationTypeVS
 Title: "Medication preparation Type value set"
 Description: "Medication preparation type value set"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationTypeVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
