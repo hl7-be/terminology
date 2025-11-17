@@ -12,10 +12,11 @@ Description: "NIHDI codes for use to describe eAgreement products or services in
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^version = "2.1.0"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementproductorservice"
+* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-02-17T19:47:43+01:00"
+* ^date = "2025-07-10T09:50:54+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -28,4 +29,5 @@ Description: "NIHDI codes for use to describe eAgreement products or services in
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * include codes from system NIHDIPhysiotherapyPathologySituationCode
-* include codes from system $be-cs-speech-therapy-pathology-situation-code
+* include codes from system BeCSSpeechTherapyPathologySituationCode
+* include codes from system MyCareNetAnnexTypes

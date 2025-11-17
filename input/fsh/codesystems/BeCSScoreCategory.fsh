@@ -22,17 +22,17 @@ Description: "Score Category"
 * ^content = #complete
 * ^count = 3
 * #risk "Risk score" "Risk score"
-* #risk ^designation[0].language = #fr-BE
-* #risk ^designation[=].value = "Risk score"
-* #risk ^designation[+].language = #nl-BE
-* #risk ^designation[=].value = "Risk score"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Risk score"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Risk score"
 * #pain "Pain score" "Pain score"
-* #pain ^designation[0].language = #fr-BE
-* #pain ^designation[=].value = "Pain Score"
-* #pain ^designation[+].language = #nl-BE
-* #pain ^designation[=].value = "Pain Score"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Pain Score"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Pain Score"
 * #other "Other" "Other"
-* #other ^designation[0].language = #fr-BE
-* #other ^designation[=].value = "Autre"
-* #other ^designation[+].language = #nl-BE
-* #other ^designation[=].value = "andere"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Autre"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "andere"

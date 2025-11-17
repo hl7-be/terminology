@@ -13,10 +13,11 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^version = "2.1.0"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-decision-values"
+* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-02-17T19:47:43+01:00"
+* ^date = "2025-07-10T09:50:54+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

@@ -22,22 +22,22 @@ Description: "Problem Origin Type"
 * ^content = #complete
 * ^count = 4
 * #referral "Referral order" "Following a referral order"
-* #referral ^designation[0].language = #fr-BE
-* #referral ^designation[=].value = "prescription de renvoi"
-* #referral ^designation[+].language = #nl-BE
-* #referral ^designation[=].value = "verwijsvoorschrift"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "prescription de renvoi"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "verwijsvoorschrift"
 * #own-initiative "Patient's own initiative" "The patient has arrived on their own initiative"
-* #own-initiative ^designation[0].language = #fr-BE
-* #own-initiative ^designation[=].value = "libre"
-* #own-initiative ^designation[+].language = #nl-BE
-* #own-initiative ^designation[=].value = "Op eigen initiatief"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "libre"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Op eigen initiatief"
 * #counsel "Advice or recommendation from another provider (no prescription)" "From an advice or recommendation of a health professional (without prescription)"
-* #counsel ^designation[0].language = #fr-BE
-* #counsel ^designation[=].value = "conseil"
-* #counsel ^designation[+].language = #nl-BE
-* #counsel ^designation[=].value = "doorverwijzing"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "conseil"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "doorverwijzing"
 * #other "other" "Other"
-* #other ^designation[0].language = #fr-BE
-* #other ^designation[=].value = "autre"
-* #other ^designation[+].language = #nl-BE
-* #other ^designation[=].value = "andere"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "autre"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "andere"

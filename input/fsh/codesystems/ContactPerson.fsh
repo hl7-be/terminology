@@ -22,71 +22,71 @@ Description: "Contact person in Belgium."
 * ^content = #complete
 * ^count = 23
 * #father "father"
-* #father ^designation.language = #en
-* #father ^designation.value = "father"
+  * ^designation.language = #en
+  * ^designation.value = "father"
 * #mother "mother"
-* #mother ^designation.language = #en
-* #mother ^designation.value = "mother"
+  * ^designation.language = #en
+  * ^designation.value = "mother"
 * #child "child"
-* #child ^designation.language = #en
-* #child ^designation.value = "child"
+  * ^designation.language = #en
+  * ^designation.value = "child"
 * #spouse "spouse"
-* #spouse ^designation.language = #en
-* #spouse ^designation.value = "spouse"
+  * ^designation.language = #en
+  * ^designation.value = "spouse"
 * #husband "husband"
-* #husband ^designation.language = #en
-* #husband ^designation.value = "husband"
+  * ^designation.language = #en
+  * ^designation.value = "husband"
 * #partner "partner"
-* #partner ^designation.language = #en
-* #partner ^designation.value = "partner"
+  * ^designation.language = #en
+  * ^designation.value = "partner"
 * #brother "brother"
-* #brother ^designation.language = #en
-* #brother ^designation.value = "brother"
+  * ^designation.language = #en
+  * ^designation.value = "brother"
 * #sister "sister"
-* #sister ^designation.language = #en
-* #sister ^designation.value = "sister"
+  * ^designation.language = #en
+  * ^designation.value = "sister"
 * #brotherinlaw "brotherinlaw"
-* #brotherinlaw ^designation.language = #en
-* #brotherinlaw ^designation.value = "brother-in-law"
+  * ^designation.language = #en
+  * ^designation.value = "brother-in-law"
 * #tutor "tutor"
-* #tutor ^designation.language = #en
-* #tutor ^designation.value = "tutor"
+  * ^designation.language = #en
+  * ^designation.value = "tutor"
 * #notary "notary"
-* #notary ^designation.language = #en
-* #notary ^designation.value = "notary"
+  * ^designation.language = #en
+  * ^designation.value = "notary"
 * #lawyer "lawyer"
-* #lawyer ^designation.language = #en
-* #lawyer ^designation.value = "lawyer"
+  * ^designation.language = #en
+  * ^designation.value = "lawyer"
 * #employer "employer"
-* #employer ^designation.language = #en
-* #employer ^designation.value = "employer"
+  * ^designation.language = #en
+  * ^designation.value = "employer"
 * #grandparent "grandparent"
-* #grandparent ^designation.language = #en
-* #grandparent ^designation.value = "grandparent"
+  * ^designation.language = #en
+  * ^designation.value = "grandparent"
 * #son "son"
-* #son ^designation.language = #en
-* #son ^designation.value = "son"
+  * ^designation.language = #en
+  * ^designation.value = "son"
 * #daughter "daughter"
-* #daughter ^designation.language = #en
-* #daughter ^designation.value = "daughter"
+  * ^designation.language = #en
+  * ^designation.value = "daughter"
 * #grandchild "grandchild"
-* #grandchild ^designation.language = #en
-* #grandchild ^designation.value = "grandchild"
+  * ^designation.language = #en
+  * ^designation.value = "grandchild"
 * #neighbour "neighbour"
-* #neighbour ^designation.language = #en
-* #neighbour ^designation.value = "neighbour"
+  * ^designation.language = #en
+  * ^designation.value = "neighbour"
 * #stepson "stepson"
-* #stepson ^designation.language = #en
-* #stepson ^designation.value = "stepson"
+  * ^designation.language = #en
+  * ^designation.value = "stepson"
 * #stepdaughter "stepdaughter"
-* #stepdaughter ^designation.language = #en
-* #stepdaughter ^designation.value = "stepdaughter"
+  * ^designation.language = #en
+  * ^designation.value = "stepdaughter"
 * #stepfather "stepfather"
-* #stepfather ^designation.language = #en
-* #stepfather ^designation.value = "stepfather"
+  * ^designation.language = #en
+  * ^designation.value = "stepfather"
 * #stepmother "stepmother"
-* #stepmother ^designation.language = #en
-* #stepmother ^designation.value = "stepmother"
+  * ^designation.language = #en
+  * ^designation.value = "stepmother"
 * #sisterinlaw "sisterinlaw"
-* #sisterinlaw ^designation.language = #en
-* #sisterinlaw ^designation.value = "sisterinlaw"
+  * ^designation.language = #en
+  * ^designation.value = "sisterinlaw"

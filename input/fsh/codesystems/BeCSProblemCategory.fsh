@@ -22,37 +22,37 @@ Description: "Problem Category"
 * ^content = #complete
 * ^count = 7
 * #diagnosis "Diagnosis" "A disease identified from a clinical reasoning, based on pathological and physiological ascertainments"
-* #diagnosis ^designation[0].language = #fr-BE
-* #diagnosis ^designation[=].value = "Diagnostic"
-* #diagnosis ^designation[+].language = #nl-BE
-* #diagnosis ^designation[=].value = "diagnose"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Diagnostic"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "diagnose"
 * #problem "Problem" "Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment"
-* #problem ^designation[0].language = #fr-BE
-* #problem ^designation[=].value = "Problème"
-* #problem ^designation[+].language = #nl-BE
-* #problem ^designation[=].value = "Probleem"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Problème"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Probleem"
 * #risk "Risk" "Identification of a health problem or situation that may require ongoing monitoring or management"
-* #risk ^designation[0].language = #fr-BE
-* #risk ^designation[=].value = "Risque"
-* #risk ^designation[+].language = #nl-BE
-* #risk ^designation[=].value = "Risico"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Risque"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Risico"
 * #antecedent "Antecedent" "Information about a problem that has been resolved"
-* #antecedent ^designation[0].language = #fr-BE
-* #antecedent ^designation[=].value = "Antécédent"
-* #antecedent ^designation[+].language = #nl-BE
-* #antecedent ^designation[=].value = "Antecedent"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Antécédent"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Antecedent"
 * #congenital "Congenital anomaly" "Congenital anomaly"
-* #congenital ^designation[0].language = #fr-BE
-* #congenital ^designation[=].value = "Maladie congénitale"
-* #congenital ^designation[+].language = #nl-BE
-* #congenital ^designation[=].value = "Aangeboren afwijking"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Maladie congénitale"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Aangeboren afwijking"
 * #conclusion "Conclusion" "Informations about a conclusion from anamnesis performed by a professional other than a physician"
-* #conclusion ^designation[0].language = #fr-BE
-* #conclusion ^designation[=].value = "Conclusion anamnèse"
-* #conclusion ^designation[+].language = #nl-BE
-* #conclusion ^designation[=].value = "Anamnesis conclusie"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Conclusion anamnèse"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Anamnesis conclusie"
 * #other "Other" "Other"
-* #other ^designation[0].language = #fr-BE
-* #other ^designation[=].value = "Autre"
-* #other ^designation[+].language = #nl-BE
-* #other ^designation[=].value = "andere"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Autre"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "andere"

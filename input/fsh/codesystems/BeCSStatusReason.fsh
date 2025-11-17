@@ -22,12 +22,12 @@ Description: "Vaccination reason status Code System."
 * ^content = #complete
 * ^count = 2
 * #OTHER "Other"
-* #OTHER ^designation[0].language = #fr-BE
-* #OTHER ^designation[=].value = "Autre"
-* #OTHER ^designation[+].language = #nl-BE
-* #OTHER ^designation[=].value = "Andere"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Autre"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Andere"
 * #ALLERGY "Allergy to vaccine ingredient"
-* #ALLERGY ^designation[0].language = #fr-BE
-* #ALLERGY ^designation[=].value = "Allergie"
-* #ALLERGY ^designation[+].language = #nl-BE
-* #ALLERGY ^designation[=].value = "Allergie"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Allergie"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Allergie"
