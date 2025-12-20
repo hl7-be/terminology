@@ -3,10 +3,10 @@ Id: be-cs-vaccination-administration-route
 Title: "BeCSVaccineAdministrationRoute"
 Description: "Vaccine Administration Route"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-03-24T16:01:36+01:00"
+* ^date = "2025-11-27T15:15:33+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

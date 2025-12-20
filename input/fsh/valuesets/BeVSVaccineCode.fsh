@@ -5,10 +5,10 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension.valueInteger = 1
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"
-* ^version = "1.1.1"
+* ^version = "1.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-03-24T16:01:36+01:00"
+* ^date = "2025-11-27T15:15:33+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -418,7 +418,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * SNOMED_CT#871839001 ^designation[0].language = #fr-BE
 * SNOMED_CT#871839001 ^designation[=].value = "vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B"
 * SNOMED_CT#871839001 ^designation[+].language = #nl-BE
-* SNOMED_CT#871839001 ^designation[=].value = "vaccin met uitsluitend Corynebacterium diphtheriae-Ag, Bordetella pertussis-Ag, Clostridium tetani-Ag en Haemophilus influenzae type b-Ag"
+* SNOMED_CT#871839001 ^designation[=].value = "vaccin enkel tegen difterie, tetanus, kinkhoest, Haemophilus influenzae b"
 * SNOMED_CT#871839001 ^designation[+].language = #en
 * SNOMED_CT#871839001 ^designation[=].value = "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"
 * SNOMED_CT#1252690003 "Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)"
@@ -432,6 +432,20 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * SNOMED_CT#51451000087105 ^designation[0].language = #fr-BE
 * SNOMED_CT#51451000087105 ^designation[=].value = "vaccin pneumococcique conjugué 13-valent"
 * SNOMED_CT#51451000087105 ^designation[+].language = #nl-BE
-* SNOMED_CT#51451000087105 ^designation[=].value = "vaccin met uitsluitend geconjugeerde Streptococcus pneumoniae-Ag van kapselpolysachariden van Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F"
+* SNOMED_CT#51451000087105 ^designation[=].value = "vaccin tegen pneumokokken 13 types"
 * SNOMED_CT#51451000087105 ^designation[+].language = #en
-* SNOMED_CT#51451000087105 ^designation[=].value = " Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+* SNOMED_CT#51451000087105 ^designation[=].value = "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+* SNOMED_CT#1345202008 "Vaccine product containing only Chikungunya virus antigen (medicinal product)"
+* SNOMED_CT#1345202008 ^designation[0].language = #fr-BE
+* SNOMED_CT#1345202008 ^designation[=].value = "produit vaccinal contenant uniquement l'antigène du virus Chikungunya"
+* SNOMED_CT#1345202008 ^designation[+].language = #nl-BE
+* SNOMED_CT#1345202008 ^designation[=].value = "vaccin met enkel antigeen van Chikungunya-virus"
+* SNOMED_CT#1345202008 ^designation[+].language = #en
+* SNOMED_CT#1345202008 ^designation[=].value = "Vaccine product containing only Chikungunya virus antigen (medicinal product)"
+* SNOMED_CT#777424002 "Product containing only Respiratory syncytial virus immune globulin (medicinal product)"
+* SNOMED_CT#777424002 ^designation[0].language = #fr-BE
+* SNOMED_CT#777424002 ^designation[=].value = "produit contenant uniquement de l'immunoglobuline contre le virus respiratoire syncytial"
+* SNOMED_CT#777424002 ^designation[+].language = #nl-BE
+* SNOMED_CT#777424002 ^designation[=].value = "Product dat enkel immunoglobuline tegen orthopneumovirus bevat"
+* SNOMED_CT#777424002 ^designation[+].language = #en
+* SNOMED_CT#777424002 ^designation[=].value = "Product containing only Respiratory syncytial virus immune globulin (medicinal product)"

@@ -6,7 +6,7 @@ Usage: #definition
   * valueUri = "https://www.ehealth.fgov.be/standards/fhir/vaccination/NamingSystem/be-ns-vaccinnet-vaccinecode"
 * extension[+]
   * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"
-  * valueString = "1.1.1"
+  * valueString = "1.1.2"
 * name = "BeNSVaccinetVaccineCode"
 * status = #active
 * kind = #codesystem
