@@ -8,7 +8,7 @@
 
 
 id: hl7.fhir.be.terminology
-canonical: https://hl7belgium.org/profiles/fhir/terminology/
+canonical: https://hl7belgium.org/profiles/fhir/terminology
 url: https://hl7belgium.org/profiles/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology
 name: BETerminology
 title: "HL7 Belgium terminology Implementation Guide (IG)"
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: eHealth Platform
+  url: https://www.ehealth.fgov.be/standards/fhir
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Message Structure eHealth
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: support@be-ehealth-standards.atlassian.net
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -237,8 +237,21 @@ menu:
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 parameters:
-   special-url-base: https://www.ehealth.fgov.be/standards/fhir
-#  excludettl: true
+  special-url-base: https://www.ehealth.fgov.be/standards/fhir
+  excludettl: true
+  no-narrative: 
+    - ValueSet/*
+    - CodeSystem/*
+    - NamingSystem/*
+  apply-contact: false
+  apply-context: false
+  apply-copyright: false
+  apply-jurisdiction: false
+  apply-publisher: false
+  apply-version: false
+  apply-wg: false
+  
+
 #  validation: [allow-any-extensions, no-broken-links]
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
