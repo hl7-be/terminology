@@ -168,6 +168,8 @@ pages:
     title: Copyright
   xversion.md:
     title: Cross-version
+  terminology-index.md:
+    title: Terminology Index
 
 #  artifacts.md: artifacts.html
 
@@ -216,13 +218,14 @@ menu:
     Examples: examples.html
     Implementation notes: implementationnotes.html
 
-  About: 
+  About:
     Authors: authors.html
     Known issues: knownissues.html
     Downloads: downloads.html
     Dependencies: dependencies.html
     Copyright: copyright.html
     Cross-version analysis: xversion.html
+    Terminology Index: terminology-index.html
 
   Artifacts: artifacts.html
   Rx: index.html
