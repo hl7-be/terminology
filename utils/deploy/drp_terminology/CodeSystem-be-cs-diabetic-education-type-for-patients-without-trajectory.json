@@ -1,0 +1,106 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-diabetic-education-type-for-patients-without-trajectory",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-diabetic-education-type-for-patients-without-trajectory</b></p><a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory\"> </a><a name=\"hcbe-cs-diabetic-education-type-for-patients-without-trajectory\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">diabetic-education-self-care<a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory-diabetic-education-self-care\"> </a></td><td>Education to self-care</td></tr><tr><td style=\"white-space:nowrap\">diabetic-education-understanding<a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory-diabetic-education-understanding\"> </a></td><td>Education to insight</td></tr><tr><td style=\"white-space:nowrap\">diabetic-education-no-self-care<a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory-diabetic-education-no-self-care\"> </a></td><td>Support in the absence of self-management</td></tr><tr><td style=\"white-space:nowrap\">diabetic-education-follow-up<a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory-diabetic-education-follow-up\"> </a></td><td>Follow-up after education</td></tr><tr><td style=\"white-space:nowrap\">diabetic-education-other<a name=\"be-cs-diabetic-education-type-for-patients-without-trajectory-diabetic-education-other\"> </a></td><td>Other (not reimbursed)</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>diabetic-education-self-care</td><td>Education à l'autogestion</td><td>Educatie tot zelfzorg</td></tr><tr><td>diabetic-education-understanding</td><td>Education à la compréhension</td><td>Educatie tot inzicht</td></tr><tr><td>diabetic-education-no-self-care</td><td>Suivi du patient qui ne passe pas à l'autotraitement</td><td>Begeleiding indien geen zelfzorg</td></tr><tr><td>diabetic-education-follow-up</td><td>Suivi après éducation</td><td>Opvolging na educatie</td></tr><tr><td>diabetic-education-other</td><td>Autre (non remboursé)</td><td>Andere (niet terugbetaald)</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory",
+  "version" : "1.0.0",
+  "name" : "BeCSdiabeticEducationTypeWithoutTrajectory",
+  "title" : "DRP Diabetic Education Type Without Trajectory",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-01-29T17:20:53+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Types of diabetes education for patients without a trajectory.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "diabetic-education-self-care",
+    "display" : "Education to self-care",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Educatie tot zelfzorg"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Education à l'autogestion"
+    }]
+  },
+  {
+    "code" : "diabetic-education-understanding",
+    "display" : "Education to insight",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Educatie tot inzicht"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Education à la compréhension"
+    }]
+  },
+  {
+    "code" : "diabetic-education-no-self-care",
+    "display" : "Support in the absence of self-management",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Begeleiding indien geen zelfzorg"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Suivi du patient qui ne passe pas à l'autotraitement"
+    }]
+  },
+  {
+    "code" : "diabetic-education-follow-up",
+    "display" : "Follow-up after education",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Opvolging na educatie"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Suivi après éducation"
+    }]
+  },
+  {
+    "code" : "diabetic-education-other",
+    "display" : "Other (not reimbursed)",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Andere (niet terugbetaald)"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Autre (non remboursé)"
+    }]
+  }]
+}

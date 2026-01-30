@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-education-type-with-trajectory",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-education-type-with-trajectory</b></p><a name=\"be-vs-education-type-with-trajectory\"> </a><a name=\"hcbe-vs-education-type-with-trajectory\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-diabetic-education-type-with-trajectory.html\"><code>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-diabetic-education-type-with-trajectory</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-education-type-with-trajectory",
+  "version" : "1.0.0",
+  "name" : "BeVSEducationTypeWithTrajectory",
+  "title" : "DRP Education Type With Trajectory",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-01-29T17:20:53+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Types of diabetes education for education within a care trajectory.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-diabetic-education-type-with-trajectory"
+    }]
+  }
+}
