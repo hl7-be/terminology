@@ -1,0 +1,32 @@
+# FHIR Server Configuration
+# Copy this file to config.yaml and adjust settings
+
+server:
+  # FHIR server base URL
+  url: "http://localhost:3000/fhir"
+
+  # Request timeout in seconds
+  timeout: 60
+
+  # Upload to server (true/false)
+  upload: false
+
+  # Authentication (choose one type, or comment out for no auth)
+  # auth:
+  #   # Option 1: Basic auth
+  #   type: basic
+  #   username: admin
+  #   password: secret
+
+  #   # Option 2: Bearer token
+  #   # type: bearer
+  #   # token: your-jwt-token-here
+
+  #   # Option 3: API Key
+  #   # type: apikey
+  #   # header: X-API-Key  # optional, defaults to X-API-Key
+  #   # key: your-api-key-here
+
+  # Optional custom headers
+  # headers:
+  #   X-Custom-Header: value
