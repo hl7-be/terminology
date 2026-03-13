@@ -2,13 +2,15 @@ ValueSet: BeRiskManifestation
 Id: be-riskmanifestation
 Title: "BeRiskManifestation"
 Description: "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation"
 * ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-12-18T12:02:54+01:00"
+* ^date = "2023-12-18T11:59:28+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

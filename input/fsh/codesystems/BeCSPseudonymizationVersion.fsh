@@ -6,7 +6,7 @@ Description: "List of pseudonymization versions that can be used a.o. in the Cap
 * ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-11-12T09:42:51+01:00"
+* ^date = "2024-11-12T09:30:06+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,6 +21,8 @@ Description: "List of pseudonymization versions that can be used a.o. in the Cap
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 3
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version"
 * #urn:be:fgov:ehealth:pseudo:v1
 * #urn:be:fgov:ehealth:pseudo:v2
 * #urn:be:fgov:pseudo-encrypted:v1

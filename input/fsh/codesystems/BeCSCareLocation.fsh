@@ -2,18 +2,18 @@ CodeSystem: BeCSCareLocation
 Id: be-cs-care-location
 Title: "BeCSCareLocation"
 Description: "Care Location Code System"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location"
-* ^version = "2.1.2"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"
+* ^version = "1.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2021-01-10T10:59:49+00:00"
+* ^date = "2025-11-27T15:12:01+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
-* ^contact[=].telecom[=].value = "https://www.ehealth.fgov.be/standards/fhir"
+* ^contact[=].telecom[=].value = "http://www.ehealth.fgov.be/"
 * ^contact[=].telecom[+].system = #email
 * ^contact[=].telecom[=].value = "support@be-ehealth-standards.atlassian.net"
-* ^contact[+].name = "Message Structure eHealth"
+* ^contact[+].name = "Message Structure"
 * ^contact[=].telecom.system = #email
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
@@ -21,118 +21,120 @@ Description: "Care Location Code System"
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 23
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"
 * #hospital "Hospital"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "A l’hôpital"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Ziekenhuis"
+* #hospital ^designation[0].language = #fr-BE
+* #hospital ^designation[=].value = "A l’hôpital"
+* #hospital ^designation[+].language = #nl-BE
+* #hospital ^designation[=].value = "Ziekenhuis"
 * #patient-home "Patient home"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "A domicile"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Thuis"
+* #patient-home ^designation[0].language = #fr-BE
+* #patient-home ^designation[=].value = "A domicile"
+* #patient-home ^designation[+].language = #nl-BE
+* #patient-home ^designation[=].value = "Thuis"
 * #nursing-home "Nursing home"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "En maison de repos"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Rusthuis"
+* #nursing-home ^designation[0].language = #fr-BE
+* #nursing-home ^designation[=].value = "En maison de repos"
+* #nursing-home ^designation[+].language = #nl-BE
+* #nursing-home ^designation[=].value = "Rusthuis"
 * #recovery-home "Recovery home"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "En maison de revalidation"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "In huis van revalidatie"
+* #recovery-home ^designation[0].language = #fr-BE
+* #recovery-home ^designation[=].value = "En maison de revalidation"
+* #recovery-home ^designation[+].language = #nl-BE
+* #recovery-home ^designation[=].value = "In huis van revalidatie"
 * #workplace "Workplace"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Au cabinet"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "In het kantoor"
+* #workplace ^designation[0].language = #fr-BE
+* #workplace ^designation[=].value = "Au cabinet"
+* #workplace ^designation[+].language = #nl-BE
+* #workplace ^designation[=].value = "In het kantoor"
 * #medical-center "Medical center"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "En maison médicale"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Medisch huis"
+* #medical-center ^designation[0].language = #fr-BE
+* #medical-center ^designation[=].value = "En maison médicale"
+* #medical-center ^designation[+].language = #nl-BE
+* #medical-center ^designation[=].value = "Medisch huis"
 * #clinic "Clinic"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "A la clinique"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Kliniek"
+* #clinic ^designation[0].language = #fr-BE
+* #clinic ^designation[=].value = "A la clinique"
+* #clinic ^designation[+].language = #nl-BE
+* #clinic ^designation[=].value = "Kliniek"
 * #pediatric-ic "Pediatric ic"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "En unité de soins intensive pédiatrique"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Pediatrische intensive care"
+* #pediatric-ic ^designation[0].language = #fr-BE
+* #pediatric-ic ^designation[=].value = "En unité de soins intensive pédiatrique"
+* #pediatric-ic ^designation[+].language = #nl-BE
+* #pediatric-ic ^designation[=].value = "Pediatrische intensive care"
 * #neonatal-ic "Neonatal ic"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "En unité de soins intensive pédiatrique néonatal"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Neonatale pediatrische intensive care"
+* #neonatal-ic ^designation[0].language = #fr-BE
+* #neonatal-ic ^designation[=].value = "En unité de soins intensive pédiatrique néonatal"
+* #neonatal-ic ^designation[+].language = #nl-BE
+* #neonatal-ic ^designation[=].value = "Neonatale pediatrische intensive care"
 * #prenatal-consult "Prenatal consult"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Consultation prénatale"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "prenataal consult"
+* #prenatal-consult ^designation[0].language = #fr-BE
+* #prenatal-consult ^designation[=].value = "Consultation prénatale"
+* #prenatal-consult ^designation[+].language = #nl-BE
+* #prenatal-consult ^designation[=].value = "prenataal consult"
 * #m-accueil "m-accueil"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Milieu d’accueil"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "kinderopvang"
+* #m-accueil ^designation[0].language = #fr-BE
+* #m-accueil ^designation[=].value = "Milieu d’accueil"
+* #m-accueil ^designation[+].language = #nl-BE
+* #m-accueil ^designation[=].value = "kinderopvang"
 * #child-consult "Child consult"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Consultation pour enfant"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "kind consult"
+* #child-consult ^designation[0].language = #fr-BE
+* #child-consult ^designation[=].value = "Consultation pour enfant"
+* #child-consult ^designation[+].language = #nl-BE
+* #child-consult ^designation[=].value = "kind consult"
 * #one "ONE"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "ONE"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "ONE"
+* #one ^designation[0].language = #fr-BE
+* #one ^designation[=].value = "ONE"
+* #one ^designation[+].language = #nl-BE
+* #one ^designation[=].value = "ONE"
 * #kind-gezin "Kind en gezin"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Kind&Gezin"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Kind&Gezin"
+* #kind-gezin ^designation[0].language = #fr-BE
+* #kind-gezin ^designation[=].value = "Kind&Gezin"
+* #kind-gezin ^designation[+].language = #nl-BE
+* #kind-gezin ^designation[=].value = "Kind&Gezin"
 * #ambulance "Ambulance"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Ambulance"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Ambulance"
+* #ambulance ^designation[0].language = #fr-BE
+* #ambulance ^designation[=].value = "Ambulance"
+* #ambulance ^designation[+].language = #nl-BE
+* #ambulance ^designation[=].value = "Ambulance"
 * #school "School"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "A l’école"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "School"
+* #school ^designation[0].language = #fr-BE
+* #school ^designation[=].value = "A l’école"
+* #school ^designation[+].language = #nl-BE
+* #school ^designation[=].value = "School"
 * #school-health-serv "School health services"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "services de santé scolaire"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "gezondheidsdiensten op school"
+* #school-health-serv ^designation[0].language = #fr-BE
+* #school-health-serv ^designation[=].value = "services de santé scolaire"
+* #school-health-serv ^designation[+].language = #nl-BE
+* #school-health-serv ^designation[=].value = "gezondheidsdiensten op school"
 * #pharmacy "Pharmacy"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Pharmacie"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Apotheek"
+* #pharmacy ^designation[0].language = #fr-BE
+* #pharmacy ^designation[=].value = "Pharmacie"
+* #pharmacy ^designation[+].language = #nl-BE
+* #pharmacy ^designation[=].value = "Apotheek"
 * #med-monde "Med monde"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Médecin du monde"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "dokters van de wereld"
+* #med-monde ^designation[0].language = #fr-BE
+* #med-monde ^designation[=].value = "Médecin du monde"
+* #med-monde ^designation[+].language = #nl-BE
+* #med-monde ^designation[=].value = "dokters van de wereld"
 * #ngo "Non-Governmental Organization"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "ONG"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "NGO"
+* #ngo ^designation[0].language = #fr-BE
+* #ngo ^designation[=].value = "ONG"
+* #ngo ^designation[+].language = #nl-BE
+* #ngo ^designation[=].value = "NGO"
 * #family-planning "Family planning"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Centre planning familial"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Centrum gezinsplanning"
+* #family-planning ^designation[0].language = #fr-BE
+* #family-planning ^designation[=].value = "Centre planning familial"
+* #family-planning ^designation[+].language = #nl-BE
+* #family-planning ^designation[=].value = "Centrum gezinsplanning"
 * #abroad "Abroad"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "A l’étranger"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Buitenland"
+* #abroad ^designation[0].language = #fr-BE
+* #abroad ^designation[=].value = "A l’étranger"
+* #abroad ^designation[+].language = #nl-BE
+* #abroad ^designation[=].value = "Buitenland"
 * #other "other"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Autre"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Andere"
+* #other ^designation[0].language = #fr-BE
+* #other ^designation[=].value = "Autre"
+* #other ^designation[+].language = #nl-BE
+* #other ^designation[=].value = "Andere"

@@ -2,13 +2,15 @@ ValueSet: BeVSPopulationScreeningBodySiteLocation
 Id: be-vspopulationscreening-body-site-location
 Title: "PopulationScreening Body Site Value Set"
 Description: "Body site or location on body"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vspopulationscreening-body-site-location"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vspopulationscreening-body-site-location"
 * ^version = "1.0.3"
 * ^status = #active
 * ^experimental = true
-* ^date = "2024-06-12T10:56:47+02:00"
+* ^date = "2024-06-12T10:52:09+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

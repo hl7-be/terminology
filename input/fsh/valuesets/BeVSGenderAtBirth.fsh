@@ -6,7 +6,7 @@ Description: "BeVSGenderAtBirth"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-08-30T17:36:02+02:00"
+* ^date = "2024-08-30T17:14:57+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -18,4 +18,6 @@ Description: "BeVSGenderAtBirth"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth"
 * include codes from system AdministrativeGender

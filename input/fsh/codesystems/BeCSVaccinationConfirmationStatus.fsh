@@ -6,7 +6,7 @@ Description: "Vaccination status Code System."
 * ^version = "1.1.2"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-11-27T15:15:33+01:00"
+* ^date = "2025-11-27T15:12:01+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,18 +21,20 @@ Description: "Vaccination status Code System."
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 3
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"
 * #unconfirmed "unconfirmed"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "non confirmé"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "niet bevestigd"
+* #unconfirmed ^designation[0].language = #fr-BE
+* #unconfirmed ^designation[=].value = "non confirmé"
+* #unconfirmed ^designation[+].language = #nl-BE
+* #unconfirmed ^designation[=].value = "niet bevestigd"
 * #confirmed "confirmed"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "confirmé"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "bevestigd"
+* #confirmed ^designation[0].language = #fr-BE
+* #confirmed ^designation[=].value = "confirmé"
+* #confirmed ^designation[+].language = #nl-BE
+* #confirmed ^designation[=].value = "bevestigd"
 * #other "other"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "autre"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "andere"
+* #other ^designation[0].language = #fr-BE
+* #other ^designation[=].value = "autre"
+* #other ^designation[+].language = #nl-BE
+* #other ^designation[=].value = "andere"

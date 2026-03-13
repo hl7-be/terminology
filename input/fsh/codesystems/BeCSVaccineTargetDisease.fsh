@@ -6,7 +6,7 @@ Description: "Vaccine Target Disease Code System - set of Belgian codes for dise
 * ^version = "1.1.2"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-11-27T15:15:33+01:00"
+* ^date = "2025-11-27T15:12:01+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -20,3 +20,5 @@ Description: "Vaccine Target Disease Code System - set of Belgian codes for dise
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #complete
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"

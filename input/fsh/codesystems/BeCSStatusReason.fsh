@@ -6,7 +6,7 @@ Description: "Vaccination reason status Code System."
 * ^version = "1.1.2"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-11-27T15:15:33+01:00"
+* ^date = "2025-11-27T15:12:01+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,13 +21,15 @@ Description: "Vaccination reason status Code System."
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 2
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"
 * #OTHER "Other"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Autre"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Andere"
+* #OTHER ^designation[0].language = #fr-BE
+* #OTHER ^designation[=].value = "Autre"
+* #OTHER ^designation[+].language = #nl-BE
+* #OTHER ^designation[=].value = "Andere"
 * #ALLERGY "Allergy to vaccine ingredient"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Allergie"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Allergie"
+* #ALLERGY ^designation[0].language = #fr-BE
+* #ALLERGY ^designation[=].value = "Allergie"
+* #ALLERGY ^designation[+].language = #nl-BE
+* #ALLERGY ^designation[=].value = "Allergie"

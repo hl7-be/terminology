@@ -2,11 +2,11 @@ ValueSet: BeMedicationLineRegistrationStatusVS
 Id: BeMedicationLineRegistrationStatusVS
 Title: "Medication Line Registration Status Value Set"
 Description: "This value set includes the registration statuses for medication lines."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineRegistrationStatusVS"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-10-10T13:28:44+02:00"
+* ^date = "2025-10-10T13:23:29+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -18,4 +18,6 @@ Description: "This value set includes the registration statuses for medication l
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS"
 * include codes from system BeMedicationLineRegistrationStatus

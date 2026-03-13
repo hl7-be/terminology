@@ -20,4 +20,6 @@ Description: "FedICT country codes."
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #fragment
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country"
 * #BE "Belgium"

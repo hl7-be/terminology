@@ -2,11 +2,11 @@ CodeSystem: BeMedicationType
 Id: BeMedicationType
 Title: "Medication preparation Type"
 Description: "Medication preparation type"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-10-10T13:28:44+02:00"
+* ^date = "2025-10-10T13:23:29+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,6 +21,8 @@ Description: "Medication preparation type"
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 3
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"
 * #magistral "Magistral preparation"
 * #registered-medicinal-product "Medicinal Product"
 * #non-medicinal-product "Non-medicinal product"

@@ -6,7 +6,7 @@ Description: "Codes as communicated by NIHDI and the FOD Terminology Center diff
 * ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-12-18T12:02:54+01:00"
+* ^date = "2023-12-18T11:59:28+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -18,6 +18,8 @@ Description: "Codes as communicated by NIHDI and the FOD Terminology Center diff
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type"
 * SNOMED_CT#609328004
 * SNOMED_CT#609396006
 * SNOMED_CT#782197009

@@ -2,13 +2,15 @@ ValueSet: DispenserTypes
 Id: be-vs-dispenser-types
 Title: "Dispenser Types"
 Description: "Dispenser Types - from hcparty"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types"
 * ^version = "1.1.0"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-10-10T13:28:44+02:00"
+* ^date = "2025-10-10T13:23:29+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

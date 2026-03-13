@@ -2,13 +2,15 @@ ValueSet: BeExposureRoute
 Id: be-exposureroute
 Title: "BeExposureRoute"
 Description: "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute"
 * ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-12-18T12:02:54+01:00"
+* ^date = "2023-12-18T11:59:28+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

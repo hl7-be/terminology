@@ -2,8 +2,10 @@ CodeSystem: Albert
 Id: albert
 Title: "CodeSystem Albert"
 Description: "This code system is to identify Albert code"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert"
 * ^version = "1.0.0"
 * ^status = #active

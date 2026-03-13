@@ -2,13 +2,15 @@ ValueSet: BeVSVaccineAdministrationRoute
 Id: be-vs-vaccination-administration-route
 Title: "BeVSVaccineAdministrationRoute"
 Description: "Vaccine Administration Route"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route"
 * ^version = "1.1.2"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2025-11-27T15:15:33+01:00"
+* ^date = "2025-11-27T15:12:01+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

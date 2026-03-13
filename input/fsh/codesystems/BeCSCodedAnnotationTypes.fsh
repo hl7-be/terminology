@@ -2,12 +2,14 @@ CodeSystem: BeCSCodedAnnotationTypes
 Id: be-cs-coded-annotation-types
 Title: "Coded Annotation Type Codes"
 Description: "Code System for specific types of coded annotations"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"
 * ^version = "1.0.0"
 * ^status = #active
-* ^date = "2022-09-08T14:33:03+02:00"
+* ^date = "2022-09-08T14:31:01+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom.system = #url

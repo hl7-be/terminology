@@ -2,11 +2,11 @@ CodeSystem: BeMedicationLineOriginType
 Id: BeMedicationLineOriginType
 Title: "Medication origin Type"
 Description: "Medication origin type"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-10-10T13:28:44+02:00"
+* ^date = "2025-10-10T13:23:29+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,6 +21,8 @@ Description: "Medication origin type"
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 6
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"
 * #ambulatory-request "Ambulatory prescription"
 * #hospital-request "Hospital prescription"
 * #self-medication "Upon patient demand - Self-medication"

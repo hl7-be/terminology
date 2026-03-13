@@ -104,19 +104,19 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
-#    description: The Alpha Group
-#    resources:
-#    - StructureDefinition/animal-patient
-#    - StructureDefinition/arm-procedure
-#  GroupB:
-#    name: Group B
-#    description: The Beta Group
-#    resources:
-#    - StructureDefinition/bark-control
-#    - StructureDefinition/bee-sting
+groups:
+ CSgroup:
+   name: CodeSystems
+   description: CodeSystems here
+   resources:
+   - CodeSystem/BeMedicationLineAdherenceStatusReason
+   - CodeSystem/be-cs-annex81-status-reason
+ VSgroup:
+   name: ValueSets
+   description: ValueSets here
+   resources:
+   - ValueSet/BeMedicationLineAdherenceStatusReasonVS
+   - ValueSet/BacterialCodes
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in

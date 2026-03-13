@@ -12,11 +12,13 @@ Description: "Basic Laterality as requested by CIN-NIC, subset of be-vs-body-lat
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-basic-laterality"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-basic-laterality"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-07-10T09:50:54+02:00"
+* ^date = "2025-07-10T09:45:39+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

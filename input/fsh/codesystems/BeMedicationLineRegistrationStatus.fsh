@@ -2,11 +2,11 @@ CodeSystem: BeMedicationLineRegistrationStatus
 Id: BeMedicationLineRegistrationStatus
 Title: "Medication Line Registration Status"
 Description: "This code system defines the registration statuses for medication lines."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-10-10T13:28:44+02:00"
+* ^date = "2025-10-10T13:23:29+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -21,6 +21,8 @@ Description: "This code system defines the registration statuses for medication 
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 3
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
 * #draft "Draft"
 * #recorded "Recorded"
 * #entered-in-error "Entered in Error"
