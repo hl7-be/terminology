@@ -1,4 +1,4 @@
-Instance: BeCMISOToothSnomedCT
+Instance: BeCMMyCareNetISOToothSnomedCT
 InstanceOf: ConceptMap
 Title: "MyCareNet ISO Tooth ConceptMap"
 Usage: #definition
@@ -17,7 +17,7 @@ Usage: #definition
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
       * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMISOToothSnomedCT"
+* url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMMyCareNetISOToothSnomedCT"
 * version = "2.1.2"
 * name = "BeCMISOToothSnomedCT"
 * title = "BeCMISOToothSnomedCT"
