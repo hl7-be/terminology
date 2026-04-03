@@ -9,16 +9,16 @@ Usage: #definition
   * valueInteger = 1
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
   * valueCode = #trial-use
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
 * extension[+]
   * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
-  * valueUri = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/NamingSystem/be-ns-claim-related-claim"
+  * valueUri = "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-claim-related-claim"
 * extension[+]
   * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"
   * valueString = "2.1.2"
@@ -45,5 +45,5 @@ Usage: #definition
 * jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * uniqueId
   * type = #uri
-  * value = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/NamingSystem/be-ns-claim-related-claim"
+  * value = "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-claim-related-claim"
   * preferred = true

@@ -1,18 +1,18 @@
-CodeSystem: BeCSPartialAgreementValues
-Id: be-cs-partial-agreement-values
-Title: "BeCSPartialAgreementValues"
-Description: "MyCareNet Partial agreement values"
+ValueSet: BeVSMessageEAgreement
+Id: be-vs-eagreementmessage
+Title: "MyCareNet EAgreement message"
+Description: "Codes for use to describe eAgreement messages in the MyCareNet eAgreement flows."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[=].valueInteger.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueInteger.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
+* ^extension[=].valueInteger.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-partial-agreement-values"
+* ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-eagreementmessage"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -28,6 +28,5 @@ Description: "MyCareNet Partial agreement values"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* ^caseSensitive = true
-* ^content = #fragment
-* #PARTIAL_AGREE_SRV_LOGO_001
+* include codes from system BeCSMessageEvents
+* include codes from system $restful-interaction

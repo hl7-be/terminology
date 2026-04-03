@@ -1,7 +1,8 @@
-CodeSystem: BeCSPartialAgreementValues
-Id: be-cs-partial-agreement-values
-Title: "BeCSPartialAgreementValues"
-Description: "MyCareNet Partial agreement values"
+CodeSystem: BeCSAgreementErrors
+Id: be-cs-agreement-errors
+Title: "MyCareNet Agreement errors"
+Description: """Errors in the agreement flows of MyCareNet. These values were delivered by the 
+NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) Not all codes are defined here, a full list can be found on MyCareNet.be."""
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -12,7 +13,7 @@ Description: "MyCareNet Partial agreement values"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-partial-agreement-values"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-agreement-errors"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -30,4 +31,5 @@ Description: "MyCareNet Partial agreement values"
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #fragment
-* #PARTIAL_AGREE_SRV_LOGO_001
+* #MISSING_BUNDLE_ID
+* #MISSING_CLAIM_SERVICEREQUEST_SUPPORTINGINFO

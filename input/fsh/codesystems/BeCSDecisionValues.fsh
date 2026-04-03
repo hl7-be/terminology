@@ -1,18 +1,19 @@
-CodeSystem: BeCSPartialAgreementValues
-Id: be-cs-partial-agreement-values
-Title: "BeCSPartialAgreementValues"
-Description: "MyCareNet Partial agreement values"
+CodeSystem: BeCSDecisionValues
+Id: be-cs-decision-values
+Title: "MyCareNet Decision values"
+Description: """Decision values in the agreement flows of MyCareNet. These values were delivered by the 
+NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) The codes are not defined here, a full list can be found on mycarenet.be."""
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[=].valueInteger.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueInteger.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
+* ^extension[=].valueInteger.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-* ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-partial-agreement-values"
+* ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/decision-values"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -30,4 +31,11 @@ Description: "MyCareNet Partial agreement values"
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #fragment
-* #PARTIAL_AGREE_SRV_LOGO_001
+* #agreement "agreement"
+* #intreatment "intreatment"
+* #refusal "refusal"
+* #wfi-physiotherapist "wfi-physiotherapist"
+* #wfi-prescriptor "wfi-prescriptor"
+* #tariff "tariff"
+* #wfi-serviceprovider "wfi-serviceprovider"
+* #partialAgreement "partialAgreement"

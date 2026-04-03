@@ -1,5 +1,6 @@
 Instance: BeCMISOToothSnomedCT
 InstanceOf: ConceptMap
+Title: "MyCareNet ISO Tooth ConceptMap"
 Usage: #definition
 * extension[0]
   * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -9,14 +10,14 @@ Usage: #definition
   * valueInteger = 1
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
   * valueCode = #trial-use
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
-      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ConceptMap/BeCMISOToothSnomedCT"
+      * valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
+* url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMISOToothSnomedCT"
 * version = "2.1.2"
 * name = "BeCMISOToothSnomedCT"
 * title = "BeCMISOToothSnomedCT"
@@ -41,7 +42,7 @@ Usage: #definition
 * description = "ISO tooth numbers to SNOMED CT"
 * jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * sourceUri = "https://www.iso.org/standard/68292.html"
-* targetCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-toothnumber-bodysite"
+* targetCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-toothnumber-bodysite"
 * group[0]
   * source = "https://www.iso.org/standard/68292.html"
   * target = "http://snomed.info/sct"
