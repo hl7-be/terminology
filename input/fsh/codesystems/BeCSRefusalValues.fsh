@@ -1,5 +1,5 @@
-CodeSystem: BeCSRefusalValues
-Id: be-cs-refusal-values
+CodeSystem: BeCSMyCareNetRefusalValues
+Id: be-cs-mycarenet-refusal-values
 Title: "MyCareNet Refusal values"
 Description: """Refusal values in the agreement flows of MyCareNet. These values were delivered by the 
 NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)"""
@@ -13,7 +13,7 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-refusal-values"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-refusal-values"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false

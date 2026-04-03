@@ -1,5 +1,5 @@
-CodeSystem: BeCSSpeechTherapyPathologySituationCode
-Id: be-cs-speech-therapy-pathology-situation-code
+CodeSystem: BeCSMyCareNetSpeechTherapyPathologySituationCode
+Id: be-cs-mycarenet-speech-therapy-pathology-situation-code
 Title: "MyCareNet Speech Therapy Pathology Situation code"
 Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"

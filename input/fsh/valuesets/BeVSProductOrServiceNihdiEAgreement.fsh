@@ -1,5 +1,5 @@
-ValueSet: BeVSProductOrServiceNihdiEAgreement
-Id: be-vs-eagreementproductorservice
+ValueSet: BeVSMyCareNetProductOrServiceNihdiEAgreement
+Id: be-vs-mycarenet-eagreementproductorservice
 Title: "MyCareNet Product or service"
 Description: "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "NIHDI codes for use to describe eAgreement products or services in
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-eagreementproductorservice"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementproductorservice"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -28,6 +28,6 @@ Description: "NIHDI codes for use to describe eAgreement products or services in
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* include codes from system BeCSNIHDIPhysiotherapyPathologySituationCode
-* include codes from system BeCSSpeechTherapyPathologySituationCode
-* include codes from system BeCSAnnexTypes
+* include codes from system BeCSMyCareNetNIHDIPhysiotherapyPathologySituationCode
+* include codes from system BeCSMyCareNetSpeechTherapyPathologySituationCode
+* include codes from system BeCSMyCareNetAnnexTypes

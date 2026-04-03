@@ -1,5 +1,5 @@
-ValueSet: BeVSEAgreementAdjudicationReason
-Id: be-vs-eagreementadjudicationreason
+ValueSet: BeVSMyCareNetEAgreementAdjudicationReason
+Id: be-vs-mycarenet-eagreementadjudicationreason
 Title: "MyCareNet Adjudication reason"
 Description: "Codes for use to describe eAgreement adjudication reasons in the MyCareNet eAgreement flows."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "Codes for use to describe eAgreement adjudication reasons in the M
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-eagreementadjudicationreason"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementadjudicationreason"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -28,6 +28,6 @@ Description: "Codes for use to describe eAgreement adjudication reasons in the M
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* include codes from system BeCSRefusalValues
-* include codes from system BeCSWaitingForInformationValues
-* include codes from system BeCSPartialAgreementValues
+* include codes from system BeCSMyCareNetRefusalValues
+* include codes from system BeCSMyCareNetWaitingForInformationValues
+* include codes from system BeCSMyCareNetPartialAgreementValues

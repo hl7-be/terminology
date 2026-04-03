@@ -42,7 +42,7 @@ Usage: #definition
 * description = "ISO tooth numbers to SNOMED CT"
 * jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * sourceUri = "https://www.iso.org/standard/68292.html"
-* targetCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-toothnumber-bodysite"
+* targetCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-toothnumber-bodysite"
 * group[0]
   * source = "https://www.iso.org/standard/68292.html"
   * target = "http://snomed.info/sct"

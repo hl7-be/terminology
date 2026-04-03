@@ -1,5 +1,5 @@
-ValueSet: BeVSSpeechTherapyPathologySituationCode
-Id: be-vs-speech-therapy-pathology-situation-code
+ValueSet: BeVSMyCareNetSpeechTherapyPathologySituationCode
+Id: be-vs-mycarenet-speech-therapy-pathology-situation-code
 Title: "MyCareNet Speech Therapy Pathology Situation Code"
 Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -27,4 +27,4 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* include codes from system BeCSSpeechTherapyPathologySituationCode
+* include codes from system BeCSMyCareNetSpeechTherapyPathologySituationCode

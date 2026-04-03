@@ -1,6 +1,6 @@
-CodeSystem: BeCSPartialAgreementValues
-Id: be-cs-partial-agreement-values
-Title: "BeCSPartialAgreementValues"
+CodeSystem: BeCSMyCareNetPartialAgreementValues
+Id: be-cs-mycarenet-partial-agreement-values
+Title: "BeCSMyCareNetPartialAgreementValues"
 Description: "MyCareNet Partial agreement values"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
@@ -12,7 +12,7 @@ Description: "MyCareNet Partial agreement values"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-partial-agreement-values"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-partial-agreement-values"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false

@@ -1,5 +1,5 @@
-CodeSystem: BeCSMessageEvents
-Id: be-cs-message-events
+CodeSystem: BeCSMyCareNetMessageEvents
+Id: be-cs-mycarenet-message-events
 Title: "MyCareNet Message events"
 Description: "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "Message events for MyCareNet flows.Not all codes are defined here,
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-message-events"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-message-events"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false

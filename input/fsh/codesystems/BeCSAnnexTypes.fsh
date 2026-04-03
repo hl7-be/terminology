@@ -1,5 +1,5 @@
-CodeSystem: BeCSAnnexTypes
-Id: be-cs-annex-types
+CodeSystem: BeCSMyCareNetAnnexTypes
+Id: be-cs-mycarenet-annex-types
 Title: "MyCareNet Annex types"
 Description: "Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "Annex types for MyCareNet flows. Not all codes are defined here, a
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-annex-types"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-annex-types"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false

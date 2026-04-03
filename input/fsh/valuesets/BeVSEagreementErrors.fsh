@@ -1,5 +1,5 @@
-ValueSet: BeVSEagreementErrors
-Id: be-vs-eagreementerrors
+ValueSet: BeVSMyCareNetEagreementErrors
+Id: be-vs-mycarenet-eagreementerrors
 Title: "MyCareNet EAgreement errors"
 Description: "Errors in the EAgreement flow"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "Errors in the EAgreement flow"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-eagreementerrors"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementerrors"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -28,4 +28,4 @@ Description: "Errors in the EAgreement flow"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* include codes from system BeCSAgreementErrors
+* include codes from system BeCSMyCareNetAgreementErrors

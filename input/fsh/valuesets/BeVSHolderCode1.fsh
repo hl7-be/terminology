@@ -1,5 +1,5 @@
-ValueSet: BeVSHolderCode1
-Id: be-vs-holder-code-1
+ValueSet: BeVSMyCareNetHolderCode1
+Id: be-vs-mycarenet-holder-code-1
 Title: "MyCareNet Holder Code 1"
 Description: "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-holder-code-1"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-holder-code-1"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
@@ -28,4 +28,4 @@ Description: "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* include codes from system BeCSHolderCode1
+* include codes from system BeCSMyCareNetHolderCode1

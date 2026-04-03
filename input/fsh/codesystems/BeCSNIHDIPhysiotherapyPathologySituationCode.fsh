@@ -1,5 +1,5 @@
-CodeSystem: BeCSNIHDIPhysiotherapyPathologySituationCode
-Id: be-cs-nihdi-physiotherapy-pathologysituationcode
+CodeSystem: BeCSMyCareNetNIHDIPhysiotherapyPathologySituationCode
+Id: be-cs-mycarenet-nihdi-physiotherapy-pathologysituationcode
 Title: "MyCareNet NIHDIPhysiotherapyPathology"
 Description: "Legal pathology situation codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage instructions."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
@@ -12,7 +12,7 @@ Description: "Legal pathology situation codes as defined by NIHDI to be used in 
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-nihdi-physiotherapy-pathologysituationcode"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-nihdi-physiotherapy-pathologysituationcode"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false

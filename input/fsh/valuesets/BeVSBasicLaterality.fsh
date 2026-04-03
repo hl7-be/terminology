@@ -1,7 +1,7 @@
-ValueSet: BeVSBasicLaterality
-Id: be-vs-basic-laterality
+ValueSet: BeVSMyCareNetBasicLaterality
+Id: be-vs-mycarenet-basic-laterality
 Title: "MyCareNet Basic Laterality"
-Description: "Basic Laterality as requested by CIN-NIC, subset of be-vs-body-laterality"
+Description: "Basic Laterality as requested by CIN-NIC, subset of be-vs-mycarenet-body-laterality"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -12,7 +12,7 @@ Description: "Basic Laterality as requested by CIN-NIC, subset of be-vs-body-lat
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-basic-laterality"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-basic-laterality"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
