@@ -2,30 +2,25 @@ CodeSystem: BeCSCareLocation
 Id: be-cs-care-location
 Title: "BeCSCareLocation"
 Description: "Care Location Code System"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"
-* ^version = "1.1.2"
+
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"
+
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location"
+
+
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-care-location"
+
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-11-27T15:12:01+01:00"
-* ^publisher = "eHealth Platform"
-* ^contact[0].name = "eHealth Platform"
-* ^contact[=].telecom[0].system = #url
-* ^contact[=].telecom[=].value = "http://www.ehealth.fgov.be/"
-* ^contact[=].telecom[+].system = #email
-* ^contact[=].telecom[=].value = "support@be-ehealth-standards.atlassian.net"
-* ^contact[+].name = "Message Structure"
-* ^contact[=].telecom.system = #email
-* ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
-* ^contact[=].telecom.use = #work
-* ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 23
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"
+
 * #hospital "Hospital"
 * #hospital ^designation[0].language = #fr-BE
-* #hospital ^designation[=].value = "A l’hôpital"
+* #hospital ^designation[=].value = "A l'hôpital"
 * #hospital ^designation[+].language = #nl-BE
 * #hospital ^designation[=].value = "Ziekenhuis"
 * #patient-home "Patient home"
@@ -75,7 +70,7 @@ Description: "Care Location Code System"
 * #prenatal-consult ^designation[=].value = "prenataal consult"
 * #m-accueil "m-accueil"
 * #m-accueil ^designation[0].language = #fr-BE
-* #m-accueil ^designation[=].value = "Milieu d’accueil"
+* #m-accueil ^designation[=].value = "Milieu d'accueil"
 * #m-accueil ^designation[+].language = #nl-BE
 * #m-accueil ^designation[=].value = "kinderopvang"
 * #child-consult "Child consult"
@@ -100,7 +95,7 @@ Description: "Care Location Code System"
 * #ambulance ^designation[=].value = "Ambulance"
 * #school "School"
 * #school ^designation[0].language = #fr-BE
-* #school ^designation[=].value = "A l’école"
+* #school ^designation[=].value = "A l'école"
 * #school ^designation[+].language = #nl-BE
 * #school ^designation[=].value = "School"
 * #school-health-serv "School health services"
@@ -130,7 +125,7 @@ Description: "Care Location Code System"
 * #family-planning ^designation[=].value = "Centrum gezinsplanning"
 * #abroad "Abroad"
 * #abroad ^designation[0].language = #fr-BE
-* #abroad ^designation[=].value = "A l’étranger"
+* #abroad ^designation[=].value = "A l'étranger"
 * #abroad ^designation[+].language = #nl-BE
 * #abroad ^designation[=].value = "Buitenland"
 * #other "other"

@@ -2,11 +2,10 @@ ValueSet: BeVSCdHcParty
 Id: be-vs-cd-hcparty
 Title: "BeVSCdHcParty"
 Description: "List of health care parties in Belgium"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-cd-hcparty"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-08-30T17:14:57+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

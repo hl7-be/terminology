@@ -15,7 +15,6 @@ Description: "RT52Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instru
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-02-17T19:22:03+01:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url

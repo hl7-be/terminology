@@ -6,22 +6,10 @@ Description: "Codes as defined initially by the NIHDI. Dutch translations were n
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score"
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2020-10-01T11:01:09+00:00"
-* ^publisher = "eHealth Platform"
-* ^contact[0].name = "eHealth Platform"
-* ^contact[=].telecom[0].system = #url
-* ^contact[=].telecom[=].value = "https://www.ehealth.fgov.be"
-* ^contact[=].telecom[+].system = #email
-* ^contact[=].telecom[=].value = "message-structure@www.ehealth.fgov.be"
-* ^contact[+].name = "Message-Structure"
-* ^contact[=].telecom.system = #email
-* ^contact[=].telecom.value = "message-structure@www.ehealth.fgov.be"
-* ^contact[=].telecom.use = #work
-* ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 18

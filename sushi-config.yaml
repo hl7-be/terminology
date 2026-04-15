@@ -8,8 +8,8 @@
 
 
 id: hl7.fhir.be.terminology
-canonical: https://hl7belgium.org/profiles/fhir/terminology
-url: https://hl7belgium.org/profiles/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology
+canonical: https://www.ehealth.fgov.be/standards/fhir/terminology
+url: https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology
 name: BETerminology
 title: "HL7 Belgium terminology Implementation Guide (IG)"
 description: HL7 Belgium terminology Implementation Guide (IG).
@@ -17,6 +17,9 @@ status: draft
 license: CC0-1.0
 date: 2025-05-26
 version: 1.0.0
+
+outputPathStrategy: mirror
+
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here, but the current tooling 
@@ -104,19 +107,19 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-groups:
- CSgroup:
-   name: CodeSystems
-   description: CodeSystems here
-   resources:
-   - CodeSystem/BeMedicationLineAdherenceStatusReason
-   - CodeSystem/be-cs-annex81-status-reason
- VSgroup:
-   name: ValueSets
-   description: ValueSets here
-   resources:
-   - ValueSet/BeMedicationLineAdherenceStatusReasonVS
-   - ValueSet/BacterialCodes
+# groups:
+#  CSgroup:
+#    name: CodeSystems
+#    description: CodeSystems here
+#    resources:
+#   #  - CodeSystem/BeMedicationLineAdherenceStatusReason
+#   #  - CodeSystem/be-cs-annex81-status-reason
+#  VSgroup:
+#    name: ValueSets
+#    description: ValueSets here
+#    resources:
+#    - ValueSet/BeMedicationLineAdherenceStatusReasonVS
+#    - ValueSet/BacterialCodes
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -251,7 +254,7 @@ parameters:
   apply-copyright: false
   apply-jurisdiction: false
   apply-publisher: false
-  apply-version: false
+  apply-version: true
   apply-wg: false
   
 
