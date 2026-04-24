@@ -12,31 +12,31 @@ Description: "Vaccine Administration Route"
 * ^count = 7
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"
-* #IM "Instramuscular"
+* #IM "Intramuscular"
 * #IM ^designation[0].language = #fr-BE
 * #IM ^designation[=].value = "Intramusculaire"
 * #IM ^designation[+].language = #nl-BE
-* #IM ^designation[=].value = "Intramusculaire"
+* #IM ^designation[=].value = "Intramusculair"
 * #SC "Subcutaneous"
 * #SC ^designation[0].language = #fr-BE
 * #SC ^designation[=].value = "Sous-cutanée"
 * #SC ^designation[+].language = #nl-BE
-* #SC ^designation[=].value = "Subcutane"
+* #SC ^designation[=].value = "Subcutaan"
 * #IV "Intravenous"
 * #IV ^designation[0].language = #fr-BE
 * #IV ^designation[=].value = "intraveineuse"
 * #IV ^designation[+].language = #nl-BE
-* #IV ^designation[=].value = "intraveneus"
+* #IV ^designation[=].value = "Intraveneus"
 * #ID "Intradermal"
 * #ID ^designation[0].language = #fr-BE
 * #ID ^designation[=].value = "Intradermique"
 * #ID ^designation[+].language = #nl-BE
-* #ID ^designation[=].value = "Intradermale"
+* #ID ^designation[=].value = "Intradermaal"
 * #Oral "Oral"
 * #Oral ^designation[0].language = #fr-BE
 * #Oral ^designation[=].value = "Orale"
 * #Oral ^designation[+].language = #nl-BE
-* #Oral ^designation[=].value = "Mondeling"
+* #Oral ^designation[=].value = "Oraal"
 * #Nasal "Nasal"
 * #Nasal ^designation[0].language = #fr-BE
 * #Nasal ^designation[=].value = "Nasal"
@@ -46,4 +46,4 @@ Description: "Vaccine Administration Route"
 * #unknown ^designation[0].language = #fr-BE
 * #unknown ^designation[=].value = "Inconnu"
 * #unknown ^designation[+].language = #nl-BE
-* #unknown ^designation[=].value = "onbekend"
+* #unknown ^designation[=].value = "Onbekend"
