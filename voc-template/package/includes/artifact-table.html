@@ -1,0 +1,107 @@
+{% comment %}
+Artifact Table Include - Generic table for any FHIR resource type
+Usage:
+  {% include artifact-table.html types="ValueSet,CodeSystem" %}
+  {% include artifact-table.html types="StructureDefinition" %}
+  {% include artifact-table.html types="all" %}
+  {% include artifact-table.html types="ValueSet,CodeSystem" id="my-table" %}
+  {% include artifact-table.html resources="ValueSet/MyVS1,CodeSystem/MyCS1" id="custom-table" %}
+
+Parameters:
+  types: comma-separated list of resource types (e.g., ValueSet, CodeSystem, NamingSystem, StructureDefinition) or "all"
+  resources: comma-separated list of specific resources (e.g., "ValueSet/MyVS,CodeSystem/MyCS")
+  id: optional table id (defaults to "artifact-table")
+
+Note: If 'resources' is provided, 'types' is ignored.
+{% endcomment %}
+
+{% assign tableId = include.id | default: "artifact-table" %}
+
+{% comment %} Check if specific resources are provided {% endcomment %}
+{% assign useResourceList = false %}
+{% if include.resources and include.resources != "" %}
+  {% assign useResourceList = true %}
+  {% assign resourceList = include.resources | split: "," %}
+{% endif %}
+
+{% assign typeList = include.types | split: "," %}
+{% assign showAll = false %}
+{% if include.types == "all" %}
+  {% assign showAll = true %}
+{% endif %}
+
+{% comment %} Determine if we need to show the Type column {% endcomment %}
+{% assign showTypeColumn = false %}
+{% if useResourceList %}
+  {% comment %} Check if resource list has multiple types {% endcomment %}
+  {% assign foundTypes = "" %}
+  {% for res in resourceList %}
+    {% assign trimmedRes = res | strip %}
+    {% assign resType = trimmedRes | split: '/' | first %}
+    {% unless foundTypes contains resType %}
+      {% if foundTypes != "" %}
+        {% assign showTypeColumn = true %}
+      {% endif %}
+      {% assign foundTypes = foundTypes | append: resType | append: "," %}
+    {% endunless %}
+  {% endfor %}
+{% else %}
+  {% assign typeCount = typeList | size %}
+  {% if showAll or typeCount > 1 %}
+    {% assign showTypeColumn = true %}
+  {% endif %}
+{% endif %}
+
+<table id="{{tableId}}" class="artifact-datatable display" style="width:100%">
+  <thead>
+    <tr>
+{% if showTypeColumn %}
+      <th>Type</th>
+{% endif %}
+      <th>Name</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for r in site.data.resources %}
+{% assign resource = r[1] %}
+{% assign resKey = r[0] %}
+{% assign resType = resKey | split: '/' | first %}
+{% assign includeResource = false %}
+
+{% if useResourceList %}
+  {% for res in resourceList %}
+    {% assign trimmedRes = res | strip %}
+    {% if resKey == trimmedRes %}
+      {% assign includeResource = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% elsif showAll %}
+  {% assign includeResource = true %}
+{% else %}
+  {% for t in typeList %}
+    {% assign trimmedType = t | strip %}
+    {% if resType == trimmedType %}
+      {% assign includeResource = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if includeResource %}
+    <tr>
+{% if showTypeColumn %}
+      <td>{{resType}}</td>
+{% endif %}
+      <td><a href="{{resource.path}}">{{resource.name}}</a></td>
+      <td>{{resource.title}}</td>
+      <td>{{resource.description | escape}}</td>
+      <td>{{resource.status.status}}</td>
+    </tr>
+{% endif %}
+{% endfor %}
+  </tbody>
+</table>

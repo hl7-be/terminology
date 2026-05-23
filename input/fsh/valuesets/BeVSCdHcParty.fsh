@@ -2,11 +2,10 @@ ValueSet: BeVSCdHcParty
 Id: be-vs-cd-hcparty
 Title: "BeVSCdHcParty"
 Description: "List of health care parties in Belgium"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-cd-hcparty"
 * ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-08-30T17:36:02+02:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -18,4 +17,6 @@ Description: "List of health care parties in Belgium"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty"
 * include codes from system HCParty

@@ -12,23 +12,14 @@ Description: "Annex types for MyCareNet flows. Not all codes are defined here, a
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
-* ^version = "2.1.2"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
+// * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
+
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-07-10T09:50:54+02:00"
-* ^publisher = "eHealth Platform"
-* ^contact[0].name = "eHealth Platform"
-* ^contact[=].telecom[0].system = #url
-* ^contact[=].telecom[=].value = "http://www.ehealth.fgov.be/"
-* ^contact[=].telecom[+].system = #email
-* ^contact[=].telecom[=].value = "support@be-ehealth-standards.atlassian.net"
-* ^contact[+].name = "Message Structure"
-* ^contact[=].telecom.system = #email
-* ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
-* ^contact[=].telecom.use = #work
-* ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* ^caseSensitive = true
+* ^caseSensitive = false
+
 * ^content = #fragment
 * #functional-report "functional-report"
 * #medical-report "medical-report"

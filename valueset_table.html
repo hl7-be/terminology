@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>ValueSet Summary Table</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #333; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+    th { background-color: #4CAF50; color: white; }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    tr:hover { background-color: #ddd; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>ValueSet Summary Table</h1>
+  <table>
+    <tr>
+      <th>ValueSet Name</th>
+      <th>Description</th>
+      <th>Number of Concepts</th>
+      <th>Definition Type</th>
+      <th>Code Systems</th>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode'>BeAllergyIntoleranceCode</a></td>
+      <td>Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent'>BeCausativeAgent</a></td>
+      <td>Causative Agents for Allergy (non medication)</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate'>BeCivilState</a></td>
+      <td>Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/CD-CIVILSTATE for the Belgian specific code.</td>
+      <td>15</td>
+      <td>Extensional</td>
+      <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus<br>http://terminology.hl7.org/CodeSystem/v3-NullFlavor<br>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson'>BeContactPerson</a></td>
+      <td>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</td>
+      <td>23</td>
+      <td>Intensional</td>
+      <td>http://terminology.hl7.org/CodeSystem/v2-0131<br>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementadjudicationreason'>ValueSet adjudication reason</a></td>
+      <td>Codes for use to describe eAgreement adjudication reasons in the MyCareNet eAgreement flows.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values<br>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/refusal-values<br>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute'>BeExposureRoute</a></td>
+      <td>Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.</td>
+      <td>3</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationExposureIntentVS'>Medication exposure intent</a></td>
+      <td>The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusReasonVS'>Adherence Status Reason ValueSet</a></td>
+      <td>ValueSet containing reasons for non-adherence to a treatment or intervention.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatusReason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusVS'>BeExtAdherenceStatus</a></td>
+      <td>The status of taking the medication.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineOriginTypeVS'>Medication origin type value set</a></td>
+      <td>Medication origin type value set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineRegistrationStatusVS'>Medication Line Registration Status Value Set</a></td>
+      <td>This value set includes the registration statuses for medication lines.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationPrescriptionStatusVS'>Medication Prescription Status</a></td>
+      <td>Medication prescription status codes.</td>
+      <td>5</td>
+      <td>Extensional</td>
+      <td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationRequestReimbursementTypeVS'>Medication request reimbursement type ValueSet</a></td>
+      <td>Medication request reimbursement type - instructions for reimbursement of the medication request</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationTypeVS'>Medication preparation Type value set</a></td>
+      <td>Medication preparation type value set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementmessage'>ValueSet message</a></td>
+      <td>Codes for use to describe eAgreement messages in the MyCareNet eAgreement flows.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>http://hl7.org/fhir/restful-interaction<br>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy'>BeNoAllergy</a></td>
+      <td>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</td>
+      <td>1</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-populationscreening-result-vs'>PopulationScreening Result Value Set</a></td>
+      <td>Result</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementproductorservice'>ValueSet product or service</a></td>
+      <td>NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-speech-therapy-pathology-situation-code<br>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types<br>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-referral-category'>BeReferralCategory</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Codes to define the high level category for a referral prescription. SNOMED-CT codes in this valueset are just a draft proposal to give a general idea - pending an official valueset.</td>
+      <td>7</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation'>BeRiskManifestation</a></td>
+      <td>Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.</td>
+      <td>34</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeRouteOfAdministrationVS'>Route of Administration ValueSet</a></td>
+      <td>This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.</td>
+      <td>83</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type'>BeVSAllergyIntoleranceType</a></td>
+      <td>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance.</td>
+      <td>4</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-annex-81-reason-code'>BeVSAnnex81ReasonCode</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Nurse diagnostics and observations giving cause to the Annex 81</td>
+      <td>12</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-annex81-status-reason'>BeVSAnnex81StatusReason</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Status reason of the Annex 81</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-annex81-status-reason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-basic-laterality'>Basic Laterality</a></td>
+      <td>Basic Laterality as requested by CIN-NIC, subset of be-vs-body-laterality</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-bodysite'>Body Site</a></td>
+      <td>Body Site</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-bodysite</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-bodysite-nursing'>Body Site</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Body Site</td>
+      <td>44</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location'>BeVSCareLocation</a></td>
+      <td>Care Location Value Set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty'>BeVSCdHcParty</a></td>
+      <td>List of health care parties in Belgium</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-claim-exemption-code'>Claim Exemption Code</a></td>
+      <td>RT50Z23 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-claim-exemption-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-claim-norm-code'>Claim Norm Code</a></td>
+      <td>RT50Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-claim-norm-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-claim-transplantation-code'>Claim Transplantation Code</a></td>
+      <td>RT50Z48 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-claim-transplantation-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/lab/ValueSet/be-vs-coded-annotation-types'>Coded Annotation Types</a></td>
+      <td>Value Set for specific types of coded annotations</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-decision-values'>Mycarenet Decision Values</a></td>
+      <td>Values indicating the type of decision. These values were delivered by the 
+NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-eagreementerrors'>EAgreement errors</a></td>
+      <td>Errors in the EAgreement flow</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth'>List of possible genders at birth in Belgium</a></td>
+      <td>BeVSGenderAtBirth</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>http://hl7.org/fhir/administrative-gender</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-holder-code-1'>BeVSHolderCode1</a></td>
+      <td>see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-holder-code-2'>BeVSHolderCode2</a></td>
+      <td>see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-hospital-service-cd'>Hospital Service Code</a></td>
+      <td>Annex 16.15 (2.C) in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-hospital-service-cd</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-id-doc-input-type'>Id Doc Input Type</a></td>
+      <td>RT52Z9 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-id-doc-input-type</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-id-doc-manual-input-justification'>Id Doc Manual Input Justification</a></td>
+      <td>RT52Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-id-doc-manual-input-justification</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-id-doc-media-type'>Id Doc Media Type</a></td>
+      <td>RT52Z10 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-id-doc-media-type</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-id-doc-vignette-use-justification'>Id Doc Vignette Use Justification</a></td>
+      <td>RT52Z11 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-id-doc-vignette-use-justification</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality'>Laterality</a></td>
+      <td>Laterality</td>
+      <td>12</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type'>BeVSPatientRelationshipType</a></td>
+      <td>Describes the patient relationship type (the relation between the patient and the person implied)</td>
+      <td>25</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-category'>Patient Will Category</a></td>
+      <td>Patient will category Value Set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-code'>Patient Will code Value Set</a></td>
+      <td>Patient Will code Value Set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-scope'>BeVSPatientWillScope</a></td>
+      <td>Patient Will scope Value Set</td>
+      <td>1</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-performer-task-status-reason'>BeVSPerformerTaskStatusReason</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Codes for the current status of a referral prescription.</td>
+      <td>7</td>
+      <td>Extensional</td>
+      <td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vspopulationscreening-body-site-location'>PopulationScreening Body Site Value Set</a></td>
+      <td>Body site or location on body</td>
+      <td>1</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/BeVSPopulationScreeningFollowUpAdvice'>Population Screening Follow-up Advice Value Set</a></td>
+      <td>Possible follow up actions</td>
+      <td>1</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-next-invitation-type'>Population Screening Next Invitation Type Value Set</a></td>
+      <td>Value Set containing the codes for the type of the next invitation (or exclusion of next invitation)</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-type'>Population Screening Type Value Set</a></td>
+      <td>Value Set with the codes for the type of screening</td>
+      <td>3</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-prescription-status-reason'>BeVSPrescriptionStatusReason</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Reasons for the status of the prescription</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-category'>Problem Category</a></td>
+      <td>Problem Category</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-code'>Problem Code</a></td>
+      <td>Problem Code. No Belgian standardized valueset is yet defined, this is expected   for a future iteration. Implementers are encouraged to use a codification system of their choosing.</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-origin-type'>Problem Origin Type</a></td>
+      <td>Problem Origin Type</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/infsec/ValueSet/be-vs-pseudonymization-type'>Types of pseudonymization</a></td>
+      <td>The technique used for pseudonymization</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code'>Reaction Manifestation Code</a></td>
+      <td>Reaction Manifestation Code (Allergy - Immunization)</td>
+      <td>33</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-request-intent'>BeVSRequestIntent</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - The allowed intent codes in the context of referral prescription</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://hl7.org/fhir/request-intent</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-request-note-type'>BeVSRequestNoteType</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Types of notes used in a referral prescription</td>
+      <td>7</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse'>BeVSRequestedServicesNurse</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Codes indicating the requests that can be asked from a nurse.</td>
+      <td>43</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct<br>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse-detail'>BeVSRequestedServicesNurseDetail</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Codes indicating the request details that can be asked from a nurse.</td>
+      <td>63</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct<br>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-requester-norm'>Prescriber Standard</a></td>
+      <td>RT50Z26 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-requester-norm</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score'>Score Value Set</a></td>
+      <td>Codes as defined by the NIHDI. Dutch translations are expected for a next release.</td>
+      <td>15</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct<br>https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory'>Score Category Value Set</a></td>
+      <td>Score Category Value Set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-speech-therapy-pathology-situation-code'>Speech Therapy Pathology Situation Code</a></td>
+      <td>Texte de la nomenclature (Article 36, par. 2)</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-speech-therapy-pathology-situation-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-task-intent'>BeVSTaskIntent</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - The allowed intent codes in the context of tasks in the field of referral prescriptions</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://hl7.org/fhir/request-intent</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-toothnumber-bodysite'>Tooth Number Body Site</a></td>
+      <td>Tooth Number Body Site</td>
+      <td>52</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://hl7belgium.org/profiles/fhir/terminology//ValueSet/be-vs-treatment-reason'>Treatment Reason</a></td>
+      <td>RT20Z17 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://hl7belgium.org/profiles/fhir/terminology//CodeSystem/be-cs-treatment-reason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-treatment-status-reason'>BeVSTreatmentStatusReason</a></td>
+      <td>DEMONSTRATIVE EXAMPLE - Codes for the current status of a treatment in a referral prescription.</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-treatment-status-reason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite'>BeVSVaccinationBodySite</a></td>
+      <td>Vaccination Body Site Value Set</td>
+      <td>6</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-confirmation-status'>BeVSVaccinationConfirmationStatus</a></td>
+      <td>Vaccination status Value Set</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-product'>BeVSVaccinationProduct</a></td>
+      <td>Vaccination Product Value Set</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-reason-code'>BeVSVaccinationReasonCode</a></td>
+      <td>Vaccination reason code Value Set - the reasons for an vaccination</td>
+      <td>2</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason'>BeVSVaccinationStatusReason</a></td>
+      <td>Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed</td>
+      <td>4</td>
+      <td>Extensional</td>
+      <td>http://terminology.hl7.org/CodeSystem/v3-ActReason<br>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route'>BeVSVaccineAdministrationRoute</a></td>
+      <td>Vaccine Administration Route</td>
+      <td>1</td>
+      <td>Extensional</td>
+      <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor<br>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code'>BeVSVaccineCode</a></td>
+      <td>Vaccine Code Value Set - the types of vaccines that are administered in Belgium</td>
+      <td>60</td>
+      <td>Extensional</td>
+      <td>http://snomed.info/sct<br>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-target-disease'>BeVSVaccineTargetDisease</a></td>
+      <td>Vaccine Target Disease Value Set - the types of diseases that targeted by the vaccines</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types'>Dispenser Types</a></td>
+      <td>Dispenser Types - from hcparty</td>
+      <td>7</td>
+      <td>Extensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
+    </tr>
+    <tr>
+      <td><a href='N/A'>N/A</a></td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='N/A'>N/A</a></td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='N/A'>N/A</a></td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><a href='https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS'>Types of rating provided by the PSS system</a></td>
+      <td>ValueSet - Types of rating provided by the PSS system</td>
+      <td>0</td>
+      <td>Intensional</td>
+      <td>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</td>
+    </tr>
+  </table>
+</body>
+</html>

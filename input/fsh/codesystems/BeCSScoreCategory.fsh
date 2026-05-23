@@ -2,37 +2,29 @@ CodeSystem: BeCSScoreCategory
 Id: be-cs-score-category
 Title: "Score Category"
 Description: "Score Category"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 1
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
-* ^version = "1.0.0"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
+* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score-category"
+* ^version = "1.1.0"
 * ^status = #active
-* ^date = "2021-01-10T10:59:49+00:00"
-* ^publisher = "eHealth Platform"
-* ^contact[0].name = "eHealth Platform"
-* ^contact[=].telecom[0].system = #url
-* ^contact[=].telecom[=].value = "https://www.ehealth.fgov.be"
-* ^contact[=].telecom[+].system = #email
-* ^contact[=].telecom[=].value = "message-structure@www.ehealth.fgov.be"
-* ^contact[+].name = "Message-Structure"
-* ^contact[=].telecom.system = #email
-* ^contact[=].telecom.value = "message-structure@www.ehealth.fgov.be"
-* ^contact[=].telecom.use = #work
-* ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
+* ^experimental = false
+* ^caseSensitive = false
 * ^content = #complete
 * ^count = 3
 * #risk "Risk score" "Risk score"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Risk score"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Risk score"
+* #risk ^designation[0].language = #fr-BE
+* #risk ^designation[=].value = "Risk score"
+* #risk ^designation[+].language = #nl-BE
+* #risk ^designation[=].value = "Risk score"
 * #pain "Pain score" "Pain score"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Pain Score"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "Pain Score"
+* #pain ^designation[0].language = #fr-BE
+* #pain ^designation[=].value = "Pain Score"
+* #pain ^designation[+].language = #nl-BE
+* #pain ^designation[=].value = "Pain Score"
 * #other "Other" "Other"
-  * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "Autre"
-  * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "andere"
+* #other ^designation[0].language = #fr-BE
+* #other ^designation[=].value = "Autre"
+* #other ^designation[+].language = #nl-BE
+* #other ^designation[=].value = "andere"
