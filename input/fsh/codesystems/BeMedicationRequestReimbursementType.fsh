@@ -20,7 +20,7 @@ Description: "Medication request reimbursement type - instructions for reimburse
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 9
+* ^count = 10
 * #third-party-payer-applicable "Third-party payer applicable"
   * ^designation[0].language = #fr-BE
   * ^designation[=].value = "Tiers-payant applicable"
@@ -66,3 +66,8 @@ Description: "Medication request reimbursement type - instructions for reimburse
   * ^designation[=].value = "Trajet de démarrage diabète type 2"
   * ^designation[+].language = #nl-BE
   * ^designation[=].value = "Opstarttraject diabetes type 2"
+* #education-and-self-care-program-type-2-diabetes "\"Education and self-care\" programme for type 2 diabetes"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Programme « Éducation et autogestion » pour le diabète de type 2"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Programma \"Educatie en zelfzorg\" diabetes type 2"
