@@ -149,6 +149,10 @@ pages:
     title: Logical models
   terminology.md:
     title: Terminology Considerations
+  authoring.md:
+    title: Authoring
+  usage.md:
+    title: Using terminology
   profilemapping.md:
     title: Mapping to profiles
   examples.md:
@@ -209,6 +213,8 @@ menu:
 #      - Scenarios
     Logical models: logicals.html
     Terminology considerations: terminology.html
+    Authoring: authoring.html
+    Using terminology: usage.html
 
 
   Implementation:
