@@ -1,0 +1,116 @@
+@startuml terminology-architecture
+!include <archimate/Archimate>
+
+title Terminology Architecture
+
+skinparam nodesep 30
+skinparam ranksep 55
+skinparam wrapWidth 200
+
+' =====================================================================
+' FHIR TERMINOLOGY ECOSYSTEM - global, federated
+' =====================================================================
+Grouping(g_eco, "FHIR Terminology Ecosystem") {
+  Application_DataObject(o_intl, "<b>HL7 & International</b>\n<b>Terminology assets</b>")
+  Application_DataObject(o_fedreg, "FHIR tx Federation Registry")
+  Application_Component(c_global, "Global FHIR\nTerminology Server")
+}
+
+' =====================================================================
+' CTC - national SNOMED CT authoring and distribution
+' =====================================================================
+' declared right-to-left so the layout puts the business process on the right:
+' c_sctserver | o_sctrelease | p_sct
+Grouping(g_ctc, "CTC") {
+  Application_Component(c_sctserver, "<b>National SNOMED</b>\n<b>CT terminology server</b>")
+  Application_DataObject(o_sctrelease, "National SNOMED CT release")
+  Business_Process(p_sct, "National SCT\nextension & RefSet authoring")
+}
+
+' =====================================================================
+' NATIONAL TERMINOLOGY ECOSYSTEM - operational service and content
+' =====================================================================
+Grouping(g_nat, "National Terminology ecosystem") {
+  Business_Process(p_fhir, "FHIR terminology\ncontent authoring & publication")
+  Application_DataObject(o_natreg, "National Terminology\nContent Registry")
+  Application_DataObject(o_beassets, "<b>BE FHIR</b>\n<b>Terminology assets</b>")
+  Application_Component(c_nts, "<b>National</b>\n<b>operational</b>\n<b>terminology server</b>")
+}
+
+' =====================================================================
+' TERMINOLOGY CONSUMERS
+' =====================================================================
+Grouping(g_cons, "Terminology consumers") {
+  Application_Component(c_pipeline, "FHIR build pipeline")
+  Application_Component(c_validator, "<b>FHIR Validator</b>")
+  Application_DataObject(o_localcache, "<b>Local terminology</b>\n<b>cache</b>")
+  Application_Component(c_local, "Local/vendor\nterminology server")
+  Application_Component(c_ehr, "EHR /\nApplication")
+}
+
+' =====================================================================
+' RELATIONSHIPS
+' =====================================================================
+
+' --- Ecosystem -------------------------------------------------------
+Rel_Flow(o_intl, c_global)
+Rel_Flow(o_fedreg, c_global)
+
+
+c_global -[hidden]down-> p_sct
+
+' layout hints: ecosystem row in reading order,
+' the three source groups stacked in a left-hand column,
+' and the consumers group to their right
+o_intl -[hidden]right-> o_fedreg
+o_fedreg -[hidden]right-> c_global
+c_sctserver -[hidden]down-> p_fhir
+' CTC internal order: server | release | process (business process on the right)
+c_sctserver -[hidden]right-> o_sctrelease
+o_sctrelease -[hidden]right-> p_sct
+c_nts -[hidden]right-> o_localcache
+o_beassets -[hidden]right-> c_local
+
+' --- International content feeds the national layer -------------------
+Rel_Flow_Down(o_intl, o_sctrelease)
+Rel_Flow_Down(o_intl, c_nts)
+
+' --- Federation: the national server is an authoritative member --------
+Rel_Association_Down(o_fedreg, c_nts, "registered: authoritative for Belgian content")
+ 
+' --- CTC: authoring, release, distribution ----------------------------
+' arrows run leftwards, which fixes the order c_sctserver <- o_sctrelease <- p_sct
+Rel_Flow_Left(p_sct, o_sctrelease)
+Rel_Flow_Left(o_sctrelease, c_sctserver)
+Rel_Flow_Down(c_sctserver, c_nts)
+
+' --- National: authoring, content, operational server ------------------
+Rel_Access_Down(p_fhir, o_natreg)
+Rel_Access_Right(p_fhir, o_beassets)
+Rel_Flow_Up(o_beassets, c_nts)
+
+' --- Distribution to consumers ----------------------------------------
+Rel_Serving(c_global, c_pipeline, "(default)")
+Rel_Flow_Right(o_beassets, c_local)
+Rel_Flow_Right(o_natreg, c_local)
+Rel_Flow_Right(c_nts, o_localcache)
+
+' --- Preferred and discouraged routes ---------------------------------
+c_nts -[#Green,thickness=3]right-> c_pipeline : (preferred)
+c_nts -[#Red,thickness=2]right-> c_ehr : (avoid)
+
+' --- Inside the consumers ---------------------------------------------
+Rel_Aggregation_Right(c_pipeline, c_validator)
+Rel_Aggregation_Up(c_ehr, c_validator)
+Rel_Flow_Right(o_localcache, c_ehr)
+Rel_Serving_Right(c_local, c_ehr)
+
+' =====================================================================
+' LEGEND
+' =====================================================================
+legend bottom left
+  <color:Green>**——**</color>  preferred route
+  <color:Red>**——**</color>  route to avoid
+endlegend
+
+@enduml

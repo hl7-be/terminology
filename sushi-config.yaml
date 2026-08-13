@@ -149,6 +149,8 @@ pages:
     title: Logical models
   terminology.md:
     title: Terminology Considerations
+  terminology-architecture.md:
+    title: Terminology Architecture
   profilemapping.md:
     title: Mapping to profiles
   examples.md:
@@ -224,6 +226,7 @@ menu:
     Copyright: copyright.html
     Cross-version analysis: xversion.html
 
+  Terminology Architecture: terminology-architecture.html
   Artifacts: artifacts.html
   Rx: index.html
 #  Downloads: downloads.html
