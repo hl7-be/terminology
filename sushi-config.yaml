@@ -136,43 +136,28 @@ pages:
     title: Home
   scope.md:
     title: Scope and Content
-  background.md:
-    title: Background
-  challenges.md:
-    title: Challenges
-  design.md:
-    title: Design Choices
-  references.md:
-    title: References
-  usecases.md:
-    title: Use Cases
-  workflow.md:
-    title: Workflow
-  logicals.md:
-    title: Logical models
-  terminology.md:
-    title: Terminology Considerations
-  profilemapping.md:
-    title: Mapping to profiles
-  examples.md:
-    title: Examples
-
-  implementationnotes.md:
-    title: Implementation notes
-  authors.md:
-    title: Authors
-  knownissues.md:
-    title: Known issues
+  architecture.md:
+    title: Architecture
+  # background.md:
+  #   title: Background
+  # design.md:
+  #   title: Design Choices
+  # references.md:
+  #   title: References
+  # usecases.md:
+  #   title: Use Cases
+  # implementationnotes.md:
+  #   title: Implementation notes
+  # knownissues.md:
+  #   title: Known issues
   downloads.md:
     title: Downloads
-  dependencies.md:
-    title: Dependencies
+  # dependencies.md:
+  #   title: Dependencies
   copyright.md:
     title: Copyright
-  xversion.md:
-    title: Cross-version
-  terminology-index.md:
-    title: Terminology Index
+  # terminology-index.md:
+  #   title: Terminology Index
 
 #  artifacts.md: artifacts.html
 
