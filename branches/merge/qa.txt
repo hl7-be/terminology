@@ -1,0 +1,672 @@
+BETerminology : Validation Results
+=========================================
+
+err = 15, warn = 376, info = 42
+IG Publisher Version: 2.2.7
+Generated Fri Apr 24 10:08:10 UTC 2026. FHIR version 4.0.1 for hl7.fhir.be.terminology#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/terminology)
+ Build Errors : 40 / 7 / 0
+ /work/fsh-generated/resources/CodeSystem-agreement-errors : 0 / 4 / 1
+ /work/fsh-generated/resources/CodeSystem-agreement-types : 0 / 5 / 1
+ /work/fsh-generated/resources/CodeSystem-annex-types : 0 / 5 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-bodysite : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-care-location : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-exemption-code : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-norm-code : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-transplantation-code : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-holder-code-1 : 0 / 5 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-holder-code-2 : 0 / 5 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-hospital-service-cd : 0 / 4 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-input-type : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-manual-input-justification : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-media-type : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-vignette-use-justification : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-partial-agreement-values : 0 / 6 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-problem-category : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-problem-origin-type : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-requester-norm : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-score : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-score-category : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-speech-therapy-pathology-situation-code : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-treatment-reason : 0 / 5 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-administration-route : 0 / 4 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-confirmation-status : 0 / 4 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-status-reason : 0 / 4 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccine-code : 0 / 4 / 2
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccine-target-disease : 0 / 4 / 2
+ /work/fsh-generated/resources/CodeSystem-cd-civilstate : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-contact-person : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-fed-country : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-hcparty : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-decision-values : 0 / 6 / 2
+ /work/fsh-generated/resources/CodeSystem-message-events : 0 / 6 / 2
+ /work/fsh-generated/resources/CodeSystem-nihdi-physiotherapy-pathologysituationcode : 0 / 6 / 2
+ /work/fsh-generated/resources/CodeSystem-refusal-values : 0 / 6 / 2
+ /work/fsh-generated/resources/CodeSystem-waitingforinformation-values : 0 / 6 / 2
+ /work/fsh-generated/resources/ConceptMap-BeCMISOToothSnomedCT : 0 / 4 / 3
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.terminology : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-cbe : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ehp : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-insurancenumber : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-insurancymembership : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-nihdi : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-allergy : 0 / 2 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-claim-related-claim : 0 / 4 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-nomenclature : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-one-vaccination : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-vaccinnet-vaccinecode : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ssin : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-allergyintolerancecode : 0 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-causativeagent : 2 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-civilstate : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-exposureroute : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-noallergy : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-riskmanifestation : 0 / 3 / 4
+ /work/fsh-generated/resources/ValueSet-be-vs-allergyintolerance-type : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-basic-laterality : 0 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-body-topography : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-bodysite : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-care-location : 0 / 4 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-cd-hcparty : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-exemption-code : 0 / 4 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-norm-code : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-transplantation-code : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-decision-values : 0 / 5 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-eagreementerrors : 0 / 5 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-gender-at-birth : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-holder-code-1 : 0 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-holder-code-2 : 0 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-hospital-service-cd : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-input-type : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-manual-input-justification : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-media-type : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-vignette-use-justification : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-laterality : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-patient-relationship-type : 0 / 26 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-category : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-code : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-origin-type : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-reaction-manifestation-code : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-requester-norm : 0 / 4 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-score : 0 / 4 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-scorecategory : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-speech-therapy-pathology-situation-code : 0 / 4 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-toothnumber-bodysite : 0 / 5 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-treatment-reason : 0 / 4 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-bodysite : 0 / 3 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-product : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-reason-code : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason : 0 / 3 / 3
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccine-code : 1 / 5 / 6
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccine-target-disease : 0 / 3 / 2
+ /work/fsh-generated/resources/ValueSet-eagreementadjudicationreason : 0 / 4 / 4
+ /work/fsh-generated/resources/ValueSet-eagreementmessage : 0 / 5 / 2
+ /work/fsh-generated/resources/ValueSet-eagreementproductorservice : 0 / 8 / 3
+</table>
+== n/a ==
+ERROR: There are multiple resources with the same title [Claim Exemption Code].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Claim Norm Code].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Claim Transplantation Code].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Hospital Service Code].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Id Doc Input Type].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Id Doc Manual Input Justification].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Id Doc Media Type].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Id Doc Vignette Use Justification].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Prescriber Standard].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Problem Category].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Problem Origin Type].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Treatment Reason].  This is not allowed because it produces duplicate entries in the table of contents.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/be-ns-allergy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource NamingSystem/be-ns-claim-related-claim.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: en/CodeSystem-be-cs-claim-exemption-code.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 323, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/CodeSystem-be-cs-claim-norm-code.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 323, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/CodeSystem-be-cs-claim-transplantation-code.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 323, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-cbe.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ehp.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-insurancenumber.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-insurancymembership.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-nihdi.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-nihdi-nomenclature.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-nihdi-organization.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-nihdi-professional.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-one-vaccination.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-product-manufacturer.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ns-vaccinnet-vaccinecode.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/NamingSystem-be-ssin.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-civilstate.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 316, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-allergyintolerance-type.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 316, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-cd-hcparty.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 316, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-claim-norm-code.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-claim-transplantation-code.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-gender-at-birth.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 316, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-hospital-service-cd.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-id-doc-input-type.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-id-doc-manual-input-justification.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-id-doc-media-type.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-id-doc-vignette-use-justification.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-be-vs-patient-relationship-type.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 316, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+ERROR: en/ValueSet-eagreementadjudicationreason.html#/html/body/div/div/div/div/div/table/tr/td/img at Line 320, column 24: The image source 'assets/images/bel.svg' cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/CodeSystem-agreement-errors.json ==
+WARNING: CodeSystem/agreement-errors: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/agreement-errors: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/agreement-errors: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-agreement-types.json ==
+WARNING: CodeSystem/agreement-types: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/agreement-types: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/agreement-types: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-types'
+WARNING: CodeSystem/agreement-types: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-annex-types.json ==
+WARNING: CodeSystem/annex-types: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/annex-types: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/annex-types: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types'
+WARNING: CodeSystem/annex-types: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-bodysite.json ==
+WARNING: CodeSystem/be-cs-bodysite: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-care-location.json ==
+WARNING: CodeSystem/be-cs-care-location: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location'
+WARNING: CodeSystem/be-cs-care-location: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-claim-exemption-code.json ==
+WARNING: CodeSystem/be-cs-claim-exemption-code: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-exemption-code: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-exemption-code: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/CodeSystem-be-cs-claim-norm-code.json ==
+WARNING: CodeSystem/be-cs-claim-norm-code: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-norm-code: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-norm-code: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/CodeSystem-be-cs-claim-transplantation-code.json ==
+WARNING: CodeSystem/be-cs-claim-transplantation-code: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-transplantation-code: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-claim-transplantation-code: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/CodeSystem-be-cs-holder-code-1.json ==
+WARNING: CodeSystem/be-cs-holder-code-1: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-holder-code-1: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-holder-code-1: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1'
+WARNING: CodeSystem/be-cs-holder-code-1: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-holder-code-2.json ==
+WARNING: CodeSystem/be-cs-holder-code-2: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-holder-code-2: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-holder-code-2: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2'
+WARNING: CodeSystem/be-cs-holder-code-2: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-hospital-service-cd.json ==
+WARNING: CodeSystem/be-cs-hospital-service-cd: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-hospital-service-cd: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-hospital-service-cd: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-input-type.json ==
+WARNING: CodeSystem/be-cs-id-doc-input-type: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-input-type: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-input-type: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-id-doc-input-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-id-doc-input-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-manual-input-justification.json ==
+WARNING: CodeSystem/be-cs-id-doc-manual-input-justification: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-manual-input-justification: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-manual-input-justification: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-id-doc-manual-input-justification: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-id-doc-manual-input-justification: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-media-type.json ==
+WARNING: CodeSystem/be-cs-id-doc-media-type: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-media-type: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-media-type: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-id-doc-media-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-id-doc-media-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-vignette-use-justification.json ==
+WARNING: CodeSystem/be-cs-id-doc-vignette-use-justification: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-vignette-use-justification: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-id-doc-vignette-use-justification: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-id-doc-vignette-use-justification: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-id-doc-vignette-use-justification: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-partial-agreement-values.json ==
+WARNING: CodeSystem/be-cs-partial-agreement-values: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-partial-agreement-values: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/be-cs-partial-agreement-values: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values'
+WARNING: CodeSystem/be-cs-partial-agreement-values: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-partial-agreement-values: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-partial-agreement-values: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-problem-category.json ==
+WARNING: CodeSystem/be-cs-problem-category: CodeSystem.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category'
+WARNING: CodeSystem/be-cs-problem-category: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-problem-origin-type.json ==
+WARNING: CodeSystem/be-cs-problem-origin-type: CodeSystem.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type'
+WARNING: CodeSystem/be-cs-problem-origin-type: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-requester-norm.json ==
+WARNING: CodeSystem/be-cs-requester-norm: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-requester-norm: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-requester-norm: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-requester-norm: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-requester-norm: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-score.json ==
+WARNING: CodeSystem/be-cs-score: CodeSystem.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score'
+WARNING: CodeSystem/be-cs-score: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-score-category.json ==
+WARNING: CodeSystem/be-cs-score-category: CodeSystem.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category'
+WARNING: CodeSystem/be-cs-score-category: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-speech-therapy-pathology-situation-code.json ==
+WARNING: CodeSystem/be-cs-speech-therapy-pathology-situation-code: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-speech-therapy-pathology-situation-code: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-speech-therapy-pathology-situation-code: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-speech-therapy-pathology-situation-code: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-speech-therapy-pathology-situation-code: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-treatment-reason.json ==
+WARNING: CodeSystem/be-cs-treatment-reason: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-treatment-reason: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: CodeSystem/be-cs-treatment-reason: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-treatment-reason: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-treatment-reason: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-administration-route.json ==
+WARNING: CodeSystem/be-cs-vaccination-administration-route: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route'
+WARNING: CodeSystem/be-cs-vaccination-administration-route: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-vaccination-administration-route: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-vaccination-administration-route: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-confirmation-status.json ==
+WARNING: CodeSystem/be-cs-vaccination-confirmation-status: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status'
+WARNING: CodeSystem/be-cs-vaccination-confirmation-status: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-vaccination-confirmation-status: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-vaccination-confirmation-status: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-status-reason.json ==
+WARNING: CodeSystem/be-cs-vaccination-status-reason: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason'
+WARNING: CodeSystem/be-cs-vaccination-status-reason: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-vaccination-status-reason: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-vaccination-status-reason: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-vaccine-code.json ==
+WARNING: CodeSystem/be-cs-vaccine-code: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code'
+WARNING: CodeSystem/be-cs-vaccine-code: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-vaccine-code: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-vaccine-code: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-be-cs-vaccine-target-disease.json ==
+WARNING: CodeSystem/be-cs-vaccine-target-disease: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease'
+WARNING: CodeSystem/be-cs-vaccine-target-disease: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/be-cs-vaccine-target-disease: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/be-cs-vaccine-target-disease: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-cd-civilstate.json ==
+WARNING: CodeSystem/cd-civilstate: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate'
+WARNING: CodeSystem/cd-civilstate: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-cd-contact-person.json ==
+WARNING: CodeSystem/cd-contact-person: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person'
+WARNING: CodeSystem/cd-contact-person: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-cd-fed-country.json ==
+WARNING: CodeSystem/cd-fed-country: CodeSystem.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country'
+WARNING: CodeSystem/cd-fed-country: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-cd-hcparty.json ==
+WARNING: CodeSystem/cd-hcparty: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-decision-values.json ==
+WARNING: CodeSystem/decision-values: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/decision-values: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/decision-values: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values'
+WARNING: CodeSystem/decision-values: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/decision-values: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/decision-values: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-message-events.json ==
+WARNING: CodeSystem/message-events: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/message-events: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/message-events: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events'
+WARNING: CodeSystem/message-events: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/message-events: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/message-events: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-nihdi-physiotherapy-pathologysituationcode.json ==
+WARNING: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode'
+WARNING: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nihdi-physiotherapy-pathologysituationcode: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-refusal-values.json ==
+WARNING: CodeSystem/refusal-values: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/refusal-values: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/refusal-values: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/refusal-values'
+WARNING: CodeSystem/refusal-values: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/refusal-values: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/refusal-values: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/CodeSystem-waitingforinformation-values.json ==
+WARNING: CodeSystem/waitingforinformation-values: CodeSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/waitingforinformation-values: CodeSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: CodeSystem/waitingforinformation-values: CodeSystem.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values'
+WARNING: CodeSystem/waitingforinformation-values: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: CodeSystem/waitingforinformation-values: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/waitingforinformation-values: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ConceptMap-BeCMISOToothSnomedCT.json ==
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.source.ofType(uri): No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[0].source: No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[1].source: No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+INFORMATION: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+INFORMATION: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[1].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+WARNING: ConceptMap.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.terminology.json ==
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/NamingSystem-be-cbe.json ==
+WARNING: NamingSystem/be-cbe: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ehp.json ==
+WARNING: NamingSystem/be-ehp: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-insurancenumber.json ==
+WARNING: NamingSystem/be-insurancenumber: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-insurancymembership.json ==
+WARNING: NamingSystem/be-insurancymembership: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-nihdi.json ==
+WARNING: NamingSystem/be-nihdi: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-allergy.json ==
+WARNING: NamingSystem/be-ns-allergy: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: NamingSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/NamingSystem-be-ns-claim-related-claim.json ==
+WARNING: NamingSystem/be-ns-claim-related-claim: NamingSystem.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: NamingSystem/be-ns-claim-related-claim: NamingSystem.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: NamingSystem/be-ns-claim-related-claim: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: NamingSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-nomenclature.json ==
+WARNING: NamingSystem/be-ns-nihdi-nomenclature: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-organization.json ==
+WARNING: NamingSystem/be-ns-nihdi-organization: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-professional.json ==
+WARNING: NamingSystem/be-ns-nihdi-professional: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-one-vaccination.json ==
+WARNING: NamingSystem/be-ns-one-vaccination: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-product-manufacturer.json ==
+WARNING: NamingSystem/be-ns-product-manufacturer: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ns-vaccinnet-vaccinecode.json ==
+WARNING: NamingSystem/be-ns-vaccinnet-vaccinecode: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/NamingSystem-be-ssin.json ==
+WARNING: NamingSystem/be-ssin: NamingSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-allergyintolerancecode.json ==
+WARNING: ValueSet/be-allergyintolerancecode: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode'
+WARNING: ValueSet/be-allergyintolerancecode: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+WARNING: ValueSet.where(id = 'be-allergyintolerancecode'): Unable to expand included value set 'https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-causativeagent': Error from https://apps.health.belgium.be/ontoserver/fhir: Can not determine authorisation; no credentials were provided. (and Error from https://apps.health.belgium.be/ontoserver/fhir: Can not determine authorisation; no credentials were provided.)
+== fsh-generated/resources/ValueSet-be-causativeagent.json ==
+WARNING: ValueSet/be-causativeagent: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent'
+WARNING: ValueSet/be-causativeagent: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+ERROR: ValueSet/be-causativeagent: ValueSet.compose.include[0].filter[0]: The value for a filter based on property 'concept' must be a valid code from the system 'http://snomed.info/sct', and '50851000172106' is not (Error from https://apps.health.belgium.be/ontoserver/fhir: Can not determine authorisation; no credentials were provided.)
+ERROR: ValueSet/be-causativeagent: ValueSet.compose.include[1].filter[0]: The value for a filter based on property 'concept' must be a valid code from the system 'http://snomed.info/sct', and '50841000172109' is not (Error from https://apps.health.belgium.be/ontoserver/fhir: Can not determine authorisation; no credentials were provided.)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+WARNING: ValueSet.where(id = 'be-causativeagent'): Error from https://apps.health.belgium.be/ontoserver/fhir: Can not determine authorisation; no credentials were provided.
+== fsh-generated/resources/ValueSet-be-civilstate.json ==
+WARNING: ValueSet/be-civilstate: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate'
+WARNING: ValueSet/be-civilstate: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-exposureroute.json ==
+WARNING: ValueSet/be-exposureroute: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute'
+WARNING: ValueSet/be-exposureroute: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-noallergy.json ==
+WARNING: ValueSet/be-noallergy: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy'
+WARNING: ValueSet/be-noallergy: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-riskmanifestation.json ==
+WARNING: ValueSet/be-riskmanifestation: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation'
+WARNING: ValueSet/be-riskmanifestation: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-riskmanifestation: ValueSet.compose.include[0].concept[15]: Wrong Display Name 'Rash / Eruption' for http://snomed.info/sct#271807003. Valid display is one of 9 choices: 'Eruption' (en), 'Skin rash' (en), 'Skin eruption' (en), 'Rash' (en), 'Breaking out - eruption' (en), 'Exanthem' (en), 'Eruption (disorder)' (en), 'Eruption of skin (disorder)' (en) or 'Eruption of skin' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-riskmanifestation: ValueSet.compose.include[0].concept[20]: Wrong Display Name 'Low blood pressure  / hypotension' for http://snomed.info/sct#45007003. Valid display is one of 7 choices: 'Hypotension' (en), 'Hypotension, NOS' (en), 'Hypopiesis' (en), 'Arterial hypotension, NOS' (en), 'Arterial hypotension' (en), 'Low blood pressure' (en) or 'Low blood pressure (disorder)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-riskmanifestation: ValueSet.compose.include[0].concept[22]: Wrong Display Name 'TEN - toxic epidermal necrolysis / lyell syndrome' for http://snomed.info/sct#768962006. Valid display is one of 3 choices: 'Lyell syndrome (disorder)' (en), 'Toxic epidermal necrolysis' (en) or 'Lyell syndrome' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-allergyintolerance-type.json ==
+WARNING: ValueSet/be-vs-allergyintolerance-type: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type'
+WARNING: ValueSet/be-vs-allergyintolerance-type: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-basic-laterality.json ==
+WARNING: ValueSet/be-vs-basic-laterality: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-basic-laterality: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-basic-laterality: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-basic-laterality'
+WARNING: ValueSet/be-vs-basic-laterality: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-body-topography.json ==
+WARNING: ValueSet/be-vs-body-topography: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-bodysite.json ==
+WARNING: ValueSet/be-vs-bodysite: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-bodysite'
+WARNING: ValueSet/be-vs-bodysite: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-care-location.json ==
+WARNING: ValueSet/be-vs-care-location: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location'
+WARNING: ValueSet/be-vs-care-location: ValueSet.extension[2].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location'
+WARNING: ValueSet/be-vs-care-location: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-cd-hcparty.json ==
+WARNING: ValueSet/be-vs-cd-hcparty: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty'
+WARNING: ValueSet/be-vs-cd-hcparty: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-claim-exemption-code.json ==
+WARNING: ValueSet/be-vs-claim-exemption-code: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-exemption-code: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-exemption-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-claim-norm-code.json ==
+WARNING: ValueSet/be-vs-claim-norm-code: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-norm-code: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-norm-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-claim-transplantation-code.json ==
+WARNING: ValueSet/be-vs-claim-transplantation-code: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-transplantation-code: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-claim-transplantation-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-decision-values.json ==
+WARNING: ValueSet/be-vs-decision-values: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-decision-values: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-decision-values: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-decision-values'
+WARNING: ValueSet/be-vs-decision-values: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-decision-values: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/decision-values' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-eagreementerrors.json ==
+WARNING: ValueSet/be-vs-eagreementerrors: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-eagreementerrors: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-eagreementerrors: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-eagreementerrors'
+WARNING: ValueSet/be-vs-eagreementerrors: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-eagreementerrors: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/agreement-errors' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-gender-at-birth.json ==
+WARNING: ValueSet/be-vs-gender-at-birth: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth'
+WARNING: ValueSet/be-vs-gender-at-birth: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-holder-code-1.json ==
+WARNING: ValueSet/be-vs-holder-code-1: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-holder-code-1: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-holder-code-1: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-holder-code-1'
+WARNING: ValueSet/be-vs-holder-code-1: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-holder-code-2.json ==
+WARNING: ValueSet/be-vs-holder-code-2: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-holder-code-2: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-holder-code-2: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-holder-code-2'
+WARNING: ValueSet/be-vs-holder-code-2: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-hospital-service-cd.json ==
+WARNING: ValueSet/be-vs-hospital-service-cd: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-hospital-service-cd: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-hospital-service-cd: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-id-doc-input-type.json ==
+WARNING: ValueSet/be-vs-id-doc-input-type: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-input-type: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-input-type: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-id-doc-manual-input-justification.json ==
+WARNING: ValueSet/be-vs-id-doc-manual-input-justification: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-manual-input-justification: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-manual-input-justification: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-id-doc-media-type.json ==
+WARNING: ValueSet/be-vs-id-doc-media-type: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-media-type: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-media-type: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-id-doc-vignette-use-justification.json ==
+WARNING: ValueSet/be-vs-id-doc-vignette-use-justification: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-vignette-use-justification: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-id-doc-vignette-use-justification: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/ValueSet-be-vs-laterality.json ==
+WARNING: ValueSet/be-vs-laterality: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality'
+WARNING: ValueSet/be-vs-laterality: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-patient-relationship-type.json ==
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type'
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[0]: The concept '444191003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[1]: The concept '444304005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[2]: The concept '444295003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[3]: The concept '444148008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[4]: The concept '444055008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[5]: The concept '444294004' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[6]: The concept '767308003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[7]: The concept '444193000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[8]: The concept '444301002' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[9]: The concept '444053001' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[10]: The concept '444241008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[11]: The concept '444303004' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[12]: The concept '444302009' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[13]: The concept '444194006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[14]: The concept '444243006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[15]: The concept '444242001' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[16]: The concept '444293005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[17]: The concept '444244000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[18]: The concept '444292000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[19]: The concept '444054007' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[20]: The concept '444192005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[21]: The concept '739683002' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[22]: The concept '699111006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[23]: The concept '444052006' has a status of inactive and its use should be reviewed
+== fsh-generated/resources/ValueSet-be-vs-problem-category.json ==
+WARNING: ValueSet/be-vs-problem-category: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-category'
+WARNING: ValueSet/be-vs-problem-category: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-problem-code.json ==
+WARNING: ValueSet/be-vs-problem-code: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-code'
+WARNING: ValueSet/be-vs-problem-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-problem-origin-type.json ==
+WARNING: ValueSet/be-vs-problem-origin-type: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-origin-type'
+WARNING: ValueSet/be-vs-problem-origin-type: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-reaction-manifestation-code.json ==
+WARNING: ValueSet/be-vs-reaction-manifestation-code: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code'
+WARNING: ValueSet/be-vs-reaction-manifestation-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-requester-norm.json ==
+WARNING: ValueSet/be-vs-requester-norm: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-requester-norm: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-requester-norm: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-score.json ==
+WARNING: ValueSet/be-vs-score: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score'
+WARNING: ValueSet/be-vs-score: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/be-vs-score: ValueSet.compose.include[0].concept[5].display: 'Norton pressure sore risk score (observable entity)' is no longer considered a correct display for code '443133008' (status = inactive). The correct display is one of Norton pressure sore risk score,Norton Scale score (observable entity),Norton Scale score
+INFORMATION: ValueSet/be-vs-score: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Visual analog scale score (observable entity), Mini-mental state examination score (observable entity), Malnutrition universal screening tool score (observable entity), Norton pressure sore risk score (observable entity), Thirty second chair stand test score (observable entity)] and examples for no FSN: [FINDRISC (Finnish Diabetes Risk Score) score, Index of Independence in Activities of Daily Living, Pain Assessment in Advanced Dementia Scale, Subjective Global Assessment, Waterlow pressure sore risk score])
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-scorecategory.json ==
+WARNING: ValueSet/be-vs-scorecategory: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory'
+WARNING: ValueSet/be-vs-scorecategory: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-speech-therapy-pathology-situation-code.json ==
+WARNING: ValueSet/be-vs-speech-therapy-pathology-situation-code: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-speech-therapy-pathology-situation-code: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-speech-therapy-pathology-situation-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-speech-therapy-pathology-situation-code: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-toothnumber-bodysite.json ==
+WARNING: ValueSet/be-vs-toothnumber-bodysite: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-toothnumber-bodysite: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/be-vs-toothnumber-bodysite: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-toothnumber-bodysite'
+WARNING: ValueSet/be-vs-toothnumber-bodysite: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-treatment-reason.json ==
+WARNING: ValueSet/be-vs-treatment-reason: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-treatment-reason: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology'
+WARNING: ValueSet/be-vs-treatment-reason: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route.json ==
+WARNING: ValueSet/be-vs-vaccination-administration-route: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route'
+WARNING: ValueSet/be-vs-vaccination-administration-route: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-bodysite.json ==
+WARNING: ValueSet/be-vs-vaccination-bodysite: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite'
+WARNING: ValueSet/be-vs-vaccination-bodysite: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-vaccination-bodysite: ValueSet.compose.include[0]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Skin structure of upper arm (body structure), Skin structure of thigh (body structure)] and examples for no FSN: [Deltoid muscle, Muscle of thigh, Muscle of buttock, Skin of forearm])
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status.json ==
+WARNING: ValueSet/be-vs-vaccination-confirmation-status: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-confirmation-status'
+WARNING: ValueSet/be-vs-vaccination-confirmation-status: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-product.json ==
+WARNING: ValueSet/be-vs-vaccination-product: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-product'
+WARNING: ValueSet/be-vs-vaccination-product: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-reason-code.json ==
+WARNING: ValueSet/be-vs-vaccination-reason-code: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-reason-code'
+WARNING: ValueSet/be-vs-vaccination-reason-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason.json ==
+WARNING: ValueSet/be-vs-vaccination-status-reason: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason'
+WARNING: ValueSet/be-vs-vaccination-status-reason: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-vaccination-status-reason: ValueSet.compose.include[1].concept[0]: Wrong Display Name 'Immune' for http://terminology.hl7.org/CodeSystem/v3-ActReason#IMMUNE. Valid display is 'immunity' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-vs-vaccination-status-reason: ValueSet.compose.include[1].concept[2]: Wrong Display Name 'Out of Stock' for http://terminology.hl7.org/CodeSystem/v3-ActReason#OSTOCK. Valid display is 'product out of stock' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-be-vs-vaccine-code.json ==
+WARNING: ValueSet/be-vs-vaccine-code: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code'
+ERROR: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1].concept[35].designation[0]: ValueSet.compose.include.concept.designation.value: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ValueSet|4.0.1)
+WARNING: ValueSet/be-vs-vaccine-code: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1].concept[0]: Wrong Display Name 'unspecified vaccine' for http://snomed.info/sct#787859002. Valid display is one of 3 choices: 'Vaccine product' (en), 'Vaccine product (product)' (en) or 'Vaccine product (medicinal product)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1].concept[7]: Wrong Display Name 'Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |' for http://snomed.info/sct#871726005. Valid display is one of 3 choices: 'Rabies vaccine' (en), 'Rabies lyssavirus antigen only vaccine product' (en) or 'Vaccine product containing only Rabies lyssavirus antigen (medicinal product)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1].concept[19]: Wrong Display Name 'Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens' for http://snomed.info/sct#1209197008. Valid display is one of 3 choices: 'Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens (medicinal product)' (en), 'Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens only vaccine product' (en) or 'Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 vaccine' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1].concept[54]: Wrong Display Name 'Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus' for http://snomed.info/sct#1252703004. Valid display is one of 3 choices: 'Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus (medicinal product)' (en), 'Measles morbillivirus and Mumps orthorubulavirus antigens only vaccine product' (en) or 'Measles and mumps vaccine' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/be-vs-vaccine-code: ValueSet.compose.include[1]: This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended (examples for FSN: [Vaccine product containing only Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens (medicinal product), Vaccine product containing only Yellow fever virus antigen (medicinal product), Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product), Vaccine product containing only Dengue virus antigen (medicinal product), Vaccine product containing only Ebolavirus antigen (medicinal product)] and examples for no FSN: [unspecified vaccine, Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |, Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens, Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus])
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+WARNING: ValueSet.where(id = 'be-vs-vaccine-code'): Error from https://tx.fhir.org/r4: Error: Cannot read properties of undefined (reading 'trim')
+== fsh-generated/resources/ValueSet-be-vs-vaccine-target-disease.json ==
+WARNING: ValueSet/be-vs-vaccine-target-disease: ValueSet.extension[1].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-target-disease'
+WARNING: ValueSet/be-vs-vaccine-target-disease: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/be-vs-vaccine-target-disease: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-target-disease' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-eagreementadjudicationreason.json ==
+WARNING: ValueSet/eagreementadjudicationreason: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementadjudicationreason: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementadjudicationreason: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementadjudicationreason'
+WARNING: ValueSet/eagreementadjudicationreason: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/eagreementadjudicationreason: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/refusal-values' which has status 'fragment'
+INFORMATION: ValueSet/eagreementadjudicationreason: ValueSet.compose.include[1]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/waitingforinformation-values' which has status 'fragment'
+INFORMATION: ValueSet/eagreementadjudicationreason: ValueSet.compose.include[2]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-partial-agreement-values' which has status 'fragment'
+== fsh-generated/resources/ValueSet-eagreementmessage.json ==
+WARNING: ValueSet/eagreementmessage: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementmessage: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementmessage: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementmessage'
+WARNING: ValueSet/eagreementmessage: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/eagreementmessage: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/message-events' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+== fsh-generated/resources/ValueSet-eagreementproductorservice.json ==
+WARNING: ValueSet/eagreementproductorservice: ValueSet.extension[1].value.ofType(integer).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementproductorservice: ValueSet.extension[2].value.ofType(code).extension[0].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet'
+WARNING: ValueSet/eagreementproductorservice: ValueSet.extension[3].value.ofType(canonical): A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementproductorservice'
+WARNING: ValueSet/eagreementproductorservice: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code'
+WARNING: ValueSet/eagreementproductorservice: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: ValueSet/eagreementproductorservice: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/nihdi-physiotherapy-pathologysituationcode' which has status 'fragment'
+INFORMATION: ValueSet/eagreementproductorservice: ValueSet.compose.include[2]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/annex-types' which has status 'fragment'
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.terminology, jurisdiction = urn:iso:std:iso:3166#BE) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
+WARNING: ValueSet.where(id = 'eagreementproductorservice'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code' could not be found, so the value set cannot be expanded

@@ -1,0 +1,23 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-bodysite",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeCSBodySite",
+  "title" : "Body Site CodeSystem",
+  "status" : "retired",
+  "experimental" : false,
+  "date" : "2026-08-27T09:03:57+00:00",
+  "description" : "Body Site CodeSystem",
+  "caseSensitive" : false,
+  "content" : "not-present"
+}

@@ -1,0 +1,554 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ConceptMap/BeCMISOToothSnomedCT> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BeCMISOToothSnomedCT"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap BeCMISOToothSnomedCT</b></p><a name=\"BeCMISOToothSnomedCT\"> </a><a name=\"hcBeCMISOToothSnomedCT\"> </a><p>Mapping from https://www.iso.org/standard/68292.html to <a href=\"ValueSet-be-vs-mycarenet-toothnumber-bodysite.html\">MyCareNet Tooth Number Body Site</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://www.iso.org/standard/68292.html</code> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>11</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>422653006 (Structure of permanent maxillary right central incisor tooth (body structure))</td></tr><tr><td>12</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>424877001 (Structure of permanent maxillary right lateral incisor tooth (body structure))</td></tr><tr><td>13</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>860767006 (Structure of permanent maxillary right canine tooth (body structure))</td></tr><tr><td>14</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>57826002 (Structure of permanent maxillary right first premolar tooth (body structure))</td></tr><tr><td>15</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>36492000 (Structure of permanent maxillary right second premolar tooth (body structure))</td></tr><tr><td>16</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>865995000 (Structure of permanent maxillary right first molar tooth (body structure))</td></tr><tr><td>17</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>863902006 (Structure of permanent maxillary right second molar tooth (body structure))</td></tr><tr><td>18</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>68085002 (Structure of permanent maxillary right third molar tooth (body structure))</td></tr><tr><td>21</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>424399000 (Structure of permanent maxillary left central incisor tooth (body structure))</td></tr><tr><td>22</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>423185002 (Structure of permanent maxillary left lateral incisor tooth (body structure))</td></tr><tr><td>23</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>860780009 (Structure of permanent maxillary left canine tooth (body structure))</td></tr><tr><td>24</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>61897005 (Structure of permanent maxillary left first premolar tooth (body structure))</td></tr><tr><td>25</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>23226009 (Structure of permanent maxillary left second premolar tooth (body structure))</td></tr><tr><td>26</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>865988009 (Structure of permanent maxillary left first molar tooth (body structure))</td></tr><tr><td>27</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>863901004 (Structure of permanent maxillary left second molar tooth (body structure))</td></tr><tr><td>28</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>87704003 (Structure of permanent maxillary left third molar tooth (body structure))</td></tr><tr><td>31</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>425106001 (Structure of permanent mandibular left central incisor tooth (body structure))</td></tr><tr><td>32</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>423331005 (Structure of permanent mandibular left lateral incisor tooth (body structure))</td></tr><tr><td>33</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>860782001 (Structure of permanent mandibular left canine tooth (body structure))</td></tr><tr><td>34</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>2400006 (Structure of permanent mandibular left first premolar tooth (body structure))</td></tr><tr><td>35</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>24573005 (Structure of permanent mandibular left second premolar tooth (body structure))</td></tr><tr><td>36</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>866006002 (Structure of permanent mandibular left first molar tooth (body structure))</td></tr><tr><td>37</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>863898000 (Structure of permanent mandibular left second molar tooth (body structure))</td></tr><tr><td>38</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>74344005 (Structure of permanent mandibular left third molar tooth (body structure))</td></tr><tr><td>41</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>424575004 (Structure of permanent mandibular right central incisor tooth (body structure))</td></tr><tr><td>42</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>423937004 (Structure of permanent mandibular right lateral incisor tooth (body structure))</td></tr><tr><td>43</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>860785004 (Structure of permanent mandibular right canine tooth (body structure))</td></tr><tr><td>44</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>80140008 (Structure of permanent mandibular right first premolar tooth (body structure))</td></tr><tr><td>45</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>8873007 (Structure of permanent mandibular right second premolar tooth (body structure))</td></tr><tr><td>46</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>866005003 (Structure of permanent mandibular right first molar tooth (body structure))</td></tr><tr><td>47</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>863899008 (Structure of permanent mandibular right second molar tooth (body structure))</td></tr><tr><td>48</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>38994002 (Structure of permanent mandibular right third molar tooth (body structure))</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>https://www.iso.org/standard/68292.html</code> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>51</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>88824007 (Structure of deciduous maxillary right central incisor tooth (body structure))</td></tr><tr><td>52</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>65624003 (Structure of deciduous maxillary right lateral incisor tooth (body structure))</td></tr><tr><td>53</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>30618001 (Structure of deciduous maxillary right canine tooth (body structure))</td></tr><tr><td>54</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>17505006 (Structure of deciduous maxillary right first molar tooth (body structure))</td></tr><tr><td>55</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>27855007 (Structure of deciduous maxillary right second molar tooth (body structure))</td></tr><tr><td>61</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>51678005 (Structure of deciduous maxillary left central incisor tooth (body structure))</td></tr><tr><td>62</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>43622005 (Structure of deciduous maxillary left lateral incisor tooth (body structure))</td></tr><tr><td>63</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>73937000 (Structure of deciduous maxillary left canine tooth (body structure))</td></tr><tr><td>64</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>45234009 (Structure of deciduous maxillary left first molar tooth (body structure))</td></tr><tr><td>65</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>51943008 (Structure of deciduous maxillary left second molar tooth (body structure))</td></tr><tr><td>71</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>89552004 (Structure of deciduous mandibular left central incisor tooth (body structure))</td></tr><tr><td>72</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>14770005 (Structure of deciduous mandibular left lateral incisor tooth (body structure))</td></tr><tr><td>73</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>43281008 (Structure of deciduous mandibular left canine tooth (body structure))</td></tr><tr><td>74</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>38896004 (Structure of deciduous mandibular left first molar tooth (body structure))</td></tr><tr><td>75</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>49330006 (Structure of deciduous mandibular left second molar tooth (body structure))</td></tr><tr><td>81</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>67834006 (Structure of deciduous mandibular right central incisor tooth (body structure))</td></tr><tr><td>82</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>22445006 (Structure of deciduous mandibular right lateral incisor tooth (body structure))</td></tr><tr><td>83</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>6062009 (Structure of deciduous mandibular right canine tooth (body structure))</td></tr><tr><td>84</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>58646007 (Structure of deciduous mandibular right first molar tooth (body structure))</td></tr><tr><td>85</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>61868007 (Structure of deciduous mandibular right second molar tooth (body structure))</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-wg>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMISOToothSnomedCT"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMISOToothSnomedCT>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.2"] ; # 
+  fhir:name [ fhir:v "BeCMISOToothSnomedCT"] ; # 
+  fhir:title [ fhir:v "BeCMISOToothSnomedCT"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-10T09:50:54+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.ehealth.fgov.be/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ISO tooth numbers to SNOMED CT"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:source [
+     a fhir:Uri ;
+     fhir:v "https://www.iso.org/standard/68292.html"^^xsd:anyURI ;
+     fhir:l <https://www.iso.org/standard/68292.html>
+  ] ; # 
+  fhir:target [
+     a fhir:Canonical ;
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-toothnumber-bodysite"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-toothnumber-bodysite>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://www.iso.org/standard/68292.html"^^xsd:anyURI ;
+       fhir:l <https://www.iso.org/standard/68292.html>
+     ] ;
+     fhir:target [
+       fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+       fhir:l <http://snomed.info/sct>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "11" ] ;
+       fhir:display [ fhir:v "11" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "422653006" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "12" ] ;
+       fhir:display [ fhir:v "12" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "424877001" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "13" ] ;
+       fhir:display [ fhir:v "13" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "860767006" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "14" ] ;
+       fhir:display [ fhir:v "14" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "57826002" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right first premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15" ] ;
+       fhir:display [ fhir:v "15" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "36492000" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right second premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "16" ] ;
+       fhir:display [ fhir:v "16" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "865995000" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "17" ] ;
+       fhir:display [ fhir:v "17" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "863902006" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "18" ] ;
+       fhir:display [ fhir:v "18" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "68085002" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary right third molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "21" ] ;
+       fhir:display [ fhir:v "21" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "424399000" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "22" ] ;
+       fhir:display [ fhir:v "22" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "423185002" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "23" ] ;
+       fhir:display [ fhir:v "23" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "860780009" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "24" ] ;
+       fhir:display [ fhir:v "24" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "61897005" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left first premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "25" ] ;
+       fhir:display [ fhir:v "25" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "23226009" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left second premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "26" ] ;
+       fhir:display [ fhir:v "26" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "865988009" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "27" ] ;
+       fhir:display [ fhir:v "27" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "863901004" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "28" ] ;
+       fhir:display [ fhir:v "28" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "87704003" ] ;
+         fhir:display [ fhir:v "Structure of permanent maxillary left third molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31" ] ;
+       fhir:display [ fhir:v "31" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "425106001" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "32" ] ;
+       fhir:display [ fhir:v "32" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "423331005" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "33" ] ;
+       fhir:display [ fhir:v "33" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "860782001" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "34" ] ;
+       fhir:display [ fhir:v "34" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "2400006" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left first premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "35" ] ;
+       fhir:display [ fhir:v "35" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "24573005" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left second premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "36" ] ;
+       fhir:display [ fhir:v "36" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "866006002" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "37" ] ;
+       fhir:display [ fhir:v "37" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "863898000" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "38" ] ;
+       fhir:display [ fhir:v "38" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "74344005" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular left third molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "41" ] ;
+       fhir:display [ fhir:v "41" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "424575004" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "42" ] ;
+       fhir:display [ fhir:v "42" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "423937004" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "43" ] ;
+       fhir:display [ fhir:v "43" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "860785004" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "44" ] ;
+       fhir:display [ fhir:v "44" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "80140008" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right first premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "45" ] ;
+       fhir:display [ fhir:v "45" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "8873007" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right second premolar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "46" ] ;
+       fhir:display [ fhir:v "46" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "866005003" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "47" ] ;
+       fhir:display [ fhir:v "47" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "863899008" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "48" ] ;
+       fhir:display [ fhir:v "48" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "38994002" ] ;
+         fhir:display [ fhir:v "Structure of permanent mandibular right third molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [
+       fhir:v "https://www.iso.org/standard/68292.html"^^xsd:anyURI ;
+       fhir:l <https://www.iso.org/standard/68292.html>
+     ] ;
+     fhir:target [
+       fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+       fhir:l <http://snomed.info/sct>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "51" ] ;
+       fhir:display [ fhir:v "51" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "88824007" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary right central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "52" ] ;
+       fhir:display [ fhir:v "52" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "65624003" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary right lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "53" ] ;
+       fhir:display [ fhir:v "53" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "30618001" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary right canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "54" ] ;
+       fhir:display [ fhir:v "54" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "17505006" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary right first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "55" ] ;
+       fhir:display [ fhir:v "55" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "27855007" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary right second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61" ] ;
+       fhir:display [ fhir:v "61" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "51678005" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary left central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "62" ] ;
+       fhir:display [ fhir:v "62" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "43622005" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary left lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "63" ] ;
+       fhir:display [ fhir:v "63" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "73937000" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary left canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "64" ] ;
+       fhir:display [ fhir:v "64" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "45234009" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary left first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "65" ] ;
+       fhir:display [ fhir:v "65" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "51943008" ] ;
+         fhir:display [ fhir:v "Structure of deciduous maxillary left second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "71" ] ;
+       fhir:display [ fhir:v "71" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "89552004" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular left central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "72" ] ;
+       fhir:display [ fhir:v "72" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "14770005" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular left lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "73" ] ;
+       fhir:display [ fhir:v "73" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "43281008" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular left canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "74" ] ;
+       fhir:display [ fhir:v "74" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "38896004" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular left first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "75" ] ;
+       fhir:display [ fhir:v "75" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "49330006" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular left second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "81" ] ;
+       fhir:display [ fhir:v "81" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "67834006" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular right central incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "82" ] ;
+       fhir:display [ fhir:v "82" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "22445006" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular right lateral incisor tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "83" ] ;
+       fhir:display [ fhir:v "83" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "6062009" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular right canine tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "84" ] ;
+       fhir:display [ fhir:v "84" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "58646007" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular right first molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "85" ] ;
+       fhir:display [ fhir:v "85" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "61868007" ] ;
+         fhir:display [ fhir:v "Structure of deciduous mandibular right second molar tooth (body structure)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-problem-code",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-code"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-problem-code",
+  "version" : "1.0.0",
+  "name" : "BeVSProblemCode",
+  "title" : "Problem Code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Problem Code. No Belgian standardized valueset is yet defined, this is expected   for a future iteration. Implementers are encouraged to use a codification system of their choosing."
+}

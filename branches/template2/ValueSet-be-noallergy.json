@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-noallergy",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-noallergy",
+  "version" : "1.0.0",
+  "name" : "BeNoAllergy",
+  "title" : "BeNoAllergy",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-27T09:03:57+00:00",
+  "description" : "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)"
+      }]
+    }]
+  }
+}

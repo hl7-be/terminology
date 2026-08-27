@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-care-location",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-care-location",
+  "version" : "1.0.0",
+  "name" : "BeVSCareLocation",
+  "title" : "BeVSCareLocation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-27T09:03:57+00:00",
+  "description" : "Care Location Value Set",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-care-location"
+    }]
+  }
+}

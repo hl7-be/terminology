@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-laterality"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-laterality"/>
+  <version value="1.0.0"/>
+  <name value="BeVSLaterality"/>
+  <title value="Laterality"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T09:03:57+00:00"/>
+  <description value="Laterality"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="7771000"/>
+      </concept>
+      <concept>
+        <code value="24028007"/>
+      </concept>
+      <concept>
+        <code value="51440002"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

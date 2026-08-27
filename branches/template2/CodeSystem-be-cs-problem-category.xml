@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-problem-category"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-problem-category"/>
+  <version value="1.0.0"/>
+  <name value="BeCSProblemCategory"/>
+  <title value="Problem Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T09:03:57+00:00"/>
+  <description value="Problem Category"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="diagnosis"/>
+    <display value="Diagnosis"/>
+    <definition value="A disease identified from a clinical reasoning, based on pathological and physiological ascertainments"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Diagnostic"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="diagnose"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="problem"/>
+    <display value="Problem"/>
+    <definition value="Identification of problems that the healthcare provider considers harmful, potentially harmful, and which may be the subject of further investigation or treatment"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Problème"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Probleem"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="risk"/>
+    <display value="Risk"/>
+    <definition value="Identification of a health problem or situation that may require ongoing monitoring or management"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Risque"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Risico"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="antecedent"/>
+    <display value="Antecedent"/>
+    <definition value="Information about a problem that has been resolved"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Antécédent"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Antecedent"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="congenital"/>
+    <display value="Congenital anomaly"/>
+    <definition value="Congenital anomaly"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Maladie congénitale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Aangeboren afwijking"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="conclusion"/>
+    <display value="Conclusion"/>
+    <definition value="Informations about a conclusion from anamnesis performed by a professional other than a physician"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Conclusion anamnèse"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Anamnesis conclusie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-vaccination-administration-route",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-vaccination-administration-route",
+  "version" : "1.0.0",
+  "name" : "BeVSVaccineAdministrationRoute",
+  "title" : "BeVSVaccineAdministrationRoute",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-27T09:03:57+00:00",
+  "description" : "Vaccine Administration Route",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccination-administration-route"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

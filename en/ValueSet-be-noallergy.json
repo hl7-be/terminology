@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-noallergy",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy",
+  "version" : "1.2.0",
+  "name" : "BeNoAllergy",
+  "title" : "BeNoAllergy",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-18T12:02:54+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "No known allergy (situation)"
+        },
+        {
+          "language" : "en",
+          "value" : "No known allergy"
+        },
+        {
+          "language" : "nl-BE",
+          "value" : "geen gekende allergie"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "pas d'allergie connue"
+        }]
+      }]
+    }]
+  }
+}

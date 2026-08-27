@@ -1,0 +1,124 @@
+# BeCSVaccineAdministrationRoute - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## CodeSystem: BeCSVaccineAdministrationRoute 
+
+ 
+Vaccine Administration Route 
+
+This Code system is referenced in the definition of the following value sets:
+
+* [BeVSVaccineAdministrationRoute](ValueSet-be-vs-vaccination-administration-route.md)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-vaccination-administration-route",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccination-administration-route",
+  "version" : "1.0.0",
+  "name" : "BeCSVaccineAdministrationRoute",
+  "title" : "BeCSVaccineAdministrationRoute",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Vaccine Administration Route",
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "IM",
+    "display" : "Intramuscular",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Intramusculaire"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Intramusculair"
+    }]
+  },
+  {
+    "code" : "SC",
+    "display" : "Subcutaneous",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Sous-cutanée"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Subcutaan"
+    }]
+  },
+  {
+    "code" : "IV",
+    "display" : "Intravenous",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "intraveineuse"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Intraveneus"
+    }]
+  },
+  {
+    "code" : "ID",
+    "display" : "Intradermal",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Intradermique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Intradermaal"
+    }]
+  },
+  {
+    "code" : "Oral",
+    "display" : "Oral",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Orale"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Oraal"
+    }]
+  },
+  {
+    "code" : "Nasal",
+    "display" : "Nasal",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Nasal"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Nasaal"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Inconnu"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Onbekend"
+    }]
+  }]
+}
+
+```

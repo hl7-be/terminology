@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationPrescriptionStatusVS"/>
+  <language value="en"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationPrescriptionStatusVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationPrescriptionStatusVS"/>
+  <title value="Medication Prescription Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:28:44+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication prescription status codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/CodeSystem/medicationrequest-status"/>
+      <concept>
+        <code value="active"/>
+      </concept>
+      <concept>
+        <code value="completed"/>
+      </concept>
+      <concept>
+        <code value="cancelled"/>
+      </concept>
+      <concept>
+        <code value="stopped"/>
+      </concept>
+      <concept>
+        <code value="entered-in-error"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

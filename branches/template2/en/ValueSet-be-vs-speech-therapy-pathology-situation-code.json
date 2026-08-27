@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-speech-therapy-pathology-situation-code",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
+      }]
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-speech-therapy-pathology-situation-code",
+  "version" : "1.0.0",
+  "name" : "BeVSSpeechTherapyPathologySituationCode",
+  "title" : "Speech Therapy Pathology Situation Code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-27T09:03:57+00:00",
+  "description" : "Texte de la nomenclature (Article 36, par. 2)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code"
+    }]
+  }
+}

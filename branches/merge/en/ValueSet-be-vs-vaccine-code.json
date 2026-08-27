@@ -1,0 +1,280 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-vaccine-code",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-vaccine-code",
+  "version" : "1.0.0",
+  "name" : "BeVSVaccineCode",
+  "title" : "BeVSVaccineCode",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Vaccine Code Value Set - the types of vaccines that are administered in Belgium",
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-code",
+      "concept" : [{
+        "code" : "other"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "787859002",
+        "display" : "unspecified vaccine"
+      },
+      {
+        "code" : "836500008",
+        "display" : "Vaccine product containing only Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens (medicinal product)"
+      },
+      {
+        "code" : "871717007",
+        "display" : "Vaccine product containing only Yellow fever virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871719005",
+        "display" : "Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871720004",
+        "display" : "Vaccine product containing only Dengue virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871721000",
+        "display" : "Vaccine product containing only Ebolavirus antigen (medicinal product)"
+      },
+      {
+        "code" : "871724008",
+        "display" : "Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871726005",
+        "display" : "Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |"
+      },
+      {
+        "code" : "871727001",
+        "display" : "Vaccine product containing only Vaccinia virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871729003",
+        "display" : "Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product)"
+      },
+      {
+        "code" : "871732000",
+        "display" : "Vaccine product containing only Rubella virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871737006",
+        "display" : "Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)"
+      },
+      {
+        "code" : "871739009",
+        "display" : "Vaccine product containing only Human poliovirus antigen (medicinal product)"
+      },
+      {
+        "code" : "871742003",
+        "display" : "Vaccine product containing only Clostridium tetani antigen (medicinal product)"
+      },
+      {
+        "code" : "871751006",
+        "display" : "Vaccine product containing only Hepatitis A virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871758000",
+        "display" : "Vaccine product containing only Bordetella pertussis antigen (medicinal product)"
+      },
+      {
+        "code" : "871761004",
+        "display" : "Vaccine product containing only Rotavirus antigen (medicinal product)"
+      },
+      {
+        "code" : "871764007",
+        "display" : "Vaccine product containing only Haemophilus influenzae type b antigen (medicinal product)"
+      },
+      {
+        "code" : "871765008",
+        "display" : "Vaccine product containing only Measles morbillivirus antigen (medicinal product)"
+      },
+      {
+        "code" : "1209197008",
+        "display" : "Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens"
+      },
+      {
+        "code" : "871803007",
+        "display" : "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)"
+      },
+      {
+        "code" : "871804001",
+        "display" : "Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)"
+      },
+      {
+        "code" : "871817003",
+        "display" : "Vaccine product containing only Measles morbillivirus and Rubella virus antigens (medicinal product)"
+      },
+      {
+        "code" : "871822003",
+        "display" : "Vaccine product containing only Hepatitis B virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871826000",
+        "display" : "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+      },
+      {
+        "code" : "871831003",
+        "display" : "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"
+      },
+      {
+        "code" : "871837004",
+        "display" : "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"
+      },
+      {
+        "code" : "871866001",
+        "display" : "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)"
+      },
+      {
+        "code" : "871871008",
+        "display" : "Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)"
+      },
+      {
+        "code" : "871873006",
+        "display" : "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)"
+      },
+      {
+        "code" : "871875004",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+      },
+      {
+        "code" : "871878002",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"
+      },
+      {
+        "code" : "871886002",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus antigens (medicinal product)"
+      },
+      {
+        "code" : "871887006",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Human poliovirus antigens (medicinal product)"
+      },
+      {
+        "code" : "871891001",
+        "display" : "Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)"
+      },
+      {
+        "code" : "871895005",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)",
+        "designation" : [{
+          "language" : "fr-BE"
+        }]
+      },
+      {
+        "code" : "871908002",
+        "display" : "Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"
+      },
+      {
+        "code" : "871919004",
+        "display" : "Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)"
+      },
+      {
+        "code" : "1052328007",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+      },
+      {
+        "code" : "1052330009",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+      },
+      {
+        "code" : "1119220001",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (medicinal product)"
+      },
+      {
+        "code" : "1252708008",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"
+      },
+      {
+        "code" : "1252709000",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsular polysaccharide antigens conjugated (medicinal product)"
+      },
+      {
+        "code" : "911000221103",
+        "display" : "Vaccine product containing only Human papillomavirus antigen (medicinal product)"
+      },
+      {
+        "code" : "921000221108",
+        "display" : "Vaccine product containing only Neisseria meningitidis antigen (medicinal product)"
+      },
+      {
+        "code" : "961000221100",
+        "display" : "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
+      },
+      {
+        "code" : "981000221107",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
+      },
+      {
+        "code" : "991000221105",
+        "display" : "Vaccine product containing only Vibrio cholerae antigen (medicinal product)"
+      },
+      {
+        "code" : "1181000221105",
+        "display" : "Vaccine product containing only Influenza virus antigen (medicinal product)"
+      },
+      {
+        "code" : "1861000221106",
+        "display" : "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+      },
+      {
+        "code" : "1981000221108",
+        "display" : "Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)"
+      },
+      {
+        "code" : "1991000221106",
+        "display" : "Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)"
+      },
+      {
+        "code" : "2001000221108",
+        "display" : "Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)"
+      },
+      {
+        "code" : "28531000087107",
+        "display" : "Vaccine product against severe acute respiratory syndrome coronavirus 2 (medicinal product)"
+      },
+      {
+        "code" : "1252703004",
+        "display" : "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus"
+      },
+      {
+        "code" : "51311000087100",
+        "display" : "Vaccine product containing only Human orthopneumovirus antigen (medicinal product)"
+      },
+      {
+        "code" : "871839001",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"
+      },
+      {
+        "code" : "1252690003",
+        "display" : "Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)"
+      },
+      {
+        "code" : "51451000087105",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+      },
+      {
+        "code" : "1345202008",
+        "display" : "Vaccine product containing only Chikungunya virus antigen (medicinal product)"
+      },
+      {
+        "code" : "777424002",
+        "display" : "Product containing only Respiratory syncytial virus immune globulin (medicinal product)"
+      }]
+    }]
+  }
+}

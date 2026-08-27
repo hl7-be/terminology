@@ -1,0 +1,241 @@
+# BeContactPerson - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## ValueSet: BeContactPerson 
+
+ 
+Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values. 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-contactperson",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson",
+  "version" : "2.1.2",
+  "name" : "BeContactPerson",
+  "title" : "BeContactPerson",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-30T17:36:02+02:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-not-a",
+        "value" : "O"
+      }]
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person",
+      "concept" : [{
+        "code" : "father",
+        "designation" : [{
+          "language" : "en",
+          "value" : "father"
+        }]
+      },
+      {
+        "code" : "mother",
+        "designation" : [{
+          "language" : "en",
+          "value" : "mother"
+        }]
+      },
+      {
+        "code" : "child",
+        "designation" : [{
+          "language" : "en",
+          "value" : "child"
+        }]
+      },
+      {
+        "code" : "spouse",
+        "designation" : [{
+          "language" : "en",
+          "value" : "spouse"
+        }]
+      },
+      {
+        "code" : "husband",
+        "designation" : [{
+          "language" : "en",
+          "value" : "husband"
+        }]
+      },
+      {
+        "code" : "partner",
+        "designation" : [{
+          "language" : "en",
+          "value" : "partner"
+        }]
+      },
+      {
+        "code" : "brother",
+        "designation" : [{
+          "language" : "en",
+          "value" : "brother"
+        }]
+      },
+      {
+        "code" : "sister",
+        "designation" : [{
+          "language" : "en",
+          "value" : "sister"
+        }]
+      },
+      {
+        "code" : "brotherinlaw",
+        "designation" : [{
+          "language" : "en",
+          "value" : "brother-in-law"
+        }]
+      },
+      {
+        "code" : "tutor",
+        "designation" : [{
+          "language" : "en",
+          "value" : "tutor"
+        }]
+      },
+      {
+        "code" : "notary",
+        "designation" : [{
+          "language" : "en",
+          "value" : "notary"
+        }]
+      },
+      {
+        "code" : "lawyer",
+        "designation" : [{
+          "language" : "en",
+          "value" : "lawyer"
+        }]
+      },
+      {
+        "code" : "employer",
+        "designation" : [{
+          "language" : "en",
+          "value" : "employer"
+        }]
+      },
+      {
+        "code" : "grandparent",
+        "designation" : [{
+          "language" : "en",
+          "value" : "grandparent"
+        }]
+      },
+      {
+        "code" : "son",
+        "designation" : [{
+          "language" : "en",
+          "value" : "son"
+        }]
+      },
+      {
+        "code" : "daughter",
+        "designation" : [{
+          "language" : "en",
+          "value" : "daughter"
+        }]
+      },
+      {
+        "code" : "grandchild",
+        "designation" : [{
+          "language" : "en",
+          "value" : "grandchild"
+        }]
+      },
+      {
+        "code" : "neighbour",
+        "designation" : [{
+          "language" : "en",
+          "value" : "neighbour"
+        }]
+      },
+      {
+        "code" : "stepson",
+        "designation" : [{
+          "language" : "en",
+          "value" : "stepson"
+        }]
+      },
+      {
+        "code" : "stepdaughter",
+        "designation" : [{
+          "language" : "en",
+          "value" : "stepdaughter"
+        }]
+      },
+      {
+        "code" : "stepfather",
+        "designation" : [{
+          "language" : "en",
+          "value" : "stepfather"
+        }]
+      },
+      {
+        "code" : "stepmother",
+        "designation" : [{
+          "language" : "en",
+          "value" : "stepmother"
+        }]
+      },
+      {
+        "code" : "sisterinlaw",
+        "designation" : [{
+          "language" : "en",
+          "value" : "sisterinlaw"
+        }]
+      }]
+    }]
+  }
+}
+
+```

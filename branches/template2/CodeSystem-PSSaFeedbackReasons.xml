@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PSSaFeedbackReasons"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/PSSaFeedbackReasons"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.2.51.22.2.16.8"/>
+  </identifier>
+  <version value="1.1.0"/>
+  <name value="PSSaFeedbackReasons"/>
+  <title value="PSSa Feedback Code Reasons"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-02-27T16:08:13+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Feedback code reasons for PSS antimicrobial"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="ClinicIssue"/>
+    <display value="Concerning clinical presentation"/>
+  </concept>
+  <concept>
+    <code value="Comorbidities"/>
+    <display value="Comorbidities"/>
+  </concept>
+  <concept>
+    <code value="FastResults"/>
+    <display value="Faster results"/>
+  </concept>
+  <concept>
+    <code value="PosPrevExp"/>
+    <display value="Positive prior experience"/>
+  </concept>
+  <concept>
+    <code value="InsuffEffect"/>
+    <display value="Insufficient effect of recommended management in the past"/>
+  </concept>
+  <concept>
+    <code value="BetterTol"/>
+    <display value="Better tolerated"/>
+  </concept>
+  <concept>
+    <code value="Allergy"/>
+    <display value="Allergy"/>
+  </concept>
+  <concept>
+    <code value="OtherReason"/>
+    <display value="Other reason — which"/>
+  </concept>
+</CodeSystem>

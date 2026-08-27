@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-allergyintolerancecode"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-allergyintolerancecode"/>
+  <version value="1.0.0"/>
+  <name value="BeAllergyIntoleranceCode"/>
+  <title value="BeAllergyIntoleranceCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T09:03:57+00:00"/>
+  <description value="Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <compose>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-causativeagent"/>
+    </include>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-noallergy"/>
+    </include>
+  </compose>
+</ValueSet>

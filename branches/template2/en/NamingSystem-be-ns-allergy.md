@@ -1,0 +1,32 @@
+# be-ns-allergy - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## NamingSystem: be-ns-allergy 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "NamingSystem",
+  "id" : "be-ns-allergy",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-allergy"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "1.0.0"
+  }],
+  "name" : "BeNSAllergy",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2026-06-01T00:00:00Z",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://www.ehealth.fgov.be/standards/fhir/allergy/NamingSystem/be-ns-allergy",
+    "preferred" : true
+  }]
+}
+
+```

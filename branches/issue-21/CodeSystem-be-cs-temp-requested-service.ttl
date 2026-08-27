@@ -1,0 +1,317 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-temp-requested-service> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-temp-requested-service"] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeTempRequestedService"] ; # 
+  fhir:title [ fhir:v "BeTempRequestedService"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-10T14:13:48+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DEMONSTRATIVE EXAMPLE - Temporary codes for indicating services that can be requested from a Nurse"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "tmp-prep-x081-2" ] ;
+     fhir:display [ fhir:v "Preparing medication_Appendix 81" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Préparation des médicaments_Appendix 81" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Medicatie klaarzetten_Bijlage 81" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Preparing medication_Appendix 81" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-prep-rsed-5" ] ;
+     fhir:display [ fhir:v "Preparing medication_not reimbursed" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Préparation des médicaments_non remboursée" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Medicatie klaarzetten_niet terugbetaald" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Preparing medication_not reimbursed" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-inte-tion-6" ] ;
+     fhir:display [ fhir:v "intermittent bladder catheterization" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Sondage vésical intermittent" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "intermittente blaassondage" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "intermittent bladder catheterization" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-remo-tube-9" ] ;
+     fhir:display [ fhir:v "remove bladder tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Retrait de la sonde vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaassondage verwijderen" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "remove bladder tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-repl-tube-0" ] ;
+     fhir:display [ fhir:v "replace bladder tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Remplacement de la sonde vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaassondage vervangen" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "replace bladder tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-inse-tube-9" ] ;
+     fhir:display [ fhir:v "insert bladder tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Placement de la sonde vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaassondage plaatsen" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "insert bladder tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-blad-sion-4" ] ;
+     fhir:display [ fhir:v "bladder tube supervision" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Supervision de la sonde vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaassondage toezicht" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "bladder tube supervision" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-blad-ance-2" ] ;
+     fhir:display [ fhir:v "bladder instillation performance" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Mise en oeuvre de l’instillation vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaasinstillatie uitvoering" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "bladder instillation performance" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-blad-ring-1" ] ;
+     fhir:display [ fhir:v "bladder instillation monitoring" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Supervision de l’instillation vésicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "blaasinstillatie toezicht" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "bladder instillation monitoring" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-supr-ring-9" ] ;
+     fhir:display [ fhir:v "suprapubic bladder monitoring" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Supervision de la sonde vésicale sus-pubienne" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "suprapubische blaassonde toezicht" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "suprapubic bladder monitoring" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-moni-eter-9" ] ;
+     fhir:display [ fhir:v "Monitoring catheter" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Supervision d’un cathéter" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Toezicht katheter" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Monitoring catheter" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-dres-eter-4" ] ;
+     fhir:display [ fhir:v "Dressing change catheter" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Changement d’un pansement de cathéter" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Verbandwissel katheter" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Dressing change catheter" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-care-tube-6" ] ;
+     fhir:display [ fhir:v "care for tracheostomy tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "entretien du tube de trachéotomie" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "zorgen aan tracheacanule" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "care for tracheostomy tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-care-tube-1" ] ;
+     fhir:display [ fhir:v "care for gastric tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "entretien du tube gastrique" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "zorgen aan maagsonde" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "care for gastric tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-gast-care-1" ] ;
+     fhir:display [ fhir:v "gastrostomy tube care" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "entretien de la sonde de gastrostomie" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "zorgen aan gastrostomiesonde" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "gastrostomy tube care" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-care-eter-9" ] ;
+     fhir:display [ fhir:v "care for a catheter" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "prendre soin d'un cathéter" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "zorgen aan een catheter" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "care for a catheter" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-repl-tube-5" ] ;
+     fhir:display [ fhir:v "replace tracheostomy tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "remplacer le tube de trachéotomie" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "vervangen tracheacanule" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "replace tracheostomy tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-clea-tube-3" ] ;
+     fhir:display [ fhir:v "clean tracheostomy tube" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "nettoyer la canule de trachéotomie" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "reinigen tracheacanule" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "clean tracheostomy tube" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-spec-act0-5" ] ;
+     fhir:display [ fhir:v "Specific technical provision (B2 act - C act)" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Disposition technique spécifique (loi B2 - loi C)" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Specifieke technische verstrekking (B2 handeling - C handeling)" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Specific technical provision (B2 act - C act)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "tmp-plac-edle-0" ] ;
+     fhir:display [ fhir:v "Place/replace needle" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Placer/remplacer l'aiguille" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Plaatsen/vervangen naald" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Place/replace needle" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

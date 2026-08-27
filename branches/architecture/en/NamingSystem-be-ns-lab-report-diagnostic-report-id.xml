@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="be-ns-lab-report-diagnostic-report-id"/>
+  <language value="en"/>
+  <name value="BeLabReportDiagnosticReportId"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2021-11-17"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unique Identifier for Lab Report Diagnostic Report"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://www.ehealth.fgov.be/standards/fhir/lab/NamingSystem/be-ns-lab-report-diagnostic-report-id"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://www.ehealth.fgov.be/lab-report/diagnostic-report-id"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

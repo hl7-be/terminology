@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-patient-relationship-type"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-patient-relationship-type"/>
+  <version value="1.0.0"/>
+  <name value="BeVSPatientRelationshipType"/>
+  <title value="BeVSPatientRelationshipType"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Describes the patient relationship type (the relation between the patient and the person implied)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="444191003"/>
+      </concept>
+      <concept>
+        <code value="444304005"/>
+      </concept>
+      <concept>
+        <code value="444295003"/>
+      </concept>
+      <concept>
+        <code value="444148008"/>
+      </concept>
+      <concept>
+        <code value="444055008"/>
+      </concept>
+      <concept>
+        <code value="444294004"/>
+      </concept>
+      <concept>
+        <code value="767308003"/>
+      </concept>
+      <concept>
+        <code value="444193000"/>
+      </concept>
+      <concept>
+        <code value="444301002"/>
+      </concept>
+      <concept>
+        <code value="444053001"/>
+      </concept>
+      <concept>
+        <code value="444241008"/>
+      </concept>
+      <concept>
+        <code value="444303004"/>
+      </concept>
+      <concept>
+        <code value="444302009"/>
+      </concept>
+      <concept>
+        <code value="444194006"/>
+      </concept>
+      <concept>
+        <code value="444243006"/>
+      </concept>
+      <concept>
+        <code value="444242001"/>
+      </concept>
+      <concept>
+        <code value="444293005"/>
+      </concept>
+      <concept>
+        <code value="444244000"/>
+      </concept>
+      <concept>
+        <code value="444292000"/>
+      </concept>
+      <concept>
+        <code value="444054007"/>
+      </concept>
+      <concept>
+        <code value="444192005"/>
+      </concept>
+      <concept>
+        <code value="739683002"/>
+      </concept>
+      <concept>
+        <code value="699111006"/>
+      </concept>
+      <concept>
+        <code value="444052006"/>
+      </concept>
+      <concept>
+        <code value="410604004"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

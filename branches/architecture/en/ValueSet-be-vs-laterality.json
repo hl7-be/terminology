@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-laterality",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality",
+  "version" : "1.0.0",
+  "name" : "BeVSLaterality",
+  "title" : "Laterality",
+  "status" : "active",
+  "date" : "2021-01-10T10:59:49+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be"
+    },
+    {
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be"
+    }]
+  },
+  {
+    "name" : "Message-Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@www.ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Laterality",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "419161000"
+      },
+      {
+        "code" : "419465000"
+      },
+      {
+        "code" : "51440002"
+      },
+      {
+        "code" : "261183002"
+      },
+      {
+        "code" : "261122009"
+      },
+      {
+        "code" : "255561001"
+      },
+      {
+        "code" : "49370004"
+      },
+      {
+        "code" : "264217000"
+      },
+      {
+        "code" : "261089000"
+      },
+      {
+        "code" : "255551008"
+      },
+      {
+        "code" : "351726001"
+      },
+      {
+        "code" : "352730000"
+      }]
+    }]
+  }
+}

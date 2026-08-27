@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-temp-requested-service-detail"/>
+  <language value="en"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail"/>
+  <version value="1.0.0"/>
+  <name value="BeTempRequestedServiceDetail"/>
+  <title value="BeTempRequestedServiceDetail"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - Temporary codes for indicating service details that can be requested from a Nurse"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="24"/>
+  <concept>
+    <code value="tmp-with-tion-7"/>
+    <display value="Within convention"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Binnen conventie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Au sein de la convention"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Within convention"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-with-sion-8"/>
+    <display value="Within progression"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Binnen voortraject"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Dans la progression"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Within progression"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-with-tory-8"/>
+    <display value="Without trajectory"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Zonder traject"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Sans trajectoire"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Without trajectory"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-prot-dges-5"/>
+    <display value="protection of wound edges"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="bescherming van wondranden"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="protection des bords de la plaie"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="protection of wound edges"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-shor-wick-2"/>
+    <display value="Shorten wick"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Inkorten wiek"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Raccourcir la mèche"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Shorten wick"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-supe-tion-2"/>
+    <display value="supervised drain without suction"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="toezicht drain zonder suctie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="vidange surveillée sans aspiration"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="supervised drain without suction"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-for0-tion-6"/>
+    <display value="For insulin administration"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Voor insuline toediening"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Pour l'administration d'insuline"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="For insulin administration"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-for0-tion-9"/>
+    <display value="For medication administration"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Voor medicatietoediening"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Pour l'administration des médicaments"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="For medication administration"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-glyc-file-0"/>
+    <display value="Glycemic day profile"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Glycemiedagprofiel"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Profil glycémique du jour"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Glycemic day profile"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-bolu-very-5"/>
+    <display value="bolus medication delivery"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="medicatietoediening in bolus"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="administration de médicaments en bolus"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="bolus medication delivery"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-medi-tion-8"/>
+    <display value="medication administration via dilution"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="medicatietoediening via verdunning"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="administration de médicaments par dilution"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="medication administration via dilution"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-supr-0tip-7"/>
+    <display value="Suprapubic bladder care insertion tip"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Suprapubische blaassonde verzorging insteekpunt"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Embout d'insertion pour soins de la vessie sus-pubienne"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Suprapubic bladder care insertion tip"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-supr-ring-4"/>
+    <display value="Suprapubic bladder tube monitoring"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Suprapubische blaassonde toezicht"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Surveillance du tube vésical sus-pubien"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Suprapubic bladder tube monitoring"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-educ-ight-0"/>
+    <display value="Education to insight"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Educatie tot inzicht"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="L'éducation à la perspicacité"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Education to insight"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-guid-care-5"/>
+    <display value="Guidance if not self-care"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Begeleiding indien geen zelfzorg"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Des conseils sinon des soins personnels"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Guidance if not self-care"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-foll-tion-5"/>
+    <display value="Follow-up after education"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Opvolging na educatie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Suivi après l'éducation"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Follow-up after education"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-foll-care-7"/>
+    <display value="Follow-up of the patient who does not switch to self-care"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Opvolging van de patiënt die niet overstapt op zelfzorg"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Suivi du patient qui ne passe pas aux soins personnels"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Follow-up of the patient who does not switch to self-care"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-star-nist-0"/>
+    <display value="Start insulin or GLP 1 agonist"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Start insuline of GLP 1-agonist"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Démarrer l'insuline ou l'agoniste du GLP 1"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Start insulin or GLP 1 agonist"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-addi-&gt;7.5-0"/>
+    <display value="Additional education HBA1C&gt;7.5"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Bijkomende educatie HBA1C&gt;7.5"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Formation complémentaire HBA1C&gt;7.5"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Additional education HBA1C&gt;7.5"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-addi-ions-3"/>
+    <display value="Additional education switching from 1 to 2 injections"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Bijkomende educatie omschakeling van 1 naar 2 injecties"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Formation complémentaire passage de 1 à 2 injections"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Additional education switching from 1 to 2 injections"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-educ-tion-0"/>
+    <display value="Education in patients on oral medication"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Educatie bij patiënten met orale medicatie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Éducation des patients sous médication orale"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Education in patients on oral medication"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-educ-rial-8"/>
+    <display value="Education material"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Educatie materiaal"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Matériel pédagogique"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Education material"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-grou-sion-3"/>
+    <display value="Group session"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Groepsessie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Séance de groupe"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Group session"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-indi-sion-8"/>
+    <display value="Individual session"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Individuele sessie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Séance individuelle"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Individual session"/>
+    </designation>
+  </concept>
+</CodeSystem>

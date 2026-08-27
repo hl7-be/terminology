@@ -1,0 +1,1839 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>CodeSystem NIHDIPhysiotherapyPathology - HL7 Belgium terminology Implementation Guide (IG) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7-be.css"/>
+  <!-- Placeholder for child template CSS declarations -->
+  <!-- eHealth Platform -->
+  <!-- draft -->
+
+<link rel="stylesheet" href="assets/css/colors.css"/>
+
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"21.121"}
+    h3,h4,h5,h6{--heading-prefix:"21.121"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+        
+  <!-- eHealth Platform -->
+  <!-- draft -->
+
+<div id="ig-nav">
+  <a no-external="true" id="standards-logo" href="index.html">
+    <img src="assets/images/standards.svg" alt="Welcome on standards website" height="50"/>
+  </a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium terminology Implementation Guide (IG)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img src="../assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="scope.html">Scope and content</a>
+      </li>
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="challenges.html">Challenges</a>
+      </li>
+      <li>
+        <a href="design.html">Design choices</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use cases</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="logicals.html">Logical models</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology considerations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profilemapping.html">Mapping to profiles</a>
+      </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
+      <li>
+        <a href="implementationnotes.html">Implementation notes</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="knownissues.html">Known issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+      <li>
+        <a href="xversion.html">Cross-version analysis</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="terminology-architecture.html">Terminology Architecture</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="index.html">Rx</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CodeSystem NIHDIPhysiotherapyPathology</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+  <!-- layouts\layout-codesystem -->
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">HL7 Belgium terminology Implementation Guide (IG), published by eHealth Platform. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/terminology/tree/architecture">https://github.com/hl7-be/terminology/tree/architecture</a> and changes regularly. See the <a href="https://hl7belgium.org/profiles/fhir/terminology/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-nihdi-physiotherapy-pathologysituationcode.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-nihdi-physiotherapy-pathologysituationcode.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CodeSystem: CodeSystem NIHDIPhysiotherapyPathology
+
+  </h2>
+
+  <table class="colstu" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode<button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.2<button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode|2.1.2" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label for="showChanges" style="margin:0;font-weight:normal">Highlight text changes?</label>
+  
+        <input onchange="toggleChanges()" style="margin:0" id="showChanges" type="checkbox"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Trial-use</a>
+          
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+        
+      </td>
+
+
+
+      <td><a name="l501">​</a>
+        <i>Realm:</i> <img src="assets/images/bel.svg" alt="Belgium flag" title="Belgium" height="16"/>
+      </td>
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NIHDIPhysiotherapyPathologySituationCode</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Legal pathology situation codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage instructions.</p>
+
+</p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <p>This Code system is referenced in the definition of the following value sets:</p>
+
+  
+<ul>
+ <li><a href="ValueSet-eagreementproductorservice.html">ValueSet product or service</a></li>
+</ul>
+
+
+  <div data-fhir="generated"><p class="res-header-id"></p><a name="nihdi-physiotherapy-pathologysituationcode"> </a><a name="hcnihdi-physiotherapy-pathologysituationcode"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode</code> provides <b>a fragment</b> that includes following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td></tr>
+<tr><td style="white-space:nowrap">fa-1<a name="nihdi-physiotherapy-pathologysituationcode-fa-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-2<a name="nihdi-physiotherapy-pathologysituationcode-fa-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-2-b<a name="nihdi-physiotherapy-pathologysituationcode-fa-2-b"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-3<a name="nihdi-physiotherapy-pathologysituationcode-fa-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-4<a name="nihdi-physiotherapy-pathologysituationcode-fa-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-5<a name="nihdi-physiotherapy-pathologysituationcode-fa-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-6<a name="nihdi-physiotherapy-pathologysituationcode-fa-6"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-7<a name="nihdi-physiotherapy-pathologysituationcode-fa-7"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-8<a name="nihdi-physiotherapy-pathologysituationcode-fa-8"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-9<a name="nihdi-physiotherapy-pathologysituationcode-fa-9"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-10<a name="nihdi-physiotherapy-pathologysituationcode-fa-10"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-11<a name="nihdi-physiotherapy-pathologysituationcode-fa-11"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-12<a name="nihdi-physiotherapy-pathologysituationcode-fa-12"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-13<a name="nihdi-physiotherapy-pathologysituationcode-fa-13"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-14<a name="nihdi-physiotherapy-pathologysituationcode-fa-14"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-15<a name="nihdi-physiotherapy-pathologysituationcode-fa-15"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-16<a name="nihdi-physiotherapy-pathologysituationcode-fa-16"> </a></td></tr>
+<tr><td style="white-space:nowrap">fa-17<a name="nihdi-physiotherapy-pathologysituationcode-fa-17"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-51<a name="nihdi-physiotherapy-pathologysituationcode-fb-51"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-59<a name="nihdi-physiotherapy-pathologysituationcode-fb-59"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-54<a name="nihdi-physiotherapy-pathologysituationcode-fb-54"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-55<a name="nihdi-physiotherapy-pathologysituationcode-fb-55"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-56<a name="nihdi-physiotherapy-pathologysituationcode-fb-56"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-57<a name="nihdi-physiotherapy-pathologysituationcode-fb-57"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-58<a name="nihdi-physiotherapy-pathologysituationcode-fb-58"> </a></td></tr>
+<tr><td style="white-space:nowrap">fb-60<a name="nihdi-physiotherapy-pathologysituationcode-fb-60"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-na<a name="nihdi-physiotherapy-pathologysituationcode-e-na"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-a<a name="nihdi-physiotherapy-pathologysituationcode-e-a"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-b<a name="nihdi-physiotherapy-pathologysituationcode-e-b"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-c<a name="nihdi-physiotherapy-pathologysituationcode-e-c"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-d<a name="nihdi-physiotherapy-pathologysituationcode-e-d"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-e-1<a name="nihdi-physiotherapy-pathologysituationcode-e-e-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-e-2<a name="nihdi-physiotherapy-pathologysituationcode-e-e-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-e-3<a name="nihdi-physiotherapy-pathologysituationcode-e-e-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-f<a name="nihdi-physiotherapy-pathologysituationcode-e-f"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-g-1<a name="nihdi-physiotherapy-pathologysituationcode-e-g-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-g-2<a name="nihdi-physiotherapy-pathologysituationcode-e-g-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-g-3<a name="nihdi-physiotherapy-pathologysituationcode-e-g-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-g-4<a name="nihdi-physiotherapy-pathologysituationcode-e-g-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-1<a name="nihdi-physiotherapy-pathologysituationcode-e-h-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-2<a name="nihdi-physiotherapy-pathologysituationcode-e-h-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-3<a name="nihdi-physiotherapy-pathologysituationcode-e-h-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-4<a name="nihdi-physiotherapy-pathologysituationcode-e-h-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-5<a name="nihdi-physiotherapy-pathologysituationcode-e-h-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-h-6<a name="nihdi-physiotherapy-pathologysituationcode-e-h-6"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-i-1<a name="nihdi-physiotherapy-pathologysituationcode-e-i-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-i-2<a name="nihdi-physiotherapy-pathologysituationcode-e-i-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-i-3<a name="nihdi-physiotherapy-pathologysituationcode-e-i-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-j-1<a name="nihdi-physiotherapy-pathologysituationcode-e-j-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-j-2<a name="nihdi-physiotherapy-pathologysituationcode-e-j-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-j-3<a name="nihdi-physiotherapy-pathologysituationcode-e-j-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-j-4<a name="nihdi-physiotherapy-pathologysituationcode-e-j-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-j-5<a name="nihdi-physiotherapy-pathologysituationcode-e-j-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-k<a name="nihdi-physiotherapy-pathologysituationcode-e-k"> </a></td></tr>
+<tr><td style="white-space:nowrap">e-l<a name="nihdi-physiotherapy-pathologysituationcode-e-l"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-1-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-1-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-1-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-5<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-6<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-6"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-7<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-7"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-2-8<a name="nihdi-physiotherapy-pathologysituationcode-eb-2-8"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-5<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-3-6<a name="nihdi-physiotherapy-pathologysituationcode-eb-3-6"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-2-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-2-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-2-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-2-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-2-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-2-5<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-2-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-5-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-5<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-5"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-6-6<a name="nihdi-physiotherapy-pathologysituationcode-eb-6-6"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-7-1<a name="nihdi-physiotherapy-pathologysituationcode-eb-7-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-7-2<a name="nihdi-physiotherapy-pathologysituationcode-eb-7-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-7-3<a name="nihdi-physiotherapy-pathologysituationcode-eb-7-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-7-4<a name="nihdi-physiotherapy-pathologysituationcode-eb-7-4"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-8<a name="nihdi-physiotherapy-pathologysituationcode-eb-8"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-9<a name="nihdi-physiotherapy-pathologysituationcode-eb-9"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-10<a name="nihdi-physiotherapy-pathologysituationcode-eb-10"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-11<a name="nihdi-physiotherapy-pathologysituationcode-eb-11"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-12<a name="nihdi-physiotherapy-pathologysituationcode-eb-12"> </a></td></tr>
+<tr><td style="white-space:nowrap">eb-13<a name="nihdi-physiotherapy-pathologysituationcode-eb-13"> </a></td></tr>
+<tr><td style="white-space:nowrap">m-1<a name="nihdi-physiotherapy-pathologysituationcode-m-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">p-1<a name="nihdi-physiotherapy-pathologysituationcode-p-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">dh-1<a name="nihdi-physiotherapy-pathologysituationcode-dh-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">cr-1<a name="nihdi-physiotherapy-pathologysituationcode-cr-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-0-0-0-0<a name="nihdi-physiotherapy-pathologysituationcode-co-0-0-0-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-5-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-5-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-6-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-6-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-7-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-7-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-8-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-8-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-90-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-90-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-5-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-5-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-6-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-6-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-90-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-90-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-2-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-2-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-5-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-5-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-6-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-6-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-7-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-7-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-8-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-8-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-90-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-90-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-1-3-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-1-3-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-6-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-6-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-6-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-6-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-6-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-6-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-1-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-1-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-2-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-2-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-2-3-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-2-3-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-6-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-6-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-6-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-6-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-6-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-6-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-1-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-1-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-6-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-6-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-6-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-6-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-6-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-6-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-7-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-7-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-7-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-7-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-7-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-7-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-2-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-2-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-1-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-1-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-1-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-1-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-1-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-1-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-4-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-4-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-4-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-4-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-4-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-4-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-5-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-5-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-5-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-5-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-5-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-5-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-6-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-6-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-6-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-6-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-6-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-6-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-90-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-90-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-90-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-90-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-90-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-90-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-99-1<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-99-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-99-2<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-99-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-3-3-99-3<a name="nihdi-physiotherapy-pathologysituationcode-co-3-3-99-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-4-1-90-0<a name="nihdi-physiotherapy-pathologysituationcode-co-4-1-90-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-4-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-4-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-5-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-5-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-5-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-5-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-5-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-5-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-5-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-5-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-5-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-5-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-2-1<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-2-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-2-2<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-2-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-2-3<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-2-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-6-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-6-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-7-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-7-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-7-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-7-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-7-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-7-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-3-1<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-3-1"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-3-2<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-3-2"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-3-3<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-3-3"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-90-0<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-90-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-8-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-8-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-9-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-9-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-9-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-9-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-9-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-9-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-9-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-9-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-9-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-9-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-10-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-10-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-10-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-10-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-10-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-10-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-10-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-10-1-99-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-1-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-1-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-2-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-2-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-3-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-3-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-4-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-4-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-5-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-5-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-6-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-6-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-7-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-7-0"> </a></td></tr>
+<tr><td style="white-space:nowrap">co-11-1-99-0<a name="nihdi-physiotherapy-pathologysituationcode-co-11-1-99-0"> </a></td></tr></table><p><b>Additional Language Displays</b></p>
+<table class="codes" data-fhir="generated"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr>
+<tr><td>fa-1</td>
+<td>a) Affections posttraumatiques ou postopératoires:situations dans lesquelles une ou plusieurs prestations de l'article 14, k) (orthopédie), I (prestations chirurgicales) et III (arthroscopies diagnostiques et thérapeutiques), sont attestées et pour lesquelles la prestation ou la somme de ces
+prestations correspond à une valeur de N200 ou plus;</td>
+<td>a) Volgende posttraumatische of postoperatieve aandoeningen:situaties waarin één of meerdere verstrekkingen uit artikel 14 k) (orthopedie), I (heelkundige verstrekkingen) en III
+(diagnostische en therapeutische arthroscopieën) zijn aangerekend en waarin de verstrekking of de som van die
+verstrekkingen overeenkomst met een waarde van N 200 of meer;</td></tr>
+<tr><td>fa-2</td>
+<td>a) Affections posttraumatiques ou postopératoires:situations dans lesquelles une prestation de l'article 14, b) (neurochirurgie) est attestée et pour laquelle la prestation correspond à une valeur de K225 ou plus</td>
+<td>a) Volgende posttraumatische of postoperatieve aandoeningen:situaties waarin een verstrekking uit artikel 14 b) (neurochirurgie) zijn aangerekend en waarin deze verstrekking
+overeenkomt met een waarde van K 225 of meer;</td></tr>
+<tr><td>fa-2-b</td>
+<td>a) Affections posttraumatiques ou postopératoires:en cas de lésions de la main, situations dans lesquelles une ou plusieurs prestations de l’article 14, k) (orthopédie) I (prestations chirurgicales) d’une valeur totale de Nx et une prestation de l’article 14, b) (neurochirurgie) d’une valeur de Ky  sont effectuées conjointement lorsque le résultat du calcul suivant [Nx/N200 + Ky/225] est supérieur ou égal à 1 ;</td>
+<td>a) Volgende posttraumatische of postoperatieve aandoeningen:in geval van handletsels, situaties waarin één of meerdere verstrekkingen uit artikel 14, k) (orthopedie) I
+(heelkundige verstrekkingen) met een totale waarde van Nx en een verstrekking van artikel 14, b) (neurochirurgie)
+met een waarde van Ky tegelijk zijn verricht terwijl het resultaat van de volgende berekening [Nx/N200 +
+Ky/K225] hoger is dan of gelijk is aan 1;</td></tr>
+<tr><td>fa-3</td>
+<td>a) Affections posttraumatiques ou postopératoires:situations dans lesquelles une des prestations 227695–227706, 227710–227721, 227813-227824, 227835– 227846, 226936-226940, 227592–227603, 227614–227625, 227651-227662, 227673-227684, 227776-227780 ou 227791-
+227802 de l'article 14, e) de la nomenclature est attestée.</td>
+<td>a) Volgende posttraumatische of postoperatieve aandoeningen:situaties waarbij een van de verstrekkingen 227695-227706, 227710-227721, 227813-227824, 227835-227846,
+226936-226940, 227592-227603, 227614-227625, 227651-227662, 227673-227684, 227776-2277801 of 227791-
+227802 is geattesteerd uit artikel 14, e) van de nomenclatuur.</td></tr>
+<tr><td>fa-4</td>
+<td>b) Situations dans lesquelles les prestations 211046, 212225 ou 214045 (article 13, &sect; 1er de la nomenclature (réanimation)) a été attestée</td>
+<td>b) Situaties waarbij de verstrekkingen 211046, 212225 of 214045, (artikel 13, &sect; 1 van de nomenclatuur (reanimatie)) werden
+aangerekend.</td></tr>
+<tr><td>fa-5</td>
+<td>c) Bénéficiaires après une admission en fonction de soins intensifs (code 490), dans une fonction de soins néonatals locaux (fonction N°) (code 190) ou un service de néonatalgie intensive (NIC) (code 270)</td>
+<td>c) Situaties waarbij de rechthebbenden opgenomen zijn geweest in een erkende functie intensieve verzorging (code 490), in
+een erkende functie plaatselijke neonatale verzorging (functie N*
+) (code 190) of in een erkende dienst voor intensieve
+neonatalogie (NIC) (code 270).</td></tr>
+<tr><td>fa-6</td>
+<td>c) Insuffisance respiratoire pour les enfants de moins de 16 ans souffrant de trachéo-, laryngo- ou bronchomalacie ou d'infections récidivantes des voies respiratoires inférieures.</td>
+<td>d) Ademhalingsinsufficiëntie bij kinderen onder 16 jaar met tracheo-, laryngo- of bronchomalacie of recidiverende lage
+luchtwegeninfecties</td></tr>
+<tr><td>fa-7</td>
+<td>e) Déficit moteur et invalidité à la suited'une mononeuropathie (par exemple pied tombant ou main tombante);</td>
+<td>e) Motorisch deficit en invalidering als gevolg van:mononeuropathie (bijvoorbeeld dropvoet, drophand);</td></tr>
+<tr><td>fa-8</td>
+<td>e) Déficit moteur et invalidité à la suited'une polyneuropathie motrice ou mixte;</td>
+<td>e) Motorisch deficit en invalidering als gevolg van:motorische of gemengde polyneuropathie;</td></tr>
+<tr><td>fa-9</td>
+<td>e) Déficit moteur et invalidité à la suited'une myopathie induite par médication ou par contact aigu ou chronique avec des substances toxiques.</td>
+<td>e) Motorisch deficit en invalidering als gevolg van:myopathie geïnduceerd door medicatie of door acuut of chronisch contact met toxische stoffen.</td></tr>
+<tr><td>fa-10</td>
+<td>f) Situations dans le domaine de l'orthopédie – traumatologie 
+ - fracture vertébrale qui a nécessité une immobilisation par plâtre, corset ou orthèse d'au moins trois semaines;
+ - fracture du bassin qui nécessite une immobilisation ou une décharge totale ou partielle d'au moins trois semaines;
+ - fracture de la rotule, du plateau tibial, de la tête humérale, du coude ou fracture intra-articulaire à la hauteur des
+ membres, qui ont nécessité une immobilisation d'au moins trois semaines;
+ - luxation du coude, de la hanche, de la prothèse de hanche ou de l'articulation de l'épaule ou de la prothèse de
+l'épaule;
+ - entorse grave du genou avec rupture totale ou partielle d'un ou de plusieurs ligaments.</td>
+<td>f) Situaties in het domein van de orthopedie – traumatologie 10.
+ - wervelbreuk die gedurende minstens drie weken met een gipsverband, een korset of een orthese werd
+geïmmobiliseerd;
+
+ - bekkenbreuk die gedurende minstens drie weken een immobilisatie of partieel of volledig steunverbod
+vereist;
+
+ - breuken aan de knieschijf, het tibiaplateau, de humeruskop, de elleboog of intra-articulaire breuken ter
+hoogte van de ledematen, die gedurende minstens drie weken werd geïmmobiliseerd;
+
+ - luxatie van de elleboog, de heup, de heupprothese, het schoudergewricht of de schouderprothese;
+ - ernstige knievertuikingen met gehele of partiële ruptuur van één of meerdere ligamenten.</td></tr>
+<tr><td>fa-11</td>
+<td>g) Capsulite rétractile (frozen shoulder)</td>
+<td>g) Adhesieve capsulitis (frozen shoulder)</td></tr>
+<tr><td>fa-12</td>
+<td>h) Situations nécessitant une rééducation uro-, gynéco-, colo- ou proctologiqueNeuropathie avérée, tant chez les femmes que chez les hommes</td>
+<td>h) Situaties die uro-, gynaeco-, colo- of proctologische revalidatie vereisenbewezen neuropathie, zowel bij mannen als bij vrouwen</td></tr>
+<tr><td>fa-13</td>
+<td>h) Situations nécessitant une rééducation uro-, gynéco-, colo- ou proctologiqueRééducation postopératoire du dysfonctionnement sphinctérien après:
+(01) Prostatectomie radicale ou adénomectomie
+(02) Cystectomie totale avec entéro-cystoplastie chez des patients présentant une incontinence urinaire et/ou un déficit de sensibilité de réplétion vésicale.
+(03) Amputation d'une partie du système digestif avec maintien du sphincter anal
+(04) Prolapsus vésical, rectal ou utérin après intervention chirurgicale.</td>
+<td>h) Situaties die uro-, gynaeco-, colo- of proctologische revalidatie vereisenpostoperatieve revalidatie van sfyncterdisfunctie na: 13. (01) radicale prostatectomie of adenomectie. (02) totale cystectomie met vervangblaas ingeplant op de urethra bij patiënten die lijden aan urinaire incontinentie en/of verminderd aandranggevoel (03) verwijdering van een deel van het spijsverteringskanaal met behoud van de anale sfyncter. (04) fverzakking van blaas, rectum of baarmoeder na een chirurgische ingreep.</td></tr>
+<tr><td>fa-14</td>
+<td>h) Situations nécessitant une rééducation uro-, gynéco-, colo- ou proctologiquePathologies fonctionnelles pour les enfants jusqu'au 16ème anniversaire dues à des dysfonctionnements 14.
+ ou des malformations:
+(1) infections urinaires pouvant constituer une menace pour le haut appareil urinaire à court et moyen termes:
+ - dyssynergie vésico-sphinctérienne
+ - infections urinaires à répétition
+ - syndrome des valves urétrales post-opératoire
+ - immaturité vésicale
+ (2) encoprésie chez l’enfant</td>
+<td>h) Situaties die uro-, gynaeco-, colo- of proctologische revalidatie vereisenfunctionele aandoeningen bij kinderen tot de 16e
+ varjaardag ten gevolge van één van de volgende disfuncties of
+misvormingen
+(01) urinaire aandoeningen die op korte en middellange termijn een bedreiging vormen voor de
+hogere urinewegen:
+
+ - dyssynergie tussen blaas en sfincter
+ - recidiverende urinewegeninfecties
+ - postoperatief syndroom van urethrakleppen
+ - vesicale immaturiteit
+ (02) encopresis bij het kind</td></tr>
+<tr><td>fa-15</td>
+<td>i) Syndrome Douloureux Régional Complexe (SDRC) de type I (algoneurodystrophie ou maladie de Südeck)  ou de type II (causalgie)</td>
+<td>i) Reflex Sympathische dystrofie (RSD) van het type I (algoneurodystrofie of Südeckatrofie) of van het type II (causalgie)</td></tr>
+<tr><td>fa-16</td>
+<td>j) Polytraumatismes, avec des répercussions fonctionnelles invalidantes au niveau de deux membre différents ou au niveau
+d’un membre et du tronc, dont au moins 2 traumatismes répondent aux critères des situations pathologiques définies au <span class="fhir-conformance"> 14,
+5°, A, a),
+1) ou 2) (affections posttraumatiques ou postopératoires) et/ou au </span><span class="fhir-conformance"> 14,
+5°, A, a),
+1) ou 2) (affections posttraumatiques ou postopératoires) et/ou au </span></td>
+<td>j) Polytraumatismen, met invaliderende functionele gevolgen ter hoogte van twee verschillende ledematen of ter hoogte van
+een lidmaat en de romp, waarvan ten minste 2 traumatismen voldoen aan de criteria van de pathologische situaties
+omschreven in <span class="fhir-conformance"> 14, 5°, A, a), 1) of 2) (posttraumatische of postoperatieve aandoeningen) en/of in </span><span class="fhir-conformance"> 14, 5°, A, a), 1) of 2) (posttraumatische of postoperatieve aandoeningen) en/of in </span></td></tr>
+<tr><td>fa-17</td>
+<td>k) Situations dans le domaine de la stomatologie énumérées ci-dessous :
+ - après une intervention chirurgicale temporomandibulaire intra-articulaire;
+ - pendant et/ou après une radiothérapie concernant la région maxillo-faciale
+ - après une fracture mandibulaire intra-articulaire ou sub-condylaire</td>
+<td>k) De volgende situaties in het domein van de stomatologie: 
+- na een intra-articulaire temporomandibulaire heelkundige ingreep;
+ - tijdens en/of na radiotherapie betreffende de maxillo-faciale zone;
+ - na een intra-articulaire of sub-condylaire mandibulaire breuk;</td></tr>
+<tr><td>fb-51</td>
+<td>a) Situations qui nécessitent une rééducation fonctionnelle de la marche pour les bénéficiaires à partir de leur 65ème anniversaire ayant déjà été victime d’une chute et présentant un risque de récidive, à objectiver par le médecin traitant et le kinésithérapeute
+au moyen :
+1) du test « Timed up &amp; go », avec un score supérieur à 20 secondes;
+et
+2) du résultat positif à au moins un des deux tests suivants, ceux-ci devant tous deux être effectués :
+(01) – le test « Tinetti », avec un score inférieur à 20/28;
+(02) – le test « Timed chair stands », avec un score supérieur à 14 secondes</td>
+<td>a) Situaties die een gangrevalidatie noodzakelijk maken voor rechthebbenden vanaf hun 65ste
+verjaardag, die al eens gevallen zijn met het risico op herhaling, te objectiveren door de behandelend
+geneesheer en kinesitherapeut aan de hand van:
+1) de “Timed up &amp; go” test, met een score hoger dan 20 seconden;
+en
+2) een positief resultaat op ten minste één van twee volgende testen, die allebei moeten worden verricht:
+(01) de “Tinetti” test, met een score kleiner dan 20/28;
+(02) de “Timed chair stands” test, met een score hoger dan 14 seconden.</td></tr>
+<tr><td>fb-59</td>
+<td>b) Troubles du développement psychomoteur
+Chez les enfants de moins de 16 ans, après avis et proposition de traitement d’un des médecins spécialistes mentionnés
+ci-dessous, et avec un score significativement plus faible sur un test standardisé ;
+Médecin spécialiste en :
+- (neuro)pédiatrie
+- (neuro)pédiatrie et F et P (*)
+- neuropsychiatrie et F et P (*)
+- neurologie
+- neurologie et F et P (*)
+- psychiatrie
+- psychiatrie et F et P (*)
+
+(*) F et P = spécialiste en réadaptation fonctionnelle et professionnelle des handicapés
+Chez les enfants de moins de 19 mois, l’avis, la proposition de traitement et le score significativement plus faible mentionnés
+ci-dessus peuvent être remplacés par la constatation de troubles manifestes clinique du développement sur base d’une
+évaluation effectuée par une équipe multidisciplinaire spécialisée, qui compte au moins un (neuro)pédiatre</td>
+<td>b) Psychomotorische ontwikkelingsstoornissen
+Bij kinderen onder 16 jaar, na advies en behandelingsvoorstel door een van ondervermelde
+geneesheren-specialisten en met een significant zwakkere score op een gestandaardiseerde test;
+Geneesheer-specialist voor:
+- (neuro)pediatrie
+- (neuro)pediatrie en F en P (*)
+- neuropsychiatrie en F en P (*)
+- neurologie
+- neurologie en F en P (*)
+- psychiatrie
+- psychiatrie en F en P (*)
+(*) F en P = specialist voor functionele en professionele revalidatie voor gehandicapten
+Bij kinderen onder 19 maanden kan bovenvermeld advies, behandelingsvoorstel en significant
+zwakkere score vervangen worden door de vaststelling van klinisch duidelijke
+ontwikkelingsstoornissen op basis van een evaluatie in een gespecialiseerde multidisciplinaire
+equipe, waar ten minste een (neuro)pediater deel van uitmaakt.</td></tr>
+<tr><td>fb-54</td>
+<td>c) Insuffisance respiratoire chez les bénéficiaires qui sont suivis dans le cadre de la convention-type de rééducation fonctionnelle relative à l'oxygénothérapie de longue durée à domicile ou en cas de respiration artificielle à domicile.</td>
+<td>c) Ademhalingsinsufficiëntie bij rechthebbenden die opgevolgd worden in het kader van de
+typerevalidatie-overeenkomst inzake langdurige zuurstoftherapie thuis of bij thuisbeademing.</td></tr>
+<tr><td>fb-55</td>
+<td>d) Polyneuropathie chronique motrice ou mixte.</td>
+<td>d) Chronische motorische of gemengde polyneuropathie.</td></tr>
+<tr><td>fb-56</td>
+<td>e) Syndrome de fatigue chronique répondant aux conditions prévues dans la nomenclature.</td>
+<td>e) Chronisch vermoeidheidssyndroom
+die voldoen aan de voorwaarden beschreven in de nomenclatuur</td></tr>
+<tr><td>fb-57</td>
+<td>f) Syndrome fibromyalgique 
+Le diagnostic doit être confirmé par un médecin spécialiste en rhumatologie ou en médecine physique et réadaptation sur base
+d’un examen clinique comprenant les critères de diagnostic de l’ACR (American College of Rheumatology). Cette confirmation
+signée par le médecin spécialiste doit figurer dans le dossier individuel kinésithérapeutique et préciser que les critères de
+diagnotic utilisés sont bien ceux de l’ACR
+Avant la fin de chaque année civile qui suit l’année au cours de laquelle la 1ère prestation du traitement a eu lieu, le médecin
+spécialiste susmentionné réévaluera l’évolution de la symptomatologie du patient afin de confirmer la nécessité de poursuivre le
+traitement dans le cadre du &sect; 14. Cette confirmation signée par le médecin spécialiste doit figurer dans le dossier individuel
+kinésithérapeutique</td>
+<td>f) Fibromyalgiesyndroom
+De diagnose moet bevestigd zijn door een geneesheer, specialist voor reumatologie of in de
+fysische geneeskunde en de revalidatie, op grond van een klinisch onderzoek dat de
+diagnostische criteria van de ACR (American College of Rheumatology) omvat. Deze
+bevestiging, getekend door de geneesheer-specialist, moet voorkomen in het individueel
+kinesitherapiedossier en weergeven dat de gebruikte diagnostische criteria wel degelijk die van
+de ACR zijn.
+Voor het einde van elk kalenderjaar dat volgt op het jaar van de eerste verstrekking van de
+behandeling, moet de voornoemde geneesheer-specialist de evolutie van de symptomen
+opnieuw evalueren, teneinde te bevestigen dat het noodzakelijk is dat de behandeling wordt
+voortgezet in het kader van &sect;14. Deze bevestiging, getekend door de geneesheer-specialist,
+moet voorkomen in het individueel kinesitherapiedossier.</td></tr>
+<tr><td>fb-58</td>
+<td>g) Dystonie cervicale primaire démontrée par un rapport diagnostique établi par un médecin-spécialiste en neurologie</td>
+<td>g) Primaire cervicale dystonie
+aangetoond met een diagnostische verslag opgesteld door een geneesheer-specialist voor
+neurologie</td></tr>
+<tr><td>fb-60</td>
+<td>h) lymphoedème 
+répondant aux conditions prévues dans la nomenclature</td>
+<td>h) Lymfoedeem
+die voldoen aan de voorwaarden beschreven in de nomenclatuur</td></tr>
+<tr><td>e-na</td>
+<td>Situation pathologique non définie (ancien accord papier)</td>
+<td>Onbepaalde pathologische situatie (oud papier akkoord)</td></tr>
+<tr><td>e-a</td>
+<td>a) Paralysie périphérique étendue : monoplégie, syndrome de Guillain Barré.</td>
+<td>a) Uitgebreide perifere verlamming: monoplegie, syndroom van Guillain Barré;</td></tr>
+<tr><td>e-b</td>
+<td>b) Affections neurologiques centrales de caractère évolutif avec déficit moteur étendu.
+Exemples : sclérose en plaques, maladie de Parkinson, sclérose latérale amyotrophique, etc.</td>
+<td>b) Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek zoals bij voorbeeld multiple sclerose, de ziekte van Parkinson en de amyotrofische laterale sclerose…;</td></tr>
+<tr><td>e-c</td>
+<td>c) Séquelles motrices étendues d'origine encéphalique ou médullaire.
+Exemples : infirmité motrice cérébrale "Cerebral Palsy", hémiplégie, spina bifida, syndrome cérébelleux, etc.</td>
+<td>c) Uitbegreide motorische sequellen van encefale of medullaire oorsprong (bijvoorbeeld: hersenverlamming “Cerebral Palsy”, hemiplegie, spina bifida, cerebellair syndroom,…);</td></tr>
+<tr><td>e-d</td>
+<td>d) Suites de brûlures graves au niveau des membres et/ou du cou pendant la phase évolutive.</td>
+<td>d) Sequellen van zware brandwonden ter hoogte van de ledematen en/of de hals tijdens de evolutieve fase;</td></tr>
+<tr><td>e-e-1</td>
+<td>e) Perte fonctionnelle :Perte fonctionnelle importante d’un membre suite à une agénésie du membre ou à une dysmélie affectant l’anatomie de ses différents segments</td>
+<td>e) functioneel verliesbelangrijk functioneel verlies van een lidmaat ten gevolge van een agenesie van een lidmaat of van een dysmelie die de anatomie van zijn verschillende segmenten aantast</td></tr>
+<tr><td>e-e-2</td>
+<td>e) Perte fonctionnelle :Perte fonctionnelle globale d'un membre suite à une amputation, pendant la période d'adaptation</td>
+<td>e) functioneel verliesglobaal functioneel verlies van een lidmaat door amputatie, tijdens de aanpassingsperiode;</td></tr>
+<tr><td>e-e-3</td>
+<td>e) Perte fonctionnelle :Perte fonctionnelle globale post-traumatique d'un membre, pendant la période évolutive</td>
+<td>e) functioneel verliesGlobaal posttraumatische functioneel verlies van een lidmaat, tijdens de evolutieve periode;</td></tr>
+<tr><td>e-f</td>
+<td>f) Pied bot varus équin chez l'enfant de moins de 2 ans.</td>
+<td>f) Spits- en klompvoet, bij een kind jonger dan 2 jaar;</td></tr>
+<tr><td>e-g-1</td>
+<td>g) Dysfonction articulaire grave résultant :d’une hémophilie</td>
+<td>g) Ernstige gewrichtsdysfunctie ten gevolge van:hemofilie;</td></tr>
+<tr><td>e-g-2</td>
+<td>g) Dysfonction articulaire grave résultant :de maladies héréditaires du tissu conjonctif (ostéogenèse imparfaite de type III et IV, syndrome d'Ehlers-Danlos, chondrodysplasies, syndrome de Marfan)</td>
+<td>g) Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen (osteogenesis imperfecta van het type III en IV, Ehlers-Danlos-syndroom, chondrodysplasieën, Marfan-syndroom);</td></tr>
+<tr><td>e-g-3</td>
+<td>g) Dysfonction articulaire grave résultant :d’une scoliose évolutive de 15° au moins d'angle de courbure (ou angle de Cobb) chez des bénéficiaires en dessous de 18 ans</td>
+<td>g) Ernstige gewrichtsdysfunctie ten gevolge van:evolutieve scoliose met een kromming van minstens 15° (of hoek van Cobb) bij rechthebbenden onder de 18 jaar;</td></tr>
+<tr><td>e-g-4</td>
+<td>g) Dysfonction articulaire grave résultant :d’une arthrogrypose</td>
+<td>g) Ernstige gewrichtsdysfunctie ten gevolge van: arthrogrypose;</td></tr>
+<tr><td>e-h-1</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Arthrite rhumatoïde</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis:Reumatoïde artritis</td></tr>
+<tr><td>e-h-2</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Spondyloarthropathies</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis:Spondyloarthropathie</td></tr>
+<tr><td>e-h-3</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Arthrite rhumatoïde juvénile</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis:Juveniele chronische artritis</td></tr>
+<tr><td>e-h-4</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Lupus erythémateux</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis:&nbsp; Systemische lupus</td></tr>
+<tr><td>e-h-5</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Sclérodermie</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis: Sclerodermie</td></tr>
+<tr><td>e-h-6</td>
+<td>h) Polyarthrites chroniques inflammatoires d’origine immunitaire :Syndrome de Sjögren primaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)</td>
+<td>h) Chronische auto-immune inflammatoire polyarthritis:Primair syndroom van Sjögren, volgens de definities aanvaard door de Koninklijke Belgische      Vereniging voor Reumatologie</td></tr>
+<tr><td>e-i-1</td>
+<td>i)&nbsp;Myopathies :Dystrophies musculaires progressives héréditaires</td>
+<td>i) Myopathieën:    de progressieve erfelijke musculaire dystrofieën;</td></tr>
+<tr><td>e-i-2</td>
+<td>i)&nbsp;Myopathies :Myotonie congénitale de Thomsen</td>
+<td>i) Myopathieën:     de myotonia congenita van Thomsen;</td></tr>
+<tr><td>e-i-3</td>
+<td>i)&nbsp;Myopathies :Polymyosite auto-immune</td>
+<td>i) Myopathieën:     de auto-immune polymuosotis;</td></tr>
+<tr><td>e-j-1</td>
+<td>j) Affections pulmonaires :Mucoviscidose ou dyskinésie ciliaire bronchiale primaire objectivées</td>
+<td>j) longaandoeningen:Mucoviscidose of geobjectiveerde primaire bronchiale ciliaire dyskinesie;</td></tr>
+<tr><td>e-j-2</td>
+<td>j) Affections pulmonaires :Bronchiectasies hyperproductives objectivées</td>
+<td>j) longaandoeningen:Geobjectiveerde hyperproductieve bronchiectasieën</td></tr>
+<tr><td>e-j-3</td>
+<td>j) Affections pulmonaires :Affections pulmonaires chroniques irréversibles obstructives ou restrictives avec des valeurs de volume expiratoire maximum-seconde inférieures ou égales à 60 % mesurées à un intervalle d'au moins 1 mois. Chez un enfant de moins de 7 ans, l'insuffisance respiratoire irréversible pourra être établie sur base d'un rapport motivé du spécialiste traitant</td>
+<td>j) longaandoeningen:Irreversibele chronische obstructieve of restrictieve longaandoeningen met maximum expiratoire seconde         capaciteit waarden van minder dan of gelijk aan 60%,   opgemeten in een tussenperiode van minstend één maand;  bij een kind jonger dan 7 jaar kan de irreversibele ademhalingsinsufficiëntie worden vastgesteld op basis van   een gemotiveerd verslag van de behandelende arts;</td></tr>
+<tr><td>e-j-4</td>
+<td>j) Affections pulmonaires :Infections pulmonaires récidivantes en cas d'immunodépression grave établie</td>
+<td>j) longaandoeningen:Recidiverende pulmonaire infecties bij bewezen ernstige immunodepressie;</td></tr>
+<tr><td>e-j-5</td>
+<td>j) Affections pulmonaires :Dysplasie broncho-pulmonaire avec oxygénodépendance de plus de 28 jours. La demande motivée du pédiatre traitant comportera notamment le rapport d'hospitalisation en service N.</td>
+<td>j) longaandoeningen:    Broncho-pulmonaire dysplasie met zuurstofafhankelijkheid    gedurende meer dan 28 dagen. De met redenen omklede aanvraag van de behandelende kinderarts moet met name het verslag over de opneming in een dienst N omvatten;</td></tr>
+<tr><td>e-k</td>
+<td>k) Lymphoedème :
+En cas d’atteinte unilatérale au niveau d’un membre (supérieur ou inférieur) pour un lymphoedème post-radiothérapeutique ou post-chirurgical répondant aux critères suivants :
+soit une périmétrie effectuée sur l’ensemble du membre ou une volumétrie de la main ou du pied montre une différence par rapport au membre controlatéral de +10 %. Ces mesures doivent être effectuées selon les protocoles fixés par le Comité de l’assurance soins de santé, sur proposition du Collège des médecins-directeurs
+soit une lymphoscintigraphie en 3 temps atteste de la gravité du diagnostic avec présence d’un critère majeur selon la classification lymphoscintigraphique des œdèmes des membres visant à leur prise en charge kinésithérapeutique. Cette classification est fixée par le Comité de l’assurance soins de santé, sur proposition du Collège des médecins-directeurs
+Pour tous les autres types de lymphoedème, une lymphoscintigraphie en trois temps doit attester du diagnostic avec présence d’un critère majeur selon la classification lymphoscintigraphique des œdèmes visant à leur prise en charge kinésithérapeutique.
+
+Néanmoins, une lymphoscintigraphie n’est pas exigée dans 3 cas :
+il s’agit d’un lymphoedème cervico-facial
+il s’agit d’un patient de moins de 14 ans pour lequel la réalisation d’une lymphoscintigraphie en 3 temps n’est pas indiquée
+impossibilité physique motivée de réaliser une lymphoscintigraphie en 3 temps.
+Dans ces 3 cas, le médecin spécialiste doit envoyer au médecin-conseil un rapport motivé justifiant le diagnostic et la nécessité des soins. S’il le juge utile, le médecin-conseil envoie ce dossier pour avis au Collège des médecins-directeurs.</td>
+<td>k) Lymfoedeem: 
+
+Bij een eenzijdige aantasting ter hoogte van een lidmaat (bovenste of onderste) door een postradiotherapeutisch of postchirurgisch lymfoedeem dat beantwoordt aan de volgende criteria:
+ofwel moet een perimetrie die is uitgevoerd op het hele lidmaat, of een volumetrisch onderzoek van de hand of de voet een verschil van +10 % aantonen ten opzichte van het contralaterale lidmaat. Die metingen moeten worden uitgevoerd volgens de protocollen die zijn vastgelegd door het Verzekeringscomité, op voorstel van het College van geneesheren-directeurs
+ofwel moet een lymfoscintigrafisch onderzoek in 3 stappen de ernst van de diagnose bevestigen als aan een belangrijk criterium is voldaan volgens de lymfoscintigrafische classificatie van de oedemen van de ledematen met het oog op de kinesitherapeutische tenlasteneming ervan. Die classificatie wordt vastgelegd door het Verzekeringscomité, op voorstel van het College van geneesheren-directeurs
+Voor alle andere soorten van lymfoedeem moet een lymfoscintigrafisch onderzoek in 3 stappen de diagnose bevestigen als aan een belangrijk criterium is voldaan volgens de lymfoscintigrafische classificatie van de oedemen met het oog op de kinesitherapeutische tenlasteneming ervan.
+
+Nochtans is een lymfoscintigrafisch onderzoek niet vereist in 3 gevallen:
+als het een cervico-faciaal oedeem betreft:
+als het een patiënt jonger dan 14 jaar betreft waarvoor het uitvoeren van een lymfoscintigrafisch onderzoek in drie stappen niet aangewezen is
+in geval van gemotiveerde fysieke onmogelijkheid om een lymfoscintigrafisch onderzoek in drie stappen uit te voeren.
+In die 3 gevallen moet de geneesheer-specialist een gemotiveerd verslag dat de diagnose en de verzorgingsnood rechtvaardigt, aan de adviserend-geneesheer bezorgen. Deze zal, indien hij dat nuttig acht, dat dossier voor advies aan het College van Geneesheren-directeurs bezorgen.</td></tr>
+<tr><td>e-l</td>
+<td>l) Anomalie structurelle du système locomoteur, occasionnant de graves troubles fonctionnels, sur base d’une affection rare, autrement dit dont la prévalence est inférieure à 5 pour 10.000 habitants. Cette affection est soit de nature inflammatoire ou métabolique, soit résultant d’un trouble de la croissance ou du développement.</td>
+<td>l) structurele anomalie van het locomotorisch stelsel, dat ernstige functionele stoornissen veroorzaakt, ten gevolge van een zeldzame aandoening, met andere woorden een aandoening waarvan de prevalentie kleiner is dan 5 op 10.000 inwoners. Deze aandoening is ofwel van inflammatoire of metabole aard ofwel is zij het gevolg van een groei- of ontwikkelingsstoornis.”</td></tr>
+<tr><td>eb-1-1</td>
+<td>Paralysie périphérique étendue Monoplégie</td>
+<td>Uitgebreide perifere verlamming:monoplegie</td></tr>
+<tr><td>eb-1-2</td>
+<td>Paralysie périphérique étendue Syndrome de Guillain Barré</td>
+<td>Uitgebreide perifere verlamming:syndroom van Guillain Barré</td></tr>
+<tr><td>eb-1-3</td>
+<td>Paralysie périphérique étendue polyneuropathie héréditaire (ex. Maladie de Charcot-Marie-Tooth)</td>
+<td>Uitgebreide perifere verlamming:erfelijke polyneuropathie (vb ziekte van Charcot-Marie-Tooth))</td></tr>
+<tr><td>eb-2-1</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étendusclérose en plaques</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:multiple sclerose</td></tr>
+<tr><td>eb-2-2</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étendumaladie de Parkinson</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:de ziekte van Parkinson</td></tr>
+<tr><td>eb-2-3</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étenduatrophies multisystématisées (toutes les formes)</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:Multipele Systeem Atrofie (in alle vormen)</td></tr>
+<tr><td>eb-2-4</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étenduparalysie supranucléaire progressive, la dégénérescence corticobasale</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:Progressive Supranuclear Palsy, Corticobasal Degeneration</td></tr>
+<tr><td>eb-2-5</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étenduautres syndromes classés sous les syndrômes dits « Parkinson-Plus&nbsp;»</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:syndromen die geklasseerd worden onder de Parkinson-Plus syndromen</td></tr>
+<tr><td>eb-2-6</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étendumaladie de Huntington</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:de ziekte van Huntington</td></tr>
+<tr><td>eb-2-7</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étendusclérose latérale amyotrophique</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:amyotrofische laterale sclerose</td></tr>
+<tr><td>eb-2-8</td>
+<td>Affections neurologiques centrales de caractère évolutif avec déficit moteur étenduataxie spinocérébellaire</td>
+<td>Evolutieve aandoeningen van het centrale zenuwstelsel met een uitgebreid motorisch gebrek:spinocerebellaire ataxie</td></tr>
+<tr><td>eb-3-1</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:infirmité motrice cérébrale "Cerebral Palsy"</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:hersenverlamming "Cerebral Palsy"</td></tr>
+<tr><td>eb-3-2</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:accident vasculaire cérébral</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:cerebrovasculair accident</td></tr>
+<tr><td>eb-3-3</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:paraplégie (-parésie), quadriplégie (-parésie) quelque soit l’étiologie</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:paraplegie (-parese), quadriplegie (-parese) onafhankelijk van de etiologie</td></tr>
+<tr><td>eb-3-4</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:spina bifida</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:spina bifida</td></tr>
+<tr><td>eb-3-5</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:syndrome cérébelleux</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:cerebellair syndroom</td></tr>
+<tr><td>eb-3-6</td>
+<td>Séquelles motrices étendues d'origine encéphalique ou médullaire&nbsp;:encéphalite infectieuse ou auto-immune</td>
+<td>Uitgebreide motorische sequellen van encefale of medullaire oorsprong:infectieuze of auto-immune encefalitis</td></tr>
+<tr><td>eb-4</td>
+<td>Perte fonctionnelle importante d’un membre suite à une agénésie du membre ou à une dysmélie affectant l’anatomie de ses différents segments</td>
+<td>Belangrijk functioneel verlies van een lidmaat ten gevolge van een agenesie van het lidmaat of van een dysmelie die de anatomie van zijn verschillende segmenten aantast</td></tr>
+<tr><td>eb-5-1</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:hémophilie</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:hemofilie</td></tr>
+<tr><td>eb-5-2-1</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:maladies héréditaires du tissu conjonctif/ostéogenèse imparfaite de type III et IV</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen/osteogenesis imperfecta van het type III en IV</td></tr>
+<tr><td>eb-5-2-2</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:maladies héréditaires du tissu conjonctif/syndrome d'Ehlers-Danlos</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen/Ehlers-Danlos-syndroom</td></tr>
+<tr><td>eb-5-2-3</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:maladies héréditaires du tissu conjonctif/chondrodysplasies</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen/chondrodysplasieën</td></tr>
+<tr><td>eb-5-2-4</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:maladies héréditaires du tissu conjonctif/syndrome deMarfan</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen/Marfan-syndroom</td></tr>
+<tr><td>eb-5-2-5</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:maladies héréditaires du tissu conjonctif/Autre</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:erfelijke bindweefselaandoeningen/Anders</td></tr>
+<tr><td>eb-5-3</td>
+<td>Dysfonction articulaire grave résultant&nbsp;:arthrogrypose congénitale multiple</td>
+<td>Ernstige gewrichtsdysfunctie ten gevolge van:multipel congenitale arthrogrypose</td></tr>
+<tr><td>eb-6-1</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)arthrite rhumatoïde</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):reumatoïde artritis</td></tr>
+<tr><td>eb-6-2</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)spondyloarthropathies</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):spondyloartropathie</td></tr>
+<tr><td>eb-6-3</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)arthrite rhumatoïde juvénile</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):juveniele chronische artritis</td></tr>
+<tr><td>eb-6-4</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)lupus erythémateux</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):systemische lupus</td></tr>
+<tr><td>eb-6-5</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)sclérodermie</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):sclerodermie</td></tr>
+<tr><td>eb-6-6</td>
+<td>Troubles graves de la ou des fonctions articulaire(s), qui sont le résultat d’une polyarthrite chronique inflammatoire d’origine immunitaire (selon les définitions acceptées par la Société Royale Belge de Rhumatologie)syndrome de Sjögren primaire</td>
+<td>Ernstige stoornissen van de gewrichtsfunctie(s), die het gevolg zijn van een chronische autoimmune inflammatoire polyarthritis (volgens de definities aanvaard door de Koninklijke Belgische Vereniging voor Reumatologie):primair syndroom van Sjögren</td></tr>
+<tr><td>eb-7-1</td>
+<td>Myopathies&nbsp;: myopathies héréditaires évolutives (dont la dystrophie musculaire de Duchenne…)</td>
+<td>Myopathieën:erfelijke evolutieve myopathieën (waaronder de spierziekte van Duchenne,…)</td></tr>
+<tr><td>eb-7-2</td>
+<td>Myopathies&nbsp;: dystrophies myotoniques (dont la maladie de Steinert,…)</td>
+<td>Myopathieën:myotone dystrofie (onder andere de ziekte van Steinert,…)</td></tr>
+<tr><td>eb-7-3</td>
+<td>Myopathies&nbsp;: myotonie congénitale (dont la maladie de Thomsen,…)</td>
+<td>Myopathieën:myotonia congenita (onder andere de ziekte van Thomsen,…)</td></tr>
+<tr><td>eb-7-4</td>
+<td>Myopathies&nbsp;: Polymyosite auto-immune</td>
+<td>Myopathieën:auto-immune polymyositis</td></tr>
+<tr><td>eb-8</td>
+<td>Mucoviscidose ou dyskinésie ciliaire bronchiale primaire objectivées</td>
+<td>Mucoviscidose of geobjectiveerde primaire bronchiale ciliaire dyskinesie</td></tr>
+<tr><td>eb-9</td>
+<td>Bronchiectasies hyperproductives objectivées</td>
+<td>Geobjectiveerde hyperproductieve bronchiectasieën</td></tr>
+<tr><td>eb-10</td>
+<td>Affections pulmonaires chroniques irréversibles obstructives ou restrictives avec des valeurs de volume expiratoire maximum-seconde inférieures ou égales à 60 % mesurées à un intervalle d'au moins 1 mois&nbsp;; chez un enfant de moins de 7 ans, l'insuffisance respiratoire irréversible pourra être établie sur base d'un rapport motivé du spécialiste traitant</td>
+<td>Irreversibele chronische obstructieve of restrictieve longaandoeningen met maximum expiratoire secondecapaciteit waarden van minder dan of gelijk aan 60 pct., opgemeten in een tussenperiode van minstens één maand; bij een kind jonger dan 7 jaar kan de irreversibele ademhalingsinsufficiëntie worden vastgesteld op basis van een gemotiveerd verslag van de behandelende specialist</td></tr>
+<tr><td>eb-11</td>
+<td>Infections pulmonaires récidivantes en cas d'immunodépression grave établie</td>
+<td>Recidiverende pulmonaire infecties bij bewezen ernstige immunodepressie</td></tr>
+<tr><td>eb-12</td>
+<td>Dysplasie broncho-pulmonaire avec oxygénodépendance de plus de 28 jours</td>
+<td>Broncho-pulmonaire dysplasie met zuurstofafhankelijkheid gedurende meer dan 28 dagen</td></tr>
+<tr><td>eb-13</td>
+<td>Épidermolyse bulleuse dans la forme dystrophique ou jonctionnelle</td>
+<td>Epidermolysis bullosa in de dystrofische of junctionele vorm</td></tr>
+<tr><td>m-1</td>
+<td>Soins pré et/ou post partum</td>
+<td>Pre en/of post-partum zorgen</td></tr>
+<tr><td>p-1</td>
+<td>Soins palliatifs</td>
+<td>Paliatieve zorgen</td></tr>
+<tr><td>dh-1</td>
+<td>Hospitalisation de jour</td>
+<td>Daghospitalisatie</td></tr>
+<tr><td>cr-1</td>
+<td>Examen consultatif</td>
+<td>Consultatief onderzoek</td></tr>
+<tr><td>co-0-0-0-0</td>
+<td>n/a n/a Situation pathologique non définie (accord papier) -</td>
+<td>n/a n/a Onbepaalde pathologische situatie (papieren akkoord) -</td></tr>
+<tr><td>co-1-1-1-0</td>
+<td>Colonne vertébrale Nuque - Cervical Arthrose -</td>
+<td>Wervelzuil Nek- Cervicaal  Artrose -</td></tr>
+<tr><td>co-1-1-2-0</td>
+<td>Colonne vertébrale Nuque - Cervical Discopathie, Hernie discale -</td>
+<td>Wervelzuil Nek- Cervicaal  Discopathie, Discushernia -</td></tr>
+<tr><td>co-1-1-3-0</td>
+<td>Colonne vertébrale Nuque - Cervical Sténose du canal rachidien -</td>
+<td>Wervelzuil Nek- Cervicaal  Spinaal kanaalstenose -</td></tr>
+<tr><td>co-1-1-4-0</td>
+<td>Colonne vertébrale Nuque - Cervical Cervico-brachialgie -</td>
+<td>Wervelzuil Nek- Cervicaal  Cervico-brachialgie -</td></tr>
+<tr><td>co-1-1-5-0</td>
+<td>Colonne vertébrale Nuque - Cervical Occipitalgie, Névralgie occipitale, Céphalée de tension, Migraine -</td>
+<td>Wervelzuil Nek- Cervicaal  Occipitalgie, Occipitalisneuralgie, Spanningshoofdpijn, Migraine -</td></tr>
+<tr><td>co-1-1-6-0</td>
+<td>Colonne vertébrale Nuque - Cervical Torticolis -</td>
+<td>Wervelzuil Nek- Cervicaal  Torticollis -</td></tr>
+<tr><td>co-1-1-7-0</td>
+<td>Colonne vertébrale Nuque - Cervical Syndrome du trapèze -</td>
+<td>Wervelzuil Nek- Cervicaal  Trapeziussyndroom -</td></tr>
+<tr><td>co-1-1-8-0</td>
+<td>Colonne vertébrale Nuque - Cervical Coup de fouet -</td>
+<td>Wervelzuil Nek- Cervicaal  Whiplash -</td></tr>
+<tr><td>co-1-1-90-0</td>
+<td>Colonne vertébrale Nuque - Cervical Fracture -</td>
+<td>Wervelzuil Nek- Cervicaal  Fraktuur  -</td></tr>
+<tr><td>co-1-1-99-0</td>
+<td>Colonne vertébrale Nuque - Cervical Autre (également de F-E-11bis) -</td>
+<td>Wervelzuil Nek- Cervicaal  Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-1-2-1-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Arthrose -</td>
+<td>Wervelzuil Rug (Thoracaal) Artrose -</td></tr>
+<tr><td>co-1-2-2-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Discopathie, Hernie discale -</td>
+<td>Wervelzuil Rug (Thoracaal) Discopathie, Discushernia -</td></tr>
+<tr><td>co-1-2-3-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Sténose du canal rachidien -</td>
+<td>Wervelzuil Rug (Thoracaal) Spinaal kanaal stenose -</td></tr>
+<tr><td>co-1-2-4-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Dorsalgie -</td>
+<td>Wervelzuil Rug (Thoracaal) Dorsalgie -</td></tr>
+<tr><td>co-1-2-5-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Syndrome radiculaire dorsal, Radiculopathie -</td>
+<td>Wervelzuil Rug (Thoracaal) Dorsaal radiculair syndroom, Radiculopathie -</td></tr>
+<tr><td>co-1-2-6-0</td>
+<td>Colonne vertébrale Dos (Thoracique) (Kyfo)scoliose -</td>
+<td>Wervelzuil Rug (Thoracaal) (Kyfo)scoliose -</td></tr>
+<tr><td>co-1-2-90-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Fracture -</td>
+<td>Wervelzuil Rug (Thoracaal) Fraktuur  -</td></tr>
+<tr><td>co-1-2-99-0</td>
+<td>Colonne vertébrale Dos (Thoracique) Autre (également de F-E-11bis) -</td>
+<td>Wervelzuil Rug (Thoracaal) Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-1-3-1-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Arthrose -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Artrose -</td></tr>
+<tr><td>co-1-3-2-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Discopathie, Hernie discale -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Discopathie, Discushernia -</td></tr>
+<tr><td>co-1-3-3-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Sténose du canal rachidien -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Spinaal kanaal stenose -</td></tr>
+<tr><td>co-1-3-4-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Lombalgie -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Lage rugpijn, Lumbalgie -</td></tr>
+<tr><td>co-1-3-5-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Lombo sciatique -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Lumbo-ischialgie -</td></tr>
+<tr><td>co-1-3-6-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Syndrome radiculaire lombo-sacré, Radiculopathie -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Lumbosacraal radiculair syndroom, Radiculopathie -</td></tr>
+<tr><td>co-1-3-7-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Trouble sacro-iliaque -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Sacro-iliac disorder -</td></tr>
+<tr><td>co-1-3-8-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Spondylolisthésis, Spondylolyse -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Spondylolisthesis, Spondylolyse -</td></tr>
+<tr><td>co-1-3-90-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Fracture -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Fraktuur  -</td></tr>
+<tr><td>co-1-3-99-0</td>
+<td>Colonne vertébrale Dos (Lombo-sacral) Autre (également de F-E-11bis) -</td>
+<td>Wervelzuil Rug (Lumbaal - Sacraal) Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-2-1-1-1</td>
+<td>Membre supérieur Epaule - Haut du bras Arthrose Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Artrose Links</td></tr>
+<tr><td>co-2-1-1-2</td>
+<td>Membre supérieur Epaule - Haut du bras Arthrose Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Artrose Rechts</td></tr>
+<tr><td>co-2-1-1-3</td>
+<td>Membre supérieur Epaule - Haut du bras Arthrose Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Artrose Beiden</td></tr>
+<tr><td>co-2-1-2-1</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-2-1-2-2</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-2-1-2-3</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-2-1-3-1</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion de la coiffe (des rotateurs) Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm (Rotator)cuff lijden  Links</td></tr>
+<tr><td>co-2-1-3-2</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion de la coiffe (des rotateurs) Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm (Rotator)cuff lijden  Rechts</td></tr>
+<tr><td>co-2-1-3-3</td>
+<td>Membre supérieur Epaule - Haut du bras Lésion de la coiffe (des rotateurs) Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm (Rotator)cuff lijden  Beiden</td></tr>
+<tr><td>co-2-1-4-1</td>
+<td>Membre supérieur Epaule - Haut du bras Pincement Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Inpingement Links</td></tr>
+<tr><td>co-2-1-4-2</td>
+<td>Membre supérieur Epaule - Haut du bras Pincement Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Inpingement Rechts</td></tr>
+<tr><td>co-2-1-4-3</td>
+<td>Membre supérieur Epaule - Haut du bras Pincement Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Inpingement Beiden</td></tr>
+<tr><td>co-2-1-5-1</td>
+<td>Membre supérieur Epaule - Haut du bras Luxation Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Luxatie Links</td></tr>
+<tr><td>co-2-1-5-2</td>
+<td>Membre supérieur Epaule - Haut du bras Luxation Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Luxatie Rechts</td></tr>
+<tr><td>co-2-1-5-3</td>
+<td>Membre supérieur Epaule - Haut du bras Luxation Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Luxatie Beiden</td></tr>
+<tr><td>co-2-1-6-1</td>
+<td>Membre supérieur Epaule - Haut du bras Syndrome du défilé thoraco-brachial (Thoracic Outlet Syndrome) Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Thoracic Outlet Syndroom Links</td></tr>
+<tr><td>co-2-1-6-2</td>
+<td>Membre supérieur Epaule - Haut du bras Syndrome du défilé thoraco-brachial (Thoracic Outlet Syndrome) Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Thoracic Outlet Syndroom Rechts</td></tr>
+<tr><td>co-2-1-6-3</td>
+<td>Membre supérieur Epaule - Haut du bras Syndrome du défilé thoraco-brachial (Thoracic Outlet Syndrome) Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Thoracic Outlet Syndroom Beiden</td></tr>
+<tr><td>co-2-1-90-1</td>
+<td>Membre supérieur Epaule - Haut du bras Fracture Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Fraktuur  Links</td></tr>
+<tr><td>co-2-1-90-2</td>
+<td>Membre supérieur Epaule - Haut du bras Fracture Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Fraktuur  Rechts</td></tr>
+<tr><td>co-2-1-90-3</td>
+<td>Membre supérieur Epaule - Haut du bras Fracture Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Fraktuur  Beiden</td></tr>
+<tr><td>co-2-1-99-1</td>
+<td>Membre supérieur Epaule - Haut du bras Autre (également de F-E-11bis) Gauche</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-2-1-99-2</td>
+<td>Membre supérieur Epaule - Haut du bras Autre (également de F-E-11bis) Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-2-1-99-3</td>
+<td>Membre supérieur Epaule - Haut du bras Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Bovenste extremiteit Schouder - Bovenarm Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-2-2-1-1</td>
+<td>Membre supérieur Coude - Avant-bras Arthrose Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Artrose Links</td></tr>
+<tr><td>co-2-2-1-2</td>
+<td>Membre supérieur Coude - Avant-bras Arthrose Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Artrose Rechts</td></tr>
+<tr><td>co-2-2-1-3</td>
+<td>Membre supérieur Coude - Avant-bras Arthrose Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Artrose Beiden</td></tr>
+<tr><td>co-2-2-2-1</td>
+<td>Membre supérieur Coude - Avant-bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-2-2-2-2</td>
+<td>Membre supérieur Coude - Avant-bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-2-2-2-3</td>
+<td>Membre supérieur Coude - Avant-bras Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-2-2-3-1</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite médiale, Tennis elbow Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis medialis, Tenniselleboog Links</td></tr>
+<tr><td>co-2-2-3-2</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite médiale, Tennis elbow Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis medialis, Tenniselleboog Rechts</td></tr>
+<tr><td>co-2-2-3-3</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite médiale, Tennis elbow Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis medialis, Tenniselleboog Beiden</td></tr>
+<tr><td>co-2-2-4-1</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite ulnaire, Coude du golfeur Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis ulnaris, Golferselleboog Links</td></tr>
+<tr><td>co-2-2-4-2</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite ulnaire, Coude du golfeur Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis ulnaris, Golferselleboog Rechts</td></tr>
+<tr><td>co-2-2-4-3</td>
+<td>Membre supérieur Coude - Avant-bras Epicondylite ulnaire, Coude du golfeur Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Epicondylitis ulnaris, Golferselleboog Beiden</td></tr>
+<tr><td>co-2-2-5-1</td>
+<td>Membre supérieur Coude - Avant-bras Microtraumatismes répétés (RSI) Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Repetitive strain injury (RSI) Links</td></tr>
+<tr><td>co-2-2-5-2</td>
+<td>Membre supérieur Coude - Avant-bras Microtraumatismes répétés (RSI) Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Repetitive strain injury (RSI) Rechts</td></tr>
+<tr><td>co-2-2-5-3</td>
+<td>Membre supérieur Coude - Avant-bras Microtraumatismes répétés (RSI) Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Repetitive strain injury (RSI) Beiden</td></tr>
+<tr><td>co-2-2-90-1</td>
+<td>Membre supérieur Coude - Avant-bras Fracture Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Fraktuur  Links</td></tr>
+<tr><td>co-2-2-90-2</td>
+<td>Membre supérieur Coude - Avant-bras Fracture Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Fraktuur  Rechts</td></tr>
+<tr><td>co-2-2-90-3</td>
+<td>Membre supérieur Coude - Avant-bras Fracture Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Fraktuur  Beiden</td></tr>
+<tr><td>co-2-2-99-1</td>
+<td>Membre supérieur Coude - Avant-bras Autre (également de F-E-11bis) Gauche</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-2-2-99-2</td>
+<td>Membre supérieur Coude - Avant-bras Autre (également de F-E-11bis) Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-2-2-99-3</td>
+<td>Membre supérieur Coude - Avant-bras Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Bovenste extremiteit Elleboog - Onderarm Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-2-3-1-1</td>
+<td>Membre supérieur Poignet - Main Arthrose Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Artrose Links</td></tr>
+<tr><td>co-2-3-1-2</td>
+<td>Membre supérieur Poignet - Main Arthrose Droit</td>
+<td>Bovenste extremiteit Pols - Hand Artrose Rechts</td></tr>
+<tr><td>co-2-3-1-3</td>
+<td>Membre supérieur Poignet - Main Arthrose Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Artrose Beiden</td></tr>
+<tr><td>co-2-3-2-1</td>
+<td>Membre supérieur Poignet - Main Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-2-3-2-2</td>
+<td>Membre supérieur Poignet - Main Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Bovenste extremiteit Pols - Hand Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-2-3-2-3</td>
+<td>Membre supérieur Poignet - Main Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-2-3-3-1</td>
+<td>Membre supérieur Poignet - Main Syndrome du canal carpien Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Carpal-tunnelsyndroom Links</td></tr>
+<tr><td>co-2-3-3-2</td>
+<td>Membre supérieur Poignet - Main Syndrome du canal carpien Droit</td>
+<td>Bovenste extremiteit Pols - Hand Carpal-tunnelsyndroom Rechts</td></tr>
+<tr><td>co-2-3-3-3</td>
+<td>Membre supérieur Poignet - Main Syndrome du canal carpien Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Carpal-tunnelsyndroom Beiden</td></tr>
+<tr><td>co-2-3-4-1</td>
+<td>Membre supérieur Poignet - Main De Quervain, Dupuytren Gauche</td>
+<td>Bovenste extremiteit Pols - Hand De Quervain's, Dupuytren Links</td></tr>
+<tr><td>co-2-3-4-2</td>
+<td>Membre supérieur Poignet - Main De Quervain, Dupuytren Droit</td>
+<td>Bovenste extremiteit Pols - Hand De Quervain's, Dupuytren Rechts</td></tr>
+<tr><td>co-2-3-4-3</td>
+<td>Membre supérieur Poignet - Main De Quervain, Dupuytren Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand De Quervain's, Dupuytren Beiden</td></tr>
+<tr><td>co-2-3-5-1</td>
+<td>Membre supérieur Poignet - Main Microtraumatismes répétés (RSI) Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Repetitive strain injury (RSI) Links</td></tr>
+<tr><td>co-2-3-5-2</td>
+<td>Membre supérieur Poignet - Main Microtraumatismes répétés (RSI) Droit</td>
+<td>Bovenste extremiteit Pols - Hand Repetitive strain injury (RSI) Rechts</td></tr>
+<tr><td>co-2-3-5-3</td>
+<td>Membre supérieur Poignet - Main Microtraumatismes répétés (RSI) Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Repetitive strain injury (RSI) Beiden</td></tr>
+<tr><td>co-2-3-90-1</td>
+<td>Membre supérieur Poignet - Main Fracture Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Fraktuur  Links</td></tr>
+<tr><td>co-2-3-90-2</td>
+<td>Membre supérieur Poignet - Main Fracture Droit</td>
+<td>Bovenste extremiteit Pols - Hand Fraktuur  Rechts</td></tr>
+<tr><td>co-2-3-90-3</td>
+<td>Membre supérieur Poignet - Main Fracture Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Fraktuur  Beiden</td></tr>
+<tr><td>co-2-3-99-1</td>
+<td>Membre supérieur Poignet - Main Autre (également de F-E-11bis) Gauche</td>
+<td>Bovenste extremiteit Pols - Hand Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-2-3-99-2</td>
+<td>Membre supérieur Poignet - Main Autre (également de F-E-11bis) Droit</td>
+<td>Bovenste extremiteit Pols - Hand Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-2-3-99-3</td>
+<td>Membre supérieur Poignet - Main Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Bovenste extremiteit Pols - Hand Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-3-1-1-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Arthrose Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Artrose Links</td></tr>
+<tr><td>co-3-1-1-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Arthrose Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Artrose Rechts</td></tr>
+<tr><td>co-3-1-1-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Arthrose Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Artrose Beiden</td></tr>
+<tr><td>co-3-1-2-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-3-1-2-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-3-1-2-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-3-1-3-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse FAI (conflit fémoro-acétabulaire), CAM, PINCER Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen FAI (femoro-acetabulair impingement), CAM, PINCER Links</td></tr>
+<tr><td>co-3-1-3-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse FAI (conflit fémoro-acétabulaire), CAM, PINCER Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen FAI (femoro-acetabulair impingement), CAM, PINCER Rechts</td></tr>
+<tr><td>co-3-1-3-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse FAI (conflit fémoro-acétabulaire), CAM, PINCER Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen FAI (femoro-acetabulair impingement), CAM, PINCER Beiden</td></tr>
+<tr><td>co-3-1-4-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Luxation de la hanche Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupluxatie Links</td></tr>
+<tr><td>co-3-1-4-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Luxation de la hanche Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupluxatie Rechts</td></tr>
+<tr><td>co-3-1-4-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Luxation de la hanche Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupluxatie Beiden</td></tr>
+<tr><td>co-3-1-5-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Douleur à l'aine, Claquage de la hanche, Pubalgie Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Liespijn, Snapping Hip, Pubalgie Links</td></tr>
+<tr><td>co-3-1-5-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Douleur à l'aine, Claquage de la hanche, Pubalgie Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Liespijn, Snapping Hip, Pubalgie Rechts</td></tr>
+<tr><td>co-3-1-5-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Douleur à l'aine, Claquage de la hanche, Pubalgie Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Liespijn, Snapping Hip, Pubalgie Beiden</td></tr>
+<tr><td>co-3-1-6-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Dysplasie de la hanche Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupdysplasie Links</td></tr>
+<tr><td>co-3-1-6-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Dysplasie de la hanche Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupdysplasie Rechts</td></tr>
+<tr><td>co-3-1-6-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Dysplasie de la hanche Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Heupdysplasie Beiden</td></tr>
+<tr><td>co-3-1-90-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Fracture Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Fraktuur  Links</td></tr>
+<tr><td>co-3-1-90-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Fracture Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Fraktuur  Rechts</td></tr>
+<tr><td>co-3-1-90-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Fracture Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Fraktuur  Beiden</td></tr>
+<tr><td>co-3-1-99-1</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Autre (également de F-E-11bis) Gauche</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-3-1-99-2</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Autre (également de F-E-11bis) Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-3-1-99-3</td>
+<td>Membre inférieur Bassin - Hanche - Cuisse Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Onderste extremiteit Bekken - Heup - Bovenbeen Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-3-2-1-1</td>
+<td>Membre inférieur Genou Arthrose Gauche</td>
+<td>Onderste extremiteit Knie Artrose Links</td></tr>
+<tr><td>co-3-2-1-2</td>
+<td>Membre inférieur Genou Arthrose Droit</td>
+<td>Onderste extremiteit Knie Artrose Rechts</td></tr>
+<tr><td>co-3-2-1-3</td>
+<td>Membre inférieur Genou Arthrose Gauche et Droit</td>
+<td>Onderste extremiteit Knie Artrose Beiden</td></tr>
+<tr><td>co-3-2-2-1</td>
+<td>Membre inférieur Genou Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Onderste extremiteit Knie Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-3-2-2-2</td>
+<td>Membre inférieur Genou Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Onderste extremiteit Knie Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-3-2-2-3</td>
+<td>Membre inférieur Genou Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Onderste extremiteit Knie Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-3-2-3-1</td>
+<td>Membre inférieur Genou Luxation de l'articulation fémoro-patellaire, luxation rotulienne Gauche</td>
+<td>Onderste extremiteit Knie Dislocatie van patellofemoraal gewricht, Patellaluxatie Links</td></tr>
+<tr><td>co-3-2-3-2</td>
+<td>Membre inférieur Genou Luxation de l'articulation fémoro-patellaire, luxation rotulienne Droit</td>
+<td>Onderste extremiteit Knie Dislocatie van patellofemoraal gewricht, Patellaluxatie Rechts</td></tr>
+<tr><td>co-3-2-3-3</td>
+<td>Membre inférieur Genou Luxation de l'articulation fémoro-patellaire, luxation rotulienne Gauche et Droit</td>
+<td>Onderste extremiteit Knie Dislocatie van patellofemoraal gewricht, Patellaluxatie Beiden</td></tr>
+<tr><td>co-3-2-4-1</td>
+<td>Membre inférieur Genou Instabilité Gauche</td>
+<td>Onderste extremiteit Knie Instabiliteit Links</td></tr>
+<tr><td>co-3-2-4-2</td>
+<td>Membre inférieur Genou Instabilité Droit</td>
+<td>Onderste extremiteit Knie Instabiliteit Rechts</td></tr>
+<tr><td>co-3-2-4-3</td>
+<td>Membre inférieur Genou Instabilité Gauche et Droit</td>
+<td>Onderste extremiteit Knie Instabiliteit Beiden</td></tr>
+<tr><td>co-3-2-5-1</td>
+<td>Membre inférieur Genou Lésion ligamentaire, Lésion tendineuse Gauche</td>
+<td>Onderste extremiteit Knie Ligamentair letsel, Peesletsel Links</td></tr>
+<tr><td>co-3-2-5-2</td>
+<td>Membre inférieur Genou Lésion ligamentaire, Lésion tendineuse Droit</td>
+<td>Onderste extremiteit Knie Ligamentair letsel, Peesletsel Rechts</td></tr>
+<tr><td>co-3-2-5-3</td>
+<td>Membre inférieur Genou Lésion ligamentaire, Lésion tendineuse Gauche et Droit</td>
+<td>Onderste extremiteit Knie Ligamentair letsel, Peesletsel Beiden</td></tr>
+<tr><td>co-3-2-6-1</td>
+<td>Membre inférieur Genou Lésion du ménisque Gauche</td>
+<td>Onderste extremiteit Knie Meniscusletsel Links</td></tr>
+<tr><td>co-3-2-6-2</td>
+<td>Membre inférieur Genou Lésion du ménisque Droit</td>
+<td>Onderste extremiteit Knie Meniscusletsel Rechts</td></tr>
+<tr><td>co-3-2-6-3</td>
+<td>Membre inférieur Genou Lésion du ménisque Gauche et Droit</td>
+<td>Onderste extremiteit Knie Meniscusletsel Beiden</td></tr>
+<tr><td>co-3-2-7-1</td>
+<td>Membre inférieur Genou Lésion fémoro-patellaire, Chondromalacie Gauche</td>
+<td>Onderste extremiteit Knie Patellofemoraal letsel, Chondromalacie Links</td></tr>
+<tr><td>co-3-2-7-2</td>
+<td>Membre inférieur Genou Lésion fémoro-patellaire, Chondromalacie Droit</td>
+<td>Onderste extremiteit Knie Patellofemoraal letsel, Chondromalacie Rechts</td></tr>
+<tr><td>co-3-2-7-3</td>
+<td>Membre inférieur Genou Lésion fémoro-patellaire, Chondromalacie Gauche et Droit</td>
+<td>Onderste extremiteit Knie Patellofemoraal letsel, Chondromalacie Beiden</td></tr>
+<tr><td>co-3-2-90-1</td>
+<td>Membre inférieur Genou Fracture Gauche</td>
+<td>Onderste extremiteit Knie Fraktuur  Links</td></tr>
+<tr><td>co-3-2-90-2</td>
+<td>Membre inférieur Genou Fracture Droit</td>
+<td>Onderste extremiteit Knie Fraktuur  Rechts</td></tr>
+<tr><td>co-3-2-90-3</td>
+<td>Membre inférieur Genou Fracture Gauche et Droit</td>
+<td>Onderste extremiteit Knie Fraktuur  Beiden</td></tr>
+<tr><td>co-3-2-99-1</td>
+<td>Membre inférieur Genou Autre (également de F-E-11bis) Gauche</td>
+<td>Onderste extremiteit Knie Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-3-2-99-2</td>
+<td>Membre inférieur Genou Autre (également de F-E-11bis) Droit</td>
+<td>Onderste extremiteit Knie Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-3-2-99-3</td>
+<td>Membre inférieur Genou Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Onderste extremiteit Knie Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-3-3-1-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Arthrose Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Artrose Links</td></tr>
+<tr><td>co-3-3-1-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Arthrose Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Artrose Rechts</td></tr>
+<tr><td>co-3-3-1-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Arthrose Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Artrose Beiden</td></tr>
+<tr><td>co-3-3-2-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Links</td></tr>
+<tr><td>co-3-3-2-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Rechts</td></tr>
+<tr><td>co-3-3-2-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Lésion des muscles, des tendons et/ou des nerfs, Bursite, Tendinite, Foulure, Contusion Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Letsel van spieren, pezen en/of zenuwen, Bursitis, Tendinitis, Strain, Contusie Beiden</td></tr>
+<tr><td>co-3-3-3-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Distorsion, Entorse, Laxité, Traumatisme d'inversion, Rupture ligamentaire Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Distorsie, Verstuiking, Laxiteit, Inversietrauma, Ruptuur ligament Links</td></tr>
+<tr><td>co-3-3-3-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Distorsion, Entorse, Laxité, Traumatisme d'inversion, Rupture ligamentaire Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Distorsie, Verstuiking, Laxiteit, Inversietrauma, Ruptuur ligament Rechts</td></tr>
+<tr><td>co-3-3-3-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Distorsion, Entorse, Laxité, Traumatisme d'inversion, Rupture ligamentaire Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Distorsie, Verstuiking, Laxiteit, Inversietrauma, Ruptuur ligament Beiden</td></tr>
+<tr><td>co-3-3-4-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fasciite plantaire Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Plantaire fasciitis Links</td></tr>
+<tr><td>co-3-3-4-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fasciite plantaire Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Plantaire fasciitis Rechts</td></tr>
+<tr><td>co-3-3-4-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fasciite plantaire Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Plantaire fasciitis Beiden</td></tr>
+<tr><td>co-3-3-5-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Pes planus, Pes valgus, Hallux valgus, Épine calcanéenne, Pied bot Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Pes planus, Pes valgus, Hallux valgus, Hielspoor, Klompvoet Links</td></tr>
+<tr><td>co-3-3-5-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Pes planus, Pes valgus, Hallux valgus, Épine calcanéenne, Pied bot Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Pes planus, Pes valgus, Hallux valgus, Hielspoor, Klompvoet Rechts</td></tr>
+<tr><td>co-3-3-5-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Pes planus, Pes valgus, Hallux valgus, Épine calcanéenne, Pied bot Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Pes planus, Pes valgus, Hallux valgus, Hielspoor, Klompvoet Beiden</td></tr>
+<tr><td>co-3-3-6-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Périostite tibiale Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Shin splints Links</td></tr>
+<tr><td>co-3-3-6-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Périostite tibiale Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Shin splints Rechts</td></tr>
+<tr><td>co-3-3-6-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Périostite tibiale Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Shin splints Beiden</td></tr>
+<tr><td>co-3-3-90-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fracture Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Fraktuur  Links</td></tr>
+<tr><td>co-3-3-90-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fracture Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Fraktuur  Rechts</td></tr>
+<tr><td>co-3-3-90-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Fracture Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Fraktuur  Beiden</td></tr>
+<tr><td>co-3-3-99-1</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Autre (également de F-E-11bis) Gauche</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Andere (ook uit F-E-11bis) Links</td></tr>
+<tr><td>co-3-3-99-2</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Autre (également de F-E-11bis) Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Andere (ook uit F-E-11bis) Rechts</td></tr>
+<tr><td>co-3-3-99-3</td>
+<td>Membre inférieur Bas de jambe - Cheville - Pied Autre (également de F-E-11bis) Gauche et Droit</td>
+<td>Onderste extremiteit Onderbeen - Enkel - Voet Andere (ook uit F-E-11bis) Beiden</td></tr>
+<tr><td>co-4-1-90-0</td>
+<td>Thorax - Fracture -</td>
+<td>Thorax - Fraktuur  -</td></tr>
+<tr><td>co-4-1-99-0</td>
+<td>Thorax - Autre (également de F-E-11bis) -</td>
+<td>Thorax - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-5-1-1-0</td>
+<td>Troubles pulmonaires - Insuffisance respiratoire -</td>
+<td>Longaandoeningen - Ademhalingsinsufficiëntie -</td></tr>
+<tr><td>co-5-1-2-0</td>
+<td>Troubles pulmonaires - BPCO, Bronchite, Bronchiolite, Pneumonie, ... -</td>
+<td>Longaandoeningen - COPD, Bronchitis, Bronchiolitis, Pneumonie, … -</td></tr>
+<tr><td>co-5-1-3-0</td>
+<td>Troubles pulmonaires - Asthme -</td>
+<td>Longaandoeningen - Astma -</td></tr>
+<tr><td>co-5-1-4-0</td>
+<td>Troubles pulmonaires - Hyperventilation -</td>
+<td>Longaandoeningen - Hyperventilatie  -</td></tr>
+<tr><td>co-5-1-99-0</td>
+<td>Troubles pulmonaires - Autre (également de F-E-11bis) -</td>
+<td>Longaandoeningen - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-6-1-1-0</td>
+<td>Troubles cardiovasculaires et lymphatiques - Post infarctus du myocarde -</td>
+<td>Hart-, vaat- en lymfeaandoeningen - Post-hartinfarct  -</td></tr>
+<tr><td>co-6-1-2-1</td>
+<td>Troubles cardiovasculaires et lymphatiques - Oedème (lymphatique) Gauche</td>
+<td>Hart-, vaat- en lymfeaandoeningen - (Lymf)oedeem  Links</td></tr>
+<tr><td>co-6-1-2-2</td>
+<td>Troubles cardiovasculaires et lymphatiques - Oedème (lymphatique) Droit</td>
+<td>Hart-, vaat- en lymfeaandoeningen - (Lymf)oedeem  Rechts</td></tr>
+<tr><td>co-6-1-2-3</td>
+<td>Troubles cardiovasculaires et lymphatiques - Oedème (lymphatique) Gauche et Droit</td>
+<td>Hart-, vaat- en lymfeaandoeningen - (Lymf)oedeem  Beiden</td></tr>
+<tr><td>co-6-1-3-0</td>
+<td>Troubles cardiovasculaires et lymphatiques - Accident ischémique cérébral transitoire (TIA) -</td>
+<td>Hart-, vaat- en lymfeaandoeningen - Transient cerebral ischaemic attack (TIA) -</td></tr>
+<tr><td>co-6-1-4-0</td>
+<td>Troubles cardiovasculaires et lymphatiques - Claudication intermittente -</td>
+<td>Hart-, vaat- en lymfeaandoeningen - Claudicatio intermittens -</td></tr>
+<tr><td>co-6-1-99-0</td>
+<td>Troubles cardiovasculaires et lymphatiques - Autre (également de F-E-11bis) -</td>
+<td>Hart-, vaat- en lymfeaandoeningen - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-7-1-1-0</td>
+<td>Troubles neurologiques - Polynévrite, Polyneuropathie -</td>
+<td>Neurologische aandoeningen - Polyneuritis, Polyneuropathie -</td></tr>
+<tr><td>co-7-1-2-0</td>
+<td>Troubles neurologiques - Névralgie intercostale, Zona, Herpes Zoster -</td>
+<td>Neurologische aandoeningen - Intercostaal neuralgie, Zona, Herpes Zoster -</td></tr>
+<tr><td>co-7-1-99-0</td>
+<td>Troubles neurologiques - Autre (également de F-E-11bis) -</td>
+<td>Neurologische aandoeningen - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-8-1-1-0</td>
+<td>ORL et visage - Syndrome temporo-mandibulaire -</td>
+<td>ORL en aangezicht - Temporo-mandibulair syndroom -</td></tr>
+<tr><td>co-8-1-2-0</td>
+<td>ORL et visage - Bruxisme -</td>
+<td>ORL en aangezicht - Bruxisme -</td></tr>
+<tr><td>co-8-1-3-1</td>
+<td>ORL et visage - Défaillance du nerf facial Gauche</td>
+<td>ORL en aangezicht - Uitval aangezichtszenuw Links</td></tr>
+<tr><td>co-8-1-3-2</td>
+<td>ORL et visage - Défaillance du nerf facial Droit</td>
+<td>ORL en aangezicht - Uitval aangezichtszenuw Rechts</td></tr>
+<tr><td>co-8-1-3-3</td>
+<td>ORL et visage - Défaillance du nerf facial Gauche et Droit</td>
+<td>ORL en aangezicht - Uitval aangezichtszenuw Beiden</td></tr>
+<tr><td>co-8-1-4-0</td>
+<td>ORL et visage - Vertiges, Syndrome de Ménière -</td>
+<td>ORL en aangezicht - Duizeligheid (Vertigo), Syndroom van Meniere -</td></tr>
+<tr><td>co-8-1-90-0</td>
+<td>ORL et visage - Fracture -</td>
+<td>ORL en aangezicht - Fraktuur  -</td></tr>
+<tr><td>co-8-1-99-0</td>
+<td>ORL et visage - Autre (également de F-E-11bis) -</td>
+<td>ORL en aangezicht - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-9-1-1-0</td>
+<td>Abdomen, troubles internes et/ou liés à la grossesse - Instabilité pelvienne, Symphysiolyse -</td>
+<td>Abdomen, inwendige aandoeningen en/of zwangerschap gerelateerd - Bekkeninstabiliteit, Symfysiolyse -</td></tr>
+<tr><td>co-9-1-2-0</td>
+<td>Abdomen, troubles internes et/ou liés à la grossesse - Rééducation du plancher pelvien, Uro-Procto-Gynaeco, Incontinence -</td>
+<td>Abdomen, inwendige aandoeningen en/of zwangerschap gerelateerd - Bekkenbodem reëducatie, Uro-Procto-Gynaeco, Incontinentie -</td></tr>
+<tr><td>co-9-1-3-0</td>
+<td>Abdomen, troubles internes et/ou liés à la grossesse - Déchirure des muscles abdominaux -</td>
+<td>Abdomen, inwendige aandoeningen en/of zwangerschap gerelateerd - Buikspierscheur -</td></tr>
+<tr><td>co-9-1-4-0</td>
+<td>Abdomen, troubles internes et/ou liés à la grossesse - Affections liées à la grossesse (hors périnatalité) -</td>
+<td>Abdomen, inwendige aandoeningen en/of zwangerschap gerelateerd - Aandoeningen in verband met zwangerschap (exclusief perinatale) -</td></tr>
+<tr><td>co-9-1-99-0</td>
+<td>Abdomen, troubles internes et/ou liés à la grossesse - Autre (également de F-E-11bis) -</td>
+<td>Abdomen, inwendige aandoeningen en/of zwangerschap gerelateerd - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-10-1-1-0</td>
+<td>Troubles pédiatriques - Retard de développement moteur -</td>
+<td>Pediatrische aandoeningen - Motorische ontwikkelingsvertraging -</td></tr>
+<tr><td>co-10-1-2-0</td>
+<td>Troubles pédiatriques - Développement asymétrique -</td>
+<td>Pediatrische aandoeningen - Asymmetrische ontwikkeling -</td></tr>
+<tr><td>co-10-1-3-0</td>
+<td>Troubles pédiatriques - Maladresse motrice -</td>
+<td>Pediatrische aandoeningen - Motorische onhandigheid -</td></tr>
+<tr><td>co-10-1-99-0</td>
+<td>Troubles pédiatriques - Autre (également de F-E-11bis) -</td>
+<td>Pediatrische aandoeningen - Andere (ook uit F-E-11bis) -</td></tr>
+<tr><td>co-11-1-1-0</td>
+<td>Autre - Rééducation de la marche en cas de déviation de la marche et/ou de la mobilité -</td>
+<td>Andere - Gangrevalidatie bij afwijking van gang en/of beweeglijkheid -</td></tr>
+<tr><td>co-11-1-2-0</td>
+<td>Autre - Kiné pré-opératoire -</td>
+<td>Andere - Pré-operatieve kiné -</td></tr>
+<tr><td>co-11-1-3-0</td>
+<td>Autre - Facteurs de risque liés au mode de vie (diabète, obésité, …) -</td>
+<td>Andere - Risicofactoren in de levensstijl (diabetes, obesitas, …) -</td></tr>
+<tr><td>co-11-1-4-0</td>
+<td>Autre - Fibromyalgie, SFC, ME, MUS, ... -</td>
+<td>Andere - Fibromyalgie, CVS, ME, SOLK, … -</td></tr>
+<tr><td>co-11-1-5-0</td>
+<td>Autre -  Brûlures, Cicatrices, … -</td>
+<td>Andere - Brandwonden, Littekens, … -</td></tr>
+<tr><td>co-11-1-6-0</td>
+<td>Autre - Reconditionnement après une faiblesse musculaire (générale) -</td>
+<td>Andere - Reconditionering na (algemene) spierzwakte -</td></tr>
+<tr><td>co-11-1-7-0</td>
+<td>Autre - Post-Covid -</td>
+<td>Andere - Post-Covid -</td></tr>
+<tr><td>co-11-1-99-0</td>
+<td>Autre - Autre (également de F-E-11bis) -</td>
+<td>Andere - Andere (ook uit F-E-11bis) -</td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Description of the above table(s)</a>.
+  </p>
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script src="assets/js/togglechanges.js" type="text/javascript"> </script>
+  <script src="assets/js/requirements-table.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir">eHealth Platform</a>.  
+          Package hl7.fhir.be.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-08-13 12:54:00 +0000">
+    2026-08-13
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+              <!-- eHealth Platform -->
+  <!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7belgium.org/profiles/fhir/terminology/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a>
+  <!-- no fitting stylesheet found (status/publisher) -->
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

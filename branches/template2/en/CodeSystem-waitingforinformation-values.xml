@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="waitingforinformation-values"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/waitingforinformation-values"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetWaitingForInformationValues"/>
+  <title value="CodeSystem waiting for information values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T09:03:57+00:00"/>
+  <description value="Waiting for information values in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="WFI_AGREE_ALL_001"/>
+    <display value="WFI_AGREE_ALL_001"/>
+  </concept>
+  <concept>
+    <code value="WFI_AGREE_ALL_002"/>
+    <display value="WFI_AGREE_ALL_002"/>
+  </concept>
+  <concept>
+    <code value="WFI_AGREE_SRV_PHYSIO_001"/>
+    <display value="WFI_AGREE_SRV_PHYSIO_001"/>
+  </concept>
+  <concept>
+    <code value="WFI_AGREE_SRV_PHYSIO_002"/>
+    <display value="WFI_AGREE_SRV_PHYSIO_002"/>
+  </concept>
+  <concept>
+    <code value="WFI_AGREE_SRV_PHYSIO_003"/>
+    <display value="WFI_AGREE_SRV_PHYSIO_003"/>
+  </concept>
+</CodeSystem>

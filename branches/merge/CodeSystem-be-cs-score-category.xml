@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-score-category"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score-category"/>
+  <version value="1.0.0"/>
+  <name value="BeCSScoreCategory"/>
+  <title value="Score Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Score Category"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="risk"/>
+    <display value="Risk score"/>
+    <definition value="Risk score"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Risk score"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Risk score"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="pain"/>
+    <display value="Pain score"/>
+    <definition value="Pain score"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Pain Score"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Pain Score"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

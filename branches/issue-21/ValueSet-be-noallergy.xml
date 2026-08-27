@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-noallergy"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"/>
+  <version value="1.2.0"/>
+  <name value="BeNoAllergy"/>
+  <title value="BeNoAllergy"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="716186003"/>
+        <display value="No known allergy (situation)"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="No known allergy (situation)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="No known allergy"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="geen gekende allergie"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="pas d'allergie connue"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

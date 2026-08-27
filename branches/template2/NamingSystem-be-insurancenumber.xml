@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="be-insurancenumber"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-insurancenumber"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <name value="BeInsuranceNumberNamingSystem"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2020-06-01"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="the identification number of a mutual insurance association (mutualité) as “a not-for-profit association, which, with foresight, assistance and solidarity aims to promote the physical, mental and social well-being of its members” (The Belgian law of 6 August 1990)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/insurancenumber"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

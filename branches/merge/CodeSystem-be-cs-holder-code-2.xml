@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-holder-code-2"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-holder-code-2"/>
+  <version value="1.0.0"/>
+  <name value="BeCSHolderCode2"/>
+  <title value="Insurability code CT2"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="23"/>
+  <concept>
+    <code value="000"/>
+  </concept>
+  <concept>
+    <code value="100"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+  </concept>
+  <concept>
+    <code value="111"/>
+  </concept>
+  <concept>
+    <code value="114"/>
+  </concept>
+  <concept>
+    <code value="120"/>
+  </concept>
+  <concept>
+    <code value="121"/>
+  </concept>
+  <concept>
+    <code value="130"/>
+  </concept>
+  <concept>
+    <code value="131"/>
+  </concept>
+  <concept>
+    <code value="140"/>
+  </concept>
+  <concept>
+    <code value="141"/>
+  </concept>
+  <concept>
+    <code value="144"/>
+  </concept>
+  <concept>
+    <code value="150"/>
+  </concept>
+  <concept>
+    <code value="151"/>
+  </concept>
+  <concept>
+    <code value="460"/>
+  </concept>
+  <concept>
+    <code value="461"/>
+  </concept>
+  <concept>
+    <code value="464"/>
+  </concept>
+  <concept>
+    <code value="481"/>
+  </concept>
+  <concept>
+    <code value="701"/>
+  </concept>
+  <concept>
+    <code value="900"/>
+  </concept>
+  <concept>
+    <code value="901"/>
+  </concept>
+  <concept>
+    <code value="911"/>
+  </concept>
+</CodeSystem>

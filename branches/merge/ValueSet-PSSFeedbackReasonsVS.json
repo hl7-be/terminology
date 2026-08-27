@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PSSFeedbackReasonsVS",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"
+  }],
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/PSSFeedbackReasonsVS",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.13"
+  }],
+  "version" : "1.1.0",
+  "name" : "PSSFeedbackReasonsVS",
+  "title" : "PSS Feedback Code Reasons",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-02-27T16:08:13+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback code reasons for PSS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/PSSaFeedbackReasons"
+    },
+    {
+      "system" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/PSSrFeedbackReasons"
+    }]
+  }
+}

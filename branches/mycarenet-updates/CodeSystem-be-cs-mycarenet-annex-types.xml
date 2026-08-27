@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-mycarenet-annex-types"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-annex-types"/>
+  <version value="2.1.2"/>
+  <name value="BeCSMyCareNetAnnexTypes"/>
+  <title value="MyCareNet Annex types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-10T09:50:54+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="functional-report"/>
+    <display value="functional-report"/>
+  </concept>
+  <concept>
+    <code value="medical-report"/>
+    <display value="medical-report"/>
+  </concept>
+  <concept>
+    <code value="physiotherapist-report"/>
+    <display value="physiotherapist-report"/>
+  </concept>
+  <concept>
+    <code value="cra-justification"/>
+    <display value="cra-justification"/>
+  </concept>
+  <concept>
+    <code value="scoliosis-protocol"/>
+    <display value="scoliosis-protocol"/>
+  </concept>
+  <concept>
+    <code value="rheumatology-report"/>
+    <display value="rheumatology-report"/>
+  </concept>
+  <concept>
+    <code value="radiology-protocol"/>
+    <display value="radiology-protocol"/>
+  </concept>
+  <concept>
+    <code value="mevs-results"/>
+    <display value="mevs-results"/>
+  </concept>
+  <concept>
+    <code value="perimetry-lymphoscintigraphy-results"/>
+    <display value="perimetry-lymphoscintigraphy-results"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+  </concept>
+  <concept>
+    <code value="776100"/>
+    <display value="7.76.1 - Sequelae of female genital mutilation"/>
+  </concept>
+  <concept>
+    <code value="776201"/>
+    <display value="7.76.2 - Support for transidentity"/>
+  </concept>
+  <concept>
+    <code value="776601"/>
+    <display value="7.76.6 - Pediatric rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="776001"/>
+    <display value="7.76.0 - AIDS and HIV"/>
+  </concept>
+  <concept>
+    <code value="778101"/>
+    <display value="7.78.1 - Memory clinic"/>
+  </concept>
+  <concept>
+    <code value="781501"/>
+    <display value="7.81.5 - Severe chronic respiratory conditions"/>
+  </concept>
+  <concept>
+    <code value="781001"/>
+    <display value="7.81.x - Long-term oxygen therapy at home"/>
+  </concept>
+  <concept>
+    <code value="782101"/>
+    <display value="7.82.1 - Cardiac rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="782501"/>
+    <display value="7.82.5 - Support in case of unwanted pregnancy"/>
+  </concept>
+  <concept>
+    <code value="783101"/>
+    <display value="7.83.1 - Unexpected and unexplained death of a child under 18 months"/>
+  </concept>
+  <concept>
+    <code value="783501"/>
+    <display value="7.83.5 - Sudden death monitoring"/>
+  </concept>
+  <concept>
+    <code value="783601"/>
+    <display value="7.83.6 - Children born prematurely"/>
+  </concept>
+  <concept>
+    <code value="784501"/>
+    <display value="7.84.5 - Pediatric neuropsychiatric rehabilitation"/>
+  </concept>
+  <concept>
+    <code value="785201"/>
+    <display value="7.85.2 - Home ventilatory assistance"/>
+  </concept>
+  <concept>
+    <code value="785301"/>
+    <display value="7.85.3 - Home ventilatory assistance - obesity-hypoventilation syndrome"/>
+  </concept>
+  <concept>
+    <code value="785001"/>
+    <display value="7.85.x - Obstructive sleep apnea"/>
+  </concept>
+  <concept>
+    <code value="786501"/>
+    <display value="7.86.5 - Insulin pump"/>
+  </concept>
+  <concept>
+    <code value="786701"/>
+    <display value="7.86.7 - Self-regulation of diabetes in children"/>
+  </concept>
+  <concept>
+    <code value="786801"/>
+    <display value="7.86.8 - Clinics of diabetic foot"/>
+  </concept>
+  <concept>
+    <code value="786901"/>
+    <display value="7.86.9 - Advanced or expensive technologies in a specialized center"/>
+  </concept>
+  <concept>
+    <code value="786001"/>
+    <display value="7.86.x - Self-management of adult diabetic patients"/>
+  </concept>
+  <concept>
+    <code value="789101"/>
+    <display value="7.89.1 - Cystic fibrosis"/>
+  </concept>
+  <concept>
+    <code value="789201"/>
+    <display value="7.89.2 - Neuromuscular disease"/>
+  </concept>
+  <concept>
+    <code value="789301"/>
+    <display value="7.89.3 - Intractable epilepsy"/>
+  </concept>
+  <concept>
+    <code value="789401"/>
+    <display value="7.89.4 - Chronic fatigue syndrome (CFS)"/>
+  </concept>
+  <concept>
+    <code value="789501"/>
+    <display value="7.89.5 - Cerebral palsy"/>
+  </concept>
+  <concept>
+    <code value="789551"/>
+    <display value="7.89.55 - IMOC - Spina-Bifida"/>
+  </concept>
+  <concept>
+    <code value="789701"/>
+    <display value="7.89.7 - Pediatric nephrology"/>
+  </concept>
+  <concept>
+    <code value="789801"/>
+    <display value="7.89.8 - Hemophilia"/>
+  </concept>
+  <concept>
+    <code value="789901"/>
+    <display value="7.89.9 - Lymphedema"/>
+  </concept>
+  <concept>
+    <code value="789001"/>
+    <display value="7.89.0 - Rare hereditary monogenic metabolic disease"/>
+  </concept>
+  <concept>
+    <code value="950"/>
+    <display value="9.50 - General locomotor rehabilitation centers"/>
+  </concept>
+  <concept>
+    <code value="951"/>
+    <display value="9.51 - Conventions R30 - R60"/>
+  </concept>
+  <concept>
+    <code value="resth-in"/>
+    <display value="Retirement home - (Re)admission/transfer/change category-scale/extension"/>
+  </concept>
+  <concept>
+    <code value="resth-out"/>
+    <display value="Retirement home - Closure"/>
+  </concept>
+  <concept>
+    <code value="psyh-in"/>
+    <display value="Psychiatric home - Admission/extension"/>
+  </concept>
+  <concept>
+    <code value="psyh-out"/>
+    <display value="Psychiatric home - Closure"/>
+  </concept>
+  <concept>
+    <code value="ihp-in"/>
+    <display value="Sheltered living - Admission/extension"/>
+  </concept>
+  <concept>
+    <code value="ihp-out"/>
+    <display value="Sheltered living - Closure"/>
+  </concept>
+</CodeSystem>

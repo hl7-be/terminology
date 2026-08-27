@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeRouteOfAdministrationVS"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeRouteOfAdministrationVS"/>
+  <version value="1.1.0"/>
+  <name value="BeRouteOfAdministrationVS"/>
+  <title value="Route of Administration ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:28:44+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO); Belgium is a member of IHTSDO. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="738982001"/>
+        <display value="Oromucosal use"/>
+      </concept>
+      <concept>
+        <code value="54471007"/>
+        <display value="Buccal use"/>
+      </concept>
+      <concept>
+        <code value="448598008"/>
+        <display value="Cutaneous use"/>
+      </concept>
+      <concept>
+        <code value="372449004"/>
+        <display value="Dental use"/>
+      </concept>
+      <concept>
+        <code value="372450004"/>
+        <display value="Endocervical use"/>
+      </concept>
+      <concept>
+        <code value="372451000"/>
+        <display value="Endosinusial use"/>
+      </concept>
+      <concept>
+        <code value="372452007"/>
+        <display value="Endotracheopulmonary use"/>
+      </concept>
+      <concept>
+        <code value="417985001"/>
+        <display value="Intestinal use"/>
+      </concept>
+      <concept>
+        <code value="764723001"/>
+        <display value="Epilesional use"/>
+      </concept>
+      <concept>
+        <code value="372453002"/>
+        <display value="Extraamniotic use"/>
+      </concept>
+      <concept>
+        <code value="766790006"/>
+        <display value="Haemodialysis"/>
+      </concept>
+      <concept>
+        <code value="714743009"/>
+        <display value="Extracorporeal use"/>
+      </concept>
+      <concept>
+        <code value="372454008"/>
+        <display value="Gastroenteral use"/>
+      </concept>
+      <concept>
+        <code value="372457001"/>
+        <display value="Gingival use"/>
+      </concept>
+      <concept>
+        <code value="718329006"/>
+        <display value="Infiltration"/>
+      </concept>
+      <concept>
+        <code value="372458006"/>
+        <display value="Intraamniotic use"/>
+      </concept>
+      <concept>
+        <code value="58100008"/>
+        <display value="Intraarterial use"/>
+      </concept>
+      <concept>
+        <code value="12130007"/>
+        <display value="Intraarticular use"/>
+      </concept>
+      <concept>
+        <code value="372459003"/>
+        <display value="Intrabursal use"/>
+      </concept>
+      <concept>
+        <code value="418821007"/>
+        <display value="Intracameral use"/>
+      </concept>
+      <concept>
+        <code value="372460008"/>
+        <display value="Intracardiac use"/>
+      </concept>
+      <concept>
+        <code value="418331006"/>
+        <display value="Intracartilaginous use"/>
+      </concept>
+      <concept>
+        <code value="372461007"/>
+        <display value="Intracavernous use"/>
+      </concept>
+      <concept>
+        <code value="446540005"/>
+        <display value="Intracerebral use"/>
+      </concept>
+      <concept>
+        <code value="420719007"/>
+        <display value="Intracerebroventricular use"/>
+      </concept>
+      <concept>
+        <code value="372462000"/>
+        <display value="Intracervical use"/>
+      </concept>
+      <concept>
+        <code value="58761000052107"/>
+        <display value="Intracholangiopancreatic use"/>
+      </concept>
+      <concept>
+        <code value="418892005"/>
+        <display value="Intracisternal use"/>
+      </concept>
+      <concept>
+        <code value="418608002"/>
+        <display value="Intracorneal use"/>
+      </concept>
+      <concept>
+        <code value="372463005"/>
+        <display value="Intracoronary use"/>
+      </concept>
+      <concept>
+        <code value="372464004"/>
+        <display value="Intradermal use"/>
+      </concept>
+      <concept>
+        <code value="372465003"/>
+        <display value="Intradiscal use"/>
+      </concept>
+      <concept>
+        <code value="448077001"/>
+        <display value="Intraepidermal use"/>
+      </concept>
+      <concept>
+        <code value="445768003"/>
+        <display value="Gastric use"/>
+      </concept>
+      <concept>
+        <code value="58751000052109"/>
+        <display value="Intraglandular use"/>
+      </concept>
+      <concept>
+        <code value="372466002"/>
+        <display value="Intralesional use"/>
+      </concept>
+      <concept>
+        <code value="372467006"/>
+        <display value="Intralymphatic use"/>
+      </concept>
+      <concept>
+        <code value="447121004"/>
+        <display value="Intramammary use"/>
+      </concept>
+      <concept>
+        <code value="78421000"/>
+        <display value="Intramuscular use"/>
+      </concept>
+      <concept>
+        <code value="372468001"/>
+        <display value="Intraocular use"/>
+      </concept>
+      <concept>
+        <code value="417255000"/>
+        <display value="Intraosseous use"/>
+      </concept>
+      <concept>
+        <code value="445771006"/>
+        <display value="Intrapericardial use"/>
+      </concept>
+      <concept>
+        <code value="38239002"/>
+        <display value="Intraperitoneal use"/>
+      </concept>
+      <concept>
+        <code value="372469009"/>
+        <display value="Intrapleural use"/>
+      </concept>
+      <concept>
+        <code value="58771000052103"/>
+        <display value="Intraportal use"/>
+      </concept>
+      <concept>
+        <code value="419810008"/>
+        <display value="Intraprostatic use"/>
+      </concept>
+      <concept>
+        <code value="420201002"/>
+        <display value="Intrapulmonary use"/>
+      </concept>
+      <concept>
+        <code value="372470005"/>
+        <display value="Intrasternal use"/>
+      </concept>
+      <concept>
+        <code value="72607000"/>
+        <display value="Intrathecal use"/>
+      </concept>
+      <concept>
+        <code value="447122006"/>
+        <display value="Intratumoral use"/>
+      </concept>
+      <concept>
+        <code value="62226000"/>
+        <display value="Intrauterine use"/>
+      </concept>
+      <concept>
+        <code value="47625008"/>
+        <display value="Intravenous use"/>
+      </concept>
+      <concept>
+        <code value="420287000"/>
+        <display value="Intraventricular use"/>
+      </concept>
+      <concept>
+        <code value="372471009"/>
+        <display value="Intravesical use"/>
+      </concept>
+      <concept>
+        <code value="418401004"/>
+        <display value="Intravitreal use"/>
+      </concept>
+      <concept>
+        <code value="420185003"/>
+        <display value="Laryngopharyngeal use"/>
+      </concept>
+      <concept>
+        <code value="46713006"/>
+        <display value="Nasal use"/>
+      </concept>
+      <concept>
+        <code value="385432009"/>
+        <display value="Route of administration not applicable"/>
+      </concept>
+      <concept>
+        <code value="372472002"/>
+        <display value="Oculonasal use"/>
+      </concept>
+      <concept>
+        <code value="54485002"/>
+        <display value="Ocular use"/>
+      </concept>
+      <concept>
+        <code value="26643006"/>
+        <display value="Oral use"/>
+      </concept>
+      <concept>
+        <code value="418664002"/>
+        <display value="Oropharyngeal use"/>
+      </concept>
+      <concept>
+        <code value="10547007"/>
+        <display value="Auricular use"/>
+      </concept>
+      <concept>
+        <code value="419165009"/>
+        <display value="Paravertebral use"/>
+      </concept>
+      <concept>
+        <code value="372474001"/>
+        <display value="Periarticular use"/>
+      </concept>
+      <concept>
+        <code value="447080003"/>
+        <display value="Epidural use"/>
+      </concept>
+      <concept>
+        <code value="372475000"/>
+        <display value="Perineural use"/>
+      </concept>
+      <concept>
+        <code value="447052000"/>
+        <display value="Periodontal use"/>
+      </concept>
+      <concept>
+        <code value="420047004"/>
+        <display value="Periosseous use"/>
+      </concept>
+      <concept>
+        <code value="58811000052103"/>
+        <display value="Peritumoral use"/>
+      </concept>
+      <concept>
+        <code value="58821000052106"/>
+        <display value="Posterior juxtascleral use"/>
+      </concept>
+      <concept>
+        <code value="37161004"/>
+        <display value="Rectal use"/>
+      </concept>
+      <concept>
+        <code value="447694001"/>
+        <display value="Inhalation use"/>
+      </concept>
+      <concept>
+        <code value="418321004"/>
+        <display value="Retrobulbar use"/>
+      </concept>
+      <concept>
+        <code value="372476004"/>
+        <display value="Subconjunctival use"/>
+      </concept>
+      <concept>
+        <code value="34206005"/>
+        <display value="Subcutaneous use"/>
+      </concept>
+      <concept>
+        <code value="37839007"/>
+        <display value="Sublingual use"/>
+      </concept>
+      <concept>
+        <code value="419874009"/>
+        <display value="Submucosal use"/>
+      </concept>
+      <concept>
+        <code value="58831000052108"/>
+        <display value="Subretinal use"/>
+      </concept>
+      <concept>
+        <code value="6064005"/>
+        <display value="Local use"/>
+      </concept>
+      <concept>
+        <code value="45890007"/>
+        <display value="Transdermal use"/>
+      </concept>
+      <concept>
+        <code value="90028008"/>
+        <display value="Urethral use"/>
+      </concept>
+      <concept>
+        <code value="16857009"/>
+        <display value="Vaginal use"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

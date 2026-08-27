@@ -1,0 +1,98 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationLineAdherenceStatus",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatus",
+  "title" : "Medication Line Adherence Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-10T13:28:44+02:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication Line Adherence Status - ValueSet.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "taking",
+    "display" : "Taking",
+    "definition" : "The medication is being taken.",
+    "concept" : [{
+      "code" : "taking-as-directed",
+      "display" : "Taking As Directed",
+      "definition" : "The medication is being taken as directed."
+    },
+    {
+      "code" : "taking-not-as-directed",
+      "display" : "Taking Not As Directed",
+      "definition" : "The medication is not being taken as directed."
+    }]
+  },
+  {
+    "code" : "not-taking",
+    "display" : "Not Taking",
+    "definition" : "The medication is not being taken.",
+    "concept" : [{
+      "code" : "on-hold",
+      "display" : "On Hold",
+      "definition" : "The medication is on hold.",
+      "concept" : [{
+        "code" : "on-hold-as-directed",
+        "display" : "On Hold As Directed",
+        "definition" : "The medication is on hold as directed."
+      },
+      {
+        "code" : "on-hold-not-as-directed",
+        "display" : "On Hold Not As Directed",
+        "definition" : "The medication is on hold not as directed."
+      }]
+    },
+    {
+      "code" : "stopped",
+      "display" : "Stopped",
+      "definition" : "The medication is stopped.",
+      "concept" : [{
+        "code" : "stopped-as-directed",
+        "display" : "Stopped As Directed",
+        "definition" : "The medication is stopped as directed."
+      },
+      {
+        "code" : "stopped-not-as-directed",
+        "display" : "Stopped Not As Directed",
+        "definition" : "The medication is stopped not as directed."
+      }]
+    }]
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "Whether the medication is being taken or not is not currently known."
+  }]
+}

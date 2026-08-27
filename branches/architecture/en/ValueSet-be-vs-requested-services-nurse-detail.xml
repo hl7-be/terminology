@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-requested-services-nurse-detail"/>
+  <language value="en"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse-detail"/>
+  <version value="1.0.0"/>
+  <name value="BeVSRequestedServicesNurseDetail"/>
+  <title value="BeVSRequestedServicesNurseDetail"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - Codes indicating the request details that can be asked from a nurse."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="118292001"/>
+      </concept>
+      <concept>
+        <code value="162098000"/>
+      </concept>
+      <concept>
+        <code value="163033001"/>
+      </concept>
+      <concept>
+        <code value="163034007"/>
+      </concept>
+      <concept>
+        <code value="173765009"/>
+      </concept>
+      <concept>
+        <code value="176192000"/>
+      </concept>
+      <concept>
+        <code value="182524008"/>
+      </concept>
+      <concept>
+        <code value="18949003"/>
+      </concept>
+      <concept>
+        <code value="225103006"/>
+      </concept>
+      <concept>
+        <code value="225150002"/>
+      </concept>
+      <concept>
+        <code value="225908003"/>
+      </concept>
+      <concept>
+        <code value="226007004"/>
+      </concept>
+      <concept>
+        <code value="2267008"/>
+      </concept>
+      <concept>
+        <code value="241025004"/>
+      </concept>
+      <concept>
+        <code value="246124003"/>
+      </concept>
+      <concept>
+        <code value="247450001"/>
+      </concept>
+      <concept>
+        <code value="248343001"/>
+      </concept>
+      <concept>
+        <code value="256897009"/>
+      </concept>
+      <concept>
+        <code value="262061000"/>
+      </concept>
+      <concept>
+        <code value="262068006"/>
+      </concept>
+      <concept>
+        <code value="30549001"/>
+      </concept>
+      <concept>
+        <code value="335353000"/>
+      </concept>
+      <concept>
+        <code value="35963001"/>
+      </concept>
+      <concept>
+        <code value="364632003"/>
+      </concept>
+      <concept>
+        <code value="364689004"/>
+      </concept>
+      <concept>
+        <code value="36777000"/>
+      </concept>
+      <concept>
+        <code value="370858005"/>
+      </concept>
+      <concept>
+        <code value="37318803"/>
+      </concept>
+      <concept>
+        <code value="3895009"/>
+      </concept>
+      <concept>
+        <code value="390951007"/>
+      </concept>
+      <concept>
+        <code value="39477002"/>
+      </concept>
+      <concept>
+        <code value="408342007"/>
+      </concept>
+      <concept>
+        <code value="410021007"/>
+      </concept>
+      <concept>
+        <code value="410379003"/>
+      </concept>
+      <concept>
+        <code value="410582009"/>
+      </concept>
+      <concept>
+        <code value="410619003"/>
+      </concept>
+      <concept>
+        <code value="41351007"/>
+      </concept>
+      <concept>
+        <code value="415882003"/>
+      </concept>
+      <concept>
+        <code value="431314004"/>
+      </concept>
+      <concept>
+        <code value="445606007"/>
+      </concept>
+      <concept>
+        <code value="450969007"/>
+      </concept>
+      <concept>
+        <code value="45710003"/>
+      </concept>
+      <concept>
+        <code value="467848007"/>
+      </concept>
+      <concept>
+        <code value="48817005"/>
+      </concept>
+      <concept>
+        <code value="55449009"/>
+      </concept>
+      <concept>
+        <code value="6125005"/>
+      </concept>
+      <concept>
+        <code value="698610002"/>
+      </concept>
+      <concept>
+        <code value="699826006"/>
+      </concept>
+      <concept>
+        <code value="75325006"/>
+      </concept>
+      <concept>
+        <code value="75367002"/>
+      </concept>
+      <concept>
+        <code value="762238003"/>
+      </concept>
+      <concept>
+        <code value="78014005"/>
+      </concept>
+      <concept>
+        <code value="791006"/>
+      </concept>
+      <concept>
+        <code value="79165006"/>
+      </concept>
+      <concept>
+        <code value="79710002"/>
+      </concept>
+      <concept>
+        <code value="81011003"/>
+      </concept>
+      <concept>
+        <code value="8499008"/>
+      </concept>
+      <concept>
+        <code value="86290005"/>
+      </concept>
+      <concept>
+        <code value="87612001"/>
+      </concept>
+      <concept>
+        <code value="87750000"/>
+      </concept>
+      <concept>
+        <code value="89826002"/>
+      </concept>
+      <concept>
+        <code value="90838004"/>
+      </concept>
+      <concept>
+        <code value="337414009"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-riskmanifestation"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-riskmanifestation"/>
+  <version value="1.0.0"/>
+  <name value="BeRiskManifestation"/>
+  <title value="BeRiskManifestation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T09:03:57+00:00"/>
+  <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="39579001"/>
+        <display value="Anaphylaxis"/>
+      </concept>
+      <concept>
+        <code value="735173007"/>
+        <display value="Anaphylactic shock"/>
+      </concept>
+      <concept>
+        <code value="41291007"/>
+        <display value="Angio-oedema"/>
+      </concept>
+      <concept>
+        <code value="410430005"/>
+        <display value="Cardiorespiratory arrest"/>
+      </concept>
+      <concept>
+        <code value="698247007"/>
+        <display value="Cardiac arrhythmia"/>
+      </concept>
+      <concept>
+        <code value="195967001"/>
+        <display value="Asthma"/>
+      </concept>
+      <concept>
+        <code value="4386001"/>
+        <display value="Bronchospasm"/>
+      </concept>
+      <concept>
+        <code value="9826008"/>
+        <display value="Conjunctivitis"/>
+      </concept>
+      <concept>
+        <code value="91175000"/>
+        <display value="Seizure"/>
+      </concept>
+      <concept>
+        <code value="40275004"/>
+        <display value="Contact dermatitis"/>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Diarrhoea"/>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Dyspnea"/>
+      </concept>
+      <concept>
+        <code value="43116000"/>
+        <display value="Eczema"/>
+      </concept>
+      <concept>
+        <code value="271759003"/>
+        <display value="Bullous eruption"/>
+      </concept>
+      <concept>
+        <code value="247472004"/>
+        <display value="Weal"/>
+      </concept>
+      <concept>
+        <code value="271807003"/>
+        <display value="Rash / Eruption"/>
+      </concept>
+      <concept>
+        <code value="271757001"/>
+        <display value="Papular eruption"/>
+      </concept>
+      <concept>
+        <code value="297942002"/>
+        <display value="Drug-induced erythema multiforme"/>
+      </concept>
+      <concept>
+        <code value="76067001"/>
+        <display value="Sneezing"/>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fever"/>
+      </concept>
+      <concept>
+        <code value="45007003"/>
+        <display value="Low blood pressure  / hypotension"/>
+      </concept>
+      <concept>
+        <code value="422587007"/>
+        <display value="Nausea"/>
+      </concept>
+      <concept>
+        <code value="768962006"/>
+        <display value="TEN - toxic epidermal necrolysis / lyell syndrome"/>
+      </concept>
+      <concept>
+        <code value="51599000"/>
+        <display value="Oedema of larynx"/>
+      </concept>
+      <concept>
+        <code value="23924001"/>
+        <display value="Tight chest"/>
+      </concept>
+      <concept>
+        <code value="418363000"/>
+        <display value="Itching of skin"/>
+      </concept>
+      <concept>
+        <code value="70076002"/>
+        <display value="Rhinitis"/>
+      </concept>
+      <concept>
+        <code value="162290004"/>
+        <display value="Dry eyes"/>
+      </concept>
+      <concept>
+        <code value="73442001"/>
+        <display value="Stevens-Johnson syndrome"/>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Cough"/>
+      </concept>
+      <concept>
+        <code value="126485001"/>
+        <display value="Urticaria"/>
+      </concept>
+      <concept>
+        <code value="31996006"/>
+        <display value="Vasculitis"/>
+      </concept>
+      <concept>
+        <code value="1985008"/>
+        <display value="Vomitus"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

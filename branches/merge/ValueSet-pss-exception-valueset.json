@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "pss-exception-valueset",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset"
+  }],
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/pss-exception-valueset",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.14"
+  }],
+  "version" : "1.1.0",
+  "name" : "PSSExceptionValueSet",
+  "title" : "PSS Exception ValueSet",
+  "status" : "active",
+  "date" : "2026-02-27T16:08:13+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet including exception codes for Patient Summary (PSS).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/pss-exception-codes"
+    }]
+  }
+}

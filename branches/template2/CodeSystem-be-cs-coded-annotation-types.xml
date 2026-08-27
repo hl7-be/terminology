@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-coded-annotation-types"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"/>
+  <version value="1.0.0"/>
+  <name value="BeCSCodedAnnotationTypes"/>
+  <title value="Coded Annotation Type Codes"/>
+  <status value="active"/>
+  <date value="2022-09-08T14:31:01+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code System for specific types of coded annotations"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="lab-test-accreditation"/>
+    <display value="Laboratory Test Accreditation"/>
+    <definition value="Test disclaimer with the report"/>
+  </concept>
+  <concept>
+    <code value="lab-test-subcontractor"/>
+    <display value="Laboratory Test subcontractor"/>
+    <definition value="Laboratory Test subcontractor"/>
+  </concept>
+  <concept>
+    <code value="lab-referencerange-comment"/>
+    <display value="Comment on laboratory reference range"/>
+    <definition value="Comment on reference range"/>
+  </concept>
+</CodeSystem>

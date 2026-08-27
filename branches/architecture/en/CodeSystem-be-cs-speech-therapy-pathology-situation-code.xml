@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-speech-therapy-pathology-situation-code"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code"/>
+  <version value="1.0.0"/>
+  <name value="BeCSSpeechTherapyPathologySituationCode"/>
+  <title value="Speech Therapy Pathology Situation code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-17T19:22:03+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Texte de la nomenclature (Article 36, par. 2)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="a"/>
+    <display value="Oral language and/or speech disorders"/>
+  </concept>
+  <concept>
+    <code value="b1"/>
+    <display value="Aphasia"/>
+  </concept>
+  <concept>
+    <code value="b2"/>
+    <display value="Development of receptive and/or expressive language"/>
+  </concept>
+  <concept>
+    <code value="b3"/>
+    <display value="Dyslexia/dysorthography/dyscalculia"/>
+  </concept>
+  <concept>
+    <code value="b4"/>
+    <display value="Cleft lip, palate or alveolar"/>
+  </concept>
+  <concept>
+    <code value="b5"/>
+    <display value="Radiotherapy or surgery (head/neck)"/>
+  </concept>
+  <concept>
+    <code value="b6-1"/>
+    <display value="Traumatic or proliferative dysglossias"/>
+  </concept>
+  <concept>
+    <code value="b6-2"/>
+    <display value="Dysarthria"/>
+  </concept>
+  <concept>
+    <code value="b6-3"/>
+    <display value="Chronic speech disorders"/>
+  </concept>
+  <concept>
+    <code value="b6-4"/>
+    <display value="Stuttering"/>
+  </concept>
+  <concept>
+    <code value="b6-5"/>
+    <display value="Interceptive orthodontic treatment"/>
+  </concept>
+  <concept>
+    <code value="c1"/>
+    <display value="Laryngectomy"/>
+  </concept>
+  <concept>
+    <code value="c2"/>
+    <display value="Dysfunction of the larynx and/or vocal chords"/>
+  </concept>
+  <concept>
+    <code value="d"/>
+    <display value="Hearing problems"/>
+  </concept>
+  <concept>
+    <code value="e"/>
+    <display value="Dysphagia"/>
+  </concept>
+  <concept>
+    <code value="f"/>
+    <display value="Dysphasia"/>
+  </concept>
+  <concept>
+    <code value="g"/>
+    <display value="Locked-in Syndrome"/>
+  </concept>
+</CodeSystem>

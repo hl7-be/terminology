@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-score"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"/>
+  <version value="1.0.0"/>
+  <name value="BeVSScore"/>
+  <title value="Score Value Set"/>
+  <status value="active"/>
+  <date value="2020-10-01T11:01:09+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes as defined by the NIHDI. Dutch translations are expected for a next release."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="763117005"/>
+        <display value="FINDRISC (Finnish Diabetes Risk Score) score"/>
+        <designation>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Finnish Diabetes Risk Score (observable entity)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Finnish Diabetes Risk Score"/>
+        </designation>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Finnish Diabetes Risk Score"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="446661009"/>
+        <display value="Visual Analogic Scale for pain assessment"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="(EVA) Echelle Visuelle Analogique"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="273531005"/>
+        <display value="Index of Independence in Activities of Daily Living"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Grille d'évaluation de l'autonomie pour les activités basales de la vie quotidienne"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="447316007"/>
+        <display value="Mini-Mental State Examination"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Examen mental de Folstein"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="444297006"/>
+        <display value="Malnutrition Universal Screening"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Malnutrition Universal Screening"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="443133008"/>
+        <display value="Norton Pressure Sore Risk-Assessment Scale Scoring System"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="évaluation du risque d'escarre"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7121000122100"/>
+        <display value="Pain Assessment in Advanced Dementia Scale"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Hétéro-évaluation de la douleur chez la personne âgée non communicante"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="273849003"/>
+        <display value="Subjective Global Assessment"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Subjective Global Assessment"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="450738001"/>
+        <display value="Timed Chair Stand"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="évaluation des risques de chutes et la force musculaire des membres inférieurs"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="444680009"/>
+        <display value="Timed Up&amp;Go : évalue le risque de chute chez une personne"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Timed Up&amp;Go : évalue le risque de chute chez une personne"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="278897004"/>
+        <display value="Waterlow pressure ulcer risk assessment"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="(WATERLOW) Echelle d'évaluation du risque d'escarre"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="763259004"/>
+        <display value="Disease Activity Score"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="(DAS) Score d'activité de la polyarthrite rhumatoïde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="273364009"/>
+        <display value="Clinical Disease Activity Index"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="(CDAI) Indice d'activité de la polyarthrite rhumatoïde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="443318007"/>
+        <display value="Tinetti balance and gait scale"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="évalue le risque de chute chez une personne âgée"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719124004"/>
+        <display value="Arthritis Impact Measurement Scales 2 (AIMS2)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="(EMIR) Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"/>
+    </include>
+  </compose>
+</ValueSet>

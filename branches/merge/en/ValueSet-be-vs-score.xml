@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-score"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-score"/>
+  <version value="1.0.0"/>
+  <name value="BeVSScore"/>
+  <title value="Score Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Codes as defined by the NIHDI. Dutch translations are expected for a next release."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="763117005"/>
+        <display value="FINDRISC (Finnish Diabetes Risk Score) score"/>
+      </concept>
+      <concept>
+        <code value="446661009"/>
+        <display value="Visual analog scale score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="273531005"/>
+        <display value="Index of Independence in Activities of Daily Living"/>
+      </concept>
+      <concept>
+        <code value="447316007"/>
+        <display value="Mini-mental state examination score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="444297006"/>
+        <display value="Malnutrition universal screening tool score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="443133008"/>
+        <display value="Norton pressure sore risk score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="7121000122100"/>
+        <display value="Pain Assessment in Advanced Dementia Scale"/>
+      </concept>
+      <concept>
+        <code value="273849003"/>
+        <display value="Subjective Global Assessment"/>
+      </concept>
+      <concept>
+        <code value="450738001"/>
+        <display value="Thirty second chair stand test score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="444680009"/>
+        <display value="Timed up and go mobility test score (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="278897004"/>
+        <display value="Waterlow pressure sore risk score"/>
+      </concept>
+      <concept>
+        <code value="273364009"/>
+        <display value="Crohn's disease activity index"/>
+      </concept>
+      <concept>
+        <code value="443318007"/>
+        <display value="Tinetti balance and gait scale"/>
+      </concept>
+      <concept>
+        <code value="719124004"/>
+        <display value="Arthritis Impact Measurement Scales 2 score (observable entity)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score"/>
+    </include>
+  </compose>
+</ValueSet>
