@@ -10,4 +10,4 @@ Description: "Body topography value set - describes the location or relative pos
 * ^status = #active
 * ^experimental = false
 
-* include codes from system SNOMED_CT where concept is-a #106233006
+* include codes from system SNOMED_CT where concept member-of #211201000172100
