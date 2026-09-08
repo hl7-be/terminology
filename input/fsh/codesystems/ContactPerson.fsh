@@ -2,8 +2,6 @@ CodeSystem: ContactPerson
 Id: cd-contact-person
 Title: "BeCdContactPerson"
 Description: "Contact person in Belgium."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cd-contact-person"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

@@ -2,8 +2,6 @@ ValueSet: BeVSGenderAtBirth
 Id: be-vs-gender-at-birth
 Title: "List of possible genders at birth in Belgium"
 Description: "BeVSGenderAtBirth"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-gender-at-birth"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "eHealth Platform"

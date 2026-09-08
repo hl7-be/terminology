@@ -6,9 +6,7 @@ Description: "Reaction Manifestation Code (Allergy - Immunization)"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-reaction-manifestation-code"
 
-* ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
 

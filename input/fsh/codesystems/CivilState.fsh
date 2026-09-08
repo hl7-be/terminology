@@ -2,8 +2,6 @@ CodeSystem: CivilState
 Id: cd-civilstate
 Title: "BeCdCivilState"
 Description: "Civil state in Belgium."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cd-civilstate"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

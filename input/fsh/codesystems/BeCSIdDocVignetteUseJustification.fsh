@@ -12,7 +12,6 @@ Description: "RT52Z11 in https://www.inami.fgov.be/SiteCollectionDocuments/instr
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
-* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete

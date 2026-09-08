@@ -6,8 +6,6 @@ Description: "Score Category"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score-category"
-* ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

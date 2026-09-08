@@ -2,8 +2,6 @@ CodeSystem: Cdfedcountry
 Id: cd-fed-country
 Title: "BeCdFedCountry"
 Description: "FedICT country codes."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cd-fed-country"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

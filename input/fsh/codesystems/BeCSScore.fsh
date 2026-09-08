@@ -6,8 +6,6 @@ Description: "Codes as defined initially by the NIHDI. Dutch translations were n
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score"
-* ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

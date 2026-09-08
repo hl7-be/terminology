@@ -2,8 +2,6 @@ ValueSet: BeVSAllergyIntoleranceType
 Id: be-vs-allergyintolerance-type
 Title: "BeVSAllergyIntoleranceType"
 Description: "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-allergyintolerance-type"
-* ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "eHealth Platform"

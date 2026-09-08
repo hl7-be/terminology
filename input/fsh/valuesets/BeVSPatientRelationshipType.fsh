@@ -2,8 +2,6 @@ ValueSet: BeVSPatientRelationshipType
 Id: be-vs-patient-relationship-type
 Title: "BeVSPatientRelationshipType"
 Description: "Describes the patient relationship type (the relation between the patient and the person implied)"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-patient-relationship-type"
-* ^version = "2.1.2"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "eHealth Platform"

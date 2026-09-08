@@ -12,7 +12,6 @@ Description: "Annex 16.15 (2.C) in https://www.inami.fgov.be/SiteCollectionDocum
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
-* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 // * ^date = "2025-02-17T19:22:03+01:00"

@@ -2,8 +2,6 @@ ValueSet: BeCivilstate
 Id: be-civilstate
 Title: "BeCivilState"
 Description: "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/CD-CIVILSTATE for the Belgian specific code."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-civilstate"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "eHealth Platform"

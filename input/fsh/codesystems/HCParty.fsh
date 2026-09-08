@@ -2,8 +2,6 @@ CodeSystem: HCParty
 Id: cd-hcparty
 Title: "BeCdHcParty"
 Description: "healthcare party in Belgium."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cd-hcparty"
-* ^version = "2.1.2"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

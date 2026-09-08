@@ -12,7 +12,6 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
-* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * include codes from system BeCSSpeechTherapyPathologySituationCode

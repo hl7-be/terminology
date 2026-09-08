@@ -15,7 +15,6 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
 * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/waitingforinformation-values"
 
 * ^status = #active
 * ^experimental = false
