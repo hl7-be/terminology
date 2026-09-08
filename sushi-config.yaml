@@ -220,6 +220,15 @@ menu:
 #  Downloads: downloads.html
 #  Changes: changes.html
 #  History: ../history.html
+  Guidance:
+  Artifacts:
+    All artifacts: artifacts.html
+    Value Sets: artifacts.html#1
+    Code Systems: artifacts.html#2
+    Naming Systems: artifacts.html#3
+    Concept Maps: artifacts.html#4
+  Downloads: downloads.html
+  Copyright: copyright.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -237,7 +246,7 @@ parameters:
   apply-contact: false
   apply-context: false
   apply-copyright: false
-  apply-jurisdiction: false
+  apply-jurisdiction: true
   apply-publisher: false
   apply-version: true
   apply-wg: false
