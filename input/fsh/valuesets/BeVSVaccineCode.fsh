@@ -258,7 +258,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 // * $sct#871891001 ^designation[+].language = #en
 // * $sct#871891001 ^designation[=].value = "Diphtheria and hepatitis B and acellular pertussis and inactivated poliomyelitis and tetanus vaccine"
 * $sct#871895005 "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)"
-* $sct#871895005 ^designation[0].language = #fr-BE
+//* $sct#871895005 ^designation[0].language = #fr-BE
 // * $sct#871895005 ^designation[=].value = "vaccin hexavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite, l'Haemophilus influenzae de type B et l'hépatite B"
 // * $sct#871895005 ^designation[+].language = #nl-BE
 // * $sct#871895005 ^designation[=].value = "Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b + hepatitis B"
@@ -313,6 +313,13 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 // * $sct#1252709000 ^designation[=].value = "Pneumokokken 20 types"
 // * $sct#1252709000 ^designation[+].language = #en
 // * $sct#1252709000 ^designation[=].value = "Pneumococcal 20-valent conjugate vaccine"
+* $sct#1360050007 "Vaccine product containing only Streptococcus pneumoniae Danish serotype 3, 6A, 7F, 8, 9N, 10A, 11A, 12F, 15A, de-O-acetylated 15B, 16F, 17F, 19A, 20A, 22F, 23A, 23B, 24F, 31, 33F, 35B capsular polysaccharide antigens conjugated (medicinal product)"
+// * $sct#1360050007 ^designation[0].language = #fr-BE
+// * $sct#1360050007 ^designation[=].value = "vaccin pneumococcique conjugué 21-valent"
+// * $sct#1360050007 ^designation[+].language = #nl-BE
+// * $sct#1360050007 ^designation[=].value = "Pneumokokken 21 types"
+// * $sct#1360050007 ^designation[+].language = #en
+// * $sct#1360050007 ^designation[=].value = "Pneumococcal 21-valent conjugate vaccine"
 * $sct#911000221103 "Vaccine product containing only Human papillomavirus antigen (medicinal product)"
 // * $sct#911000221103 ^designation[0].language = #fr-BE
 // * $sct#911000221103 ^designation[=].value = "vaccin contre le papillomavirus humain"
