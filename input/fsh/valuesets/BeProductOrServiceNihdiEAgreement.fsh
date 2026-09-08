@@ -20,5 +20,5 @@ Description: "NIHDI codes for use to describe eAgreement products or services in
 * ^experimental = false
 
 * include codes from system NIHDIPhysiotherapyPathologySituationCode
-* include codes from system $be-cs-speech-therapy-pathology-situation-code
+* include codes from system BeCSSpeechTherapyPathologySituationCode
 * include codes from system MyCareNetAnnexTypes

@@ -6,5 +6,6 @@ Alias: $medicationrequest-status = http://hl7.org/fhir/CodeSystem/medicationrequ
 Alias: $icd-10-cm = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $icpc-2 = http://hl7.org/fhir/sid/icpc-2
 Alias: $restful-interaction = http://hl7.org/fhir/restful-interaction
-Alias: $be-cs-speech-therapy-pathology-situation-code = https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code
+// retired: the CodeSystem now lives in this package -- reference it by name
+// Alias: $be-cs-speech-therapy-pathology-situation-code = https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code
 Alias: $sct = http://snomed.info/sct

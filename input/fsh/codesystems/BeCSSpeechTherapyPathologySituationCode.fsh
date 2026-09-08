@@ -12,7 +12,6 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
-* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 
@@ -23,6 +22,8 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * #b3 "Dyslexia/dysorthography/dyscalculia"
 * #b4 "Cleft lip, palate or alveolar"
 * #b5 "Radiotherapy or surgery (head/neck)"
+* #b5-1 "Surgical intervention (head/neck)"
+* #b5-2 "Radiotherapy intervention (head/neck)"
 * #b6-1 "Traumatic or proliferative dysglossias"
 * #b6-2 "Dysarthria"
 * #b6-3 "Chronic speech disorders"
@@ -34,3 +35,6 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * #e "Dysphagia"
 * #f "Dysphasia"
 * #g "Locked-in Syndrome"
+* #h1 "Language development disorders for patients with an IQ between 70 and 85"
+* #h2 "Dysphasia for patients with an IQ between 70 and 85"
+* #h3 "Communication disorders for patients with an IQ below 70"
