@@ -12,7 +12,7 @@ Description: "Vaccination status reason Value Set - the reasons for an vaccinati
 * ^experimental = false
 
 * include codes from system BeCSVaccinationStatusReason
-* $v3-ActReason#IMMUNE "Immune"
-* $v3-ActReason#MEDPREC "Medical Precaution"
-* $v3-ActReason#OSTOCK "Out of Stock"
-* $v3-ActReason#PATOBJ "Patient Objection"
+* $v3-ActReason#IMMUNE
+* $v3-ActReason#MEDPREC
+* $v3-ActReason#OSTOCK
+* $v3-ActReason#PATOBJ

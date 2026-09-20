@@ -14,4 +14,4 @@ Description: "Vaccine Administration Route"
 
 
 * include codes from system BeCSVaccineAdministrationRoute
-* $v3-NullFlavor#OTH "Other"
+* $v3-NullFlavor#OTH

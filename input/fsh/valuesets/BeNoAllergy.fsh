@@ -12,7 +12,7 @@ Description: "Codes as communicated by the FOD Terminology Center differentiatin
 * ^status = #active
 * ^experimental = false
 
-* $sct#716186003 "No known allergy (situation)"
+* $sct#716186003
 // * $sct#716186003 ^designation[0].use = $sct#900000000000003001 "Fully specified name"
 // * $sct#716186003 ^designation[=].value = "No known allergy (situation)"
 // * $sct#716186003 ^designation[+].language = #en
