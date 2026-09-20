@@ -14,6 +14,7 @@ Description: "RT52Z10 in https://www.inami.fgov.be/SiteCollectionDocuments/instr
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 7
 * #1

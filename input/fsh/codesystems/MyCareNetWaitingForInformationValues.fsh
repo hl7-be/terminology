@@ -19,6 +19,7 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #WFI_AGREE_ALL_001 "WFI_AGREE_ALL_001"

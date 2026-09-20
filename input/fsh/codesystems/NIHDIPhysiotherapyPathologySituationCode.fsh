@@ -19,6 +19,7 @@ Description: "Legal pathology situation codes as defined by NIHDI to be used in 
 
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 
 * ^content = #fragment

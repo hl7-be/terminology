@@ -19,6 +19,7 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 // * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/refusal-values"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #REF_AGREE_ALL_001 "REF_AGREE_ALL_001"

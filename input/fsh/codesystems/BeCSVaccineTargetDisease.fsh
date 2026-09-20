@@ -6,6 +6,7 @@ Description: "Vaccine Target Disease Code System - set of Belgian codes for dise
 
 * ^status = #draft
 * ^experimental = false
+* ^caseSensitive = true
 
 
 * ^content = #fragment 

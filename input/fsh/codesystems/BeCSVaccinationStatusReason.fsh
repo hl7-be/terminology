@@ -6,6 +6,7 @@ Description: "Vaccination reason status Code System."
 
 * ^status = #draft
 * ^experimental = false
+* ^caseSensitive = true
 
 
 * ^content = #complete

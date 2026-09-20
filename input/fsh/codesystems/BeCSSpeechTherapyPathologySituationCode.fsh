@@ -14,6 +14,7 @@ Description: "Texte de la nomenclature (Article 36, par. 2)"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #a "Oral language and/or speech disorders"

@@ -14,6 +14,7 @@ Description: "RT52Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instru
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 6
 * #1

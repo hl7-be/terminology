@@ -19,6 +19,7 @@ Description: "Message events for MyCareNet flows.Not all codes are defined here,
 
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 
 * ^content = #fragment

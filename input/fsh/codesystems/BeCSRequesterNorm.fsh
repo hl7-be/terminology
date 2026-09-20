@@ -14,6 +14,7 @@ Description: "RT50Z26 in https://www.inami.fgov.be/SiteCollectionDocuments/instr
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 
 * ^content = #complete
 * ^count = 8

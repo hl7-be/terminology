@@ -6,6 +6,7 @@ Description: "Vaccine Administration Route"
 
 * ^status = #draft
 * ^experimental = false
+* ^caseSensitive = true
 
 
 * ^content = #complete
