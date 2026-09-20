@@ -10,8 +10,9 @@ Description: "Vaccine Administration Route"
 
 * ^content = #complete
 * ^count = 7
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"
 * #IM "Intramuscular"
 * #IM ^designation[0].language = #fr-BE
 * #IM ^designation[=].value = "Intramusculaire"

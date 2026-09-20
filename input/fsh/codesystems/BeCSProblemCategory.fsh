@@ -4,8 +4,9 @@ Title: "Problem Category"
 Description: "Problem Category"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.type = #predecessor
+* ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

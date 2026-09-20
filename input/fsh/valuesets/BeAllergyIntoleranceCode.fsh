@@ -7,7 +7,8 @@ Description: "Allergy / intolerance codes as communicated by NIHDI and the FOD T
 * ^status = #active
 * ^experimental = false
 
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"
 * include codes from valueset BeCausativeAgent
 * include codes from valueset BeNoAllergy

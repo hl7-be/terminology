@@ -9,5 +9,6 @@ Description: "Vaccine Target Disease Code System - set of Belgian codes for dise
 
 
 * ^content = #fragment 
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"

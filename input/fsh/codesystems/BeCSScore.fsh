@@ -4,8 +4,9 @@ Title: "Score Code System"
 Description: "Codes as defined initially by the NIHDI. Dutch translations were not yet defined but are planned   for a next release."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.type = #predecessor
+* ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

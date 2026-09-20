@@ -10,8 +10,9 @@ Description: "Vaccination status Code System."
 
 * ^content = #complete
 * ^count = 3
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status"
 * #unconfirmed "unconfirmed"
 * #unconfirmed ^designation[0].language = #fr-BE
 * #unconfirmed ^designation[=].value = "non confirmé"

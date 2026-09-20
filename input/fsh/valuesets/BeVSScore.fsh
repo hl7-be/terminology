@@ -4,8 +4,9 @@ Title: "Score Value Set"
 Description: "Codes as defined by the NIHDI. Dutch translations are expected for a next release."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.type = #predecessor
+* ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"
 * ^status = #active
 * ^experimental = false
 

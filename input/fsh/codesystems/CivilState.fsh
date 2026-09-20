@@ -7,8 +7,9 @@ Description: "Civil state in Belgium."
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 12
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate"
 * #10 "Unmarried"
 * #10 ^designation[0].language = #en
 * #10 ^designation[=].value = "Unmarried"

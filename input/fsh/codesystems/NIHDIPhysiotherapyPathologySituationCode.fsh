@@ -12,8 +12,9 @@ Description: "Legal pathology situation codes as defined by NIHDI to be used in 
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.type = #predecessor
+* ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode"
 // * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode"
 
 * ^status = #active

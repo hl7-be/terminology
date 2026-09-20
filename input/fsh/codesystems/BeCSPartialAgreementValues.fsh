@@ -12,8 +12,9 @@
 // * ^extension[=].valueCode = #trial-use
 // * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 // * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-// * ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values"
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+// * ^extension[=].valueRelatedArtifact.type = #predecessor
+// * ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values"
 // // * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values"
 
 // * ^status = #active

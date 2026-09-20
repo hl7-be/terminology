@@ -12,8 +12,9 @@ Description: "Annex types for MyCareNet flows. Not all codes are defined here, a
 * ^extension[=].valueCode = #trial-use
 * ^extension[=].valueCode.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"
 * ^extension[=].valueCode.extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension[=].valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.type = #predecessor
+* ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
 // * ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types"
 
 * ^status = #active

@@ -6,6 +6,7 @@ Description: "FedICT country codes."
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #fragment
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country"
 * #BE "Belgium"

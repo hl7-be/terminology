@@ -7,8 +7,9 @@ Description: "Contact person in Belgium."
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 23
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person"
 * #father "father"
 * #father ^designation.language = #en
 * #father ^designation.value = "father"

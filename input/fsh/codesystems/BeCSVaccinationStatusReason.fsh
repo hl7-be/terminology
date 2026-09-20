@@ -10,8 +10,9 @@ Description: "Vaccination reason status Code System."
 
 * ^content = #complete
 * ^count = 2
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"
 * #OTHER "Other"
 * #OTHER ^designation[0].language = #fr-BE
 * #OTHER ^designation[=].value = "Autre"

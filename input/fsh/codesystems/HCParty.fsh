@@ -7,8 +7,9 @@ Description: "healthcare party in Belgium."
 * ^caseSensitive = true
 * ^content = #complete
 * ^count = 241
-// * ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-// * ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
 * #application "software application"
 * #application ^designation[0].language = #fr-BE
 * #application ^designation[=].value = "application logicielle"

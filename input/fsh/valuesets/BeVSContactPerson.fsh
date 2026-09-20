@@ -2,8 +2,9 @@ ValueSet: BeVSContactPerson
 Id: be-vs-contact-person
 Title: "Contact Person"
 Description: "Maximum valueset to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/replaces"
-* ^extension.valueCanonical = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson"
+* ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+* ^extension.valueRelatedArtifact.type = #predecessor
+* ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "eHealth Platform"
