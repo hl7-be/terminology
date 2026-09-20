@@ -206,6 +206,10 @@ menu:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 parameters:
   special-url-base: https://www.ehealth.fgov.be/standards/fhir
+  # Expand against the Belgian edition of SNOMED CT, not the International one.
+  # Belgian reference sets and extension concepts do not exist in the International
+  # edition, so without this a refset-based ValueSet silently produces no expansion.
+  path-expansion-params: ../../input/_resources/exp-params.json
   excludettl: true
   no-narrative: 
     - ValueSet/*
