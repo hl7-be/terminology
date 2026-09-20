@@ -1,6 +1,6 @@
 ValueSet: BeVSTreatmentReason
 Id: be-vs-treatment-reason
-Title: "Treatment Reason"
+Title: "Treatment Reason Value Set"
 Description: "RT20Z17 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir

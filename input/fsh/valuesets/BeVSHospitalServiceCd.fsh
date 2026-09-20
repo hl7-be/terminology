@@ -1,6 +1,6 @@
 ValueSet: BeVSHospitalServiceCd
 Id: be-vs-hospital-service-cd
-Title: "Hospital Service Code"
+Title: "Hospital Service Code Value Set"
 Description: "Annex 16.15 (2.C) in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir

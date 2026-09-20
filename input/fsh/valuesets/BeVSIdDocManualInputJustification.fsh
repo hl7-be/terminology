@@ -1,6 +1,6 @@
 ValueSet: BeVSIdDocManualInputJustification
 Id: be-vs-id-doc-manual-input-justification
-Title: "Id Doc Manual Input Justification"
+Title: "Id Doc Manual Input Justification Value Set"
 Description: "RT52Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir

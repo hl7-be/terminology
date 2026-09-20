@@ -1,6 +1,6 @@
 ValueSet: BeVSProblemOriginType
 Id: be-vs-problem-origin-type
-Title: "Problem Origin Type"
+Title: "Problem Origin Type Value Set"
 Description: "Problem Origin Type"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1

@@ -1,6 +1,6 @@
 ValueSet: BeVSClaimExemptionCode
 Id: be-vs-claim-exemption-code
-Title: "Claim Exemption Code"
+Title: "Claim Exemption Code Value Set"
 Description: "RT50Z23 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir

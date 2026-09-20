@@ -136,6 +136,8 @@ pages:
     title: Home
   using.md:
     title: Using terminologies in FHIR
+  naming.md:
+    title: Naming conventions
   architecture.md:
     title: Architecture
   # background.md:
@@ -186,6 +188,7 @@ pages:
 menu:
   Home: index.html
   Guidance:
+    Naming conventions: naming.html
   Artifacts:
     All artifacts: artifacts.html
     Value Sets: artifacts.html#1

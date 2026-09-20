@@ -1,6 +1,6 @@
 ValueSet: BeVSClaimTransplantationCode
 Id: be-vs-claim-transplantation-code
-Title: "Claim Transplantation Code"
+Title: "Claim Transplantation Code Value Set"
 Description: "RT50Z48 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
