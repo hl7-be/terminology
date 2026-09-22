@@ -1,0 +1,20 @@
+{
+  "package-id": "hl7.fhir.be.terminology",
+  "version": "1.0.0",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/terminology/1.0.0",
+  "milestone" : true,
+  "fhirversion": "R4",
+  "status": "release",
+  "sequence": "Trial Use",
+  "category": "National Base",
+  "desc": "eHealth FHIR Terminology package for Belgium",
+  "desccmd": "eHealth Terminology package for Belgium",
+  "title": "eHealth Terminology package for Belgium",
+  "ci-build" : "https://build.fhir.org/ig/hl7-be/terminology",
+  "introduction": "eHealth FHIR Terminology package for Belgium",
+  "mode": "milestone",
+  "first": true,
+  "registry-description": "eHealth FHIR Terminology package for Belgium",
+  "registry-country": "be",
+  "registry-authority": "eHealth Platform (BE)" 
+}
