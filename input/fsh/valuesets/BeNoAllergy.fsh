@@ -2,6 +2,7 @@ ValueSet: BeNoAllergy
 Id: be-noallergy
 Title: "BeNoAllergy"
 Description: "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
@@ -11,6 +12,7 @@ Description: "Codes as communicated by the FOD Terminology Center differentiatin
 
 * ^status = #active
 * ^experimental = false
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."""
 
 * $sct#716186003
 // * $sct#716186003 ^designation[0].use = $sct#900000000000003001 "Fully specified name"

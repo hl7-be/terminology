@@ -2,8 +2,10 @@ ValueSet: BeVSAllergyIntoleranceType
 Id: be-vs-allergyintolerance-type
 Title: "BeVSAllergyIntoleranceType"
 Description: "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance."
+
 * ^status = #active
 * ^experimental = false
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."""
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"
 * ^contact[=].telecom[0].system = #url
@@ -18,6 +20,7 @@ Description: "Codes as communicated by NIHDI and the FOD Terminology Center diff
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
 * ^extension.valueRelatedArtifact.type = #predecessor
 * ^extension.valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type"
+
 * $sct#609328004
 * $sct#609396006
 * $sct#782197009

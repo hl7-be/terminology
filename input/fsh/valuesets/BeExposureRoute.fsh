@@ -2,6 +2,7 @@ ValueSet: BeExposureRoute
 Id: be-exposureroute
 Title: "BeExposureRoute"
 Description: "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."
+
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
@@ -11,6 +12,7 @@ Description: "Codes to illustrate differentiating types of exposure route. This 
 
 * ^status = #active
 * ^experimental = false
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."""
 
 * $sct#447694001
 // * $sct#447694001 ^designation.language = #en
