@@ -29,3 +29,19 @@ For SNOMED CT specifically:
 | How content is represented, versioned or validated | this guide — [Using terminologies](using.html) |
 
 *The request route, the turnaround, and how release cycles are aligned are not yet documented.*
+
+### Dependencies
+
+This IG depends on the following packages:
+
+{% lang-fragment dependency-table-short.xhtml %}
+
+
+### Cross Version Analysis
+
+{% capture cross-version-analysis %}{% include cross-version-analysis.xhtml %}{% endcapture %}{{ cross-version-analysis | remove: '<p>' | remove: '</p>'}}
+
+
+### Intellectual Property Considerations
+
+{% lang-fragment ip-statements.xhtml %}
