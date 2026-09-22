@@ -1,6 +1,8 @@
 Instance: be-ns-claim-related-claim
 InstanceOf: NamingSystem
 Usage: #definition
+Title: "BeNSClaimRelatedClaim"
+Description: "Naming system for unique identifiers assigned to claims related to another claim in the Belgian MyCareNet context"
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension[=].valueCode = #fhir
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"

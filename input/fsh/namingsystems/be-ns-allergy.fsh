@@ -1,6 +1,8 @@
 Instance: be-ns-allergy
 InstanceOf: NamingSystem
 Usage: #definition
+Title: "BeNSAllergy"
+Description: "Naming system for unique identifiers assigned to AllergyIntolerance records"
 * extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
 * extension[=].valueUri = "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-allergy"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"
