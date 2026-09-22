@@ -140,6 +140,8 @@ pages:
     title: Naming conventions
   architecture.md:
     title: Architecture
+  authoring.md:
+    title: Authoring
   # background.md:
   #   title: Background
   # design.md:
@@ -189,12 +191,7 @@ menu:
   Home: index.html
   Guidance:
     Naming conventions: naming.html
-  Artifacts:
-    All artifacts: artifacts.html
-    Value Sets: artifacts.html#1
-    Code Systems: artifacts.html#2
-    Naming Systems: artifacts.html#3
-    Concept Maps: artifacts.html#4
+  Artifacts: artifacts.html
   Downloads: downloads.html
   Copyright: copyright.html
 
@@ -222,6 +219,8 @@ parameters:
   apply-publisher: false
   apply-version: true
   apply-wg: false
+  auto-oid-root: 2.16.840.1.113883.4.642.40.200.11
+
   
 
 #  validation: [allow-any-extensions, no-broken-links]
