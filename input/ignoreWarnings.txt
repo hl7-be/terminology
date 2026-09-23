@@ -3,6 +3,8 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 
-# This is inherited from the base resource
-
 # If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
+
+# References to canonical URLs from other eHealth / HL7 Belgium IGs may not be resolvable
+# because the corresponding historical packages are intentionally not loaded as dependencies.
+%A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/%
