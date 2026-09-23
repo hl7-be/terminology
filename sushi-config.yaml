@@ -18,9 +18,6 @@ license: CC0-1.0
 date: 2025-05-26
 version: 1.0.0
 
-outputPathStrategy: mirror
-
-
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here, but the current tooling 
 # only supports one FHIR version per Implementation Guide
