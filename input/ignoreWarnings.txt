@@ -8,3 +8,6 @@
 # References to canonical URLs from other eHealth / HL7 Belgium IGs may not be resolvable
 # because the corresponding historical packages are intentionally not loaded as dependencies.
 %A definition could not be found for Canonical URL 'https://www.ehealth.fgov.be/standards/fhir/%
+
+# Ignore the narrative warnings for the terminology IG
+Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
