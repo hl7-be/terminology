@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-bodysite-nursing"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-bodysite-nursing"/>
+  <version value="1.0.0"/>
+  <name value="BeVSBodySiteNursing"/>
+  <title value="Body Site"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - Body Site"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="31640002"/>
+      </concept>
+      <concept>
+        <code value="789699009"/>
+      </concept>
+      <concept>
+        <code value="78277001"/>
+      </concept>
+      <concept>
+        <code value="117590005"/>
+      </concept>
+      <concept>
+        <code value="302549007"/>
+      </concept>
+      <concept>
+        <code value="81745001"/>
+      </concept>
+      <concept>
+        <code value="60819002"/>
+      </concept>
+      <concept>
+        <code value="48477009"/>
+      </concept>
+      <concept>
+        <code value="1797002"/>
+      </concept>
+      <concept>
+        <code value="45206002"/>
+      </concept>
+      <concept>
+        <code value="123851003"/>
+      </concept>
+      <concept>
+        <code value="727234005"/>
+      </concept>
+      <concept>
+        <code value="51185008"/>
+      </concept>
+      <concept>
+        <code value="113345001"/>
+      </concept>
+      <concept>
+        <code value="85710004"/>
+      </concept>
+      <concept>
+        <code value="302543008"/>
+      </concept>
+      <concept>
+        <code value="30547001"/>
+      </concept>
+      <concept>
+        <code value="182281004"/>
+      </concept>
+      <concept>
+        <code value="421235005"/>
+      </concept>
+      <concept>
+        <code value="87342007"/>
+      </concept>
+      <concept>
+        <code value="78234002"/>
+      </concept>
+      <concept>
+        <code value="72696002"/>
+      </concept>
+      <concept>
+        <code value="182034009"/>
+      </concept>
+      <concept>
+        <code value="731694000"/>
+      </concept>
+      <concept>
+        <code value="54735007"/>
+      </concept>
+      <concept>
+        <code value="53505006"/>
+      </concept>
+      <concept>
+        <code value="76784001"/>
+      </concept>
+      <concept>
+        <code value="18911002"/>
+      </concept>
+      <concept>
+        <code value="56459004"/>
+      </concept>
+      <concept>
+        <code value="344001"/>
+      </concept>
+      <concept>
+        <code value="360857004"/>
+      </concept>
+      <concept>
+        <code value="76853006"/>
+      </concept>
+      <concept>
+        <code value="78883009"/>
+      </concept>
+      <concept>
+        <code value="55078004"/>
+      </concept>
+      <concept>
+        <code value="78132007"/>
+      </concept>
+      <concept>
+        <code value="80349001"/>
+      </concept>
+      <concept>
+        <code value="39915008"/>
+      </concept>
+      <concept>
+        <code value="244187005"/>
+      </concept>
+      <concept>
+        <code value="16982005"/>
+      </concept>
+      <concept>
+        <code value="79601000"/>
+      </concept>
+      <concept>
+        <code value="53120007"/>
+      </concept>
+      <concept>
+        <code value="14975008"/>
+      </concept>
+      <concept>
+        <code value="127949000"/>
+      </concept>
+      <concept>
+        <code value="85562004"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

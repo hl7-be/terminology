@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationRequestReimbursementType"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationRequestReimbursementType"/>
+  <title value="Medication request reimbursement type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:28:44+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication request reimbursement type - instructions for reimbursement of the medication request"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="third-party-payer-applicable"/>
+    <display value="Third-party payer applicable"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Tiers-payant applicable"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Derdebetalersregeling van toepassing"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="first-dose"/>
+    <display value="First dose"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="1ère dose"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="1ste toediening"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="second-dose"/>
+    <display value="Second dose + [date of the first dose]"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="2ème dose + [date de la 1ère dose]"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="2de toediening + [datum 1ste toediening]"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="third-dose"/>
+    <display value="Third dose + [date of the first and second dose]"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="3ème dose + [date de la 1ère et 2ème dose]"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="3de toediening + [datum 1ste en 2de toediening]"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="chronic-renal-failure-pathway"/>
+    <display value="Care pathway chronic renal failure"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Trajet de soins insuffisance rénale chronique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Zorgtraject chronische nierinsufficiëntie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="diabetes-care-pathway"/>
+    <display value="Care pathway diabetes"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Trajet de soins diabète"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Zorgtraject diabetes"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="diabetes-convention"/>
+    <display value="Diabetes convention"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Convention diabète"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Diabetesconventie"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="non-reimbursable"/>
+    <display value="Non-reimbursable"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Non remboursable"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Niet-vergoedbaar"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="startup-pathway-type-2-diabetes"/>
+    <display value="Start-up pathway type 2 diabetes"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Trajet de démarrage diabète type 2"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Opstarttraject diabetes type 2"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="education-and-self-care-program-type-2-diabetes"/>
+    <display value="&quot;Education and self-care&quot; programme for type 2 diabetes"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Programme « Éducation et autogestion » pour le diabète de type 2"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Programma &quot;Educatie en zelfzorg&quot; diabetes type 2"/>
+    </designation>
+  </concept>
+</CodeSystem>

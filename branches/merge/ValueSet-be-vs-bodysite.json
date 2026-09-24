@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-bodysite",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-bodysite"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeVSBodySite",
+  "title" : "Body Site",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Body Site",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "442083009"
+      }]
+    }]
+  }
+}

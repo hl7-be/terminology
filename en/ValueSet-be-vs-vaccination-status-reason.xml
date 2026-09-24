@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-vaccination-status-reason"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason"/>
+  <version value="1.1.2"/>
+  <name value="BeVSVaccinationStatusReason"/>
+  <title value="BeVSVaccinationStatusReason"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-11-27T15:15:33+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <concept>
+        <code value="IMMUNE"/>
+        <display value="Immune"/>
+      </concept>
+      <concept>
+        <code value="MEDPREC"/>
+        <display value="Medical Precaution"/>
+      </concept>
+      <concept>
+        <code value="OSTOCK"/>
+        <display value="Out of Stock"/>
+      </concept>
+      <concept>
+        <code value="PATOBJ"/>
+        <display value="Patient Objection"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

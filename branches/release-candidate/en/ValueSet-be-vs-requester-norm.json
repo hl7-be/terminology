@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-requester-norm",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-requester-norm",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.200.11.48.34"
+  }],
+  "version" : "1.0.0",
+  "name" : "BeVSRequesterNorm",
+  "title" : "Prescriber Standard Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-24T08:15:23+00:00",
+  "description" : "RT50Z26 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-requester-norm"
+    }]
+  }
+}

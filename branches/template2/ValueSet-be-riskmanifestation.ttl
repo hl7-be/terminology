@@ -1,0 +1,524 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-riskmanifestation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-riskmanifestation"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/replaces"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/replaces>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation>
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "BeRiskManifestation"] ; # 
+  fhir:title [ fhir:v "BeRiskManifestation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-12-18T11:59:28+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "39579001" ] ;
+         fhir:display [ fhir:v "Anaphylaxis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Anaphylaxie" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Anafylaxie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Anaphylaxis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "735173007" ] ;
+         fhir:display [ fhir:v "Anaphylactic shock" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Choc anaphylactique" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Anafylactische shock" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Anaphylactic shock" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "41291007" ] ;
+         fhir:display [ fhir:v "Angio-oedema" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Angiœdème / œdème de Quincke" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Angio-oedeem" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Angio-oedema" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "410430005" ] ;
+         fhir:display [ fhir:v "Cardiorespiratory arrest" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Arrêt cardiorespiratoire" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Cardiorespiratoire stilstand" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiorespiratory arrest" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "698247007" ] ;
+         fhir:display [ fhir:v "Cardiac arrhythmia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Arythmie cardiaque" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hartritmestoornis / Aritmie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiac arrhythmia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "195967001" ] ;
+         fhir:display [ fhir:v "Asthma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Asthme" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Astma" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Asthma" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "4386001" ] ;
+         fhir:display [ fhir:v "Bronchospasm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Bronchospasme" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Bronchospasme" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bronchospasm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9826008" ] ;
+         fhir:display [ fhir:v "Conjunctivitis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Conjonctivite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Conjunctivitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Conjunctivitis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "91175000" ] ;
+         fhir:display [ fhir:v "Seizure" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Convulsion" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Convulsie / Stuip" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Seizure" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40275004" ] ;
+         fhir:display [ fhir:v "Contact dermatitis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Dermatite de contact" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Contactdermatitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Contact dermatitis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "62315008" ] ;
+         fhir:display [ fhir:v "Diarrhoea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Diarrhée" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Diarree" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Diarrhoea" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "267036007" ] ;
+         fhir:display [ fhir:v "Dyspnea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Dyspnée" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Kortademigheid / Dyspneu" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dyspnea" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "43116000" ] ;
+         fhir:display [ fhir:v "Eczema" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Eczéma" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Eczeem" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Eczema" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "271759003" ] ;
+         fhir:display [ fhir:v "Bullous eruption" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Eruption bulleuse" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Bulleuse huideruptie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bullous eruption" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "247472004" ] ;
+         fhir:display [ fhir:v "Weal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Éruption urticaire" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Urticaire rash" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Weal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "271807003" ] ;
+         fhir:display [ fhir:v "Rash / Eruption" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Éruption cutanée" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Exantheem / huideruptie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rash / Eruption" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "271757001" ] ;
+         fhir:display [ fhir:v "Papular eruption" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Eruption papuleuse" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Papuleuze eruptie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Papular eruption" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "297942002" ] ;
+         fhir:display [ fhir:v "Drug-induced erythema multiforme" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Érythème polymorphe d'origine médicamenteuse" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Erythema multiforme door geneesmiddel" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Drug-induced erythema multiforme" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "76067001" ] ;
+         fhir:display [ fhir:v "Sneezing" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Eternuement" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Niezen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sneezing" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "386661006" ] ;
+         fhir:display [ fhir:v "Fever" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Fièvre" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Koorts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fever" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "45007003" ] ;
+         fhir:display [ fhir:v "Low blood pressure  / hypotension" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Hypotension" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Hypotensie" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Low blood pressure  / hypotension" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "422587007" ] ;
+         fhir:display [ fhir:v "Nausea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Nausée" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Misselijkheid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nausea" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "768962006" ] ;
+         fhir:display [ fhir:v "TEN - toxic epidermal necrolysis / lyell syndrome" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Syndrome de Lyell" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Syndroom van Lyell" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "TEN - toxic epidermal necrolysis / lyell syndrome" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "51599000" ] ;
+         fhir:display [ fhir:v "Oedema of larynx" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Œdème du larynx" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Oedeem van larynx" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Oedema of larynx" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "23924001" ] ;
+         fhir:display [ fhir:v "Tight chest" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Oppression thoracique" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Drukkend gevoel op de borst" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tight chest" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418363000" ] ;
+         fhir:display [ fhir:v "Itching of skin" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Prurit de la peau" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Jeuk van huid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Itching of skin" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70076002" ] ;
+         fhir:display [ fhir:v "Rhinitis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Rhinite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Rinitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rhinitis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "162290004" ] ;
+         fhir:display [ fhir:v "Dry eyes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Sécheresse oculaire" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Droge ogen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dry eyes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73442001" ] ;
+         fhir:display [ fhir:v "Stevens-Johnson syndrome" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Syndrome de Stevens-Johnson" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Syndroom van Stevens-Johnson" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stevens-Johnson syndrome" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "49727002" ] ;
+         fhir:display [ fhir:v "Cough" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Toux" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Bevindingen over hoesten" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cough" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "126485001" ] ;
+         fhir:display [ fhir:v "Urticaria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Urticaire" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Urticaria" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urticaria" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "31996006" ] ;
+         fhir:display [ fhir:v "Vasculitis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Vascularite" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Vasculitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vasculitis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1985008" ] ;
+         fhir:display [ fhir:v "Vomitus" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Vomissement" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Braaksel" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vomitus" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "404684003" ] ;
+         fhir:display [ fhir:v "Clinical Finding" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Constatation Clinique" ]
+         ] [
+           fhir:language [ fhir:v "nl-BE" ] ;
+           fhir:value [ fhir:v "Klinische bevinding" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical Finding" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

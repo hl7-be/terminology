@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-pseudonymization-version"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version"/>
+  <version value="1.2.0"/>
+  <name value="BeCSPseudonymizationVersion"/>
+  <title value="BeCSPseudonymizationVersion"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-12T09:30:06+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="List of pseudonymization versions that can be used a.o. in the Capabilities Statement"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="urn:be:fgov:ehealth:pseudo:v1"/>
+  </concept>
+  <concept>
+    <code value="urn:be:fgov:ehealth:pseudo:v2"/>
+  </concept>
+  <concept>
+    <code value="urn:be:fgov:pseudo-encrypted:v1"/>
+  </concept>
+</CodeSystem>

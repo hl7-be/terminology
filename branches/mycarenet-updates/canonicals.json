@@ -1,0 +1,1242 @@
+[{
+  "id" : "be-cs-claim-exemption-code",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-exemption-code",
+  "version" : "1.0.0",
+  "name" : "BeCSClaimExemptionCode"
+},
+{
+  "id" : "be-cs-claim-norm-code",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-norm-code",
+  "version" : "1.0.0",
+  "name" : "BeCSClaimNormCode"
+},
+{
+  "id" : "be-cs-claim-transplantation-code",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-transplantation-code",
+  "version" : "1.0.0",
+  "name" : "BeCSClaimTransplantationCode"
+},
+{
+  "id" : "be-cs-hospital-service-cd",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-hospital-service-cd",
+  "version" : "1.0.0",
+  "name" : "BeCSHospitalServiceCd"
+},
+{
+  "id" : "be-cs-id-doc-input-type",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-input-type",
+  "version" : "1.0.0",
+  "name" : "BeCSIdDocInputType"
+},
+{
+  "id" : "be-cs-id-doc-manual-input-justification",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-manual-input-justification",
+  "version" : "1.0.0",
+  "name" : "BeCSIdDocManualInputJustification"
+},
+{
+  "id" : "be-cs-id-doc-media-type",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-media-type",
+  "version" : "1.0.0",
+  "name" : "BeCSIdDocMediaType"
+},
+{
+  "id" : "be-cs-id-doc-vignette-use-justification",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-vignette-use-justification",
+  "version" : "1.0.0",
+  "name" : "BeCSIdDocVignetteUseJustification"
+},
+{
+  "id" : "be-cs-mycarenet-speech-therapy-pathology-situation-code",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-mycarenet-speech-therapy-pathology-situation-code",
+  "version" : "1.0.0",
+  "name" : "BeCSMyCareNetSpeechTherapyPathologySituationCode"
+},
+{
+  "id" : "be-cs-requester-norm",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-requester-norm",
+  "version" : "1.0.0",
+  "name" : "BeCSRequesterNorm"
+},
+{
+  "id" : "be-cs-treatment-reason",
+  "type" : "CodeSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-treatment-reason",
+  "version" : "1.0.0",
+  "name" : "BeCSTreatmentReason"
+},
+{
+  "id" : "hl7.fhir.be.terminology",
+  "type" : "ImplementationGuide",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology",
+  "version" : "1.0.0",
+  "name" : "BETerminology"
+},
+{
+  "id" : "be-ns-belac",
+  "type" : "NamingSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/NamingSystem/be-ns-belac",
+  "name" : "BeBELAC"
+},
+{
+  "id" : "be-ns-lab-report-bundle-id",
+  "type" : "NamingSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/NamingSystem/be-ns-lab-report-bundle-id",
+  "name" : "BeLabReportBundleId"
+},
+{
+  "id" : "be-ns-lab-report-diagnostic-report-id",
+  "type" : "NamingSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/NamingSystem/be-ns-lab-report-diagnostic-report-id",
+  "name" : "BeLabReportDiagnosticReportId"
+},
+{
+  "id" : "be-ns-retam",
+  "type" : "NamingSystem",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/NamingSystem/be-ns-retam",
+  "name" : "BeRetam"
+},
+{
+  "id" : "be-vs-claim-exemption-code",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-claim-exemption-code",
+  "version" : "1.0.0",
+  "name" : "BeVSClaimExemptionCode"
+},
+{
+  "id" : "be-vs-claim-norm-code",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-claim-norm-code",
+  "version" : "1.0.0",
+  "name" : "BeVSClaimNormCode"
+},
+{
+  "id" : "be-vs-claim-transplantation-code",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-claim-transplantation-code",
+  "version" : "1.0.0",
+  "name" : "BeVSClaimTransplantationCode"
+},
+{
+  "id" : "be-vs-hospital-service-cd",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-hospital-service-cd",
+  "version" : "1.0.0",
+  "name" : "BeVSHospitalServiceCd"
+},
+{
+  "id" : "be-vs-id-doc-input-type",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-id-doc-input-type",
+  "version" : "1.0.0",
+  "name" : "BeVSIdDocInputType"
+},
+{
+  "id" : "be-vs-id-doc-manual-input-justification",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-id-doc-manual-input-justification",
+  "version" : "1.0.0",
+  "name" : "BeVSIdDocManualInputJustification"
+},
+{
+  "id" : "be-vs-id-doc-media-type",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-id-doc-media-type",
+  "version" : "1.0.0",
+  "name" : "BeVSIdDocMediaType"
+},
+{
+  "id" : "be-vs-id-doc-vignette-use-justification",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-id-doc-vignette-use-justification",
+  "version" : "1.0.0",
+  "name" : "BeVSIdDocVignetteUseJustification"
+},
+{
+  "id" : "be-vs-mycarenet-speech-therapy-pathology-situation-code",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-mycarenet-speech-therapy-pathology-situation-code",
+  "version" : "1.0.0",
+  "name" : "BeVSMyCareNetSpeechTherapyPathologySituationCode"
+},
+{
+  "id" : "be-vs-requester-norm",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-requester-norm",
+  "version" : "1.0.0",
+  "name" : "BeVSRequesterNorm"
+},
+{
+  "id" : "be-vs-treatment-reason",
+  "type" : "ValueSet",
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-treatment-reason",
+  "version" : "1.0.0",
+  "name" : "BeVSTreatmentReason"
+},
+{
+  "id" : "be-ns-allergy",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/NamingSystem/be-ns-allergy",
+  "version" : "1.2.0",
+  "name" : "BeNSAllergy"
+},
+{
+  "id" : "be-allergyintolerancecode",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode",
+  "version" : "1.2.0",
+  "name" : "BeAllergyIntoleranceCode"
+},
+{
+  "id" : "be-causativeagent",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent",
+  "version" : "1.2.0",
+  "name" : "BeCausativeAgent"
+},
+{
+  "id" : "be-exposureroute",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute",
+  "version" : "1.2.0",
+  "name" : "BeExposureRoute"
+},
+{
+  "id" : "be-noallergy",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy",
+  "version" : "1.2.0",
+  "name" : "BeNoAllergy"
+},
+{
+  "id" : "be-riskmanifestation",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-riskmanifestation",
+  "version" : "1.2.0",
+  "name" : "BeRiskManifestation"
+},
+{
+  "id" : "be-vs-allergyintolerance-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-vs-allergyintolerance-type",
+  "version" : "1.2.0",
+  "name" : "BeVSAllergyIntoleranceType"
+},
+{
+  "id" : "be-cs-bodysite",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeCSBodySite"
+},
+{
+  "id" : "be-cs-problem-category",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category",
+  "version" : "1.0.0",
+  "name" : "BeCSProblemCategory"
+},
+{
+  "id" : "be-cs-problem-origin-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type",
+  "version" : "1.0.0",
+  "name" : "BeCSProblemOriginType"
+},
+{
+  "id" : "be-cs-score",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score",
+  "version" : "1.0.0",
+  "name" : "BeCSScore"
+},
+{
+  "id" : "be-cs-score-category",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category",
+  "version" : "1.0.0",
+  "name" : "BeCSScoreCategory"
+},
+{
+  "id" : "be-vs-bodysite",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeVSBodySite"
+},
+{
+  "id" : "be-vs-laterality",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality",
+  "version" : "1.0.0",
+  "name" : "BeVSLaterality"
+},
+{
+  "id" : "be-vs-problem-category",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-category",
+  "version" : "1.0.0",
+  "name" : "BeVSProblemCategory"
+},
+{
+  "id" : "be-vs-problem-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-code",
+  "version" : "1.0.0",
+  "name" : "BeVSProblemCode"
+},
+{
+  "id" : "be-vs-problem-origin-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-problem-origin-type",
+  "version" : "1.0.0",
+  "name" : "BeVSProblemOriginType"
+},
+{
+  "id" : "be-vs-reaction-manifestation-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code",
+  "version" : "1.0.0",
+  "name" : "BeVSReactionManifestationCode"
+},
+{
+  "id" : "be-vs-score",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score",
+  "version" : "1.0.0",
+  "name" : "BeVSScore"
+},
+{
+  "id" : "be-vs-scorecategory",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory",
+  "version" : "1.0.0",
+  "name" : "BeVSScoreCategory"
+},
+{
+  "id" : "be-cs-care-location",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+  "version" : "2.1.2",
+  "name" : "BeCSCareLocation"
+},
+{
+  "id" : "cd-civilstate",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate",
+  "version" : "2.1.2",
+  "name" : "CivilState"
+},
+{
+  "id" : "cd-contact-person",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person",
+  "version" : "2.1.2",
+  "name" : "ContactPerson"
+},
+{
+  "id" : "cd-fed-country",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country",
+  "version" : "2.1.2",
+  "name" : "Cdfedcountry"
+},
+{
+  "id" : "cd-hcparty",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+  "version" : "2.1.2",
+  "name" : "HCParty"
+},
+{
+  "id" : "be-cbe",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-cbe",
+  "version" : "2.1.2",
+  "name" : "BeCBENamingSystem"
+},
+{
+  "id" : "be-ehp",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ehp",
+  "version" : "2.1.2",
+  "name" : "BeEhealthPartnerIDNamingSystem"
+},
+{
+  "id" : "be-insurancenumber",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-insurancenumber",
+  "version" : "2.1.2",
+  "name" : "BeInsuranceNumberNamingSystem"
+},
+{
+  "id" : "be-insurancymembership",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-insurancymembership",
+  "version" : "2.1.2",
+  "name" : "BeInsurancymembershipNamingSystem"
+},
+{
+  "id" : "be-nihdi",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-nihdi",
+  "version" : "2.1.2",
+  "name" : "BeNIHDINamingSystem"
+},
+{
+  "id" : "be-ns-nihdi-nomenclature",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature",
+  "version" : "2.1.2",
+  "name" : "BeNSNihdiNomenclature"
+},
+{
+  "id" : "be-ns-nihdi-organization",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-organization",
+  "version" : "2.1.2",
+  "name" : "BeNSNIHDIOrganization"
+},
+{
+  "id" : "be-ns-nihdi-professional",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-professional",
+  "version" : "2.1.2",
+  "name" : "BeNSNIHDIProfessional"
+},
+{
+  "id" : "be-ssin",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ssin",
+  "version" : "2.1.2",
+  "name" : "BeSSINNamingSystem"
+},
+{
+  "id" : "be-civilstate",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate",
+  "version" : "2.1.2",
+  "name" : "BeCivilstate"
+},
+{
+  "id" : "be-contactperson",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson",
+  "version" : "2.1.2",
+  "name" : "BeContactPerson"
+},
+{
+  "id" : "be-vs-care-location",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-care-location",
+  "version" : "2.1.2",
+  "name" : "BeVSCareLocation"
+},
+{
+  "id" : "be-vs-cd-hcparty",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-cd-hcparty",
+  "version" : "2.1.2",
+  "name" : "BeVSCdHcParty"
+},
+{
+  "id" : "be-vs-gender-at-birth",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth",
+  "version" : "2.1.2",
+  "name" : "BeVSGenderAtBirth"
+},
+{
+  "id" : "be-vs-patient-relationship-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-patient-relationship-type",
+  "version" : "2.1.2",
+  "name" : "BeVSPatientRelationshipType"
+},
+{
+  "id" : "be-cs-annex81-status-reason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-annex81-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeCSAnnex81StatusReason"
+},
+{
+  "id" : "be-cs-temp-requested-service",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service",
+  "version" : "1.0.0",
+  "name" : "BeTempRequestedService"
+},
+{
+  "id" : "be-cs-temp-requested-service-detail",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail",
+  "version" : "1.0.0",
+  "name" : "BeTempRequestedServiceDetail"
+},
+{
+  "id" : "be-prescription-status-reason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason",
+  "version" : "1.0.0",
+  "name" : "BePrescriptionStatusReason"
+},
+{
+  "id" : "be-treatment-status-reason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-treatment-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeTreatmentStatusReason"
+},
+{
+  "id" : "be-ns-uhmep",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/be-ns-uhmep",
+  "version" : "1.0.0",
+  "name" : "BeUnadressedHealthMessageExchangePlatform"
+},
+{
+  "id" : "be-ns-uhmep-short",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/be-ns-uhmep-short",
+  "version" : "1.0.0",
+  "name" : "BeNsUhmepShort"
+},
+{
+  "id" : "be-vs-annex-81-reason-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-annex-81-reason-code",
+  "version" : "1.0.0",
+  "name" : "BeVSAnnex81ReasonCode"
+},
+{
+  "id" : "be-vs-annex81-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-annex81-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeVSAnnex81StatusReason"
+},
+{
+  "id" : "be-vs-bodysite-nursing",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-bodysite-nursing",
+  "version" : "1.0.0",
+  "name" : "BeVSBodySiteNursing"
+},
+{
+  "id" : "be-vs-performer-task-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-performer-task-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeVSPerformerTaskStatusReason"
+},
+{
+  "id" : "be-vs-prescription-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-prescription-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeVSPrescriptionStatusReason"
+},
+{
+  "id" : "be-vs-referral-category",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-referral-category",
+  "version" : "1.0.0",
+  "name" : "BeReferralCategory"
+},
+{
+  "id" : "be-vs-request-intent",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-request-intent",
+  "version" : "1.0.0",
+  "name" : "BeVSRequestIntent"
+},
+{
+  "id" : "be-vs-request-note-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-request-note-type",
+  "version" : "1.0.0",
+  "name" : "BeVSRequestNoteType"
+},
+{
+  "id" : "be-vs-requested-services-nurse",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse",
+  "version" : "1.0.0",
+  "name" : "BeVSRequestedServicesNurse"
+},
+{
+  "id" : "be-vs-requested-services-nurse-detail",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse-detail",
+  "version" : "1.0.0",
+  "name" : "BeVSRequestedServicesNurseDetail"
+},
+{
+  "id" : "be-vs-task-intent",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-task-intent",
+  "version" : "1.0.0",
+  "name" : "BeVSTaskIntent"
+},
+{
+  "id" : "be-vs-treatment-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-treatment-status-reason",
+  "version" : "1.0.0",
+  "name" : "BeVSTreatmentStatusReason"
+},
+{
+  "id" : "be-cs-pseudonymization-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type",
+  "version" : "1.2.0",
+  "name" : "BeCSPseudonymizationType"
+},
+{
+  "id" : "be-cs-pseudonymization-version",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-version",
+  "version" : "1.2.0",
+  "name" : "BeCSPseudonymizationVersion"
+},
+{
+  "id" : "be-vs-pseudonymization-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/ValueSet/be-vs-pseudonymization-type",
+  "version" : "1.2.0",
+  "name" : "BeVSPseudonymizationType"
+},
+{
+  "id" : "albert",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert",
+  "version" : "1.0.0",
+  "name" : "Albert"
+},
+{
+  "id" : "be-cs-coded-annotation-types",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types",
+  "version" : "1.0.0",
+  "name" : "BeCSCodedAnnotationTypes"
+},
+{
+  "id" : "be-vs-coded-annotation-types",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/ValueSet/be-vs-coded-annotation-types",
+  "version" : "1.0.0",
+  "name" : "BeVSCodedAnnotationTypes"
+},
+{
+  "id" : "BeMedicationLineAdherenceStatus",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatus"
+},
+{
+  "id" : "BeMedicationLineAdherenceStatusReason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatusReason",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusReason"
+},
+{
+  "id" : "BeMedicationLineOriginType",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineOriginType"
+},
+{
+  "id" : "BeMedicationLineRegistrationStatus",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineRegistrationStatus"
+},
+{
+  "id" : "BeMedicationRequestReimbursementType",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationRequestReimbursementType"
+},
+{
+  "id" : "BeMedicationType",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationType"
+},
+{
+  "id" : "be-ns-cnk-codes",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+  "version" : "1.1.0",
+  "name" : "BeNSCNK"
+},
+{
+  "id" : "be-ns-cti-extended-code",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code",
+  "version" : "1.1.0",
+  "name" : "BeNSCTIExtended"
+},
+{
+  "id" : "be-ns-prescription-ids",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids",
+  "version" : "1.1.0",
+  "name" : "BeNSPrescriptions"
+},
+{
+  "id" : "be-ns-product-package-type",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-product-package-type",
+  "version" : "1.1.0",
+  "name" : "BeNSProductPackage"
+},
+{
+  "id" : "BeMedicationExposureIntentVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationExposureIntentVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationExposureIntentVS"
+},
+{
+  "id" : "BeMedicationLineAdherenceStatusReasonVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusReasonVS"
+},
+{
+  "id" : "BeMedicationLineAdherenceStatusVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusVS"
+},
+{
+  "id" : "BeMedicationLineOriginTypeVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineOriginTypeVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineOriginTypeVS"
+},
+{
+  "id" : "BeMedicationLineRegistrationStatusVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineRegistrationStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineRegistrationStatusVS"
+},
+{
+  "id" : "BeMedicationPrescriptionStatusVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationPrescriptionStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationPrescriptionStatusVS"
+},
+{
+  "id" : "BeMedicationRequestReimbursementTypeVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationRequestReimbursementTypeVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationRequestReimbursementTypeVS"
+},
+{
+  "id" : "BeMedicationTypeVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationTypeVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationTypeVS"
+},
+{
+  "id" : "BeRouteOfAdministrationVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeRouteOfAdministrationVS",
+  "version" : "1.1.0",
+  "name" : "BeRouteOfAdministrationVS"
+},
+{
+  "id" : "be-vs-dispenser-types",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+  "version" : "1.1.0",
+  "name" : "DispenserTypes"
+},
+{
+  "id" : "be-cs-patientwill-category",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category",
+  "version" : "1.0.0",
+  "name" : "BeCSPatientWillCategory"
+},
+{
+  "id" : "be-cs-patientwill-code",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code",
+  "version" : "1.0.0",
+  "name" : "BeCSPatientWillCode"
+},
+{
+  "id" : "be-vs-patientwill-category",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-category",
+  "version" : "1.0.0",
+  "name" : "BeVSPatientWillCategory"
+},
+{
+  "id" : "be-vs-patientwill-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-code",
+  "version" : "1.0.0",
+  "name" : "BeVSPatientWillCode"
+},
+{
+  "id" : "be-vs-patientwill-scope",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/ValueSet/be-vs-patientwill-scope",
+  "version" : "1.0.0",
+  "name" : "BeVSPatientWillScope"
+},
+{
+  "id" : "PSSQSIConditions",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+  "version" : "1.0.0",
+  "name" : "PSSQSIConditions",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.16.1"]
+},
+{
+  "id" : "PSSQSIProcedures",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+  "version" : "1.0.0",
+  "name" : "PSSQSIProcedures",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.16.2"]
+},
+{
+  "id" : "PSSRatingTypes",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+  "version" : "1.0.0",
+  "name" : "PSSRatingTypes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"]
+},
+{
+  "id" : "BacterialCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+  "version" : "1.0.0",
+  "name" : "BacterialCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"]
+},
+{
+  "id" : "CandidaCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+  "version" : "1.0.0",
+  "name" : "CandidaCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"]
+},
+{
+  "id" : "ChlamydiaCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+  "version" : "1.0.0",
+  "name" : "ChlamydiaCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"]
+},
+{
+  "id" : "CompromisedImmuneSystemCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+  "version" : "1.0.0",
+  "name" : "CompromisedImmuneSystemCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"]
+},
+{
+  "id" : "GonokokCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+  "version" : "1.0.0",
+  "name" : "GonokokCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"]
+},
+{
+  "id" : "MycoplasmaCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+  "version" : "1.0.0",
+  "name" : "MycoplasmaCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"]
+},
+{
+  "id" : "OncologyPatientCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+  "version" : "1.0.0",
+  "name" : "OncologyPatientCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"]
+},
+{
+  "id" : "OtherCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+  "version" : "1.0.0",
+  "name" : "OtherCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"]
+},
+{
+  "id" : "PSSRatingTypesVS",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+  "version" : "1.0.0",
+  "name" : "PSSRatingTypesVS",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"]
+},
+{
+  "id" : "PregnancyCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+  "version" : "1.0.0",
+  "name" : "PregnancyCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"]
+},
+{
+  "id" : "TrichomonasCodes",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+  "version" : "1.0.0",
+  "name" : "TrichomonasCodes",
+  "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"]
+},
+{
+  "id" : "be-cs-populationscreening-next-invitation-type",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type",
+  "version" : "1.0.3",
+  "name" : "BeCSPopulationScreeningNextInvitationType"
+},
+{
+  "id" : "cvko-id",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/NamingSystem/cvko-id",
+  "version" : "1.0.3",
+  "name" : "CVKONamingSystem"
+},
+{
+  "id" : "BeVSPopulationScreeningFollowUpAdvice",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/BeVSPopulationScreeningFollowUpAdvice",
+  "version" : "1.0.3",
+  "name" : "BeVSPopulationScreeningFollowUpAdvice"
+},
+{
+  "id" : "be-populationscreening-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-populationscreening-result-vs",
+  "version" : "1.0.3",
+  "name" : "BePopulationScreeningResultVS"
+},
+{
+  "id" : "be-vs-populationscreening-next-invitation-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-next-invitation-type",
+  "version" : "1.0.3",
+  "name" : "BeVSPopulationScreeningNextInvitationType"
+},
+{
+  "id" : "be-vs-populationscreening-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vs-populationscreening-type",
+  "version" : "1.0.3",
+  "name" : "BeVSPopulationScreeningType"
+},
+{
+  "id" : "be-vspopulationscreening-body-site-location",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/ValueSet/be-vspopulationscreening-body-site-location",
+  "version" : "1.0.3",
+  "name" : "BeVSPopulationScreeningBodySiteLocation"
+},
+{
+  "id" : "be-cs-mycarenet-agreement-errors",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-agreement-errors",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetAgreementErrors"
+},
+{
+  "id" : "be-cs-mycarenet-agreement-types",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-agreement-types",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetAgreementTypes"
+},
+{
+  "id" : "be-cs-mycarenet-annex-types",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-annex-types",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetAnnexTypes"
+},
+{
+  "id" : "be-cs-mycarenet-decision-values",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-decision-values",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetDecisionValues"
+},
+{
+  "id" : "be-cs-mycarenet-holder-code-1",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-holder-code-1",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetHolderCode1"
+},
+{
+  "id" : "be-cs-mycarenet-holder-code-2",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-holder-code-2",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetHolderCode2"
+},
+{
+  "id" : "be-cs-mycarenet-message-events",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-message-events",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetMessageEvents"
+},
+{
+  "id" : "be-cs-mycarenet-nihdi-physiotherapy-pathologysituationcode",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-nihdi-physiotherapy-pathologysituationcode",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetNIHDIPhysiotherapyPathologySituationCode"
+},
+{
+  "id" : "be-cs-mycarenet-partial-agreement-values",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-partial-agreement-values",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetPartialAgreementValues"
+},
+{
+  "id" : "be-cs-mycarenet-refusal-values",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-refusal-values",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetRefusalValues"
+},
+{
+  "id" : "be-cs-mycarenet-waitingforinformation-values",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-mycarenet-waitingforinformation-values",
+  "version" : "2.1.2",
+  "name" : "BeCSMyCareNetWaitingForInformationValues"
+},
+{
+  "id" : "BeCMMyCareNetISOToothSnomedCT",
+  "type" : "ConceptMap",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ConceptMap/BeCMMyCareNetISOToothSnomedCT",
+  "version" : "2.1.2",
+  "name" : "BeCMISOToothSnomedCT"
+},
+{
+  "id" : "be-ns-claim-related-claim",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-claim-related-claim",
+  "version" : "2.1.2",
+  "name" : "BeNSClaimRelatedClaim"
+},
+{
+  "id" : "be-vs-mycarenet-basic-laterality",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-basic-laterality",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetBasicLaterality"
+},
+{
+  "id" : "be-vs-mycarenet-decision-values",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-decision-values",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetDecisionValues"
+},
+{
+  "id" : "be-vs-mycarenet-eagreementadjudicationreason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementadjudicationreason",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetEAgreementAdjudicationReason"
+},
+{
+  "id" : "be-vs-mycarenet-eagreementerrors",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementerrors",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetEagreementErrors"
+},
+{
+  "id" : "be-vs-mycarenet-eagreementmessage",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementmessage",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetMessageEAgreement"
+},
+{
+  "id" : "be-vs-mycarenet-eagreementproductorservice",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-eagreementproductorservice",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetProductOrServiceNihdiEAgreement"
+},
+{
+  "id" : "be-vs-mycarenet-holder-code-1",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-holder-code-1",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetHolderCode1"
+},
+{
+  "id" : "be-vs-mycarenet-holder-code-2",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-holder-code-2",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetHolderCode2"
+},
+{
+  "id" : "be-vs-mycarenet-toothnumber-bodysite",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-mycarenet-toothnumber-bodysite",
+  "version" : "2.1.2",
+  "name" : "BeVSMyCareNetToothNumberBodySite"
+},
+{
+  "id" : "be-cs-vaccination-administration-route",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+  "version" : "1.1.2",
+  "name" : "BeCSVaccineAdministrationRoute"
+},
+{
+  "id" : "be-cs-vaccination-confirmation-status",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status",
+  "version" : "1.1.2",
+  "name" : "BeCSVaccinationConfirmationStatus"
+},
+{
+  "id" : "be-cs-vaccination-status-reason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason",
+  "version" : "1.1.2",
+  "name" : "BeCSStatusReason"
+},
+{
+  "id" : "be-cs-vaccine-code",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code",
+  "version" : "1.1.2",
+  "name" : "BeCSVaccineCode"
+},
+{
+  "id" : "be-cs-vaccine-target-disease",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease",
+  "version" : "1.1.2",
+  "name" : "BeCSVaccineTargetDisease"
+},
+{
+  "id" : "be-ns-one-vaccination",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/NamingSystem/be-ns-one-vaccination",
+  "version" : "1.1.2",
+  "name" : "BeNSONEVaccineCode"
+},
+{
+  "id" : "be-ns-product-manufacturer",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/NamingSystem/be-ns-product-manufacturer",
+  "version" : "1.1.1",
+  "name" : "BeNSManufacturer"
+},
+{
+  "id" : "be-ns-vaccinnet-vaccinecode",
+  "type" : "NamingSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/NamingSystem/be-ns-vaccinnet-vaccinecode",
+  "version" : "1.1.2",
+  "name" : "BeNSVaccinetVaccineCode"
+},
+{
+  "id" : "be-vs-vaccination-administration-route",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-administration-route",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccineAdministrationRoute"
+},
+{
+  "id" : "be-vs-vaccination-bodysite",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationBodySite"
+},
+{
+  "id" : "be-vs-vaccination-confirmation-status",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-confirmation-status",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationConfirmationStatus"
+},
+{
+  "id" : "be-vs-vaccination-product",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-product",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationProduct"
+},
+{
+  "id" : "be-vs-vaccination-reason-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-reason-code",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationReasonCode"
+},
+{
+  "id" : "be-vs-vaccination-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationStatusReason"
+},
+{
+  "id" : "be-vs-vaccine-code",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccineCode"
+},
+{
+  "id" : "be-vs-vaccine-target-disease",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-target-disease",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccineTargetDisease"
+}]

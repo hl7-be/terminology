@@ -1,0 +1,159 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-patientwill-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-patientwill-code"] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSPatientWillCode"] ; # 
+  fhir:title [ fhir:v "Patient Will Directive CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-01-10T10:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.ehealth.fgov.be/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Patient Will Directive CodeSystem. Codes as defined by the NIHDI."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "51"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "bloodtransfusionrefusal" ]
+  ] [
+     fhir:code [ fhir:v "clinicaltrialparticipationconsent" ]
+  ] [
+     fhir:code [ fhir:v "datareuseforclinicalresearchconsent" ]
+  ] [
+     fhir:code [ fhir:v "datareuseforclinicaltrialsconsent" ]
+  ] [
+     fhir:code [ fhir:v "intubationrefusal" ]
+  ] [
+     fhir:code [ fhir:v "omissionofmedicaldata" ]
+  ] [
+     fhir:code [ fhir:v "vaccinationrefusal" ]
+  ] [
+     fhir:code [ fhir:v "dnr0" ]
+  ] [
+     fhir:code [ fhir:v "dnr1" ]
+  ] [
+     fhir:code [ fhir:v "dnr2" ]
+  ] [
+     fhir:code [ fhir:v "dnr3" ]
+  ] [
+     fhir:code [ fhir:v "hos0" ]
+  ] [
+     fhir:code [ fhir:v "hos2" ]
+  ] [
+     fhir:code [ fhir:v "onlycomfort" ]
+  ] [
+     fhir:code [ fhir:v "onlytestsforcomfort" ]
+  ] [
+     fhir:code [ fhir:v "noantibiotics" ]
+  ] [
+     fhir:code [ fhir:v "noartificialhydratationfeeding" ]
+  ] [
+     fhir:code [ fhir:v "nochemo" ]
+  ] [
+     fhir:code [ fhir:v "noradiation" ]
+  ] [
+     fhir:code [ fhir:v "nooperation" ]
+  ] [
+     fhir:code [ fhir:v "noventilation" ]
+  ] [
+     fhir:code [ fhir:v "nodialysis" ]
+  ] [
+     fhir:code [ fhir:v "noresuscitation" ]
+  ] [
+     fhir:code [ fhir:v "nointensivecare" ]
+  ] [
+     fhir:code [ fhir:v "nohospitalisation" ]
+  ] [
+     fhir:code [ fhir:v "onlytreatmentfororgandonation" ]
+  ] [
+     fhir:code [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "euthanasiarequest" ]
+  ] [
+     fhir:code [ fhir:v "euthanasiarefusal" ]
+  ] [
+     fhir:code [ fhir:v "organdonationfortransplant" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialfortransplant" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialformedication" ]
+  ] [
+     fhir:code [ fhir:v "bodymaterialforresearch" ]
+  ] [
+     fhir:code [ fhir:v "bodydonationforscience" ]
+  ] [
+     fhir:code [ fhir:v "burialbody" ]
+  ] [
+     fhir:code [ fhir:v "burialashescemetry" ]
+  ] [
+     fhir:code [ fhir:v "columbariumashes" ]
+  ] [
+     fhir:code [ fhir:v "scattergardenashes" ]
+  ] [
+     fhir:code [ fhir:v "scatterashesbelgiansea" ]
+  ] [
+     fhir:code [ fhir:v "scatterashesother" ]
+  ] [
+     fhir:code [ fhir:v "burialashesother" ]
+  ] [
+     fhir:code [ fhir:v "storeashesother" ]
+  ] [
+     fhir:code [ fhir:v "norituals" ]
+  ] [
+     fhir:code [ fhir:v "catholic" ]
+  ] [
+     fhir:code [ fhir:v "protestant" ]
+  ] [
+     fhir:code [ fhir:v "anglican" ]
+  ] [
+     fhir:code [ fhir:v "orthodox" ]
+  ] [
+     fhir:code [ fhir:v "jewish" ]
+  ] [
+     fhir:code [ fhir:v "islamic" ]
+  ] [
+     fhir:code [ fhir:v "secular" ]
+  ] [
+     fhir:code [ fhir:v "neutral" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-scorecategory"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact">
+    <valueRelatedArtifact>
+      <type value="predecessor"/>
+      <resource value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory"/>
+    </valueRelatedArtifact>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-scorecategory"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.200.11.48.36"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="BeVSScoreCategory"/>
+  <title value="Score Category Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-24T08:15:23+00:00"/>
+  <description value="Score Category Value Set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score-category"/>
+    </include>
+  </compose>
+</ValueSet>

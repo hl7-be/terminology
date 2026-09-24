@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeMedicationLineOriginTypeVS",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineOriginTypeVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineOriginTypeVS",
+  "title" : "Medication origin type value set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-10T13:28:44+02:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication origin type value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType"
+    }]
+  }
+}

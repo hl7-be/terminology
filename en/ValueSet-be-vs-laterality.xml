@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-laterality"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-laterality"/>
+  <version value="1.0.0"/>
+  <name value="BeVSLaterality"/>
+  <title value="Laterality"/>
+  <status value="active"/>
+  <date value="2021-01-10T10:59:49+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message-Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@www.ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Laterality"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="419161000"/>
+      </concept>
+      <concept>
+        <code value="419465000"/>
+      </concept>
+      <concept>
+        <code value="51440002"/>
+      </concept>
+      <concept>
+        <code value="261183002"/>
+      </concept>
+      <concept>
+        <code value="261122009"/>
+      </concept>
+      <concept>
+        <code value="255561001"/>
+      </concept>
+      <concept>
+        <code value="49370004"/>
+      </concept>
+      <concept>
+        <code value="264217000"/>
+      </concept>
+      <concept>
+        <code value="261089000"/>
+      </concept>
+      <concept>
+        <code value="255551008"/>
+      </concept>
+      <concept>
+        <code value="351726001"/>
+      </concept>
+      <concept>
+        <code value="352730000"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

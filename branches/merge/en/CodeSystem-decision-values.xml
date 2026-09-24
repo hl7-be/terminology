@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="decision-values"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/decision-values"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetDecisionValues"/>
+  <title value="CodeSystem decision values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Decision values in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) The codes are not defined here, a full list can be found on mycarenet.be."/>
+  <content value="fragment"/>
+  <concept>
+    <code value="agreement"/>
+    <display value="agreement"/>
+  </concept>
+  <concept>
+    <code value="intreatment"/>
+    <display value="intreatment"/>
+  </concept>
+  <concept>
+    <code value="refusal"/>
+    <display value="refusal"/>
+  </concept>
+  <concept>
+    <code value="wfi-physiotherapist"/>
+    <display value="wfi-physiotherapist"/>
+  </concept>
+  <concept>
+    <code value="wfi-prescriptor"/>
+    <display value="wfi-prescriptor"/>
+  </concept>
+  <concept>
+    <code value="tariff"/>
+    <display value="tariff"/>
+  </concept>
+  <concept>
+    <code value="wfi-serviceprovider"/>
+    <display value="wfi-serviceprovider"/>
+  </concept>
+  <concept>
+    <code value="partialAgreement"/>
+    <display value="partialAgreement"/>
+  </concept>
+</CodeSystem>

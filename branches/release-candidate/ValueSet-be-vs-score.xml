@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-score"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact">
+    <valueRelatedArtifact>
+      <type value="predecessor"/>
+      <resource value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"/>
+    </valueRelatedArtifact>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-score"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.200.11.48.35"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="BeVSScore"/>
+  <title value="Score Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-24T08:15:23+00:00"/>
+  <description value="Codes as defined by the NIHDI. Dutch translations are expected for a next release."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="763117005"/>
+      </concept>
+      <concept>
+        <code value="446661009"/>
+      </concept>
+      <concept>
+        <code value="273531005"/>
+      </concept>
+      <concept>
+        <code value="447316007"/>
+      </concept>
+      <concept>
+        <code value="444297006"/>
+      </concept>
+      <concept>
+        <code value="443133008"/>
+      </concept>
+      <concept>
+        <code value="7121000122100"/>
+      </concept>
+      <concept>
+        <code value="273849003"/>
+      </concept>
+      <concept>
+        <code value="450738001"/>
+      </concept>
+      <concept>
+        <code value="444680009"/>
+      </concept>
+      <concept>
+        <code value="278897004"/>
+      </concept>
+      <concept>
+        <code value="273364009"/>
+      </concept>
+      <concept>
+        <code value="443318007"/>
+      </concept>
+      <concept>
+        <code value="719124004"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score"/>
+    </include>
+  </compose>
+</ValueSet>

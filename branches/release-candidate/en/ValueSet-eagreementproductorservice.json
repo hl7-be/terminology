@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "eagreementproductorservice",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/eagreementproductorservice"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/eagreementproductorservice",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.200.11.48.51"
+  }],
+  "version" : "1.0.0",
+  "name" : "BeProductOrServiceNihdiEAgreement",
+  "title" : "ValueSet product or service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-24T08:15:23+00:00",
+  "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/nihdi-physiotherapy-pathologysituationcode"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/annex-types"
+    }]
+  }
+}

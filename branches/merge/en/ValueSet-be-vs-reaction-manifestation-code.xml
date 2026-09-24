@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-reaction-manifestation-code"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-reaction-manifestation-code"/>
+  <version value="1.0.0"/>
+  <name value="BeVSReactionManifestationCode"/>
+  <title value="Reaction Manifestation Code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Reaction Manifestation Code (Allergy - Immunization)"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="39579001"/>
+      </concept>
+      <concept>
+        <code value="735173007"/>
+      </concept>
+      <concept>
+        <code value="41291007"/>
+      </concept>
+      <concept>
+        <code value="410430005"/>
+      </concept>
+      <concept>
+        <code value="698247007"/>
+      </concept>
+      <concept>
+        <code value="195967001"/>
+      </concept>
+      <concept>
+        <code value="4386001"/>
+      </concept>
+      <concept>
+        <code value="9826008"/>
+      </concept>
+      <concept>
+        <code value="91175000"/>
+      </concept>
+      <concept>
+        <code value="40275004"/>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+      </concept>
+      <concept>
+        <code value="43116000"/>
+      </concept>
+      <concept>
+        <code value="271759003"/>
+      </concept>
+      <concept>
+        <code value="247472004"/>
+      </concept>
+      <concept>
+        <code value="271807003"/>
+      </concept>
+      <concept>
+        <code value="271757001"/>
+      </concept>
+      <concept>
+        <code value="297942002"/>
+      </concept>
+      <concept>
+        <code value="76067001"/>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+      </concept>
+      <concept>
+        <code value="45007003"/>
+      </concept>
+      <concept>
+        <code value="422587007"/>
+      </concept>
+      <concept>
+        <code value="768962006"/>
+      </concept>
+      <concept>
+        <code value="51599000"/>
+      </concept>
+      <concept>
+        <code value="23924001"/>
+      </concept>
+      <concept>
+        <code value="418363000"/>
+      </concept>
+      <concept>
+        <code value="70076002"/>
+      </concept>
+      <concept>
+        <code value="162290004"/>
+      </concept>
+      <concept>
+        <code value="73442001"/>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+      </concept>
+      <concept>
+        <code value="126485001"/>
+      </concept>
+      <concept>
+        <code value="31996006"/>
+      </concept>
+      <concept>
+        <code value="1985008"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

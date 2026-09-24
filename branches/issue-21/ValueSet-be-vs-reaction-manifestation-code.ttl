@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-reaction-manifestation-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-vs-reaction-manifestation-code"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeVSReactionManifestationCode"] ; # 
+  fhir:title [ fhir:v "Reaction Manifestation Code"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2021-01-10T10:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@www.ehealth.fgov.be" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message-Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@www.ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Reaction Manifestation Code (Allergy - Immunization)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "39579001" ]
+       ] [
+         fhir:code [ fhir:v "735173007" ]
+       ] [
+         fhir:code [ fhir:v "41291007" ]
+       ] [
+         fhir:code [ fhir:v "410430005" ]
+       ] [
+         fhir:code [ fhir:v "698247007" ]
+       ] [
+         fhir:code [ fhir:v "195967001" ]
+       ] [
+         fhir:code [ fhir:v "4386001" ]
+       ] [
+         fhir:code [ fhir:v "9826008" ]
+       ] [
+         fhir:code [ fhir:v "91175000" ]
+       ] [
+         fhir:code [ fhir:v "40275004" ]
+       ] [
+         fhir:code [ fhir:v "62315008" ]
+       ] [
+         fhir:code [ fhir:v "267036007" ]
+       ] [
+         fhir:code [ fhir:v "43116000" ]
+       ] [
+         fhir:code [ fhir:v "271759003" ]
+       ] [
+         fhir:code [ fhir:v "247472004" ]
+       ] [
+         fhir:code [ fhir:v "271807003" ]
+       ] [
+         fhir:code [ fhir:v "271757001" ]
+       ] [
+         fhir:code [ fhir:v "297942002" ]
+       ] [
+         fhir:code [ fhir:v "76067001" ]
+       ] [
+         fhir:code [ fhir:v "386661006" ]
+       ] [
+         fhir:code [ fhir:v "45007003" ]
+       ] [
+         fhir:code [ fhir:v "422587007" ]
+       ] [
+         fhir:code [ fhir:v "768962006" ]
+       ] [
+         fhir:code [ fhir:v "51599000" ]
+       ] [
+         fhir:code [ fhir:v "23924001" ]
+       ] [
+         fhir:code [ fhir:v "418363000" ]
+       ] [
+         fhir:code [ fhir:v "70076002" ]
+       ] [
+         fhir:code [ fhir:v "162290004" ]
+       ] [
+         fhir:code [ fhir:v "73442001" ]
+       ] [
+         fhir:code [ fhir:v "49727002" ]
+       ] [
+         fhir:code [ fhir:v "126485001" ]
+       ] [
+         fhir:code [ fhir:v "31996006" ]
+       ] [
+         fhir:code [ fhir:v "1985008" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

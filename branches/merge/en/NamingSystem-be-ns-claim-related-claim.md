@@ -1,0 +1,56 @@
+# be-ns-claim-related-claim - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## NamingSystem: be-ns-claim-related-claim 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "NamingSystem",
+  "id" : "be-ns-claim-related-claim",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/NamingSystem/be-ns-claim-related-claim"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "1.0.0"
+  }],
+  "name" : "BeNSClaimRelatedClaim",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2024-06-01",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/NamingSystem/be-ns-claim-related-claim",
+    "preferred" : true
+  }]
+}
+
+```

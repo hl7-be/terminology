@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-problem-disease-course"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact">
+    <valueRelatedArtifact>
+      <type value="predecessor"/>
+      <resource value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/ProblemDiseaseCourseVS"/>
+    </valueRelatedArtifact>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-problem-disease-course"/>
+  <version value="1.0.0"/>
+  <name value="BeVSProblemDiseaseCourse"/>
+  <title value="Condition Disease Course"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-20T07:58:55+00:00"/>
+  <description value="Condition disease course."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="288524001"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

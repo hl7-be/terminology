@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Using terminologies in FHIR - HL7 Belgium terminology Implementation Guide (IG) v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- eHealth Platform -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- eHealth Platform -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="standards-logo" no-external="true" href="index.html">
+    <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
+  </a>
+</div>
+
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Belgium terminology Implementation Guide (IG)</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="../assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="naming.html">Naming conventions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Using terminologies in FHIR</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Belgium terminology Implementation Guide (IG), published by eHealth Platform. This guide is not an authorized publication; it is the continuous build for version 1.0.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/terminology/tree/release-candidate'>https://github.com/hl7-be/terminology/tree/release-candidate</a> and changes regularly. See the <a href='https://www.ehealth.fgov.be/standards/fhir/terminology/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Using terminologies in FHIR</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#code-system-versions" id="markdown-toc-code-system-versions">Code system versions</a></li>
+  <li><a href="#value-sets-and-reference-sets-who-owns-a-selection" id="markdown-toc-value-sets-and-reference-sets-who-owns-a-selection">Value sets and reference sets: who owns a selection</a></li>
+  <li><a href="#validating-terminology" id="markdown-toc-validating-terminology">Validating terminology</a></li>
+  <li><a href="#topics-still-to-be-written" id="markdown-toc-topics-still-to-be-written">Topics still to be written</a></li>
+</ul>
+
+</div>
+
+<p>Considerations for implementers using the terminology published here. Guidance, not conformance rules: where a rule is intended it is expressed in a profile or a binding.</p>
+
+<h3 id="code-system-versions">Code system versions</h3>
+
+<p>Code systems change between releases: codes are added, deprecated or retired, displays corrected, hierarchies reorganised. A <code class="language-plaintext highlighter-rouge">Coding</code> naming only a system and a code is interpretable only against whatever version the reader happens to have loaded.</p>
+
+<p><strong>State the version explicitly.</strong> Doing so has four consequences:</p>
+
+<ul>
+  <li><strong>Deterministic validation</strong> — the code is checked against the intended version.</li>
+  <li><strong>Reproducible expansions</strong> — the same definition expands to the same codes next year.</li>
+  <li><strong>Durable data</strong> — a code retired in a later release stays resolvable in the release actually used.</li>
+  <li><strong>Visible disagreement</strong> — a version mismatch surfaces instead of becoming a silent difference in meaning.</li>
+</ul>
+
+<p>Without a version, a code that validates today can fail tomorrow with no change to the data.</p>
+
+<h4 id="where-the-version-goes">Where the version goes</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Context</th>
+      <th>Element</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Instance data</td>
+      <td><code class="language-plaintext highlighter-rouge">Coding.version</code></td>
+      <td>The version used when the code was chosen.</td>
+    </tr>
+    <tr>
+      <td>Value set definition</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet.compose.include.version</code></td>
+      <td>Pins the release the content is defined against.</td>
+    </tr>
+    <tr>
+      <td>Value set expansion</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet.expansion.parameter</code></td>
+      <td>Records the versions actually used.</td>
+    </tr>
+    <tr>
+      <td>Reference to a value set or profile</td>
+      <td>version suffix on the canonical</td>
+      <td><code class="language-plaintext highlighter-rouge">.../ValueSet/be-vs-bodysite</code> with <code class="language-plaintext highlighter-rouge">1.1.0</code></td>
+    </tr>
+    <tr>
+      <td>Whole IG build</td>
+      <td><code class="language-plaintext highlighter-rouge">path-expansion-params</code>, pointing at a <code class="language-plaintext highlighter-rouge">Parameters</code> with <code class="language-plaintext highlighter-rouge">system-version</code></td>
+      <td>Default release for every expansion in the guide.</td>
+    </tr>
+    <tr>
+      <td>One operation</td>
+      <td><code class="language-plaintext highlighter-rouge">$expand</code> / <code class="language-plaintext highlighter-rouge">$validate-code</code>: <code class="language-plaintext highlighter-rouge">system-version</code>, <code class="language-plaintext highlighter-rouge">force-system-version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">force-system-version</code> overrides even a stated version. Useful for testing, dangerous as a default.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w"> </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.80"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"718-7"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="pin-or-follow-the-latest">Pin, or follow the latest</h4>
+
+<p>A system design decision, not a rule this guide imposes.</p>
+
+<ul>
+  <li><strong>Pinned</strong> — reproducible, auditable, stable across builds. Someone must move the pin forward; until they do, new codes are unusable and corrections are not picked up.</li>
+  <li><strong>Latest</strong> — always current, no maintenance step. Validation results are not stable over time, and two systems on different release cycles can disagree without either being wrong.</li>
+</ul>
+
+<p>The default preference is the latest release, on the grounds that corrections and additions are generally improvements, and that a pin which is not actively maintained becomes a pin to a stale release. An archive, a regulated submission or a long-running study may require a frozen release.</p>
+
+<p>Either choice is acceptable provided it is stated. The failure mode to avoid is not “pinned” or “latest”, but <em>unstated</em>.</p>
+
+<p>Where the two pull apart:</p>
+
+<ul>
+  <li><strong>Instance data</strong> records a historical fact: the version used when the code was chosen. Do not rewrite it.</li>
+  <li><strong>Definitional artefacts</strong> express a policy: pin for stable builds, or stay open to track the latest.</li>
+</ul>
+
+<h4 id="an-unstated-version-is-selected-by-whatever-resolves-the-reference">An unstated version is selected by whatever resolves the reference</h4>
+
+<p><code class="language-plaintext highlighter-rouge">be-vaccination</code> 1.1.2 bound body site to <code class="language-plaintext highlighter-rouge">be-vs-laterality</code> without a version. Between core-clinical 1.0.0 and 1.1.0 that value set gained 3 codes and lost 8 — a breaking change to a <code class="language-plaintext highlighter-rouge">required</code> binding, shipped as a minor version. A validator holding both versions resolved the unversioned canonical to the newer one, so instances that were valid under 1.1.2 began failing.</p>
+
+<ul>
+  <li><strong>State the version on the binding</strong>, not only in the data: <code class="language-plaintext highlighter-rouge">.../ValueSet/be-vs-laterality|1.0.0</code>. An unversioned canonical delegates the choice to whatever resolves it.</li>
+  <li><strong>Resolve within the package’s dependency closure</strong>, not against a global latest: one validation context per package version, rather than a single context holding every version.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">system-version</code> and <code class="language-plaintext highlighter-rouge">force-system-version</code> do not help here: they pin the code system used during expansion, not which value set is selected.</p>
+
+<h4 id="snomed-ct-needs-an-edition-and-a-release">SNOMED CT needs an edition and a release</h4>
+
+<p>The version URI carries both:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>URI</th>
+      <th>Means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>no edition, no release</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct/11000172109</code></td>
+      <td>Belgian edition, unspecified release</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct/11000172109/version/20250315</code></td>
+      <td>Belgian edition, one release</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A code in the Belgian extension will <strong>not</strong> resolve against the International edition, so for Belgian content the edition matters at least as much as the release date.</p>
+
+<h4 id="when-validation-cannot-check-a-version">When validation cannot check a version</h4>
+
+<p>If the stated version is unavailable, validation reports that it could not check the code rather than passing it. Treat “unable to validate against version X” as a signal to load X, not as a reason to drop the version from the data.</p>
+
+<h3 id="value-sets-and-reference-sets-who-owns-a-selection">Value sets and reference sets: who owns a selection</h3>
+
+<p>A value set here never adds to SNOMED CT. Concepts come from the international edition, authored by SNOMED International; the Belgian extension, its translations and the Belgian reference sets are authored by the NRC. What is authored here is the <strong>selection</strong>.</p>
+
+<p>A reference set is also a selection — so should a given selection live in a reference set at the NRC, or in a value set here?</p>
+
+<h4 id="three-ways-to-write-the-same-value-set">Three ways to write the same value set</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Form</th>
+      <th>FSH</th>
+      <th>Selection owned by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extensional</td>
+      <td><code class="language-plaintext highlighter-rouge">* SNOMED_CT#7771000</code> …</td>
+      <td>this guide, as a fixed list</td>
+    </tr>
+    <tr>
+      <td>Hierarchical</td>
+      <td><code class="language-plaintext highlighter-rouge">where concept is-a #106233006</code></td>
+      <td>SNOMED’s modelling</td>
+    </tr>
+    <tr>
+      <td>Reference set</td>
+      <td><code class="language-plaintext highlighter-rouge">where concept in "211201000172100"</code></td>
+      <td>the release centre that maintains it</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>They can expand identically today and behave differently a year from now.</p>
+
+<ul>
+  <li><strong>Extensional</strong> is explicit and reviewable, and frozen. Inactivations pass it by, and it drifts from the terminology it claims to use.</li>
+  <li><strong>Hierarchical</strong> follows SNOMED’s modelling. This is correct where the intended scope is genuinely “everything subsumed by this concept”, but it inherits every international remodelling and includes concepts that have not been reviewed nationally.</li>
+  <li><strong>Reference set</strong> puts the selection where it is curated, with inactivations handled by the NRC’s policy and translations attached to the same content.</li>
+</ul>
+
+<h4 id="prefer-the-reference-set-where-one-exists">Prefer the reference set where one exists</h4>
+
+<p>The selection is then owned once, by the people who maintain it, rather than kept as a second list to re-check against every release.</p>
+
+<p>This changes what the NRC can do. A reference set can be corrected in the next Belgian release; a hierarchy-based definition changes only when the international edition changes.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Worked example.</strong> <code class="language-plaintext highlighter-rouge">BeVSBodyTopography</code> was <code class="language-plaintext highlighter-rouge">is-a #106233006</code>. SNOMED International is inactivating 261183002</td>
+      <td>Upper</td>
+      <td>and 261122009</td>
+      <td>Lower</td>
+      <td>, merging them into 264217000</td>
+      <td>Superior</td>
+      <td>and 261089000</td>
+      <td>Inferior</td>
+      <td>— so those two would stay in the value set until the international release lands. Defined as <code class="language-plaintext highlighter-rouge">concept in "211201000172100"</code>, the NRC can exclude them in the next Belgian release instead.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="where-no-reference-set-exists">Where no reference set exists</h4>
+
+<p>Carry the selection here and treat it as a candidate for promotion:</p>
+
+<ul>
+  <li>Record why the selection is what it is, not only what is in it. A list of codes with no stated scope cannot be turned into a reference set by anyone but its author.</li>
+  <li>Expect drift. A value set defined years ago may no longer be expressible verbatim as a reference set, because its concepts have been maintained since.</li>
+</ul>
+
+<h4 id="when-the-concept-does-not-exist">When the concept does not exist</h4>
+
+<p>The value set cannot be finished by editing it. Request the concept through the NRC — which adds it to the Belgian extension or takes it to SNOMED International — and wait for the release that carries it. A local stand-in code creates a migration problem for everyone who implements it meanwhile. See <a href="authoring.html">Authoring terminology content</a>.</p>
+
+<h3 id="validating-terminology">Validating terminology</h3>
+
+<p>Two different activities share the name:</p>
+
+<ol>
+  <li><strong>Validating the terminology</strong> — is this artefact sound, expandable, publishable? At build time.</li>
+  <li><strong>Validating data against terminology</strong> — does this <code class="language-plaintext highlighter-rouge">Coding</code> resolve, and is it in the bound value set? At instance time.</li>
+</ol>
+
+<p>A value set that builds cleanly can still reject every code an implementer sends.</p>
+
+<h4 id="what-a-terminology-check-asserts">What a terminology check asserts</h4>
+
+<p><code class="language-plaintext highlighter-rouge">$validate-code</code> answers four questions, each of which can fail independently:</p>
+
+<ul>
+  <li>Is the <strong>code system</strong> known?</li>
+  <li>Is the <strong>code</strong> valid in that system, in that version?</li>
+  <li>Is the code a <strong>member of the value set</strong>?</li>
+  <li>Does the <strong>display</strong> match a designation?</li>
+</ul>
+
+<p>Two results are commonly misread: a valid code that is not a member of the bound value set, and a correct code accompanied by an incorrect display. Neither indicates a server malfunction.</p>
+
+<h4 id="a-result-is-only-as-strong-as-the-server-behind-it">A result is only as strong as the server behind it</h4>
+
+<p>The outcome depends on which server, which code systems, which versions and which licences. The same instance can pass on one server and fail on another.</p>
+
+<ul>
+  <li><strong>Record which server was used.</strong> A result without that is not reproducible.</li>
+  <li><strong>Check the SNOMED edition.</strong> A server holding only the International edition cannot resolve Belgian extension codes.</li>
+  <li><strong>Watch the offline fallback.</strong> <code class="language-plaintext highlighter-rouge">_genonce</code> switches to <code class="language-plaintext highlighter-rouge">-tx n/a</code> when it cannot reach the server, which disables terminology checking entirely. A build that comes out clean while offline has validated nothing.</li>
+  <li><strong>Consider a local server</strong> where reproducible CI matters more than currency.</li>
+</ul>
+
+<h4 id="errors-warnings-and-i-did-not-check">Errors, warnings, and “I did not check”</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Binding</th>
+      <th>Code not in the value set</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">required</code></td>
+      <td>error — non-conformant</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extensible</code></td>
+      <td>error where a suitable code exists, otherwise permitted</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preferred</code></td>
+      <td>warning</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">example</code></td>
+      <td>information</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Separately, <strong>“unable to validate”</strong> means the server could not answer: unknown system, unavailable version, unlicensed content. It is not a pass. Treating it as one is the most common way invalid codes reach production.</p>
+
+<h4 id="what-cannot-be-fully-validated">What cannot be fully validated</h4>
+
+<ul>
+  <li>Code systems with <code class="language-plaintext highlighter-rouge">content</code> of <code class="language-plaintext highlighter-rouge">fragment</code>, <code class="language-plaintext highlighter-rouge">example</code> or <code class="language-plaintext highlighter-rouge">not-present</code> — membership cannot be confirmed.</li>
+  <li>Intensional value sets using filters the server does not implement — these fail to expand rather than expanding wrongly.</li>
+  <li>Very large expansions, which may be capped; check <code class="language-plaintext highlighter-rouge">expansion.total</code>.</li>
+  <li>Post-coordinated SNOMED CT expressions.</li>
+</ul>
+
+<h4 id="before-publishing-a-value-set">Before publishing a value set</h4>
+
+<ol>
+  <li>Does it <strong>expand</strong>?</li>
+  <li>Is the size <strong>plausible</strong> — not zero, not an entire hierarchy?</li>
+  <li>Are the versions reported in <code class="language-plaintext highlighter-rouge">expansion.parameter</code> the intended ones?</li>
+  <li>Do the relevant codes pass <code class="language-plaintext highlighter-rouge">$validate-code</code> <strong>against the value set</strong>, and not only against the code system?</li>
+  <li>Does a code taken <em>from</em> the expansion validate back <em>into</em> the value set? This catches definitions that expand to more than they accept.</li>
+</ol>
+
+<h4 id="validating-instance-data">Validating instance data</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -jar validator_cli.jar instance.json -ig hl7.fhir.be.terminology#current -tx https://tx.fhir.org
+</code></pre></div></div>
+
+<p>Keep <code class="language-plaintext highlighter-rouge">-tx</code> explicit so the result says which server produced it.</p>
+
+<h4 id="suppressing-messages">Suppressing messages</h4>
+
+<p><code class="language-plaintext highlighter-rouge">input/ignoreWarnings.txt</code> suppresses confirmed-harmless build messages, each with a comment saying why. Never suppress “unable to validate code” to make a build green: it hides exactly what the version guidance above exists to expose.</p>
+
+<h3 id="topics-still-to-be-written">Topics still to be written</h3>
+
+<ul>
+  <li>Binding strengths — what <code class="language-plaintext highlighter-rouge">required</code>, <code class="language-plaintext highlighter-rouge">extensible</code>, <code class="language-plaintext highlighter-rouge">preferred</code> and <code class="language-plaintext highlighter-rouge">example</code> oblige.</li>
+  <li><code class="language-plaintext highlighter-rouge">Coding.display</code> is not authoritative, and what <code class="language-plaintext highlighter-rouge">userSelected</code> means.</li>
+  <li><code class="language-plaintext highlighter-rouge">CodeableConcept.text</code>, for when no suitable code exists.</li>
+  <li>Deprecated, retired and replaced codes — migration, and historical data.</li>
+  <li>Translations and designations — <code class="language-plaintext highlighter-rouge">displayLanguage</code>, and the multilingual content here.</li>
+  <li>Local, national and international code systems — when to reuse, when to define.</li>
+  <li><code class="language-plaintext highlighter-rouge">NamingSystem</code> and identifier systems.</li>
+  <li><code class="language-plaintext highlighter-rouge">ConceptMap</code> and <code class="language-plaintext highlighter-rouge">$translate</code> — mapping, and its limits.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir">eHealth Platform</a>.  
+          Package hl7.fhir.be.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-24 08:15:00 +0000">
+    2026-09-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- eHealth Platform -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/terminology/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

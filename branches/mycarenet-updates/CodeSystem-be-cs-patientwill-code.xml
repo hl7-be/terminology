@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-patientwill-code"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code"/>
+  <version value="1.0.0"/>
+  <name value="BeCSPatientWillCode"/>
+  <title value="Patient Will Directive CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-01-10T10:59:49+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Patient Will Directive CodeSystem. Codes as defined by the NIHDI."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="51"/>
+  <concept>
+    <code value="bloodtransfusionrefusal"/>
+  </concept>
+  <concept>
+    <code value="clinicaltrialparticipationconsent"/>
+  </concept>
+  <concept>
+    <code value="datareuseforclinicalresearchconsent"/>
+  </concept>
+  <concept>
+    <code value="datareuseforclinicaltrialsconsent"/>
+  </concept>
+  <concept>
+    <code value="intubationrefusal"/>
+  </concept>
+  <concept>
+    <code value="omissionofmedicaldata"/>
+  </concept>
+  <concept>
+    <code value="vaccinationrefusal"/>
+  </concept>
+  <concept>
+    <code value="dnr0"/>
+  </concept>
+  <concept>
+    <code value="dnr1"/>
+  </concept>
+  <concept>
+    <code value="dnr2"/>
+  </concept>
+  <concept>
+    <code value="dnr3"/>
+  </concept>
+  <concept>
+    <code value="hos0"/>
+  </concept>
+  <concept>
+    <code value="hos2"/>
+  </concept>
+  <concept>
+    <code value="onlycomfort"/>
+  </concept>
+  <concept>
+    <code value="onlytestsforcomfort"/>
+  </concept>
+  <concept>
+    <code value="noantibiotics"/>
+  </concept>
+  <concept>
+    <code value="noartificialhydratationfeeding"/>
+  </concept>
+  <concept>
+    <code value="nochemo"/>
+  </concept>
+  <concept>
+    <code value="noradiation"/>
+  </concept>
+  <concept>
+    <code value="nooperation"/>
+  </concept>
+  <concept>
+    <code value="noventilation"/>
+  </concept>
+  <concept>
+    <code value="nodialysis"/>
+  </concept>
+  <concept>
+    <code value="noresuscitation"/>
+  </concept>
+  <concept>
+    <code value="nointensivecare"/>
+  </concept>
+  <concept>
+    <code value="nohospitalisation"/>
+  </concept>
+  <concept>
+    <code value="onlytreatmentfororgandonation"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+  </concept>
+  <concept>
+    <code value="euthanasiarequest"/>
+  </concept>
+  <concept>
+    <code value="euthanasiarefusal"/>
+  </concept>
+  <concept>
+    <code value="organdonationfortransplant"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialfortransplant"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialformedication"/>
+  </concept>
+  <concept>
+    <code value="bodymaterialforresearch"/>
+  </concept>
+  <concept>
+    <code value="bodydonationforscience"/>
+  </concept>
+  <concept>
+    <code value="burialbody"/>
+  </concept>
+  <concept>
+    <code value="burialashescemetry"/>
+  </concept>
+  <concept>
+    <code value="columbariumashes"/>
+  </concept>
+  <concept>
+    <code value="scattergardenashes"/>
+  </concept>
+  <concept>
+    <code value="scatterashesbelgiansea"/>
+  </concept>
+  <concept>
+    <code value="scatterashesother"/>
+  </concept>
+  <concept>
+    <code value="burialashesother"/>
+  </concept>
+  <concept>
+    <code value="storeashesother"/>
+  </concept>
+  <concept>
+    <code value="norituals"/>
+  </concept>
+  <concept>
+    <code value="catholic"/>
+  </concept>
+  <concept>
+    <code value="protestant"/>
+  </concept>
+  <concept>
+    <code value="anglican"/>
+  </concept>
+  <concept>
+    <code value="orthodox"/>
+  </concept>
+  <concept>
+    <code value="jewish"/>
+  </concept>
+  <concept>
+    <code value="islamic"/>
+  </concept>
+  <concept>
+    <code value="secular"/>
+  </concept>
+  <concept>
+    <code value="neutral"/>
+  </concept>
+</CodeSystem>

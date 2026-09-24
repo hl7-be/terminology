@@ -1,0 +1,256 @@
+BETerminology : Validation Results
+=========================================
+
+err = 0, warn = 27, info = 13
+IG Publisher Version: 2.3.4
+Generated Thu Sep 24 08:17:40 UTC 2026. FHIR version 4.0.1 for hl7.fhir.be.terminology#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/terminology)
+ Build Errors : 0 / 1 / 0
+ /work/fsh-generated/resources/CodeSystem-agreement-errors : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-agreement-types : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-annex-types : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-bodysite : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-care-location : 0 / 3 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-exemption-code : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-norm-code : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-claim-transplantation-code : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-holder-code-1 : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-holder-code-2 : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-hospital-service-cd : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-input-type : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-manual-input-justification : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-media-type : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-id-doc-vignette-use-justification : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-problem-category : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-problem-origin-type : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-requester-norm : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-score : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-score-category : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-speech-therapy-pathology-situation-code : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-treatment-reason : 0 / 1 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-administration-route : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-confirmation-status : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccination-status-reason : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccine-code : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-be-cs-vaccine-target-disease : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-civilstate : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-contact-person : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-fed-country : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-cd-hcparty : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-decision-values : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-message-events : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-nihdi-physiotherapy-pathologysituationcode : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-refusal-values : 0 / 2 / 1
+ /work/fsh-generated/resources/CodeSystem-waitingforinformation-values : 0 / 2 / 1
+ /work/fsh-generated/resources/ConceptMap-BeCMISOToothSnomedCT : 0 / 3 / 3
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.terminology : 0 / 0 / 1
+ /work/fsh-generated/resources/NamingSystem-be-cbe : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ehp : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-insurancenumber : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-insurancymembership : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-nihdi : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-allergy : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-claim-related-claim : 0 / 3 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-nomenclature : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-organization : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-nihdi-professional : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-one-vaccination : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-product-manufacturer : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ns-vaccinnet-vaccinecode : 0 / 1 / 1
+ /work/fsh-generated/resources/NamingSystem-be-ssin : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-allergyintolerancecode : 0 / 2 / 3
+ /work/fsh-generated/resources/ValueSet-be-causativeagent : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-civilstate : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-exposureroute : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-noallergy : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-riskmanifestation : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-allergyintolerance-type : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-basic-laterality : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-body-topography : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-bodysite : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-care-location : 0 / 3 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-cd-hcparty : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-exemption-code : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-norm-code : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-claim-transplantation-code : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-contact-person : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-decision-values : 0 / 2 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-eagreementerrors : 0 / 2 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-gender-at-birth : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-holder-code-1 : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-holder-code-2 : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-hospital-service-cd : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-input-type : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-manual-input-justification : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-media-type : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-id-doc-vignette-use-justification : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-laterality : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-patient-relationship-type : 0 / 26 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-category : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-code : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-disease-course : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-problem-origin-type : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-reaction-manifestation-code : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-requester-norm : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-score : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-scorecategory : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-severity : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-speech-therapy-pathology-situation-code : 0 / 1 / 2
+ /work/fsh-generated/resources/ValueSet-be-vs-toothnumber-bodysite : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-treatment-reason : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-bodysite : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-product : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-reason-code : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccine-code : 0 / 2 / 1
+ /work/fsh-generated/resources/ValueSet-be-vs-vaccine-target-disease : 0 / 2 / 2
+ /work/fsh-generated/resources/ValueSet-eagreementadjudicationreason : 0 / 2 / 3
+ /work/fsh-generated/resources/ValueSet-eagreementmessage : 0 / 4 / 2
+ /work/fsh-generated/resources/ValueSet-eagreementproductorservice : 0 / 2 / 4
+</table>
+== n/a ==
+WARNING: en/ValueSet-be-vs-body-topography.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 296, column 10: The link 'https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography' for "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography" is a canonical link and is therefore unsafe with regard to versions
+== fsh-generated/resources/CodeSystem-agreement-errors.json ==
+== fsh-generated/resources/CodeSystem-agreement-types.json ==
+== fsh-generated/resources/CodeSystem-annex-types.json ==
+== fsh-generated/resources/CodeSystem-be-cs-bodysite.json ==
+== fsh-generated/resources/CodeSystem-be-cs-care-location.json ==
+== fsh-generated/resources/CodeSystem-be-cs-claim-exemption-code.json ==
+== fsh-generated/resources/CodeSystem-be-cs-claim-norm-code.json ==
+== fsh-generated/resources/CodeSystem-be-cs-claim-transplantation-code.json ==
+== fsh-generated/resources/CodeSystem-be-cs-holder-code-1.json ==
+== fsh-generated/resources/CodeSystem-be-cs-holder-code-2.json ==
+== fsh-generated/resources/CodeSystem-be-cs-hospital-service-cd.json ==
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-input-type.json ==
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-manual-input-justification.json ==
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-media-type.json ==
+== fsh-generated/resources/CodeSystem-be-cs-id-doc-vignette-use-justification.json ==
+== fsh-generated/resources/CodeSystem-be-cs-problem-category.json ==
+== fsh-generated/resources/CodeSystem-be-cs-problem-origin-type.json ==
+== fsh-generated/resources/CodeSystem-be-cs-requester-norm.json ==
+== fsh-generated/resources/CodeSystem-be-cs-score.json ==
+== fsh-generated/resources/CodeSystem-be-cs-score-category.json ==
+== fsh-generated/resources/CodeSystem-be-cs-speech-therapy-pathology-situation-code.json ==
+== fsh-generated/resources/CodeSystem-be-cs-treatment-reason.json ==
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-administration-route.json ==
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-confirmation-status.json ==
+== fsh-generated/resources/CodeSystem-be-cs-vaccination-status-reason.json ==
+== fsh-generated/resources/CodeSystem-be-cs-vaccine-code.json ==
+== fsh-generated/resources/CodeSystem-be-cs-vaccine-target-disease.json ==
+== fsh-generated/resources/CodeSystem-cd-civilstate.json ==
+== fsh-generated/resources/CodeSystem-cd-contact-person.json ==
+== fsh-generated/resources/CodeSystem-cd-fed-country.json ==
+== fsh-generated/resources/CodeSystem-cd-hcparty.json ==
+== fsh-generated/resources/CodeSystem-decision-values.json ==
+== fsh-generated/resources/CodeSystem-message-events.json ==
+== fsh-generated/resources/CodeSystem-nihdi-physiotherapy-pathologysituationcode.json ==
+== fsh-generated/resources/CodeSystem-refusal-values.json ==
+== fsh-generated/resources/CodeSystem-waitingforinformation-values.json ==
+== fsh-generated/resources/ConceptMap-BeCMISOToothSnomedCT.json ==
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.source.ofType(uri): No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[0].source: No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+WARNING: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[1].source: No definition could be found for URL value 'https://www.iso.org/standard/68292.html'
+INFORMATION: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[0].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+INFORMATION: ConceptMap/BeCMISOToothSnomedCT: ConceptMap.group[1].target: Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.terminology.json ==
+== fsh-generated/resources/NamingSystem-be-cbe.json ==
+== fsh-generated/resources/NamingSystem-be-ehp.json ==
+== fsh-generated/resources/NamingSystem-be-insurancenumber.json ==
+== fsh-generated/resources/NamingSystem-be-insurancymembership.json ==
+== fsh-generated/resources/NamingSystem-be-nihdi.json ==
+== fsh-generated/resources/NamingSystem-be-ns-allergy.json ==
+== fsh-generated/resources/NamingSystem-be-ns-claim-related-claim.json ==
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-nomenclature.json ==
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-organization.json ==
+== fsh-generated/resources/NamingSystem-be-ns-nihdi-professional.json ==
+== fsh-generated/resources/NamingSystem-be-ns-one-vaccination.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-manufacturer.json ==
+== fsh-generated/resources/NamingSystem-be-ns-vaccinnet-vaccinecode.json ==
+== fsh-generated/resources/NamingSystem-be-ssin.json ==
+== fsh-generated/resources/ValueSet-be-allergyintolerancecode.json ==
+INFORMATION: ValueSet.where(id = 'be-allergyintolerancecode'): The value set expansion is too large, and only a subset has been displayed
+== fsh-generated/resources/ValueSet-be-causativeagent.json ==
+== fsh-generated/resources/ValueSet-be-civilstate.json ==
+== fsh-generated/resources/ValueSet-be-exposureroute.json ==
+== fsh-generated/resources/ValueSet-be-noallergy.json ==
+== fsh-generated/resources/ValueSet-be-riskmanifestation.json ==
+== fsh-generated/resources/ValueSet-be-vs-allergyintolerance-type.json ==
+== fsh-generated/resources/ValueSet-be-vs-basic-laterality.json ==
+== fsh-generated/resources/ValueSet-be-vs-body-topography.json ==
+== fsh-generated/resources/ValueSet-be-vs-bodysite.json ==
+== fsh-generated/resources/ValueSet-be-vs-care-location.json ==
+== fsh-generated/resources/ValueSet-be-vs-cd-hcparty.json ==
+== fsh-generated/resources/ValueSet-be-vs-claim-exemption-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-claim-norm-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-claim-transplantation-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-contact-person.json ==
+== fsh-generated/resources/ValueSet-be-vs-decision-values.json ==
+INFORMATION: ValueSet/be-vs-decision-values: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/decision-values' which has status 'fragment'
+== fsh-generated/resources/ValueSet-be-vs-eagreementerrors.json ==
+INFORMATION: ValueSet/be-vs-eagreementerrors: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/agreement-errors' which has status 'fragment'
+== fsh-generated/resources/ValueSet-be-vs-gender-at-birth.json ==
+== fsh-generated/resources/ValueSet-be-vs-holder-code-1.json ==
+== fsh-generated/resources/ValueSet-be-vs-holder-code-2.json ==
+== fsh-generated/resources/ValueSet-be-vs-hospital-service-cd.json ==
+== fsh-generated/resources/ValueSet-be-vs-id-doc-input-type.json ==
+== fsh-generated/resources/ValueSet-be-vs-id-doc-manual-input-justification.json ==
+== fsh-generated/resources/ValueSet-be-vs-id-doc-media-type.json ==
+== fsh-generated/resources/ValueSet-be-vs-id-doc-vignette-use-justification.json ==
+== fsh-generated/resources/ValueSet-be-vs-laterality.json ==
+== fsh-generated/resources/ValueSet-be-vs-patient-relationship-type.json ==
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[0]: The concept '444191003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[1]: The concept '444304005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[2]: The concept '444295003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[3]: The concept '444148008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[4]: The concept '444055008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[5]: The concept '444294004' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[6]: The concept '767308003' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[7]: The concept '444193000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[8]: The concept '444301002' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[9]: The concept '444053001' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[10]: The concept '444241008' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[11]: The concept '444303004' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[12]: The concept '444302009' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[13]: The concept '444194006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[14]: The concept '444243006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[15]: The concept '444242001' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[16]: The concept '444293005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[17]: The concept '444244000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[18]: The concept '444292000' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[19]: The concept '444054007' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[20]: The concept '444192005' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[21]: The concept '739683002' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[22]: The concept '699111006' has a status of inactive and its use should be reviewed
+WARNING: ValueSet/be-vs-patient-relationship-type: ValueSet.compose.include[0].concept[23]: The concept '444052006' has a status of inactive and its use should be reviewed
+== fsh-generated/resources/ValueSet-be-vs-problem-category.json ==
+== fsh-generated/resources/ValueSet-be-vs-problem-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-problem-disease-course.json ==
+== fsh-generated/resources/ValueSet-be-vs-problem-origin-type.json ==
+== fsh-generated/resources/ValueSet-be-vs-reaction-manifestation-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-requester-norm.json ==
+== fsh-generated/resources/ValueSet-be-vs-score.json ==
+== fsh-generated/resources/ValueSet-be-vs-scorecategory.json ==
+== fsh-generated/resources/ValueSet-be-vs-severity.json ==
+== fsh-generated/resources/ValueSet-be-vs-speech-therapy-pathology-situation-code.json ==
+INFORMATION: ValueSet/be-vs-speech-therapy-pathology-situation-code: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code' which has status 'fragment'
+== fsh-generated/resources/ValueSet-be-vs-toothnumber-bodysite.json ==
+== fsh-generated/resources/ValueSet-be-vs-treatment-reason.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-administration-route.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-bodysite.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-confirmation-status.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-product.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-reason-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccination-status-reason.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccine-code.json ==
+== fsh-generated/resources/ValueSet-be-vs-vaccine-target-disease.json ==
+INFORMATION: ValueSet/be-vs-vaccine-target-disease: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-target-disease' which has status 'fragment'
+== fsh-generated/resources/ValueSet-eagreementadjudicationreason.json ==
+INFORMATION: ValueSet/eagreementadjudicationreason: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/refusal-values' which has status 'fragment'
+INFORMATION: ValueSet/eagreementadjudicationreason: ValueSet.compose.include[1]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/waitingforinformation-values' which has status 'fragment'
+== fsh-generated/resources/ValueSet-eagreementmessage.json ==
+INFORMATION: ValueSet/eagreementmessage: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/message-events' which has status 'fragment'
+== fsh-generated/resources/ValueSet-eagreementproductorservice.json ==
+INFORMATION: ValueSet/eagreementproductorservice: ValueSet.compose.include[0]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/nihdi-physiotherapy-pathologysituationcode' which has status 'fragment'
+INFORMATION: ValueSet/eagreementproductorservice: ValueSet.compose.include[1]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code' which has status 'fragment'
+INFORMATION: ValueSet/eagreementproductorservice: ValueSet.compose.include[2]: The value set references CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/annex-types' which has status 'fragment'

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agreement-errors"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact">
+    <valueRelatedArtifact>
+      <type value="predecessor"/>
+      <resource value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors"/>
+    </valueRelatedArtifact>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/agreement-errors"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.200.11.16.1"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="MyCareNetAgreementErrors"/>
+  <title value="CodeSystem agreement errors"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-24T08:15:23+00:00"/>
+  <description value="Errors in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) Not all codes are defined here, a full list can be found on mycarenet.be."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="MISSING_BUNDLE_ID"/>
+  </concept>
+  <concept>
+    <code value="MISSING_CLAIM_SERVICEREQUEST_SUPPORTINGINFO"/>
+  </concept>
+</CodeSystem>

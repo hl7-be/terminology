@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-vaccine-target-disease",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-target-disease",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.200.11.16.27"
+  }],
+  "version" : "1.0.0",
+  "name" : "BeCSVaccineTargetDisease",
+  "title" : "BeCSVaccineTargetDisease",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-09-24T08:15:23+00:00",
+  "description" : "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vaccines",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "fragment"
+}

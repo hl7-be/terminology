@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineAdherenceStatus"/>
+  <language value="en"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineAdherenceStatus"/>
+  <title value="Medication Line Adherence Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:28:44+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication Line Adherence Status - ValueSet."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="taking"/>
+    <display value="Taking"/>
+    <definition value="The medication is being taken."/>
+    <concept>
+      <code value="taking-as-directed"/>
+      <display value="Taking As Directed"/>
+      <definition value="The medication is being taken as directed."/>
+    </concept>
+    <concept>
+      <code value="taking-not-as-directed"/>
+      <display value="Taking Not As Directed"/>
+      <definition value="The medication is not being taken as directed."/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="not-taking"/>
+    <display value="Not Taking"/>
+    <definition value="The medication is not being taken."/>
+    <concept>
+      <code value="on-hold"/>
+      <display value="On Hold"/>
+      <definition value="The medication is on hold."/>
+      <concept>
+        <code value="on-hold-as-directed"/>
+        <display value="On Hold As Directed"/>
+        <definition value="The medication is on hold as directed."/>
+      </concept>
+      <concept>
+        <code value="on-hold-not-as-directed"/>
+        <display value="On Hold Not As Directed"/>
+        <definition value="The medication is on hold not as directed."/>
+      </concept>
+    </concept>
+    <concept>
+      <code value="stopped"/>
+      <display value="Stopped"/>
+      <definition value="The medication is stopped."/>
+      <concept>
+        <code value="stopped-as-directed"/>
+        <display value="Stopped As Directed"/>
+        <definition value="The medication is stopped as directed."/>
+      </concept>
+      <concept>
+        <code value="stopped-not-as-directed"/>
+        <display value="Stopped Not As Directed"/>
+        <definition value="The medication is stopped not as directed."/>
+      </concept>
+    </concept>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <definition value="Whether the medication is being taken or not is not currently known."/>
+  </concept>
+</CodeSystem>
