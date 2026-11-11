@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-pseudonymization-type"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type"/>
+  <version value="1.2.0"/>
+  <name value="BeCSPseudonymizationType"/>
+  <title value="Types of pseudonymization"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-12T09:42:51+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The technique used for pseudonymization"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="direct"/>
+    <display value="Direct pseudonym, for text shorter than 32 bytes"/>
+  </concept>
+  <concept>
+    <code value="encrypted"/>
+    <display value="Encrypted pseudonym, for text longer than 32 bytes"/>
+  </concept>
+</CodeSystem>

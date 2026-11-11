@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-vaccination-bodysite"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-vaccination-bodysite"/>
+  <version value="1.0.0"/>
+  <name value="BeVSVaccinationBodySite"/>
+  <title value="BeVSVaccinationBodySite"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Vaccination Body Site Value Set"/>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="35259002"/>
+        <display value="Deltoid muscle"/>
+      </concept>
+      <concept>
+        <code value="50092008"/>
+        <display value="Muscle of thigh"/>
+      </concept>
+      <concept>
+        <code value="102291007"/>
+        <display value="Muscle of buttock"/>
+      </concept>
+      <concept>
+        <code value="371309009"/>
+        <display value="Skin structure of upper arm (body structure)"/>
+      </concept>
+      <concept>
+        <code value="5742000"/>
+        <display value="Skin of forearm"/>
+      </concept>
+      <concept>
+        <code value="371305003"/>
+        <display value="Skin structure of thigh (body structure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

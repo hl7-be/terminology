@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-problem-disease-course",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/ProblemDiseaseCourseVS"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-problem-disease-course",
+  "version" : "1.0.0",
+  "name" : "BeVSProblemDiseaseCourse",
+  "title" : "Condition Disease Course",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-20T07:58:55+00:00",
+  "description" : "Condition disease course.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "288524001"
+      }]
+    }]
+  }
+}

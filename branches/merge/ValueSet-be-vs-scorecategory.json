@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-scorecategory",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-scorecategory"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-scorecategory",
+  "version" : "1.0.0",
+  "name" : "BeVSScoreCategory",
+  "title" : "Score Category Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Score Category Value Set",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-score-category"
+    }]
+  }
+}

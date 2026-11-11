@@ -1,0 +1,194 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-requested-services-nurse-detail> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-vs-requested-services-nurse-detail"] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse-detail"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse-detail>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeVSRequestedServicesNurseDetail"] ; # 
+  fhir:title [ fhir:v "BeVSRequestedServicesNurseDetail"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-10T14:13:48+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DEMONSTRATIVE EXAMPLE - Codes indicating the request details that can be asked from a nurse."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail>
+       ]
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "118292001" ]
+       ] [
+         fhir:code [ fhir:v "162098000" ]
+       ] [
+         fhir:code [ fhir:v "163033001" ]
+       ] [
+         fhir:code [ fhir:v "163034007" ]
+       ] [
+         fhir:code [ fhir:v "173765009" ]
+       ] [
+         fhir:code [ fhir:v "176192000" ]
+       ] [
+         fhir:code [ fhir:v "182524008" ]
+       ] [
+         fhir:code [ fhir:v "18949003" ]
+       ] [
+         fhir:code [ fhir:v "225103006" ]
+       ] [
+         fhir:code [ fhir:v "225150002" ]
+       ] [
+         fhir:code [ fhir:v "225908003" ]
+       ] [
+         fhir:code [ fhir:v "226007004" ]
+       ] [
+         fhir:code [ fhir:v "2267008" ]
+       ] [
+         fhir:code [ fhir:v "241025004" ]
+       ] [
+         fhir:code [ fhir:v "246124003" ]
+       ] [
+         fhir:code [ fhir:v "247450001" ]
+       ] [
+         fhir:code [ fhir:v "248343001" ]
+       ] [
+         fhir:code [ fhir:v "256897009" ]
+       ] [
+         fhir:code [ fhir:v "262061000" ]
+       ] [
+         fhir:code [ fhir:v "262068006" ]
+       ] [
+         fhir:code [ fhir:v "30549001" ]
+       ] [
+         fhir:code [ fhir:v "335353000" ]
+       ] [
+         fhir:code [ fhir:v "35963001" ]
+       ] [
+         fhir:code [ fhir:v "364632003" ]
+       ] [
+         fhir:code [ fhir:v "364689004" ]
+       ] [
+         fhir:code [ fhir:v "36777000" ]
+       ] [
+         fhir:code [ fhir:v "370858005" ]
+       ] [
+         fhir:code [ fhir:v "37318803" ]
+       ] [
+         fhir:code [ fhir:v "3895009" ]
+       ] [
+         fhir:code [ fhir:v "390951007" ]
+       ] [
+         fhir:code [ fhir:v "39477002" ]
+       ] [
+         fhir:code [ fhir:v "408342007" ]
+       ] [
+         fhir:code [ fhir:v "410021007" ]
+       ] [
+         fhir:code [ fhir:v "410379003" ]
+       ] [
+         fhir:code [ fhir:v "410582009" ]
+       ] [
+         fhir:code [ fhir:v "410619003" ]
+       ] [
+         fhir:code [ fhir:v "41351007" ]
+       ] [
+         fhir:code [ fhir:v "415882003" ]
+       ] [
+         fhir:code [ fhir:v "431314004" ]
+       ] [
+         fhir:code [ fhir:v "445606007" ]
+       ] [
+         fhir:code [ fhir:v "450969007" ]
+       ] [
+         fhir:code [ fhir:v "45710003" ]
+       ] [
+         fhir:code [ fhir:v "467848007" ]
+       ] [
+         fhir:code [ fhir:v "48817005" ]
+       ] [
+         fhir:code [ fhir:v "55449009" ]
+       ] [
+         fhir:code [ fhir:v "6125005" ]
+       ] [
+         fhir:code [ fhir:v "698610002" ]
+       ] [
+         fhir:code [ fhir:v "699826006" ]
+       ] [
+         fhir:code [ fhir:v "75325006" ]
+       ] [
+         fhir:code [ fhir:v "75367002" ]
+       ] [
+         fhir:code [ fhir:v "762238003" ]
+       ] [
+         fhir:code [ fhir:v "78014005" ]
+       ] [
+         fhir:code [ fhir:v "791006" ]
+       ] [
+         fhir:code [ fhir:v "79165006" ]
+       ] [
+         fhir:code [ fhir:v "79710002" ]
+       ] [
+         fhir:code [ fhir:v "81011003" ]
+       ] [
+         fhir:code [ fhir:v "8499008" ]
+       ] [
+         fhir:code [ fhir:v "86290005" ]
+       ] [
+         fhir:code [ fhir:v "87612001" ]
+       ] [
+         fhir:code [ fhir:v "87750000" ]
+       ] [
+         fhir:code [ fhir:v "89826002" ]
+       ] [
+         fhir:code [ fhir:v "90838004" ]
+       ] [
+         fhir:code [ fhir:v "337414009" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

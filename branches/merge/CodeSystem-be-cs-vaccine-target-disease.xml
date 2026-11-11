@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccine-target-disease"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-target-disease"/>
+  <version value="1.0.0"/>
+  <name value="BeCSVaccineTargetDisease"/>
+  <title value="BeCSVaccineTargetDisease"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vaccines"/>
+  <content value="fragment"/>
+</CodeSystem>

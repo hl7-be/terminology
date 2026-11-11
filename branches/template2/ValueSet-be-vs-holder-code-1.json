@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-holder-code-1",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ValueSet/be-vs-holder-code-1"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-holder-code-1",
+  "version" : "1.0.0",
+  "name" : "BeVSHolderCode1",
+  "title" : "BeVSHolderCode1",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-20T07:58:55+00:00",
+  "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-holder-code-1"
+    }]
+  }
+}

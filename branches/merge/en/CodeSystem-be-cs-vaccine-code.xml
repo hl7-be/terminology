@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccine-code"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-code"/>
+  <version value="1.0.0"/>
+  <name value="BeCSVaccineCode"/>
+  <title value="BeCSVaccineCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Vaccine Code Code System - set of Belgian codes for types of vaccines that are administered"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+  </concept>
+</CodeSystem>

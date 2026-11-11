@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-claim-norm-code"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-claim-norm-code"/>
+  <version value="1.0.0"/>
+  <name value="BeCSClaimNormCode"/>
+  <title value="Claim Norm Code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="RT50Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="0"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+  </concept>
+</CodeSystem>

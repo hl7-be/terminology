@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-speech-therapy-pathology-situation-code"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-wg>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "fhir"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code"^^xsd:anyURI ;
+     fhir:l <https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeCSSpeechTherapyPathologySituationCode"] ; # 
+  fhir:title [ fhir:v "Speech Therapy Pathology Situation code"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-02-17T19:22:03+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.ehealth.fgov.be/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Texte de la nomenclature (Article 36, par. 2)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "a" ] ;
+     fhir:display [ fhir:v "Oral language and/or speech disorders" ]
+  ] [
+     fhir:code [ fhir:v "b1" ] ;
+     fhir:display [ fhir:v "Aphasia" ]
+  ] [
+     fhir:code [ fhir:v "b2" ] ;
+     fhir:display [ fhir:v "Development of receptive and/or expressive language" ]
+  ] [
+     fhir:code [ fhir:v "b3" ] ;
+     fhir:display [ fhir:v "Dyslexia/dysorthography/dyscalculia" ]
+  ] [
+     fhir:code [ fhir:v "b4" ] ;
+     fhir:display [ fhir:v "Cleft lip, palate or alveolar" ]
+  ] [
+     fhir:code [ fhir:v "b5" ] ;
+     fhir:display [ fhir:v "Radiotherapy or surgery (head/neck)" ]
+  ] [
+     fhir:code [ fhir:v "b6-1" ] ;
+     fhir:display [ fhir:v "Traumatic or proliferative dysglossias" ]
+  ] [
+     fhir:code [ fhir:v "b6-2" ] ;
+     fhir:display [ fhir:v "Dysarthria" ]
+  ] [
+     fhir:code [ fhir:v "b6-3" ] ;
+     fhir:display [ fhir:v "Chronic speech disorders" ]
+  ] [
+     fhir:code [ fhir:v "b6-4" ] ;
+     fhir:display [ fhir:v "Stuttering" ]
+  ] [
+     fhir:code [ fhir:v "b6-5" ] ;
+     fhir:display [ fhir:v "Interceptive orthodontic treatment" ]
+  ] [
+     fhir:code [ fhir:v "c1" ] ;
+     fhir:display [ fhir:v "Laryngectomy" ]
+  ] [
+     fhir:code [ fhir:v "c2" ] ;
+     fhir:display [ fhir:v "Dysfunction of the larynx and/or vocal chords" ]
+  ] [
+     fhir:code [ fhir:v "d" ] ;
+     fhir:display [ fhir:v "Hearing problems" ]
+  ] [
+     fhir:code [ fhir:v "e" ] ;
+     fhir:display [ fhir:v "Dysphagia" ]
+  ] [
+     fhir:code [ fhir:v "f" ] ;
+     fhir:display [ fhir:v "Dysphasia" ]
+  ] [
+     fhir:code [ fhir:v "g" ] ;
+     fhir:display [ fhir:v "Locked-in Syndrome" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

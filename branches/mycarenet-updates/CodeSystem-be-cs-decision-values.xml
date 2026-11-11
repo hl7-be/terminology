@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-decision-values"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/decision-values"/>
+  <version value="2.1.2"/>
+  <name value="BeCSDecisionValues"/>
+  <title value="MyCareNet Decision values"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-10T09:50:54+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Decision values in the agreement flows of MyCareNet. These values were delivered by the &#xA;NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) The codes are not defined here, a full list can be found on mycarenet.be."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="agreement"/>
+    <display value="agreement"/>
+  </concept>
+  <concept>
+    <code value="intreatment"/>
+    <display value="intreatment"/>
+  </concept>
+  <concept>
+    <code value="refusal"/>
+    <display value="refusal"/>
+  </concept>
+  <concept>
+    <code value="wfi-physiotherapist"/>
+    <display value="wfi-physiotherapist"/>
+  </concept>
+  <concept>
+    <code value="wfi-prescriptor"/>
+    <display value="wfi-prescriptor"/>
+  </concept>
+  <concept>
+    <code value="tariff"/>
+    <display value="tariff"/>
+  </concept>
+  <concept>
+    <code value="wfi-serviceprovider"/>
+    <display value="wfi-serviceprovider"/>
+  </concept>
+  <concept>
+    <code value="partialAgreement"/>
+    <display value="partialAgreement"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-body-topography"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography"/>
+  <version value="1.0.0"/>
+  <name value="BeVSBodyTopography"/>
+  <title value="BeVSBodyTopography"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-20T07:58:55+00:00"/>
+  <description value="Body topography value set - describes the location or relative position on the body (e.g., superior/inferior, medial/lateral, internal/external)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="in"/>
+        <value value="211201000172100"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-gender-at-birth"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-gender-at-birth"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-gender-at-birth"/>
+  <version value="1.0.0"/>
+  <name value="BeVSGenderAtBirth"/>
+  <title value="List of possible genders at birth in Belgium"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="BeVSGenderAtBirth"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/administrative-gender"/>
+    </include>
+  </compose>
+</ValueSet>

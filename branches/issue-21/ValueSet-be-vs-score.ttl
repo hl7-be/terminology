@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-vs-score> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-vs-score"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-score>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BeVSScore"] ; # 
+  fhir:title [ fhir:v "Score Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2020-10-01T11:01:09+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@www.ehealth.fgov.be" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message-Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@www.ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes as defined by the NIHDI. Dutch translations are expected for a next release."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "763117005" ] ;
+         fhir:display [ fhir:v "FINDRISC (Finnish Diabetes Risk Score) score" ] ;
+         fhir:designation ( [
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [
+               fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+               fhir:l <http://snomed.info/sct>
+             ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Finnish Diabetes Risk Score (observable entity)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Finnish Diabetes Risk Score" ]
+         ] [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Finnish Diabetes Risk Score" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "446661009" ] ;
+         fhir:display [ fhir:v "Visual Analogic Scale for pain assessment" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "(EVA) Echelle Visuelle Analogique" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273531005" ] ;
+         fhir:display [ fhir:v "Index of Independence in Activities of Daily Living" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Grille d'évaluation de l'autonomie pour les activités basales de la vie quotidienne" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "447316007" ] ;
+         fhir:display [ fhir:v "Mini-Mental State Examination" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Examen mental de Folstein" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444297006" ] ;
+         fhir:display [ fhir:v "Malnutrition Universal Screening" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Malnutrition Universal Screening" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443133008" ] ;
+         fhir:display [ fhir:v "Norton Pressure Sore Risk-Assessment Scale Scoring System" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "évaluation du risque d'escarre" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "7121000122100" ] ;
+         fhir:display [ fhir:v "Pain Assessment in Advanced Dementia Scale" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Hétéro-évaluation de la douleur chez la personne âgée non communicante" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273849003" ] ;
+         fhir:display [ fhir:v "Subjective Global Assessment" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Subjective Global Assessment" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "450738001" ] ;
+         fhir:display [ fhir:v "Timed Chair Stand" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "évaluation des risques de chutes et la force musculaire des membres inférieurs" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444680009" ] ;
+         fhir:display [ fhir:v "Timed Up&Go : évalue le risque de chute chez une personne" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "Timed Up&Go : évalue le risque de chute chez une personne" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "278897004" ] ;
+         fhir:display [ fhir:v "Waterlow pressure ulcer risk assessment" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "(WATERLOW) Echelle d'évaluation du risque d'escarre" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "763259004" ] ;
+         fhir:display [ fhir:v "Disease Activity Score" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "(DAS) Score d'activité de la polyarthrite rhumatoïde" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273364009" ] ;
+         fhir:display [ fhir:v "Clinical Disease Activity Index" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "(CDAI) Indice d'activité de la polyarthrite rhumatoïde" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443318007" ] ;
+         fhir:display [ fhir:v "Tinetti balance and gait scale" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "évalue le risque de chute chez une personne âgée" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719124004" ] ;
+         fhir:display [ fhir:v "Arthritis Impact Measurement Scales 2 (AIMS2)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "fr-BE" ] ;
+           fhir:value [ fhir:v "(EMIR) Echelle de Mesure de l'Impact de la Polyarthrite Rhumatoïde" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

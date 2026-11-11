@@ -1,0 +1,78 @@
+# BeVSVaccinationBodySite - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## ValueSet: BeVSVaccinationBodySite 
+
+ 
+Vaccination Body Site Value Set 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-vaccination-bodysite",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/replaces",
+    "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-vaccination-bodysite",
+  "version" : "1.0.0",
+  "name" : "BeVSVaccinationBodySite",
+  "title" : "BeVSVaccinationBodySite",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-04-24T10:05:30+00:00",
+  "description" : "Vaccination Body Site Value Set",
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "35259002",
+        "display" : "Deltoid muscle"
+      },
+      {
+        "code" : "50092008",
+        "display" : "Muscle of thigh"
+      },
+      {
+        "code" : "102291007",
+        "display" : "Muscle of buttock"
+      },
+      {
+        "code" : "371309009",
+        "display" : "Skin structure of upper arm (body structure)"
+      },
+      {
+        "code" : "5742000",
+        "display" : "Skin of forearm"
+      },
+      {
+        "code" : "371305003",
+        "display" : "Skin structure of thigh (body structure)"
+      }]
+    }]
+  }
+}
+
+```

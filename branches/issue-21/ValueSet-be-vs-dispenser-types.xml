@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-dispenser-types"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types"/>
+  <version value="1.1.0"/>
+  <name value="DispenserTypes"/>
+  <title value="Dispenser Types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:28:44+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Dispenser Types - from hcparty"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <concept>
+        <code value="deptpharmacy"/>
+      </concept>
+      <concept>
+        <code value="perspharmacist"/>
+      </concept>
+      <concept>
+        <code value="orgpharmacy"/>
+      </concept>
+      <concept>
+        <code value="perspharmacyassistant"/>
+      </concept>
+      <concept>
+        <code value="perspharmacistclinicalbiologist"/>
+      </concept>
+      <concept>
+        <code value="persdentist"/>
+      </concept>
+      <concept>
+        <code value="deptdentistry"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

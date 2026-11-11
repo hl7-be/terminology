@@ -1,0 +1,224 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/cd-civilstate> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cd-civilstate"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/replaces"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/replaces>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate>
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate>
+  ] ; # 
+  fhir:version [ fhir:v "2.1.2"] ; # 
+  fhir:name [ fhir:v "CivilState"] ; # 
+  fhir:title [ fhir:v "BeCdCivilState"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-08-30T17:14:57+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Civil state in Belgium."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Unmarried" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Unmarried" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Ongehuwd" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Célibataire" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "Married" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Married" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Gehuwd" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Marié" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "Annuled" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Annuled" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Nietigverklaring van het huwelijk" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Annulation de marriage" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "Putative marriage" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Putative marriage" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Putatief huwelijk" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Mariage putatif" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "Widowed" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Widowed" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Weduwnaar/weduwe" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Veuf/veuve" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "Divorced" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Divorced" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Echtgescheiden" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Divorced" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "Divorced since 1/10/1994" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Divorced since 1/10/1994" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Echtgescheiden vanaf 1/10/1994" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Divorcé à partir du 1/10/1994" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "50" ] ;
+     fhir:display [ fhir:v "Legal separation" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Legal separation" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Gescheiden van tafel en bed" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Séparé de corps et de biens" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "51" ] ;
+     fhir:display [ fhir:v "Legal separation since 1/10/1994" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Legal separation since 1/10/1994" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Gescheiden van tafel en bed sinds 1/10/1994" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Séparé de corps et de biens à partir du 1/10/1994" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "60" ] ;
+     fhir:display [ fhir:v "Repudiation" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Repudiation" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Verstoting" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Répudiation" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "80" ] ;
+     fhir:display [ fhir:v "Partnership" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Partnership" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Partnerschap" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Partenariat" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "81" ] ;
+     fhir:display [ fhir:v "End of partnership" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "End of partnership" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Partnerschap beeindigd" ]
+     ] [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Fin de partenariat" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

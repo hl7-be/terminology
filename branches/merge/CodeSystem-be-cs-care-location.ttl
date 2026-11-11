@@ -1,0 +1,298 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-care-location> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-cs-care-location"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/replaces"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/replaces>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location>
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location>
+  ] ; # 
+  fhir:version [ fhir:v "1.1.2"] ; # 
+  fhir:name [ fhir:v "BeCSCareLocation"] ; # 
+  fhir:title [ fhir:v "BeCSCareLocation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-27T15:12:01+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.ehealth.fgov.be/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Care Location Code System"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "23"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "hospital" ] ;
+     fhir:display [ fhir:v "Hospital" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "A l’hôpital" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Ziekenhuis" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "patient-home" ] ;
+     fhir:display [ fhir:v "Patient home" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "A domicile" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Thuis" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "nursing-home" ] ;
+     fhir:display [ fhir:v "Nursing home" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "En maison de repos" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Rusthuis" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "recovery-home" ] ;
+     fhir:display [ fhir:v "Recovery home" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "En maison de revalidation" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "In huis van revalidatie" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "workplace" ] ;
+     fhir:display [ fhir:v "Workplace" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Au cabinet" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "In het kantoor" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "medical-center" ] ;
+     fhir:display [ fhir:v "Medical center" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "En maison médicale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Medisch huis" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "clinic" ] ;
+     fhir:display [ fhir:v "Clinic" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "A la clinique" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Kliniek" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pediatric-ic" ] ;
+     fhir:display [ fhir:v "Pediatric ic" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "En unité de soins intensive pédiatrique" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Pediatrische intensive care" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "neonatal-ic" ] ;
+     fhir:display [ fhir:v "Neonatal ic" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "En unité de soins intensive pédiatrique néonatal" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Neonatale pediatrische intensive care" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "prenatal-consult" ] ;
+     fhir:display [ fhir:v "Prenatal consult" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Consultation prénatale" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "prenataal consult" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "m-accueil" ] ;
+     fhir:display [ fhir:v "m-accueil" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Milieu d’accueil" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "kinderopvang" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "child-consult" ] ;
+     fhir:display [ fhir:v "Child consult" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Consultation pour enfant" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "kind consult" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "one" ] ;
+     fhir:display [ fhir:v "ONE" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "ONE" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "ONE" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "kind-gezin" ] ;
+     fhir:display [ fhir:v "Kind en gezin" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Kind&Gezin" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Kind&Gezin" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ambulance" ] ;
+     fhir:display [ fhir:v "Ambulance" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Ambulance" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Ambulance" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "school" ] ;
+     fhir:display [ fhir:v "School" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "A l’école" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "School" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "school-health-serv" ] ;
+     fhir:display [ fhir:v "School health services" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "services de santé scolaire" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "gezondheidsdiensten op school" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pharmacy" ] ;
+     fhir:display [ fhir:v "Pharmacy" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Pharmacie" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Apotheek" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "med-monde" ] ;
+     fhir:display [ fhir:v "Med monde" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Médecin du monde" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "dokters van de wereld" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ngo" ] ;
+     fhir:display [ fhir:v "Non-Governmental Organization" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "ONG" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "NGO" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "family-planning" ] ;
+     fhir:display [ fhir:v "Family planning" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Centre planning familial" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Centrum gezinsplanning" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "abroad" ] ;
+     fhir:display [ fhir:v "Abroad" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "A l’étranger" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Buitenland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "other" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Autre" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Andere" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

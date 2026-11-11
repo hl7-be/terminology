@@ -1,0 +1,21 @@
+{
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology",
+  "name" : "BETerminology",
+  "title" : "HL7 Belgium terminology Implementation Guide (IG)",
+  "description" : "HL7 Belgium terminology Implementation Guide (IG).",
+  "ig-date" : "2025-05-26",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.be.terminology",
+  "ig-ver" : "1.0.0",
+  "date" : "Wed, 11 Nov, 2026 20:59:11 +0000",
+  "dateISO8601" : "2026-11-11T20:59:11+00:00",
+  "errs" : 0,
+  "warnings" : 28,
+  "hints" : 13,
+  "broken-links" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 170,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 861929472
+}

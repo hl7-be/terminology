@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="albert"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/albert"/>
+  <version value="1.0.0"/>
+  <name value="Albert"/>
+  <title value="CodeSystem Albert"/>
+  <status value="active"/>
+  <date value="2020-09-25T13:06:43+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This code system is to identify Albert code"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <content value="fragment"/>
+  <count value="1"/>
+  <concept>
+    <code value="26223"/>
+    <display value="Aldosterone (urine)"/>
+  </concept>
+</CodeSystem>

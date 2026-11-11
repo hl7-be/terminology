@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-holder-code-1"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1"/>
+  <version value="2.1.2"/>
+  <name value="BeCSHolderCode1"/>
+  <title value="Insurability code CT1"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-10T09:50:54+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="24"/>
+  <concept>
+    <code value="100"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+  </concept>
+  <concept>
+    <code value="111"/>
+  </concept>
+  <concept>
+    <code value="120"/>
+  </concept>
+  <concept>
+    <code value="121"/>
+  </concept>
+  <concept>
+    <code value="130"/>
+  </concept>
+  <concept>
+    <code value="131"/>
+  </concept>
+  <concept>
+    <code value="140"/>
+  </concept>
+  <concept>
+    <code value="141"/>
+  </concept>
+  <concept>
+    <code value="150"/>
+  </concept>
+  <concept>
+    <code value="151"/>
+  </concept>
+  <concept>
+    <code value="410"/>
+  </concept>
+  <concept>
+    <code value="411"/>
+  </concept>
+  <concept>
+    <code value="420"/>
+  </concept>
+  <concept>
+    <code value="421"/>
+  </concept>
+  <concept>
+    <code value="430"/>
+  </concept>
+  <concept>
+    <code value="431"/>
+  </concept>
+  <concept>
+    <code value="440"/>
+  </concept>
+  <concept>
+    <code value="441"/>
+  </concept>
+  <concept>
+    <code value="450"/>
+  </concept>
+  <concept>
+    <code value="451"/>
+  </concept>
+  <concept>
+    <code value="470"/>
+  </concept>
+  <concept>
+    <code value="480"/>
+  </concept>
+</CodeSystem>

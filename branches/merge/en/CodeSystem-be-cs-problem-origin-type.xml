@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-problem-origin-type"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-problem-origin-type"/>
+  <version value="1.0.0"/>
+  <name value="BeCSProblemOriginType"/>
+  <title value="Problem Origin Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Problem Origin Type"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="referral"/>
+    <display value="Referral order"/>
+    <definition value="Following a referral order"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="prescription de renvoi"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="verwijsvoorschrift"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="own-initiative"/>
+    <display value="Patient's own initiative"/>
+    <definition value="The patient has arrived on their own initiative"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="libre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Op eigen initiatief"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="counsel"/>
+    <display value="Advice or recommendation from another provider (no prescription)"/>
+    <definition value="From an advice or recommendation of a health professional (without prescription)"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="conseil"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="doorverwijzing"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="other"/>
+    <definition value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="andere"/>
+    </designation>
+  </concept>
+</CodeSystem>

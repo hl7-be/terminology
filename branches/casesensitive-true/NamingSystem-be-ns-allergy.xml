@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="be-ns-allergy"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="https://www.ehealth.fgov.be/standards/fhir/allergy/NamingSystem/be-ns-allergy"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="1.2.0"/>
+  </extension>
+  <name value="BeNSAllergy"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2022-06-28"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unique Identifier for Allergies in the Belgian Health Landscape"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://www.ehealth.fgov.be/standards/fhir/allergy/NamingSystem/be-ns-allergy"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

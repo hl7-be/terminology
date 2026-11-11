@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-vaccine-code"/>
+  <language value="en"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact">
+    <valueRelatedArtifact>
+      <type value="predecessor"/>
+      <resource value="https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"/>
+    </valueRelatedArtifact>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-vaccine-code"/>
+  <version value="1.0.0"/>
+  <name value="BeVSVaccineCode"/>
+  <title value="BeVSVaccineCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-20T07:58:55+00:00"/>
+  <description value="Vaccine Code Value Set - the types of vaccines that are administered in Belgium"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccine-code"/>
+      <concept>
+        <code value="other"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="787859002"/>
+      </concept>
+      <concept>
+        <code value="836500008"/>
+      </concept>
+      <concept>
+        <code value="871717007"/>
+      </concept>
+      <concept>
+        <code value="871719005"/>
+      </concept>
+      <concept>
+        <code value="871720004"/>
+      </concept>
+      <concept>
+        <code value="871721000"/>
+      </concept>
+      <concept>
+        <code value="871724008"/>
+      </concept>
+      <concept>
+        <code value="871726005"/>
+      </concept>
+      <concept>
+        <code value="871727001"/>
+      </concept>
+      <concept>
+        <code value="871729003"/>
+      </concept>
+      <concept>
+        <code value="871732000"/>
+      </concept>
+      <concept>
+        <code value="871737006"/>
+      </concept>
+      <concept>
+        <code value="871739009"/>
+      </concept>
+      <concept>
+        <code value="871742003"/>
+      </concept>
+      <concept>
+        <code value="871751006"/>
+      </concept>
+      <concept>
+        <code value="871758000"/>
+      </concept>
+      <concept>
+        <code value="871761004"/>
+      </concept>
+      <concept>
+        <code value="871764007"/>
+      </concept>
+      <concept>
+        <code value="871765008"/>
+      </concept>
+      <concept>
+        <code value="1209197008"/>
+      </concept>
+      <concept>
+        <code value="871803007"/>
+      </concept>
+      <concept>
+        <code value="871804001"/>
+      </concept>
+      <concept>
+        <code value="871817003"/>
+      </concept>
+      <concept>
+        <code value="871822003"/>
+      </concept>
+      <concept>
+        <code value="871826000"/>
+      </concept>
+      <concept>
+        <code value="871831003"/>
+      </concept>
+      <concept>
+        <code value="871837004"/>
+      </concept>
+      <concept>
+        <code value="871866001"/>
+      </concept>
+      <concept>
+        <code value="871871008"/>
+      </concept>
+      <concept>
+        <code value="871873006"/>
+      </concept>
+      <concept>
+        <code value="871875004"/>
+      </concept>
+      <concept>
+        <code value="871878002"/>
+      </concept>
+      <concept>
+        <code value="871886002"/>
+      </concept>
+      <concept>
+        <code value="871887006"/>
+      </concept>
+      <concept>
+        <code value="871891001"/>
+      </concept>
+      <concept>
+        <code value="871895005"/>
+      </concept>
+      <concept>
+        <code value="871908002"/>
+      </concept>
+      <concept>
+        <code value="871919004"/>
+      </concept>
+      <concept>
+        <code value="1052328007"/>
+      </concept>
+      <concept>
+        <code value="1052330009"/>
+      </concept>
+      <concept>
+        <code value="1119220001"/>
+      </concept>
+      <concept>
+        <code value="1252708008"/>
+      </concept>
+      <concept>
+        <code value="1252709000"/>
+      </concept>
+      <concept>
+        <code value="1360050007"/>
+      </concept>
+      <concept>
+        <code value="911000221103"/>
+      </concept>
+      <concept>
+        <code value="921000221108"/>
+      </concept>
+      <concept>
+        <code value="961000221100"/>
+      </concept>
+      <concept>
+        <code value="981000221107"/>
+      </concept>
+      <concept>
+        <code value="991000221105"/>
+      </concept>
+      <concept>
+        <code value="1181000221105"/>
+      </concept>
+      <concept>
+        <code value="1861000221106"/>
+      </concept>
+      <concept>
+        <code value="1981000221108"/>
+      </concept>
+      <concept>
+        <code value="1991000221106"/>
+      </concept>
+      <concept>
+        <code value="2001000221108"/>
+      </concept>
+      <concept>
+        <code value="28531000087107"/>
+      </concept>
+      <concept>
+        <code value="1252703004"/>
+      </concept>
+      <concept>
+        <code value="51311000087100"/>
+      </concept>
+      <concept>
+        <code value="871839001"/>
+      </concept>
+      <concept>
+        <code value="1252690003"/>
+      </concept>
+      <concept>
+        <code value="51451000087105"/>
+      </concept>
+      <concept>
+        <code value="1345202008"/>
+      </concept>
+      <concept>
+        <code value="777424002"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

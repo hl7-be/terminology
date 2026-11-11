@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BeMedicationRequestReimbursementType"] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/replaces"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/replaces>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType>
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType>
+  ] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "BeMedicationRequestReimbursementType"] ; # 
+  fhir:title [ fhir:v "Medication request reimbursement type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-10T13:23:29+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medication request reimbursement type - instructions for reimbursement of the medication request"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "third-party-payer-applicable" ] ;
+     fhir:display [ fhir:v "Third-party payer applicable" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Tiers-payant applicable" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Derdebetalersregeling van toepassing" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "first-dose" ] ;
+     fhir:display [ fhir:v "First dose" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "1ère dose" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "1ste toediening" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "second-dose" ] ;
+     fhir:display [ fhir:v "Second dose + [date of the first dose]" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "2ème dose + [date de la 1ère dose]" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "2de toediening + [datum 1ste toediening]" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "third-dose" ] ;
+     fhir:display [ fhir:v "Third dose + [date of the first and second dose]" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "3ème dose + [date de la 1ère et 2ème dose]" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "3de toediening + [datum 1ste en 2de toediening]" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "chronic-renal-failure-pathway" ] ;
+     fhir:display [ fhir:v "Care pathway chronic renal failure" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Trajet de soins insuffisance rénale chronique" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Zorgtraject chronische nierinsufficiëntie" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "diabetes-care-pathway" ] ;
+     fhir:display [ fhir:v "Care pathway diabetes" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Trajet de soins diabète" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Zorgtraject diabetes" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "diabetes-convention" ] ;
+     fhir:display [ fhir:v "Diabetes convention" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Convention diabète" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Diabetesconventie" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "non-reimbursable" ] ;
+     fhir:display [ fhir:v "Non-reimbursable" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Non remboursable" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Niet-vergoedbaar" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "startup-pathway-type-2-diabetes" ] ;
+     fhir:display [ fhir:v "Start-up pathway type 2 diabetes" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Trajet de démarrage diabète type 2" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Opstarttraject diabetes type 2" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

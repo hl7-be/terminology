@@ -1,0 +1,125 @@
+# BeVSVaccinationBodySite - HL7 Belgium terminology Implementation Guide (IG) v1.0.0
+
+## ValueSet: BeVSVaccinationBodySite 
+
+ 
+Vaccination Body Site Value Set 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-vaccination-bodysite",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite",
+  "version" : "1.1.2",
+  "name" : "BeVSVaccinationBodySite",
+  "title" : "BeVSVaccinationBodySite",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-27T15:15:33+01:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.ehealth.fgov.be/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Vaccination Body Site Value Set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "35259002",
+        "display" : "Deltoid muscle",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "structuur van musculus deltoideus"
+        }]
+      },
+      {
+        "code" : "50092008",
+        "display" : "Muscle of thigh",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "musculus skeleti femoris"
+        }]
+      },
+      {
+        "code" : "102291007",
+        "display" : "Muscle of buttock",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "structuur van spier van bil"
+        }]
+      },
+      {
+        "code" : "371309009",
+        "display" : "Skin structure of upper arm (body structure)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "structuur van huid van bovenarm"
+        }]
+      },
+      {
+        "code" : "5742000",
+        "display" : "Skin of forearm",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "structuur van huid van antebrachium"
+        }]
+      },
+      {
+        "code" : "371305003",
+        "display" : "Skin structure of thigh (body structure)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "huid van bovenbeen"
+        }]
+      }]
+    }]
+  }
+}
+
+```

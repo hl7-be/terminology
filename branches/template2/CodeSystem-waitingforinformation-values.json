@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "waitingforinformation-values",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/waitingforinformation-values",
+  "version" : "1.0.0",
+  "name" : "MyCareNetWaitingForInformationValues",
+  "title" : "CodeSystem waiting for information values",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-20T07:58:55+00:00",
+  "description" : "Waiting for information values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "fragment",
+  "concept" : [{
+    "code" : "WFI_AGREE_ALL_001",
+    "display" : "WFI_AGREE_ALL_001"
+  },
+  {
+    "code" : "WFI_AGREE_ALL_002",
+    "display" : "WFI_AGREE_ALL_002"
+  },
+  {
+    "code" : "WFI_AGREE_SRV_PHYSIO_001",
+    "display" : "WFI_AGREE_SRV_PHYSIO_001"
+  },
+  {
+    "code" : "WFI_AGREE_SRV_PHYSIO_002",
+    "display" : "WFI_AGREE_SRV_PHYSIO_002"
+  },
+  {
+    "code" : "WFI_AGREE_SRV_PHYSIO_003",
+    "display" : "WFI_AGREE_SRV_PHYSIO_003"
+  }]
+}

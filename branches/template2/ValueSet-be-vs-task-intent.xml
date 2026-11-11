@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-task-intent"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-task-intent"/>
+  <version value="1.0.0"/>
+  <name value="BeVSTaskIntent"/>
+  <title value="BeVSTaskIntent"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - The allowed intent codes in the context of tasks in the field of referral prescriptions"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/request-intent"/>
+      <concept>
+        <code value="order"/>
+      </concept>
+      <concept>
+        <code value="proposal"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

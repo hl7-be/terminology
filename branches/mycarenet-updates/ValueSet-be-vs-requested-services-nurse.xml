@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-requested-services-nurse"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-requested-services-nurse"/>
+  <version value="1.0.0"/>
+  <name value="BeVSRequestedServicesNurse"/>
+  <title value="BeVSRequestedServicesNurse"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - Codes indicating the requests that can be asked from a nurse."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="103713001"/>
+      </concept>
+      <concept>
+        <code value="103715008"/>
+      </concept>
+      <concept>
+        <code value="113154008"/>
+      </concept>
+      <concept>
+        <code value="127606004"/>
+      </concept>
+      <concept>
+        <code value="166900001"/>
+      </concept>
+      <concept>
+        <code value="173765009"/>
+      </concept>
+      <concept>
+        <code value="174297001"/>
+      </concept>
+      <concept>
+        <code value="175852005"/>
+      </concept>
+      <concept>
+        <code value="17636008"/>
+      </concept>
+      <concept>
+        <code value="18011004"/>
+      </concept>
+      <concept>
+        <code value="182777000"/>
+      </concept>
+      <concept>
+        <code value="183232006"/>
+      </concept>
+      <concept>
+        <code value="18629005"/>
+      </concept>
+      <concept>
+        <code value="225230008"/>
+      </concept>
+      <concept>
+        <code value="225268005"/>
+      </concept>
+      <concept>
+        <code value="225358003"/>
+      </concept>
+      <concept>
+        <code value="225420001"/>
+      </concept>
+      <concept>
+        <code value="225964003"/>
+      </concept>
+      <concept>
+        <code value="2267008"/>
+      </concept>
+      <concept>
+        <code value="233520008"/>
+      </concept>
+      <concept>
+        <code value="276737004"/>
+      </concept>
+      <concept>
+        <code value="28177007"/>
+      </concept>
+      <concept>
+        <code value="385796006"/>
+      </concept>
+      <concept>
+        <code value="385805005"/>
+      </concept>
+      <concept>
+        <code value="385966005"/>
+      </concept>
+      <concept>
+        <code value="386225006"/>
+      </concept>
+      <concept>
+        <code value="397958003"/>
+      </concept>
+      <concept>
+        <code value="41351007"/>
+      </concept>
+      <concept>
+        <code value="413899004"/>
+      </concept>
+      <concept>
+        <code value="427391006"/>
+      </concept>
+      <concept>
+        <code value="429723008"/>
+      </concept>
+      <concept>
+        <code value="445191009"/>
+      </concept>
+      <concept>
+        <code value="48817005"/>
+      </concept>
+      <concept>
+        <code value="56993006"/>
+      </concept>
+      <concept>
+        <code value="57485005"/>
+      </concept>
+      <concept>
+        <code value="6125005"/>
+      </concept>
+      <concept>
+        <code value="75325006"/>
+      </concept>
+      <concept>
+        <code value="762238003"/>
+      </concept>
+      <concept>
+        <code value="79165006"/>
+      </concept>
+      <concept>
+        <code value="81011003"/>
+      </concept>
+      <concept>
+        <code value="87750000"/>
+      </concept>
+      <concept>
+        <code value="89826002"/>
+      </concept>
+      <concept>
+        <code value="90838004"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service"/>
+    </include>
+  </compose>
+</ValueSet>

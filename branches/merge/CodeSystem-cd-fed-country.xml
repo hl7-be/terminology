@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cd-fed-country"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-fed-country"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/cd-fed-country"/>
+  <version value="1.0.0"/>
+  <name value="Cdfedcountry"/>
+  <title value="BeCdFedCountry"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="FedICT country codes."/>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="BE"/>
+    <display value="Belgium"/>
+  </concept>
+</CodeSystem>

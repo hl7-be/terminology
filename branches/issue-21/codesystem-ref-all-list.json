@@ -1,0 +1,753 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationrequest Status",
+    "title" : "Medicationrequest  status",
+    "description" : "MedicationRequest Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+    "uses" : {
+    },
+    "ValueSet-BeMedicationPrescriptionStatusVS.html" : "Medication Prescription Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-gender-at-birth.html" : "List of possible genders at birth in Belgium"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestIntent",
+    "title" : "RequestIntent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.114"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-task-intent.html" : "BeVSTaskIntent",
+    "ValueSet-be-vs-request-intent.html" : "BeVSRequestIntent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/restful-interaction",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "FHIR Restful Interactions",
+    "title" : null,
+    "description" : "The set of interactions defined by the RESTful part of the FHIR specification.",
+    "uses" : {
+    },
+    "ValueSet-eagreementmessage.html" : "ValueSet message"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+    "version" : "2026-04-01",
+    "status" : "active",
+    "name" : "ICD_10_CM",
+    "title" : "International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)",
+    "description" : "International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)",
+    "oids" : ["2.16.840.1.113883.6.90"],
+    "uses" : {
+    },
+    "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+    "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+    "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+    "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+    "ValueSet-PregnancyCodes.html" : "Pregnancy Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icpc-2",
+    "version" : "2.1.0",
+    "status" : "active",
+    "name" : "Icpc2E",
+    "title" : "International Classification of Primary Care, second edition (1998)",
+    "description" : "International Classification of Primary Care / prepared by the Classification Committee of the World Organization of National Colleges, Academies and Academic Associations of General Practitioners/Family Physicians (WONCA), known more briefly as the World",
+    "oids" : ["2.16.840.1.113883.6.139"],
+    "uses" : {
+    },
+    "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+    "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-patient-relationship-type.html" : "BeVSPatientRelationshipType",
+    "ValueSet-be-vs-vaccine-code.html" : "BeVSVaccineCode",
+    "ValueSet-be-vs-populationscreening-type.html" : "Population Screening Type Value Set",
+    "ValueSet-be-vs-referral-category.html" : "BeReferralCategory",
+    "ValueSet-be-vs-bodysite-nursing.html" : "Body Site",
+    "ValueSet-be-vspopulationscreening-body-site-location.html" : "PopulationScreening Body Site Value Set",
+    "ValueSet-BacterialCodes.html" : "Bacterial Codes",
+    "ValueSet-be-noallergy.html" : "BeNoAllergy",
+    "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
+    "ValueSet-be-vs-annex-81-reason-code.html" : "BeVSAnnex81ReasonCode",
+    "ValueSet-be-vs-requested-services-nurse.html" : "BeVSRequestedServicesNurse",
+    "ValueSet-be-vs-patientwill-scope.html" : "BeVSPatientWillScope",
+    "ValueSet-be-vs-basic-laterality.html" : "Basic Laterality",
+    "ValueSet-BeMedicationExposureIntentVS.html" : "Medication exposure intent",
+    "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+    "ValueSet-be-riskmanifestation.html" : "BeRiskManifestation",
+    "ValueSet-be-vs-laterality.html" : "Laterality",
+    "ValueSet-be-causativeagent.html" : "BeCausativeAgent",
+    "ValueSet-be-vs-score.html" : "Score Value Set",
+    "ValueSet-be-vs-reaction-manifestation-code.html" : "Reaction Manifestation Code",
+    "ValueSet-be-vs-vaccination-reason-code.html" : "BeVSVaccinationReasonCode",
+    "ValueSet-CandidaCodes.html" : "Candida Codes",
+    "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+    "ValueSet-OtherCodes.html" : "Other Codes",
+    "ValueSet-be-vs-toothnumber-bodysite.html" : "Tooth Number Body Site",
+    "ValueSet-be-vs-vaccination-bodysite.html" : "BeVSVaccinationBodySite",
+    "ValueSet-BeRouteOfAdministrationVS.html" : "Route of Administration ValueSet",
+    "ValueSet-BeVSPopulationScreeningFollowUpAdvice.html" : "Population Screening Follow-up Advice Value Set",
+    "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+    "ValueSet-be-populationscreening-result-vs.html" : "PopulationScreening Result Value Set",
+    "ValueSet-be-exposureroute.html" : "BeExposureRoute",
+    "ValueSet-be-vs-request-note-type.html" : "BeVSRequestNoteType",
+    "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+    "ValueSet-be-vs-requested-services-nurse-detail.html" : "BeVSRequestedServicesNurseDetail",
+    "ValueSet-be-vs-allergyintolerance-type.html" : "BeVSAllergyIntoleranceType",
+    "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+    "ConceptMap-BeCMISOToothSnomedCT.html" : "BeCMISOToothSnomedCT",
+    "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ContactRole2",
+    "title" : "contactRole2",
+    "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+    "oids" : ["2.16.840.1.113883.18.58"],
+    "uses" : {
+    },
+    "ValueSet-be-contactperson.html" : "BeContactPerson"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ActReason",
+    "title" : "ActReason",
+    "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+    "oids" : ["2.16.840.1.113883.5.8"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccination-status-reason.html" : "BeVSVaccinationStatusReason",
+    "ValueSet-be-vs-performer-task-status-reason.html" : "BeVSPerformerTaskStatusReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "MaritalStatus",
+    "title" : "MaritalStatus",
+    "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+    "oids" : ["2.16.840.1.113883.5.2"],
+    "uses" : {
+    },
+    "ValueSet-be-civilstate.html" : "BeCivilState"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "NullFlavor",
+    "title" : "NullFlavor",
+    "description" : "A collection of codes specifying why a valid value is not present.",
+    "oids" : ["2.16.840.1.113883.5.1008"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccination-administration-route.html" : "BeVSVaccineAdministrationRoute",
+    "ValueSet-be-civilstate.html" : "BeCivilState"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-exemption-code",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSClaimExemptionCode",
+    "title" : "Claim Exemption Code",
+    "description" : "RT50Z23 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-claim-exemption-code.html" : "Claim Exemption Code"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-norm-code",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSClaimNormCode",
+    "title" : "Claim Norm Code",
+    "description" : "RT50Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-claim-norm-code.html" : "Claim Norm Code"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-claim-transplantation-code",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSClaimTransplantationCode",
+    "title" : "Claim Transplantation Code",
+    "description" : "RT50Z48 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-claim-transplantation-code.html" : "Claim Transplantation Code"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-hospital-service-cd",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSHospitalServiceCd",
+    "title" : "Hospital Service Code",
+    "description" : "Annex 16.15 (2.C) in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-hospital-service-cd.html" : "Hospital Service Code"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-input-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSIdDocInputType",
+    "title" : "Id Doc Input Type",
+    "description" : "RT52Z9 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-id-doc-input-type.html" : "Id Doc Input Type"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-manual-input-justification",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSIdDocManualInputJustification",
+    "title" : "Id Doc Manual Input Justification",
+    "description" : "RT52Z3 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-id-doc-manual-input-justification.html" : "Id Doc Manual Input Justification"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-media-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSIdDocMediaType",
+    "title" : "Id Doc Media Type",
+    "description" : "RT52Z10 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-id-doc-media-type.html" : "Id Doc Media Type"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-id-doc-vignette-use-justification",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSIdDocVignetteUseJustification",
+    "title" : "Id Doc Vignette Use Justification",
+    "description" : "RT52Z11 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-id-doc-vignette-use-justification.html" : "Id Doc Vignette Use Justification"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-requester-norm",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSRequesterNorm",
+    "title" : "Prescriber Standard",
+    "description" : "RT50Z26 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-requester-norm.html" : "Prescriber Standard"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-speech-therapy-pathology-situation-code",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSSpeechTherapyPathologySituationCode",
+    "title" : "Speech Therapy Pathology Situation code",
+    "description" : "Texte de la nomenclature (Article 36, par. 2)",
+    "uses" : {
+    },
+    "ValueSet-be-vs-speech-therapy-pathology-situation-code.html" : "Speech Therapy Pathology Situation Code",
+    "ValueSet-eagreementproductorservice.html" : "ValueSet product or service"
+  },
+  {
+    "url" : "https://hl7belgium.org/profiles/fhir/terminology/CodeSystem/be-cs-treatment-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSTreatmentReason",
+    "title" : "Treatment Reason",
+    "description" : "RT20Z17 in https://www.inami.fgov.be/SiteCollectionDocuments/instructions_facturation_electronique.pdf",
+    "uses" : {
+    },
+    "ValueSet-be-vs-treatment-reason.html" : "Treatment Reason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-bodysite",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSBodySite",
+    "title" : "Body Site CodeSystem",
+    "description" : "Body Site CodeSystem",
+    "uses" : {
+    },
+    "ValueSet-be-vs-bodysite.html" : "Body Site"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSProblemCategory",
+    "title" : "Problem Category",
+    "description" : "Problem Category",
+    "uses" : {
+    },
+    "ValueSet-be-vs-problem-category.html" : "Problem Category"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSProblemOriginType",
+    "title" : "Problem Origin Type",
+    "description" : "Problem Origin Type",
+    "uses" : {
+    },
+    "ValueSet-be-vs-problem-origin-type.html" : "Problem Origin Type"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSScore",
+    "title" : "Score Code System",
+    "description" : "Codes as defined initially by the NIHDI. Dutch translations were not yet defined but are planned   for a next release.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-score.html" : "Score Value Set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSScoreCategory",
+    "title" : "Score Category",
+    "description" : "Score Category",
+    "uses" : {
+    },
+    "ValueSet-be-vs-scorecategory.html" : "Score Category Value Set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/be-cs-care-location",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "BeCSCareLocation",
+    "title" : "BeCSCareLocation",
+    "description" : "Care Location Code System",
+    "uses" : {
+    },
+    "ValueSet-be-vs-care-location.html" : "BeVSCareLocation"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-civilstate",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "CivilState",
+    "title" : "BeCdCivilState",
+    "description" : "Civil state in Belgium.",
+    "uses" : {
+    },
+    "ValueSet-be-civilstate.html" : "BeCivilState"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-contact-person",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "ContactPerson",
+    "title" : "BeCdContactPerson",
+    "description" : "Contact person in Belgium.",
+    "uses" : {
+    },
+    "ValueSet-be-contactperson.html" : "BeContactPerson"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "HCParty",
+    "title" : "BeCdHcParty",
+    "description" : "healthcare party in Belgium.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-dispenser-types.html" : "Dispenser Types",
+    "ValueSet-be-vs-cd-hcparty.html" : "BeVSCdHcParty"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-annex81-status-reason",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "BeCSAnnex81StatusReason",
+    "title" : "BeCSAnnex81StatusReason",
+    "description" : "DEMONSTRATIVE EXAMPLE - Status reason for the Annex 81",
+    "uses" : {
+    },
+    "ValueSet-be-vs-annex81-status-reason.html" : "BeVSAnnex81StatusReason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeTempRequestedService",
+    "title" : "BeTempRequestedService",
+    "description" : "DEMONSTRATIVE EXAMPLE - Temporary codes for indicating services that can be requested from a Nurse",
+    "uses" : {
+    },
+    "ValueSet-be-vs-requested-services-nurse.html" : "BeVSRequestedServicesNurse"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service-detail",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeTempRequestedServiceDetail",
+    "title" : "BeTempRequestedServiceDetail",
+    "description" : "DEMONSTRATIVE EXAMPLE - Temporary codes for indicating service details that can be requested from a Nurse",
+    "uses" : {
+    },
+    "ValueSet-be-vs-requested-services-nurse-detail.html" : "BeVSRequestedServicesNurseDetail"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BePrescriptionStatusReason",
+    "title" : "BePrescriptionStatusReason",
+    "description" : "DEMONSTRATIVE EXAMPLE - Status reason for the prescription. Initially defined as supporting CodeSystem for the referral prescription.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-prescription-status-reason.html" : "BeVSPrescriptionStatusReason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-treatment-status-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeTreatmentStatusReason",
+    "title" : "BeTreatmentStatusReason",
+    "description" : "DEMONSTRATIVE EXAMPLE - Status reason for the treatment. Initially defined as supporting CodeSystem for the referral prescription.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-treatment-status-reason.html" : "BeVSTreatmentStatusReason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/infsec/CodeSystem/be-cs-pseudonymization-type",
+    "version" : "1.2.0",
+    "status" : "active",
+    "name" : "BeCSPseudonymizationType",
+    "title" : "Types of pseudonymization",
+    "description" : "The technique used for pseudonymization",
+    "uses" : {
+    },
+    "ValueSet-be-vs-pseudonymization-type.html" : "Types of pseudonymization"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSCodedAnnotationTypes",
+    "title" : "Coded Annotation Type Codes",
+    "description" : "Code System for specific types of coded annotations",
+    "uses" : {
+    },
+    "ValueSet-be-vs-coded-annotation-types.html" : "Coded Annotation Types"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationLineAdherenceStatus",
+    "title" : "Medication Line Adherence Status",
+    "description" : "Medication Line Adherence Status - ValueSet.",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationLineAdherenceStatusVS.html" : "BeExtAdherenceStatus"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatusReason",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationLineAdherenceStatusReason",
+    "title" : "Adherence Status Reason",
+    "description" : "Reasons for non-adherence to a treatment or intervention.",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationLineAdherenceStatusReasonVS.html" : "Adherence Status Reason ValueSet"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationLineOriginType",
+    "title" : "Medication origin Type",
+    "description" : "Medication origin type",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationLineOriginTypeVS.html" : "Medication origin type value set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationLineRegistrationStatus",
+    "title" : "Medication Line Registration Status",
+    "description" : "This code system defines the registration statuses for medication lines.",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationLineRegistrationStatusVS.html" : "Medication Line Registration Status Value Set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationRequestReimbursementType",
+    "title" : "Medication request reimbursement type",
+    "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationRequestReimbursementTypeVS.html" : "Medication request reimbursement type ValueSet"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "BeMedicationType",
+    "title" : "Medication preparation Type",
+    "description" : "Medication preparation type",
+    "uses" : {
+    },
+    "ValueSet-BeMedicationTypeVS.html" : "Medication preparation Type value set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetAgreementErrors",
+    "title" : "CodeSystem agreement errors",
+    "description" : "Errors in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) Not all codes are defined here, a full list can be found on mycarenet.be.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-eagreementerrors.html" : "EAgreement errors"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/annex-types",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetAnnexTypes",
+    "title" : "CodeSystem annex types",
+    "description" : "Annex types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
+    "uses" : {
+    },
+    "ValueSet-eagreementproductorservice.html" : "ValueSet product or service"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-1",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "BeCSHolderCode1",
+    "title" : "Insurability code CT1",
+    "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+    "uses" : {
+    },
+    "ValueSet-be-vs-holder-code-1.html" : "BeVSHolderCode1"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-holder-code-2",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "BeCSHolderCode2",
+    "title" : "Insurability code CT2",
+    "description" : "see http://www.securimed.eu/fr/tiers-payant/codes-dassurabilite",
+    "uses" : {
+    },
+    "ValueSet-be-vs-holder-code-2.html" : "BeVSHolderCode2"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/be-cs-partial-agreement-values",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "BeCSPartialAgreementValues",
+    "title" : "BeCSPartialAgreementValues",
+    "description" : "Partial agreement values",
+    "uses" : {
+    },
+    "ValueSet-eagreementadjudicationreason.html" : "ValueSet adjudication reason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetDecisionValues",
+    "title" : "CodeSystem decision values",
+    "description" : "Decision values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.) The codes are not defined here, a full list can be found on mycarenet.be.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-decision-values.html" : "Mycarenet Decision Values"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetMessageEvents",
+    "title" : "CodeSystem message events",
+    "description" : "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
+    "uses" : {
+    },
+    "ValueSet-eagreementmessage.html" : "ValueSet message"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/nihdi-physiotherapy-pathologysituationcode",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "NIHDIPhysiotherapyPathologySituationCode",
+    "title" : "CodeSystem NIHDIPhysiotherapyPathology",
+    "description" : "Legal pathology situation codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage instructions.",
+    "uses" : {
+    },
+    "ValueSet-eagreementproductorservice.html" : "ValueSet product or service"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/refusal-values",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetRefusalValues",
+    "title" : "CodeSystem refusal values",
+    "description" : "Refusal values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)",
+    "uses" : {
+    },
+    "ValueSet-eagreementadjudicationreason.html" : "ValueSet adjudication reason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/waitingforinformation-values",
+    "version" : "2.1.2",
+    "status" : "active",
+    "name" : "MyCareNetWaitingForInformationValues",
+    "title" : "CodeSystem waiting for information values",
+    "description" : "Waiting for information values in the agreement flows of MyCareNet. These values were delivered by the \nNIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.)",
+    "uses" : {
+    },
+    "ValueSet-eagreementadjudicationreason.html" : "ValueSet adjudication reason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-category",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSPatientWillCategory",
+    "title" : "Patient Will Category CodeSystem",
+    "description" : "Patient Will Category CodeSystem",
+    "uses" : {
+    },
+    "ValueSet-be-vs-patientwill-category.html" : "Patient Will Category"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/patientwill/CodeSystem/be-cs-patientwill-code",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSPatientWillCode",
+    "title" : "Patient Will Directive CodeSystem",
+    "description" : "Patient Will Directive CodeSystem. Codes as defined by the NIHDI.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-patientwill-code.html" : "Patient Will code Value Set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "PSSRatingTypes",
+    "title" : "CodeSystem: Types of rating provided by the PSS system",
+    "description" : "CodeSystem: Types of rating provided by the PSS system",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"],
+    "uses" : {
+    },
+    "ValueSet-PSSRatingTypesVS.html" : "Types of rating provided by the PSS system"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type",
+    "version" : "1.0.3",
+    "status" : "active",
+    "name" : "BeCSPopulationScreeningNextInvitationType",
+    "title" : "Population Screening Next Invitation Type",
+    "description" : "Code System containing the codes for the type of the next invitation (or exclusion of next invitation)",
+    "uses" : {
+    },
+    "ValueSet-be-vs-populationscreening-next-invitation-type.html" : "Population Screening Next Invitation Type Value Set"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+    "version" : "1.1.2",
+    "status" : "draft",
+    "name" : "BeCSVaccineAdministrationRoute",
+    "title" : "BeCSVaccineAdministrationRoute",
+    "description" : "Vaccine Administration Route",
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccination-administration-route.html" : "BeVSVaccineAdministrationRoute"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-confirmation-status",
+    "version" : "1.1.2",
+    "status" : "draft",
+    "name" : "BeCSVaccinationConfirmationStatus",
+    "title" : "BeCSVaccinationConfirmationStatus",
+    "description" : "Vaccination status Code System.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccination-confirmation-status.html" : "BeVSVaccinationConfirmationStatus"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason",
+    "version" : "1.1.2",
+    "status" : "draft",
+    "name" : "BeCSStatusReason",
+    "title" : "BeCSStatusReason",
+    "description" : "Vaccination reason status Code System.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccination-status-reason.html" : "BeVSVaccinationStatusReason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code",
+    "version" : "1.1.2",
+    "status" : "active",
+    "name" : "BeCSVaccineCode",
+    "title" : "BeCSVaccineCode",
+    "description" : "Vaccine Code Code System - set of Belgian codes for types of vaccines that are administered",
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccine-code.html" : "BeVSVaccineCode"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-target-disease",
+    "version" : "1.1.2",
+    "status" : "draft",
+    "name" : "BeCSVaccineTargetDisease",
+    "title" : "BeCSVaccineTargetDisease",
+    "description" : "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vaccines",
+    "uses" : {
+    },
+    "ValueSet-be-vs-vaccine-target-disease.html" : "BeVSVaccineTargetDisease"
+  }]
+}

@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7belgium.org/profiles/fhir/terminology/ValueSet/be-allergyintolerancecode> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "be-allergyintolerancecode"] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "BeAllergyIntoleranceCode"] ; # 
+  fhir:title [ fhir:v "BeAllergyIntoleranceCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-12-18T12:02:54+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-causativeagent>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-noallergy>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

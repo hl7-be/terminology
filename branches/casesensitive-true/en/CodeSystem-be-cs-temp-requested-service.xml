@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-temp-requested-service"/>
+  <language value="en"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-cs-temp-requested-service"/>
+  <version value="1.0.0"/>
+  <name value="BeTempRequestedService"/>
+  <title value="BeTempRequestedService"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T14:13:48+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DEMONSTRATIVE EXAMPLE - Temporary codes for indicating services that can be requested from a Nurse"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="20"/>
+  <concept>
+    <code value="tmp-prep-x081-2"/>
+    <display value="Preparing medication_Appendix 81"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Préparation des médicaments_Appendix 81"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Medicatie klaarzetten_Bijlage 81"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Preparing medication_Appendix 81"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-prep-rsed-5"/>
+    <display value="Preparing medication_not reimbursed"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Préparation des médicaments_non remboursée"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Medicatie klaarzetten_niet terugbetaald"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Preparing medication_not reimbursed"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-inte-tion-6"/>
+    <display value="intermittent bladder catheterization"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Sondage vésical intermittent"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="intermittente blaassondage"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="intermittent bladder catheterization"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-remo-tube-9"/>
+    <display value="remove bladder tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Retrait de la sonde vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaassondage verwijderen"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="remove bladder tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-repl-tube-0"/>
+    <display value="replace bladder tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Remplacement de la sonde vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaassondage vervangen"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="replace bladder tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-inse-tube-9"/>
+    <display value="insert bladder tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Placement de la sonde vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaassondage plaatsen"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="insert bladder tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-blad-sion-4"/>
+    <display value="bladder tube supervision"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Supervision de la sonde vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaassondage toezicht"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="bladder tube supervision"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-blad-ance-2"/>
+    <display value="bladder instillation performance"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Mise en oeuvre de l’instillation vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaasinstillatie uitvoering"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="bladder instillation performance"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-blad-ring-1"/>
+    <display value="bladder instillation monitoring"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Supervision de l’instillation vésicale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="blaasinstillatie toezicht"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="bladder instillation monitoring"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-supr-ring-9"/>
+    <display value="suprapubic bladder monitoring"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Supervision de la sonde vésicale sus-pubienne"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="suprapubische blaassonde toezicht"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="suprapubic bladder monitoring"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-moni-eter-9"/>
+    <display value="Monitoring catheter"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Supervision d’un cathéter"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Toezicht katheter"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Monitoring catheter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-dres-eter-4"/>
+    <display value="Dressing change catheter"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Changement d’un pansement de cathéter"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Verbandwissel katheter"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Dressing change catheter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-care-tube-6"/>
+    <display value="care for tracheostomy tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="entretien du tube de trachéotomie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="zorgen aan tracheacanule"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="care for tracheostomy tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-care-tube-1"/>
+    <display value="care for gastric tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="entretien du tube gastrique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="zorgen aan maagsonde"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="care for gastric tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-gast-care-1"/>
+    <display value="gastrostomy tube care"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="entretien de la sonde de gastrostomie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="zorgen aan gastrostomiesonde"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="gastrostomy tube care"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-care-eter-9"/>
+    <display value="care for a catheter"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="prendre soin d'un cathéter"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="zorgen aan een catheter"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="care for a catheter"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-repl-tube-5"/>
+    <display value="replace tracheostomy tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="remplacer le tube de trachéotomie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="vervangen tracheacanule"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="replace tracheostomy tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-clea-tube-3"/>
+    <display value="clean tracheostomy tube"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="nettoyer la canule de trachéotomie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="reinigen tracheacanule"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="clean tracheostomy tube"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-spec-act0-5"/>
+    <display value="Specific technical provision (B2 act - C act)"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Disposition technique spécifique (loi B2 - loi C)"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Specifieke technische verstrekking (B2 handeling - C handeling)"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Specific technical provision (B2 act - C act)"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tmp-plac-edle-0"/>
+    <display value="Place/replace needle"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Placer/remplacer l'aiguille"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Plaatsen/vervangen naald"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Place/replace needle"/>
+    </designation>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-vaccination-bodysite"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-bodysite"/>
+  <version value="1.1.2"/>
+  <name value="BeVSVaccinationBodySite"/>
+  <title value="BeVSVaccinationBodySite"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-11-27T15:15:33+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccination Body Site Value Set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="35259002"/>
+        <display value="Deltoid muscle"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="structuur van musculus deltoideus"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50092008"/>
+        <display value="Muscle of thigh"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="musculus skeleti femoris"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="102291007"/>
+        <display value="Muscle of buttock"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="structuur van spier van bil"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="371309009"/>
+        <display value="Skin structure of upper arm (body structure)"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="structuur van huid van bovenarm"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5742000"/>
+        <display value="Skin of forearm"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="structuur van huid van antebrachium"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="371305003"/>
+        <display value="Skin structure of thigh (body structure)"/>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="huid van bovenbeen"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationTypeVS"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationTypeVS"/>
+  <title value="Medication preparation Type value set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T13:23:29+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication preparation type value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"/>
+    </include>
+  </compose>
+</ValueSet>

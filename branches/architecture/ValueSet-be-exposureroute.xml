@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-exposureroute"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-exposureroute"/>
+  <version value="1.2.0"/>
+  <name value="BeExposureRoute"/>
+  <title value="BeExposureRoute"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-18T12:02:54+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="447694001"/>
+        <designation>
+          <language value="en"/>
+          <value value="Respiratory tract route"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6064005"/>
+        <designation>
+          <language value="en"/>
+          <value value="Topical route"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26643006"/>
+        <designation>
+          <language value="en"/>
+          <value value="Oral route"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

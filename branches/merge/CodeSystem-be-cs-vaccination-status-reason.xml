@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-status-reason"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/replaces">
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-vaccination-status-reason"/>
+  <version value="1.0.0"/>
+  <name value="BeCSVaccinationStatusReason"/>
+  <title value="BeCSStatusReason"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T10:05:30+00:00"/>
+  <description value="Vaccination reason status Code System."/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="OTHER"/>
+    <display value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Andere"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ALLERGY"/>
+    <display value="Allergy to vaccine ingredient"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Allergie"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Allergie"/>
+    </designation>
+  </concept>
+</CodeSystem>

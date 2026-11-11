@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-vaccine-code"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"/>
+  <version value="1.1.2"/>
+  <name value="BeVSVaccineCode"/>
+  <title value="BeVSVaccineCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-27T15:15:33+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccine Code Value Set - the types of vaccines that are administered in Belgium"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"/>
+      <concept>
+        <code value="other"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="787859002"/>
+        <display value="unspecified vaccine"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="Autre vaccin à spécifier"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Nader te specifieren vaccin"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Some vaccine to be specified"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="836500008"/>
+        <display value="Vaccine product containing only Haemophilus influenzae type b and Neisseria meningitidis serogroup C antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin divalent contre l'Haemophilus influenzae type b et le méningocoque C"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Haemophilus influenzae b en meningokok C"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Haemophilus influenzae type b and meningitis C vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871717007"/>
+        <display value="Vaccine product containing only Yellow fever virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la fièvre jaune"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Gele koorts"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Yellow fever vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871719005"/>
+        <display value="Vaccine product containing only Tick-borne encephalitis virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la méningoencéphalite à tiques"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Tekenencefalitis virus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Tick-borne encephalitis vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871720004"/>
+        <display value="Vaccine product containing only Dengue virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la dengue"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Dengue"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Dengue vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871721000"/>
+        <display value="Vaccine product containing only Ebolavirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre l'Ebola"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Ebola"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Ebolavirus antigen only vaccine product"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871724008"/>
+        <display value="Vaccine product containing only Japanese encephalitis virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le virus de l'encéphalite japonaise"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Japanse encephalitis"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Japanese encephalitis virus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871726005"/>
+        <display value="Vaccine product containing only Rabies lyssavirus antigen (medicinal product) |"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la rage"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Hondsdolheid"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Rabies vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871727001"/>
+        <display value="Vaccine product containing only Vaccinia virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la variole"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Variola (pokken)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Vaccinia virus antigen only vaccine product"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871729003"/>
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la diphtérie"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871732000"/>
+        <display value="Vaccine product containing only Rubella virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la rubéole"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Rubella"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Rubella vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871737006"/>
+        <display value="Vaccine product containing only Mumps orthorubulavirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les oreillons"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Bof"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Mumps vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871739009"/>
+        <display value="Vaccine product containing only Human poliovirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la poliomyélite"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Polio"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Human poliovirus antigen only vaccine product"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871742003"/>
+        <display value="Vaccine product containing only Clostridium tetani antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le tétanos"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Tetanus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871751006"/>
+        <display value="Vaccine product containing only Hepatitis A virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre l'hépatite A"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Hepatitis A"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Hepatitis A vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871758000"/>
+        <display value="Vaccine product containing only Bordetella pertussis antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la coqueluche"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Kinkhoest"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pertussis vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871761004"/>
+        <display value="Vaccine product containing only Rotavirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le rotavirus"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Rotavirus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Rotavirus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871764007"/>
+        <display value="Vaccine product containing only Haemophilus influenzae type b antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre l'hemophilus influenzae de type B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Haemophilus influenzae b"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Haemophilus influenzae type b vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871765008"/>
+        <display value="Vaccine product containing only Measles morbillivirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la rougeole"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Mazelen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Measles vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1209197008"/>
+        <display value="Vaccine product containing only Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 antigens"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les papillomavirus humains (HPV) de type 6, 11, 16, 18, 31, 33, 45, 52 et 58"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="humaan papillomavirus  (HPV 6, 11, 16, 18, 31, 33, 45, 52 en 58)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Human papillomavirus 6, 11, 16, 18, 31, 33, 45, 52 and 58 vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871803007"/>
+        <display value="Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin divalent contre l'hépatite A et B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Hepatitis A + B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Hepatitis A and B vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871804001"/>
+        <display value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la fièvre typhoïde et l'hépatite A"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Tyfus + hepatitis A"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Hepatitis A and typhoid vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871817003"/>
+        <display value="Vaccine product containing only Measles morbillivirus and Rubella virus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin divalent contre la rougeole et la rubéole"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Mazelen + rubella"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Measles and rubella vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871822003"/>
+        <display value="Vaccine product containing only Hepatitis B virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre l'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Hepatitis B vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871826000"/>
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin divalent contre la diphtérie et le tétanos"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871831003"/>
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin trivalent contre la rougeole, la rubéole et les oreillons"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Mazelen + bof + rubella"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Measles and mumps and rubella vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871837004"/>
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin trivalent contre la diphtérie, le tétanos et la poliomyélite"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + polio"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and poliomyelitis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871866001"/>
+        <display value="Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le méningocoque C"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Meningokok C"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningitis C vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871871008"/>
+        <display value="Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les méningocoques A et C"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Meningokok A, C"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningitis A and C vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871873006"/>
+        <display value="Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les méningocoques A, C, W135 et Y"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Meningokok A, C, W en Y"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningitis A, C, W135 and Y vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871875004"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin trivalent contre la diphtérie, le tétanos et la coqueluche"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and pertussis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871878002"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin quadrivalent contre la diphtérie, le tétanos, la coqueluche et la poliomyélite"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest + polio"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and pertussis and poliomyelitis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871886002"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, l'Haemophilus influenzae de type B et l'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest + Haemophilus influenzae b + hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871887006"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Human poliovirus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'Haemophilus influenzae de type B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and Haemophilus influenzae type b and pertussis and poliomyelitis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871891001"/>
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pentavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et l'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest + polio + hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and hepatitis B and acellular pertussis and inactivated poliomyelitis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871895005"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b and Hepatitis B virus and Human poliovirus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin hexavalent contre la diphtérie, le tétanos, la coqueluche, la poliomyélite, l'Haemophilus influenzae de type B et l'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b + hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diphtheria and Haemophilus influenzae type b and hepatitis B and pertussis and poliomyelitis and tetanus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871908002"/>
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin tetravalent contre la rougeole, la rubéole, les oreillons et la varicelle"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Mazelen + bof + rubella + windpokken"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Measles and mumps and rubella and varicella virus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871919004"/>
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la varicelle et le zona"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Windpokken"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Varicella-zoster vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1052328007"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique conjugué heptavalent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken 7 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal 7-valent conjugate vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1052330009"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique conjugué 10-valent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken 10 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal 10-valent conjugate vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1119220001"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique non conjugué 23-valent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken 23 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal 23-valent vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1252708008"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique conjugué 15-valent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken 15 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal 15-valent conjugate vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1252709000"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsular polysaccharide antigens conjugated (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique conjugué 20-valent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken 20 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal 20-valent conjugate vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="911000221103"/>
+        <display value="Vaccine product containing only Human papillomavirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le papillomavirus humain"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Humaan papillomavirus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Human papillomavirus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="921000221108"/>
+        <display value="Vaccine product containing only Neisseria meningitidis antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le méningocoque"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Meningokok"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningococcus vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="961000221100"/>
+        <display value="Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la fièvre typhoïde"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Tyfus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Typhoid vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="981000221107"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Pneumokokken"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pneumococcal vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="991000221105"/>
+        <display value="Vaccine product containing only Vibrio cholerae antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le choléra"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Cholera"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Cholera vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1181000221105"/>
+        <display value="Vaccine product containing only Influenza virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la grippe"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Griep"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Influenza vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1861000221106"/>
+        <display value="Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la tuberculose"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Tuberculose (BCG)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Bacillus Calmette-Guerin vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1981000221108"/>
+        <display value="Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le méningocoque B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Meningokok B"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningococcus serogroup B vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1991000221106"/>
+        <display value="Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les papillomavirus humains de type 16 et 18"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="humaan papillomavirus (HPV 16, 18)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Human papillomavirus 16 and 18 vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2001000221108"/>
+        <display value="Vaccine product containing only Human papillomavirus 6, 11, 16 and 18 antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre les papillomavirus humains de type 6, 11, 16 et 18"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="humaan papillomavirus (HPV 6, 11, 16, 18)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Human papillomavirus 6, 11, 16 and 18 vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="28531000087107"/>
+        <display value="Vaccine product against severe acute respiratory syndrome coronavirus 2 (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la COVID-19"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="COVID19"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="SARS-CoV-2 vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1252703004"/>
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre la rougeole et les oreillons"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Mazelen + bof"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Measles and mumps vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51311000087100"/>
+        <display value="Vaccine product containing only Human orthopneumovirus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le RSV"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="RSV"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="RSV (respiratory syncytial virus) vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="871839001"/>
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="vaccin enkel tegen difterie, tetanus, kinkhoest, Haemophilus influenzae b"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1252690003"/>
+        <display value="Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin contre le méningocoque A"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="vaccin enkel tegen meningokok A"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Meningococcus serogroup A vaccine"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51451000087105"/>
+        <display value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="vaccin pneumococcique conjugué 13-valent"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="vaccin tegen pneumokokken 13 types"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1345202008"/>
+        <display value="Vaccine product containing only Chikungunya virus antigen (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="produit vaccinal contenant uniquement l'antigène du virus Chikungunya"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="vaccin met enkel antigeen van Chikungunya-virus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Vaccine product containing only Chikungunya virus antigen (medicinal product)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="777424002"/>
+        <display value="Product containing only Respiratory syncytial virus immune globulin (medicinal product)"/>
+        <designation>
+          <language value="fr-BE"/>
+          <value value="produit contenant uniquement de l'immunoglobuline contre le virus respiratoire syncytial"/>
+        </designation>
+        <designation>
+          <language value="nl-BE"/>
+          <value value="Product dat enkel immunoglobuline tegen orthopneumovirus bevat"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Product containing only Respiratory syncytial virus immune globulin (medicinal product)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

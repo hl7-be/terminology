@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-allergyintolerancecode",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "type" : "predecessor",
+      "resource" : "https://www.ehealth.fgov.be/standards/fhir/allergy/ValueSet/be-allergyintolerancecode"
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-allergyintolerancecode",
+  "version" : "1.0.0",
+  "name" : "BeAllergyIntoleranceCode",
+  "title" : "BeAllergyIntoleranceCode",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-20T07:58:55+00:00",
+  "description" : "Allergy / intolerance codes as communicated by NIHDI and the FOD Terminology Center. This valueset supports the Belgian federal FHIR profiling effort.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-causativeagent"]
+    },
+    {
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-noallergy"]
+    }]
+  }
+}

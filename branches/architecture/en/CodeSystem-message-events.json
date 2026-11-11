@@ -1,0 +1,134 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "message-events",
+  "language" : "en",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/ImplementationGuide/hl7.fhir.be.mycarenet"
+      }]
+    }
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events",
+  "version" : "2.1.2",
+  "name" : "MyCareNetMessageEvents",
+  "title" : "CodeSystem message events",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-10T09:50:54+02:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.ehealth.fgov.be/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "fragment",
+  "concept" : [{
+    "code" : "claim-ask",
+    "display" : "claim-ask"
+  },
+  {
+    "code" : "claim-cancel",
+    "display" : "claim-cancel"
+  },
+  {
+    "code" : "claim-completeAgreement",
+    "display" : "claim-completeAgreement"
+  },
+  {
+    "code" : "claim-extend",
+    "display" : "claim-extend"
+  },
+  {
+    "code" : "claim-argue",
+    "display" : "claim-argue"
+  },
+  {
+    "code" : "claimresponse-decide",
+    "display" : "claimresponse-decide"
+  },
+  {
+    "code" : "claimresponse-cancel",
+    "display" : "claimresponse-cancel"
+  },
+  {
+    "code" : "claimresponse-request-for-argue",
+    "display" : "claimresponse-request-for-argue"
+  },
+  {
+    "code" : "claimresponse-close",
+    "display" : "claimresponse-close"
+  },
+  {
+    "code" : "claimresponse-completeAgreement",
+    "display" : "claimresponse-completeAgreement"
+  },
+  {
+    "code" : "reject",
+    "display" : "reject"
+  },
+  {
+    "code" : "eattest-create",
+    "display" : "eattest-create"
+  },
+  {
+    "code" : "eattestresponse-create",
+    "display" : "eattestresponse-create"
+  },
+  {
+    "code" : "eattest-cancel",
+    "display" : "eattest-cancel"
+  },
+  {
+    "code" : "eattestresponse-cancel",
+    "display" : "eattestresponse-cancel"
+  },
+  {
+    "code" : "etariff-consult",
+    "display" : "etariff-consult"
+  },
+  {
+    "code" : "etariffresponse-consult",
+    "display" : "etariffresponse-consult"
+  }]
+}

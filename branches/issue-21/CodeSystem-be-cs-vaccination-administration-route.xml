@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-vaccination-administration-route"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route"/>
+  <version value="1.1.2"/>
+  <name value="BeCSVaccineAdministrationRoute"/>
+  <title value="BeCSVaccineAdministrationRoute"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-11-27T15:15:33+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.ehealth.fgov.be/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Vaccine Administration Route"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="IM"/>
+    <display value="Instramuscular"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Intramusculaire"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Intramusculaire"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="SC"/>
+    <display value="Subcutaneous"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Sous-cutanée"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Subcutane"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="IV"/>
+    <display value="Intravenous"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="intraveineuse"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="intraveneus"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ID"/>
+    <display value="Intradermal"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Intradermique"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Intradermale"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="Oral"/>
+    <display value="Oral"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Orale"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Mondeling"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="Nasal"/>
+    <display value="Nasal"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Nasal"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Nasaal"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Inconnu"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="onbekend"/>
+    </designation>
+  </concept>
+</CodeSystem>

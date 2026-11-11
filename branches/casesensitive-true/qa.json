@@ -1,0 +1,21 @@
+{
+  "url" : "https://hl7belgium.org/profiles/fhir/terminology/ImplementationGuide/hl7.fhir.be.terminology",
+  "name" : "BETerminology",
+  "title" : "HL7 Belgium terminology Implementation Guide (IG)",
+  "description" : "HL7 Belgium terminology Implementation Guide (IG).",
+  "ig-date" : "2025-05-26",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.be.terminology",
+  "ig-ver" : "1.0.0",
+  "date" : "Wed, 11 Nov, 2026 21:18:35 +0000",
+  "dateISO8601" : "2026-11-11T21:18:35+00:00",
+  "errs" : 665,
+  "warnings" : 476,
+  "hints" : 112,
+  "broken-links" : 175,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1950418336
+}
