@@ -321,6 +321,13 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 // * $sct#1360050007 ^designation[=].value = "Pneumokokken 21 types"
 // * $sct#1360050007 ^designation[+].language = #en
 // * $sct#1360050007 ^designation[=].value = "Pneumococcal 21-valent conjugate vaccine"
+* $sct#1401553000
+// * $sct#1401553000 ^designation[0].language = #fr-BE
+// * $sct#1401553000 ^designation[=].value = "vaccin hexavalent contre la maladie de Lyme"
+// * $sct#1401553000 ^designation[+].language = #nl-BE
+// * $sct#1401553000 ^designation[=].value = "6-valent vaccin tegen ziekte van Lyme"
+// * $sct#1401553000 ^designation[+].language = #en
+// * $sct#1401553000 ^designation[=].value = "Lyme disease vaccine (6-valent)"
 * $sct#911000221103
 // * $sct#911000221103 ^designation[0].language = #fr-BE
 // * $sct#911000221103 ^designation[=].value = "vaccin contre le papillomavirus humain"
