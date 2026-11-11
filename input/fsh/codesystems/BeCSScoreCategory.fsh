@@ -7,6 +7,7 @@ Description: "Score Category"
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
 * ^version = "1.0.0"
 * ^status = #active
+* ^caseSensitive = true
 * ^date = "2021-01-10T10:59:49+00:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"

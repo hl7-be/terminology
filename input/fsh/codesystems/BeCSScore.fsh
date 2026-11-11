@@ -7,6 +7,7 @@ Description: "Codes as defined initially by the NIHDI. Dutch translations were n
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
 * ^version = "1.0.0"
 * ^status = #active
+* ^caseSensitive = true
 * ^date = "2020-10-01T11:01:09+00:00"
 * ^publisher = "eHealth Platform"
 * ^contact[0].name = "eHealth Platform"

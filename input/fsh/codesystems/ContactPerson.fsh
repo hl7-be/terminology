@@ -18,7 +18,7 @@ Description: "Contact person in Belgium."
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^contact[=].telecom.use = #work
 * ^jurisdiction = urn:iso:std:iso:3166#BE "Belgium"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 23
 * #father "father"
