@@ -9,7 +9,7 @@ Description: "Problem Category"
 * ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-category"
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 7
 * #diagnosis "Diagnosis" "A disease identified from a clinical reasoning, based on pathological and physiological ascertainments"

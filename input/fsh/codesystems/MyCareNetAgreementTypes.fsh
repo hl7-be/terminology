@@ -14,7 +14,7 @@ Description: "Agreement types for MyCareNet flows. Not all codes are defined her
 
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #physiotherapy-fa "physiotherapy-fa"

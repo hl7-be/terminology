@@ -9,7 +9,7 @@ Description: "Problem Origin Type"
 * ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-problem-origin-type"
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 4
 * #referral "Referral order" "Following a referral order"

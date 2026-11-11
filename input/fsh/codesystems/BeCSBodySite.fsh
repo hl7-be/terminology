@@ -13,5 +13,5 @@ Description: "Body Site CodeSystem"
 //* ^version = "1.1.0"
 * ^status = #retired
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #not-present

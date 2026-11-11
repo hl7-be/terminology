@@ -15,7 +15,7 @@ Description: "Annex types for MyCareNet flows. Not all codes are defined here, a
 
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #functional-report "functional-report"

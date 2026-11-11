@@ -16,7 +16,7 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 
 * ^content = #fragment
 * #MISSING_BUNDLE_ID

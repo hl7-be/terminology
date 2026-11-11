@@ -9,7 +9,7 @@ Description: "Codes as defined initially by the NIHDI. Dutch translations were n
 * ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score"
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 18
 * #ADBB "Alarm distress baby scale" "Alarm distress baby scale"

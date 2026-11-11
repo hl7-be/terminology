@@ -9,7 +9,7 @@ Description: "Score Category"
 * ^extension[=].valueRelatedArtifact.resource = "https://www.ehealth.fgov.be/standards/fhir/core-clinical/CodeSystem/be-cs-score-category"
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 3
 * #risk "Risk score" "Risk score"

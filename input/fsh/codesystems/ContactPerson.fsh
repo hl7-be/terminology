@@ -4,7 +4,7 @@ Title: "BeCdContactPerson"
 Description: "Contact person in Belgium."
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = false
+* ^caseSensitive = true
 * ^content = #complete
 * ^count = 23
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
